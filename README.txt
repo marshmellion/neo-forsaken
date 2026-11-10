@@ -1,4 +1,4 @@
-NEO FORSAKEN (test build 2, 2026-11-10)
+NEO FORSAKEN (test build 3, 2026-11-10)
 The Forsaken Realms v1.28 (TheSAguy) played with NeoForge 1.0.50's table and deck builder (AdrianLopez98),
 on the Forge rules engine (Card-Forge). Source: https://github.com/marshmellion/neo-forsaken
 
@@ -10,6 +10,10 @@ HOW TO PLAY (Windows 64-bit)
 
 Nothing is installed. Java is included in the jre folder. Your saves, decks, settings and downloaded card
 images go in the "datos" folder created next to NeoForsaken.bat. To update, copy "datos" into the new folder.
+
+DEV MODE
+In the Adventure, open Settings and tick "Dev Mode". From the next duel there is a "Dev" button beside the
+Log button (bottom left); F2 opens the same panel. Type to filter, Enter runs the first match.
 
 IF IT DOES NOT START
 Run NeoForsaken-debug.bat instead: it keeps a window open with the error. The logs are datos\neo\neo.log

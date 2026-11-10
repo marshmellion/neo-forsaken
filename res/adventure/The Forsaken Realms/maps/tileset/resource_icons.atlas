@@ -1,0 +1,14 @@
+resource_icons.png
+size: 48,16
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Lumber
+  xy: 0, 0
+  size: 16, 16
+Stone
+  xy: 16, 0
+  size: 16, 16
+GoldPile
+  xy: 32, 0
+  size: 16, 16

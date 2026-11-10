@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="90">
+ <editorsettings>
+  <export target="wastetown..tmx" format="tmx"/>
+ </editorsettings>
+ <properties>
+ </properties>
+ <tileset firstgid="1" source="../../../../common/maps/tileset/main.tsx"/>
+ <tileset firstgid="10113" source="../../../../common/maps/tileset/buildings.tsx"/>
+ <tileset firstgid="11905" source="../../tileset/resource_drop.tsx"/>
+ <layer id="1" name="Background" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1DEKwCAMBVAHt17YS3nHDl2kaBpj8j+UDB/EwWcSsV2ltExmM70+YZhjIs7V7Hm5Um3e7leNUiyzmXlo1xqWK9mRJtNd2eniXMabHvcRnrbnJ/ex/smrteRYTY85nJqaPrwtb3d2PqLeHTei1wwX/a6QffxTbui3Dvk=
+  </data>
+ </layer>
+ <layer id="2" name="Ground" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztVe0KgzAQq7M/Zl/JrtuTDt9066GBeLYqsroxGghixUty/TKmouL38Loac3cjTTcnjzXd8dpcC1qPyGe35CXSx29tfNrI4PZpc45c7TUGt/w/p825jmitEflvbtTivn1aK5UfeW0hnRyHSbdkxlSv0edvZBXIXJfuteRM7aW+sHagNcuZZf+cNc/QPVOTdaGpz7WSPW8mPdHC+sZ8w0OJdSfaQZ3z+l7BOQZ/7KdNjO31qP/TtORx666DR+/mvtgfxrfQJ7x4VZvfeb4qKir+E28jjd6D
+  </data>
+ </layer>
+ <layer id="3" name="Walls" width="30" height="30">
+  <properties>
+   <property name="spriteLayer" type="bool" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxz42RgcBvFo3gU0xSv4mBgeAKkV3NAMIwNomF4DQf17XwKpGGgURyVhoHHVLQf3U584AM7hHalgl/dibQT3d+gOKDE38+AeCUH6XZTw98eQLycgzT7QepfUGgvyM8voDQ6WCmK3V4vKqZrNxx2g8AKUQSmhl+JjXN3MeqFLyG7n0MxyA0wv1I7fIl1Ay39OopH8SgexaOYfhgAd3MbkQ==
+  </data>
+ </layer>
+ <objectgroup id="4" name="Objects">
+  <object id="69" template="../../../../common/maps/obj/enemy.tx" gid="2147495067" x="208" y="224">
+   <properties>
+    <property name="dialog">[
+  {
+    &quot;text&quot;: &quot;Hello, planeswalker {var=player_name}.&quot;,
+    &quot;options&quot;: [
+      {
+        &quot;name&quot;: &quot;Why am I here?&quot;,
+        &quot;condition&quot;: [
+          {
+            &quot;checkQuestFlag&quot;: &quot;mainQuest&quot;,
+            &quot;not&quot;: true
+          },
+          {
+            &quot;checkCharacterFlag&quot;: &quot;noQuest&quot;,
+            &quot;not&quot;: true
+          }
+        ],
+        &quot;text&quot;: &quot;Easy - breathe. The stasis takes time to shed. You are awake, Guardian... after three thousand years, you are awake. This cave was your prison. And this plane is what remains of your realm.&quot;,
+        &quot;options&quot;: [
+          {
+            &quot;name&quot;: &quot;(Continue)&quot;,
+            &quot;text&quot;: &quot;You remember the Night of Chains? Five walkers. Five Seals, cut from your own stolen power. A realm left to grey and die while you slept beneath it. They have returned - their castles stand at the compass points, and their colors crawl across the ash, claiming what was never theirs.&quot;,
+            &quot;options&quot;: [
+              {
+                &quot;name&quot;: &quot;(Continue)&quot;,
+                &quot;text&quot;: &quot;I am the last Warden. My order kept your vigil for a hundred generations, and died waiting for this day. So rebuild, Guardian. Raise Orazca. Gather the survivors. And when you are strong - take back the five Seals from the five thrones.&quot;,
+                &quot;options&quot;: [
+                  {
+                    &quot;name&quot;: &quot;(Continue)&quot;,
+                    &quot;text&quot;: &quot;Take this rune. It will carry you home from anywhere in the realm - and home is Orazca, the ruin at the heart of the star, a few hundred paces from this cave's mouth. That is where I will be. The realm waited three thousand years for you, Guardian; do not make it wait again.&quot;,
+                    &quot;action&quot;: [
+                      {
+                        &quot;grantRewards&quot;: [
+                          {
+                            &quot;type&quot;: &quot;item&quot;,
+                            &quot;count&quot;: 1,
+                            &quot;itemName&quot;: &quot;Homeward rune&quot;
+                          }
+                        ]
+                      }
+                    ],
+                    &quot;options&quot;: [
+                      {
+                        &quot;name&quot;: &quot;Thank you.&quot;,
+                        &quot;text&quot;: &quot;I will reopen the portal now. On the other side lie the ash-barrens of the Forsaken Realms - your realm, Guardian, grey as it is. Walk to the broken stones you will see from the cave mouth: that was Orazca. I will be waiting there. Bring the color back.&quot;,
+                        &quot;options&quot;: [
+                          {
+                            &quot;name&quot;: &quot;(Leave)&quot;,
+                            &quot;action&quot;: [
+                              {
+                                &quot;setQuestFlag&quot;: {
+                                  &quot;key&quot;: &quot;mainQuest&quot;,
+                                  &quot;val&quot;: 1
+                                },
+                                &quot;activateMapObject&quot;: 78,
+                                &quot;deleteMapObject&quot;: 69
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        &quot;name&quot;: &quot;Goodbye.&quot;
+      }
+    ],
+    &quot;condition&quot;: [
+      {
+        &quot;checkQuestFlag&quot;: &quot;mainQuest&quot;,
+        &quot;not&quot;: true
+      }
+    ]
+  },
+  {
+    &quot;text&quot;: &quot;The Warden has rolled up his maps and banked the fire. \&quot;Nothing is left for either of us in this hole, Guardian,\&quot; he says, shouldering his pack. \&quot;Orazca is a few hundred paces out - the broken stones at the heart of the star. Come and find me there.\&quot;&quot;,
+    &quot;options&quot;: [
+      {
+        &quot;name&quot;: &quot;(Leave)&quot;,
+        &quot;action&quot;: [
+          {
+            &quot;deleteMapObject&quot;: 69
+          }
+        ]
+      }
+    ],
+    &quot;condition&quot;: [
+      {
+        &quot;getQuestFlag&quot;: {
+          &quot;key&quot;: &quot;mainQuest&quot;,
+          &quot;op&quot;: &quot;&gt;=&quot;,
+          &quot;val&quot;: 1
+        }
+      }
+    ]
+  }
+]</property>
+    <property name="displayNameOverride" value="The Warden"/>
+    <property name="enemy" value="Adept Black Wizard"/>
+   </properties>
+  </object>
+  <object id="70" template="../../../../common/maps/obj/entry_down.tx" x="192" y="160">
+   <properties>
+    <property name="noExit" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="78" template="../../../../common/maps/obj/portal.tx" x="192" y="144">
+   <properties>
+    <property name="portalState" value="active"/>
+    <property name="sprite" value="sprites/portal3.atlas"/>
+    <property name="teleport" value=""/>
+   </properties>
+  </object>
+  <object id="86" template="../../obj/wood.tx" x="287" y="176.636">
+   <properties>
+    <property name="reward">[
+  {
+    &quot;type&quot;: &quot;wood&quot;,
+    &quot;count&quot;: 10,
+    &quot;addMaxCount&quot;: 10
+ }
+]</property>
+   </properties>
+  </object>
+  <object id="89" template="../../../../common/maps/obj/dialog.tx" x="288.909" y="224" width="13.8182" height="14.9091">
+   <properties>
+    <property name="dialog">[
+{
+   &quot;condition&quot;: [{ &quot;checkCharacterFlag&quot;: &quot;newGamePlus&quot;, &quot;not&quot;: true }],
+   &quot;text&quot;: &quot;A flagstone rocks under your boot. Beneath it, wrapped in oilskin and sealed with your people's old crest, lies a single card someone hid here long ago - for whoever came home next.&quot;,
+   &quot;options&quot;: [{
+      &quot;name&quot;: &quot;(Take the card)&quot;,
+      &quot;action&quot;: [{
+         &quot;deleteMapObject&quot;:-1
+         },{
+         &quot;grantRewards&quot;: [{
+            &quot;type&quot;: &quot;card&quot;,
+            &quot;count&quot;: 1,
+            &quot;rarity&quot;: [&quot;Rare&quot;],
+            &quot;colors&quot;: [&quot;startingColor&quot;],
+            &quot;raceEditions&quot;: true
+         }]
+      }]
+   }]
+}
+]</property>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

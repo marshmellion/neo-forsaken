@@ -1,0 +1,287 @@
+nicol_bolas_boss.png
+size: 3060,2584
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 180, 252
+Idle
+  xy: 180, 64
+  size: 180, 252
+Idle
+  xy: 360, 64
+  size: 180, 252
+Idle
+  xy: 540, 64
+  size: 180, 252
+Idle
+  xy: 720, 64
+  size: 180, 252
+Idle
+  xy: 900, 64
+  size: 180, 252
+Idle
+  xy: 1080, 64
+  size: 180, 252
+Idle
+  xy: 1260, 64
+  size: 180, 252
+Idle
+  xy: 1440, 64
+  size: 180, 252
+Idle
+  xy: 1620, 64
+  size: 180, 252
+Walk
+  xy: 0, 316
+  size: 180, 252
+Walk
+  xy: 180, 316
+  size: 180, 252
+Walk
+  xy: 360, 316
+  size: 180, 252
+Walk
+  xy: 540, 316
+  size: 180, 252
+Walk
+  xy: 720, 316
+  size: 180, 252
+Walk
+  xy: 900, 316
+  size: 180, 252
+Attack
+  xy: 0, 568
+  size: 180, 252
+Attack
+  xy: 180, 568
+  size: 180, 252
+Attack
+  xy: 360, 568
+  size: 180, 252
+Attack
+  xy: 540, 568
+  size: 180, 252
+Attack
+  xy: 720, 568
+  size: 180, 252
+Attack
+  xy: 900, 568
+  size: 180, 252
+Attack
+  xy: 1080, 568
+  size: 180, 252
+Attack
+  xy: 1260, 568
+  size: 180, 252
+Attack
+  xy: 1440, 568
+  size: 180, 252
+Attack
+  xy: 1620, 568
+  size: 180, 252
+Hit
+  xy: 0, 820
+  size: 180, 252
+Hit
+  xy: 180, 820
+  size: 180, 252
+Hit
+  xy: 360, 820
+  size: 180, 252
+Hit
+  xy: 540, 820
+  size: 180, 252
+Hit
+  xy: 720, 820
+  size: 180, 252
+Hit
+  xy: 900, 820
+  size: 180, 252
+Hit
+  xy: 1080, 820
+  size: 180, 252
+Hit
+  xy: 1260, 820
+  size: 180, 252
+Death
+  xy: 0, 1072
+  size: 180, 252
+Death
+  xy: 180, 1072
+  size: 180, 252
+Death
+  xy: 360, 1072
+  size: 180, 252
+Death
+  xy: 540, 1072
+  size: 180, 252
+Death
+  xy: 720, 1072
+  size: 180, 252
+Death
+  xy: 900, 1072
+  size: 180, 252
+Death
+  xy: 1080, 1072
+  size: 180, 252
+Death
+  xy: 1260, 1072
+  size: 180, 252
+Death
+  xy: 1440, 1072
+  size: 180, 252
+Death
+  xy: 1620, 1072
+  size: 180, 252
+Death
+  xy: 1800, 1072
+  size: 180, 252
+Death
+  xy: 1980, 1072
+  size: 180, 252
+Death
+  xy: 2160, 1072
+  size: 180, 252
+Death
+  xy: 2340, 1072
+  size: 180, 252
+Death
+  xy: 2520, 1072
+  size: 180, 252
+Death
+  xy: 2700, 1072
+  size: 180, 252
+Death
+  xy: 2880, 1072
+  size: 180, 252
+Wake
+  xy: 0, 1324
+  size: 180, 252
+Wake
+  xy: 180, 1324
+  size: 180, 252
+Wake
+  xy: 360, 1324
+  size: 180, 252
+Wake
+  xy: 540, 1324
+  size: 180, 252
+Wake
+  xy: 720, 1324
+  size: 180, 252
+Wake
+  xy: 900, 1324
+  size: 180, 252
+Wake
+  xy: 1080, 1324
+  size: 180, 252
+Wake
+  xy: 1260, 1324
+  size: 180, 252
+Wake
+  xy: 1440, 1324
+  size: 180, 252
+Wake
+  xy: 1620, 1324
+  size: 180, 252
+IdleUp
+  xy: 0, 1576
+  size: 180, 252
+IdleUp
+  xy: 180, 1576
+  size: 180, 252
+IdleUp
+  xy: 360, 1576
+  size: 180, 252
+IdleUp
+  xy: 540, 1576
+  size: 180, 252
+IdleUp
+  xy: 720, 1576
+  size: 180, 252
+IdleUp
+  xy: 900, 1576
+  size: 180, 252
+IdleUp
+  xy: 1080, 1576
+  size: 180, 252
+IdleUp
+  xy: 1260, 1576
+  size: 180, 252
+IdleUp
+  xy: 1440, 1576
+  size: 180, 252
+IdleUp
+  xy: 1620, 1576
+  size: 180, 252
+IdleDown
+  xy: 0, 1828
+  size: 180, 252
+IdleDown
+  xy: 180, 1828
+  size: 180, 252
+IdleDown
+  xy: 360, 1828
+  size: 180, 252
+IdleDown
+  xy: 540, 1828
+  size: 180, 252
+IdleDown
+  xy: 720, 1828
+  size: 180, 252
+IdleDown
+  xy: 900, 1828
+  size: 180, 252
+IdleDown
+  xy: 1080, 1828
+  size: 180, 252
+IdleDown
+  xy: 1260, 1828
+  size: 180, 252
+IdleDown
+  xy: 1440, 1828
+  size: 180, 252
+IdleDown
+  xy: 1620, 1828
+  size: 180, 252
+WalkUp
+  xy: 0, 2080
+  size: 180, 252
+WalkUp
+  xy: 180, 2080
+  size: 180, 252
+WalkUp
+  xy: 360, 2080
+  size: 180, 252
+WalkUp
+  xy: 540, 2080
+  size: 180, 252
+WalkUp
+  xy: 720, 2080
+  size: 180, 252
+WalkUp
+  xy: 900, 2080
+  size: 180, 252
+WalkDown
+  xy: 0, 2332
+  size: 180, 252
+WalkDown
+  xy: 180, 2332
+  size: 180, 252
+WalkDown
+  xy: 360, 2332
+  size: 180, 252
+WalkDown
+  xy: 540, 2332
+  size: 180, 252
+WalkDown
+  xy: 720, 2332
+  size: 180, 252
+WalkDown
+  xy: 900, 2332
+  size: 180, 252

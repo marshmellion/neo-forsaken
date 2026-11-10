@@ -1,0 +1,300 @@
+chromium_boss.png
+size: 3724,2704
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 196, 264
+  footprint: 9, 65, 186, 138
+Idle
+  xy: 196, 64
+  size: 196, 264
+Idle
+  xy: 392, 64
+  size: 196, 264
+Idle
+  xy: 588, 64
+  size: 196, 264
+Idle
+  xy: 784, 64
+  size: 196, 264
+Idle
+  xy: 980, 64
+  size: 196, 264
+Idle
+  xy: 1176, 64
+  size: 196, 264
+Idle
+  xy: 1372, 64
+  size: 196, 264
+Idle
+  xy: 1568, 64
+  size: 196, 264
+Idle
+  xy: 1764, 64
+  size: 196, 264
+Walk
+  xy: 0, 328
+  size: 196, 264
+Walk
+  xy: 196, 328
+  size: 196, 264
+Walk
+  xy: 392, 328
+  size: 196, 264
+Walk
+  xy: 588, 328
+  size: 196, 264
+Walk
+  xy: 784, 328
+  size: 196, 264
+Walk
+  xy: 980, 328
+  size: 196, 264
+Attack
+  xy: 0, 592
+  size: 196, 264
+Attack
+  xy: 196, 592
+  size: 196, 264
+Attack
+  xy: 392, 592
+  size: 196, 264
+Attack
+  xy: 588, 592
+  size: 196, 264
+Attack
+  xy: 784, 592
+  size: 196, 264
+Attack
+  xy: 980, 592
+  size: 196, 264
+Attack
+  xy: 1176, 592
+  size: 196, 264
+Attack
+  xy: 1372, 592
+  size: 196, 264
+Attack
+  xy: 1568, 592
+  size: 196, 264
+Attack
+  xy: 1764, 592
+  size: 196, 264
+Attack
+  xy: 1960, 592
+  size: 196, 264
+Attack
+  xy: 2156, 592
+  size: 196, 264
+Hit
+  xy: 0, 856
+  size: 196, 264
+Hit
+  xy: 196, 856
+  size: 196, 264
+Hit
+  xy: 392, 856
+  size: 196, 264
+Hit
+  xy: 588, 856
+  size: 196, 264
+Hit
+  xy: 784, 856
+  size: 196, 264
+Hit
+  xy: 980, 856
+  size: 196, 264
+Hit
+  xy: 1176, 856
+  size: 196, 264
+Hit
+  xy: 1372, 856
+  size: 196, 264
+Death
+  xy: 0, 1120
+  size: 196, 264
+Death
+  xy: 196, 1120
+  size: 196, 264
+Death
+  xy: 392, 1120
+  size: 196, 264
+Death
+  xy: 588, 1120
+  size: 196, 264
+Death
+  xy: 784, 1120
+  size: 196, 264
+Death
+  xy: 980, 1120
+  size: 196, 264
+Death
+  xy: 1176, 1120
+  size: 196, 264
+Death
+  xy: 1372, 1120
+  size: 196, 264
+Death
+  xy: 1568, 1120
+  size: 196, 264
+Death
+  xy: 1764, 1120
+  size: 196, 264
+Death
+  xy: 1960, 1120
+  size: 196, 264
+Death
+  xy: 2156, 1120
+  size: 196, 264
+Death
+  xy: 2352, 1120
+  size: 196, 264
+Death
+  xy: 2548, 1120
+  size: 196, 264
+Death
+  xy: 2744, 1120
+  size: 196, 264
+Death
+  xy: 2940, 1120
+  size: 196, 264
+Death
+  xy: 3136, 1120
+  size: 196, 264
+Death
+  xy: 3332, 1120
+  size: 196, 264
+Death
+  xy: 3528, 1120
+  size: 196, 264
+Wake
+  xy: 0, 1384
+  size: 196, 264
+Wake
+  xy: 196, 1384
+  size: 196, 264
+Wake
+  xy: 392, 1384
+  size: 196, 264
+Wake
+  xy: 588, 1384
+  size: 196, 264
+Wake
+  xy: 784, 1384
+  size: 196, 264
+Wake
+  xy: 980, 1384
+  size: 196, 264
+Wake
+  xy: 1176, 1384
+  size: 196, 264
+Wake
+  xy: 1372, 1384
+  size: 196, 264
+Wake
+  xy: 1568, 1384
+  size: 196, 264
+Wake
+  xy: 1764, 1384
+  size: 196, 264
+IdleUp
+  xy: 0, 1648
+  size: 196, 264
+IdleUp
+  xy: 196, 1648
+  size: 196, 264
+IdleUp
+  xy: 392, 1648
+  size: 196, 264
+IdleUp
+  xy: 588, 1648
+  size: 196, 264
+IdleUp
+  xy: 784, 1648
+  size: 196, 264
+IdleUp
+  xy: 980, 1648
+  size: 196, 264
+IdleUp
+  xy: 1176, 1648
+  size: 196, 264
+IdleUp
+  xy: 1372, 1648
+  size: 196, 264
+IdleUp
+  xy: 1568, 1648
+  size: 196, 264
+IdleUp
+  xy: 1764, 1648
+  size: 196, 264
+IdleDown
+  xy: 0, 1912
+  size: 196, 264
+IdleDown
+  xy: 196, 1912
+  size: 196, 264
+IdleDown
+  xy: 392, 1912
+  size: 196, 264
+IdleDown
+  xy: 588, 1912
+  size: 196, 264
+IdleDown
+  xy: 784, 1912
+  size: 196, 264
+IdleDown
+  xy: 980, 1912
+  size: 196, 264
+IdleDown
+  xy: 1176, 1912
+  size: 196, 264
+IdleDown
+  xy: 1372, 1912
+  size: 196, 264
+IdleDown
+  xy: 1568, 1912
+  size: 196, 264
+IdleDown
+  xy: 1764, 1912
+  size: 196, 264
+WalkUp
+  xy: 0, 2176
+  size: 196, 264
+WalkUp
+  xy: 196, 2176
+  size: 196, 264
+WalkUp
+  xy: 392, 2176
+  size: 196, 264
+WalkUp
+  xy: 588, 2176
+  size: 196, 264
+WalkUp
+  xy: 784, 2176
+  size: 196, 264
+WalkUp
+  xy: 980, 2176
+  size: 196, 264
+WalkDown
+  xy: 0, 2440
+  size: 196, 264
+WalkDown
+  xy: 196, 2440
+  size: 196, 264
+WalkDown
+  xy: 392, 2440
+  size: 196, 264
+WalkDown
+  xy: 588, 2440
+  size: 196, 264
+WalkDown
+  xy: 784, 2440
+  size: 196, 264
+WalkDown
+  xy: 980, 2440
+  size: 196, 264

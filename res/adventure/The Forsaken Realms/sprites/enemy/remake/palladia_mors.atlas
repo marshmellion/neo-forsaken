@@ -1,0 +1,273 @@
+palladia_mors.png
+size: 1952,1044
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 122, 98
+  footprint: 6, 15, 101, 79
+Idle
+  xy: 122, 64
+  size: 122, 98
+Idle
+  xy: 244, 64
+  size: 122, 98
+Idle
+  xy: 366, 64
+  size: 122, 98
+Idle
+  xy: 488, 64
+  size: 122, 98
+Idle
+  xy: 610, 64
+  size: 122, 98
+Idle
+  xy: 732, 64
+  size: 122, 98
+Idle
+  xy: 854, 64
+  size: 122, 98
+Idle
+  xy: 976, 64
+  size: 122, 98
+Idle
+  xy: 1098, 64
+  size: 122, 98
+Walk
+  xy: 0, 162
+  size: 122, 98
+Walk
+  xy: 122, 162
+  size: 122, 98
+Walk
+  xy: 244, 162
+  size: 122, 98
+Walk
+  xy: 366, 162
+  size: 122, 98
+Walk
+  xy: 488, 162
+  size: 122, 98
+Walk
+  xy: 610, 162
+  size: 122, 98
+Attack
+  xy: 0, 260
+  size: 122, 98
+Attack
+  xy: 122, 260
+  size: 122, 98
+Attack
+  xy: 244, 260
+  size: 122, 98
+Attack
+  xy: 366, 260
+  size: 122, 98
+Attack
+  xy: 488, 260
+  size: 122, 98
+Attack
+  xy: 610, 260
+  size: 122, 98
+Attack
+  xy: 732, 260
+  size: 122, 98
+Attack
+  xy: 854, 260
+  size: 122, 98
+Attack
+  xy: 976, 260
+  size: 122, 98
+Attack
+  xy: 1098, 260
+  size: 122, 98
+Hit
+  xy: 0, 358
+  size: 122, 98
+Hit
+  xy: 122, 358
+  size: 122, 98
+Hit
+  xy: 244, 358
+  size: 122, 98
+Hit
+  xy: 366, 358
+  size: 122, 98
+Hit
+  xy: 488, 358
+  size: 122, 98
+Hit
+  xy: 610, 358
+  size: 122, 98
+Death
+  xy: 0, 456
+  size: 122, 98
+Death
+  xy: 122, 456
+  size: 122, 98
+Death
+  xy: 244, 456
+  size: 122, 98
+Death
+  xy: 366, 456
+  size: 122, 98
+Death
+  xy: 488, 456
+  size: 122, 98
+Death
+  xy: 610, 456
+  size: 122, 98
+Death
+  xy: 732, 456
+  size: 122, 98
+Death
+  xy: 854, 456
+  size: 122, 98
+Death
+  xy: 976, 456
+  size: 122, 98
+Death
+  xy: 1098, 456
+  size: 122, 98
+Death
+  xy: 1220, 456
+  size: 122, 98
+Death
+  xy: 1342, 456
+  size: 122, 98
+Death
+  xy: 1464, 456
+  size: 122, 98
+Death
+  xy: 1586, 456
+  size: 122, 98
+Death
+  xy: 1708, 456
+  size: 122, 98
+Death
+  xy: 1830, 456
+  size: 122, 98
+Wake
+  xy: 0, 554
+  size: 122, 98
+Wake
+  xy: 122, 554
+  size: 122, 98
+Wake
+  xy: 244, 554
+  size: 122, 98
+Wake
+  xy: 366, 554
+  size: 122, 98
+Wake
+  xy: 488, 554
+  size: 122, 98
+Wake
+  xy: 610, 554
+  size: 122, 98
+Wake
+  xy: 732, 554
+  size: 122, 98
+Wake
+  xy: 854, 554
+  size: 122, 98
+IdleUp
+  xy: 0, 652
+  size: 122, 98
+IdleUp
+  xy: 122, 652
+  size: 122, 98
+IdleUp
+  xy: 244, 652
+  size: 122, 98
+IdleUp
+  xy: 366, 652
+  size: 122, 98
+IdleUp
+  xy: 488, 652
+  size: 122, 98
+IdleUp
+  xy: 610, 652
+  size: 122, 98
+IdleUp
+  xy: 732, 652
+  size: 122, 98
+IdleUp
+  xy: 854, 652
+  size: 122, 98
+IdleUp
+  xy: 976, 652
+  size: 122, 98
+IdleUp
+  xy: 1098, 652
+  size: 122, 98
+IdleDown
+  xy: 0, 750
+  size: 122, 98
+IdleDown
+  xy: 122, 750
+  size: 122, 98
+IdleDown
+  xy: 244, 750
+  size: 122, 98
+IdleDown
+  xy: 366, 750
+  size: 122, 98
+IdleDown
+  xy: 488, 750
+  size: 122, 98
+IdleDown
+  xy: 610, 750
+  size: 122, 98
+IdleDown
+  xy: 732, 750
+  size: 122, 98
+IdleDown
+  xy: 854, 750
+  size: 122, 98
+IdleDown
+  xy: 976, 750
+  size: 122, 98
+IdleDown
+  xy: 1098, 750
+  size: 122, 98
+WalkUp
+  xy: 0, 848
+  size: 122, 98
+WalkUp
+  xy: 122, 848
+  size: 122, 98
+WalkUp
+  xy: 244, 848
+  size: 122, 98
+WalkUp
+  xy: 366, 848
+  size: 122, 98
+WalkUp
+  xy: 488, 848
+  size: 122, 98
+WalkUp
+  xy: 610, 848
+  size: 122, 98
+WalkDown
+  xy: 0, 946
+  size: 122, 98
+WalkDown
+  xy: 122, 946
+  size: 122, 98
+WalkDown
+  xy: 244, 946
+  size: 122, 98
+WalkDown
+  xy: 366, 946
+  size: 122, 98
+WalkDown
+  xy: 488, 946
+  size: 122, 98
+WalkDown
+  xy: 610, 946
+  size: 122, 98

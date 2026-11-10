@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="101">
+ <editorsettings>
+  <export target="wastetown..tmx" format="tmx" />
+ </editorsettings>
+ <properties>
+  <property name="noShopTileHiding" type="bool" value="true"/>
+ </properties>
+ <tileset firstgid="1" source="../../../../common/maps/tileset/main.tsx" />
+ <tileset firstgid="10113" source="../../../../common/maps/tileset/buildings.tsx" />
+ <tileset firstgid="11905" source="../../../../common/maps/tileset/buildings-nocollide.tsx" />
+ <tileset firstgid="13697" source="../../tileset/main-nocollide.tsx" />
+ <tileset firstgid="23809" source="../../tileset/player_land.tsx" />
+ <layer id="1" name="Background" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eNrtwwENAAAMAiAjWej9axjksNFLqqqq6rsD3ITvxA==
+  </data>
+ </layer>
+ <layer id="2" name="Ground" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eNq1l71OHDEQx32hiNa7FDwBySOwcEBzF60IoYhoQAgJMFfANTR5BoJ0fXRSpCgFiRQlnNKAaEDAm4CEOGjo6fHItm7WN/7YC7E02o/z+jd/z3jsa2aMvUoZG5MWan8FY6ei/G5ZPreQrQn/NzucsV2umP/C/SifhWZuS1u1fu/J5xP0rpYOmGDvMuVHm/u5Z9K+OjTbWu0GWptZmRujG7hXDs1bhFa71VKaeSN9+SmvDaFsXtBcSnNThONEcYHXisgR4HbZsOaYdigZ11lZJ+bBuJ3UzaXmugr7hzbQuimUCULvnod778hD8z7PGXtAfboOfyBHgLNp5UlX3h9b3DRRFmqfPbna58rHD46rff9L8l5H2G9pbzM3t5covxJ5fZMNjCfKzD1cQWOBfFji6luwRfQ8lat+M/kw77tQZrgH1pxM5cOxnczUeNzjI/bvgcgBM9a+9jfP/TXDWMHDcTX+TefDbBjjUmsA/0BvTOwWeFx833M17h8r/85R3e5pbmHFDBv4/amh+sAVmq8v9Dua9c8L5rrm+bGu1lBonuuyz4ruF9ov9nU+4jEX5gb72YVmL3GaWxeD2r6ia0/B/evX5AHE4pa/XHzvNBfHd4fTbLwmwI9FonaAjj56jw3iClr7Ok8SVDug7sO+1ObhOcBrNNXrvEBj4vWL/bSZeO/3nTM6Vlz2UCwKPebEdLnmT2bl+mbXSHsvBH6bx+1lPc09SEfbC2vEGaeT/n/uIXHmeEm9XeI8ZNZbVWaI+0WO+U3vNcee82cMc328ml5cY6gz0dN4NZ1V5nmUs1jdcY4dlXvmiDNVz6HebAj6LB3DDc21+Z9k1q79P6tF+IC5DeE+50NeQCwpzc/w/wPa
+  </data>
+ </layer>
+ <layer id="3" name="Walls" width="30" height="30">
+  <properties>
+   <property name="spriteLayer" type="bool" value="true" />
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eNpjYBgFIwHsYGFgkKYx3sWCaW8oK+39hs2OUXupC7JGw3lQ22utxcBgozUazpTY+3WQ+tddk4HBA4j1OEfjl1R7s3DYmzVCyo0vrOTV3aS0F76xotYTlLiZnHDKokJY0SN+SLU3a4DsZRgE9maNMP8OFnsB9B8gvA==
+  </data>
+ </layer>
+ <layer id="5" name="Overlay" width="30" height="30">
+  <properties>
+   <property name="noCollision" type="bool" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eNrt0VENACAMxNA6gd+N+VczMZiAkJA+A03uQJJ0wkiY+a7f5Qe3rIAKd5Ak/WcDIJQCRQ==
+  </data>
+ </layer>
+ <objectgroup id="4" name="Objects">
+  <object id="38" template="../../../../common/maps/obj/entry_up.tx" x="204" y="368" width="56" height="16" />
+  <object id="41" template="../../../../common/maps/obj/shop.tx" x="256" y="208">
+   <properties>
+    <property name="commonShopList" value="Colorless,Colorless,Artifact,Creature2Colorless,Wand,Enchantment,Instant,Creature,Black1,Black3,Black5,Blue1,Blue3,Blue5,Green1,Green3,Green5,Red1,Red3,Red5,White1,White3,White5,Graveyard,OmenStones,Instant8Black,Instant8Blue,Instant8Green,Instant8Red,Instant8White,Creature2Eldrazi,Creature2Black,Creature6Black,Creature8Black,Creature2Blue,Creature6Blue,Creature8Blue,Creature2Green,Creature6Green,Creature8Green,Creature2Red,Creature6Red,Creature8Red,Creature2White,Creature6White,Creature8White,Land8Blue,Land8Black,Land8Red,Land8Green,Land8White,Goblin,Elf,Merfolk,Zombie,Human,Angel,Sliver2Black,Sliver2Blue,Sliver2Green,Sliver2Red,Sliver2White,Assassin,Enchantment6Black,Enchantment6Blue,Enchantment6Green,Enchantment6Red,Enchantment6White,Squirrel,Multicolor,Dragon,Vampire,Vehicle2Black,Vehicle2Blue,Vehicle2Green,Vehicle2Red,Vehicle2White,Minotaur,Ogre,Dinosaur,Dwarf,Devil,Soldier,Card,Demon,Druid,Wand2Black,Wand2Blue,Wand2Green,Wand2Red,Wand2White,Bird,Nobles,Giant,SnowShop,LargeSeaCreatures,Spirit,Wolf,Knight,Random,Skeleton,Sphinx,Hydra,Spiders,SmallCats,Shapeshifter,Gods,Insects,Horrors,Mutants,Eldrazi,Pirate,Rogue,Shaman,Wizard,WhiteBoosterPackShop,BlueBoosterPackShop,BlackBoosterPackShop,RedBoosterPackShop,GreenBoosterPackShop,Instant6White,Instant6Blue,Instant6Black,Instant6Red,Instant6Green" />
+    <property name="mythicShopList" value="Planeswalker,WUBRG,PhyrexianColorless,RWB,RWU,RWG,RUB,RGB,RGU,UGB,UWG,UWB,GWB,Planeswalker4Black,Planeswalker4Blue,Planeswalker4Green,Planeswalker4Red,Planeswalker4White,Legend,Legend4Black,Legend4Blue,Legend4Green,Legend4Red,Legend4White,PhyrexianWhite,PhyrexianBlue,PhyrexianGreen,PhyrexianRed,PhyrexianBlack" />
+    <property name="noRestock" type="bool" value="true" />
+    <property name="rareShopList" value="Land4Colorless,Vehicle,White,Blue,Red,Green,Black,FlipShop,Saga,AttractionShop,ContraptionShop,Azorius,Dimir,Rakdos,Gruul,Selesnya,Orzhov,Izzet,Golgari,Boros,Simic" />
+    <property name="uncommonShopList" value="Artifact,Land,Assembly,Golem,Sliver,Wall,Equip,Enchantment,Instant,Creature,Battle,Black2,Black4,Black6,Blue2,Blue4,Blue6,Green2,Green4,Green6,Red2,Red4,Red6,White2,White4,White6,Instant4Black,Instant4Blue,Instant4Green,Instant4Red,Instant4White,Land4Blue,Land4Black,Land4Red,Land4Green,Land4White,Human4White,Sliver4Black,Sliver4Blue,Sliver4Green,Sliver4Red,Sliver4White,Enchantment4Black,Enchantment4Blue,Enchantment4Green,Enchantment4Red,Enchantment4White,Artifact4Black,Artifact4Blue,Artifact4Green,Artifact4Red,Artifact4White,Multicolor8Black,Multicolor8Blue,Multicolor8Green,Multicolor8Red,Multicolor8White,Ogre4Red,Dinosaur4Green,Dinosaur4Red,Soldier4Red,Soldier4White,Wand4Black,Wand4Blue,Wand4Green,Wand4Red,Wand4White,Bird4Blue,Bird4White,Bird4Azorius,Spirit4Blue,Spirit4White,Wolf4Green,Wolf4Red,Knight4Black,Knight4Red,Knight4White,Pirate4Blue,Rogue4Black,Rogue4Blue" />
+   </properties>
+  </object>
+  <object id="55" template="../../../../common/maps/obj/shop.tx" x="272" y="144">
+   <properties>
+    <property name="commonShopList" value="Colorless,Colorless,Artifact,Creature2Colorless,Wand,Enchantment,Instant,Creature,Black1,Black3,Black5,Blue1,Blue3,Blue5,Green1,Green3,Green5,Red1,Red3,Red5,White1,White3,White5,Graveyard,OmenStones,Instant8Black,Instant8Blue,Instant8Green,Instant8Red,Instant8White,Creature2Eldrazi,Creature2Black,Creature6Black,Creature8Black,Creature2Blue,Creature6Blue,Creature8Blue,Creature2Green,Creature6Green,Creature8Green,Creature2Red,Creature6Red,Creature8Red,Creature2White,Creature6White,Creature8White,Land8Blue,Land8Black,Land8Red,Land8Green,Land8White,Goblin,Elf,Merfolk,Zombie,Human,Angel,Sliver2Black,Sliver2Blue,Sliver2Green,Sliver2Red,Sliver2White,Assassin,Enchantment6Black,Enchantment6Blue,Enchantment6Green,Enchantment6Red,Enchantment6White,Squirrel,Multicolor,Dragon,Vampire,Vehicle2Black,Vehicle2Blue,Vehicle2Green,Vehicle2Red,Vehicle2White,Minotaur,Ogre,Dinosaur,Dwarf,Devil,Soldier,Card,Demon,Druid,Wand2Black,Wand2Blue,Wand2Green,Wand2Red,Wand2White,Bird,Nobles,Giant,SnowShop,LargeSeaCreatures,Spirit,Wolf,Knight,Random,Skeleton,Sphinx,Hydra,Spiders,SmallCats,Shapeshifter,Gods,Insects,Horrors,Mutants,Eldrazi,Pirate,Rogue,Shaman,Wizard,WhiteBoosterPackShop,BlueBoosterPackShop,BlackBoosterPackShop,RedBoosterPackShop,GreenBoosterPackShop,Instant6White,Instant6Blue,Instant6Black,Instant6Red,Instant6Green" />
+    <property name="mythicShopList" value="Planeswalker,WUBRG,PhyrexianColorless,RWB,RWU,RWG,RUB,RGB,RGU,UGB,UWG,UWB,GWB,Planeswalker4Black,Planeswalker4Blue,Planeswalker4Green,Planeswalker4Red,Planeswalker4White,Legend,Legend4Black,Legend4Blue,Legend4Green,Legend4Red,Legend4White,PhyrexianWhite,PhyrexianBlue,PhyrexianGreen,PhyrexianRed,PhyrexianBlack" />
+    <property name="noRestock" type="bool" value="true" />
+    <property name="rareShopList" value="Land4Colorless,Vehicle,White,Blue,Red,Green,Black,FlipShop,Saga,AttractionShop,ContraptionShop,Azorius,Dimir,Rakdos,Gruul,Selesnya,Orzhov,Izzet,Golgari,Boros,Simic" />
+    <property name="uncommonShopList" value="Artifact,Land,Assembly,Golem,Sliver,Wall,Equip,Enchantment,Instant,Creature,Battle,Black2,Black4,Black6,Blue2,Blue4,Blue6,Green2,Green4,Green6,Red2,Red4,Red6,White2,White4,White6,Instant4Black,Instant4Blue,Instant4Green,Instant4Red,Instant4White,Land4Blue,Land4Black,Land4Red,Land4Green,Land4White,Human4White,Sliver4Black,Sliver4Blue,Sliver4Green,Sliver4Red,Sliver4White,Enchantment4Black,Enchantment4Blue,Enchantment4Green,Enchantment4Red,Enchantment4White,Artifact4Black,Artifact4Blue,Artifact4Green,Artifact4Red,Artifact4White,Multicolor8Black,Multicolor8Blue,Multicolor8Green,Multicolor8Red,Multicolor8White,Ogre4Red,Dinosaur4Green,Dinosaur4Red,Soldier4Red,Soldier4White,Wand4Black,Wand4Blue,Wand4Green,Wand4Red,Wand4White,Bird4Blue,Bird4White,Bird4Azorius,Spirit4Blue,Spirit4White,Wolf4Green,Wolf4Red,Knight4Black,Knight4Red,Knight4White,Pirate4Blue,Rogue4Black,Rogue4Blue" />
+   </properties>
+  </object>
+  <object id="57" template="../../../../common/maps/obj/shop.tx" x="320" y="144">
+   <properties>
+    <property name="commonShopList" value="Colorless,Colorless,Artifact,Creature2Colorless,Wand,Enchantment,Instant,Creature,Black1,Black3,Black5,Blue1,Blue3,Blue5,Green1,Green3,Green5,Red1,Red3,Red5,White1,White3,White5,Graveyard,OmenStones,Instant8Black,Instant8Blue,Instant8Green,Instant8Red,Instant8White,Creature2Eldrazi,Creature2Black,Creature6Black,Creature8Black,Creature2Blue,Creature6Blue,Creature8Blue,Creature2Green,Creature6Green,Creature8Green,Creature2Red,Creature6Red,Creature8Red,Creature2White,Creature6White,Creature8White,Land8Blue,Land8Black,Land8Red,Land8Green,Land8White,Goblin,Elf,Merfolk,Zombie,Human,Angel,Sliver2Black,Sliver2Blue,Sliver2Green,Sliver2Red,Sliver2White,Assassin,Enchantment6Black,Enchantment6Blue,Enchantment6Green,Enchantment6Red,Enchantment6White,Squirrel,Multicolor,Dragon,Vampire,Vehicle2Black,Vehicle2Blue,Vehicle2Green,Vehicle2Red,Vehicle2White,Minotaur,Ogre,Dinosaur,Dwarf,Devil,Soldier,Card,Demon,Druid,Wand2Black,Wand2Blue,Wand2Green,Wand2Red,Wand2White,Bird,Nobles,Giant,SnowShop,LargeSeaCreatures,Spirit,Wolf,Knight,Random,Skeleton,Sphinx,Hydra,Spiders,SmallCats,Shapeshifter,Gods,Insects,Horrors,Mutants,Eldrazi,Pirate,Rogue,Shaman,Wizard,WhiteBoosterPackShop,BlueBoosterPackShop,BlackBoosterPackShop,RedBoosterPackShop,GreenBoosterPackShop,Instant6White,Instant6Blue,Instant6Black,Instant6Red,Instant6Green" />
+    <property name="mythicShopList" value="Planeswalker,WUBRG,PhyrexianColorless,RWB,RWU,RWG,RUB,RGB,RGU,UGB,UWG,UWB,GWB,Planeswalker4Black,Planeswalker4Blue,Planeswalker4Green,Planeswalker4Red,Planeswalker4White,Legend,Legend4Black,Legend4Blue,Legend4Green,Legend4Red,Legend4White,PhyrexianWhite,PhyrexianBlue,PhyrexianGreen,PhyrexianRed,PhyrexianBlack" />
+    <property name="noRestock" type="bool" value="true" />
+    <property name="rareShopList" value="Land4Colorless,Vehicle,White,Blue,Red,Green,Black,FlipShop,Saga,AttractionShop,ContraptionShop,Azorius,Dimir,Rakdos,Gruul,Selesnya,Orzhov,Izzet,Golgari,Boros,Simic" />
+    <property name="uncommonShopList" value="Artifact,Land,Assembly,Golem,Sliver,Wall,Equip,Enchantment,Instant,Creature,Battle,Black2,Black4,Black6,Blue2,Blue4,Blue6,Green2,Green4,Green6,Red2,Red4,Red6,White2,White4,White6,Instant4Black,Instant4Blue,Instant4Green,Instant4Red,Instant4White,Land4Blue,Land4Black,Land4Red,Land4Green,Land4White,Human4White,Sliver4Black,Sliver4Blue,Sliver4Green,Sliver4Red,Sliver4White,Enchantment4Black,Enchantment4Blue,Enchantment4Green,Enchantment4Red,Enchantment4White,Artifact4Black,Artifact4Blue,Artifact4Green,Artifact4Red,Artifact4White,Multicolor8Black,Multicolor8Blue,Multicolor8Green,Multicolor8Red,Multicolor8White,Ogre4Red,Dinosaur4Green,Dinosaur4Red,Soldier4Red,Soldier4White,Wand4Black,Wand4Blue,Wand4Green,Wand4Red,Wand4White,Bird4Blue,Bird4White,Bird4Azorius,Spirit4Blue,Spirit4White,Wolf4Green,Wolf4Red,Knight4Black,Knight4Red,Knight4White,Pirate4Blue,Rogue4Black,Rogue4Blue" />
+   </properties>
+  </object>
+  <object id="50" template="../../../../common/maps/obj/shop.tx" x="304" y="208">
+   <properties>
+    <property name="commonShopList" value="Colorless,Colorless,Artifact,Creature2Colorless,Wand,Enchantment,Instant,Creature,Black1,Black3,Black5,Blue1,Blue3,Blue5,Green1,Green3,Green5,Red1,Red3,Red5,White1,White3,White5,Graveyard,OmenStones,Instant8Black,Instant8Blue,Instant8Green,Instant8Red,Instant8White,Creature2Eldrazi,Creature2Black,Creature6Black,Creature8Black,Creature2Blue,Creature6Blue,Creature8Blue,Creature2Green,Creature6Green,Creature8Green,Creature2Red,Creature6Red,Creature8Red,Creature2White,Creature6White,Creature8White,Land8Blue,Land8Black,Land8Red,Land8Green,Land8White,Goblin,Elf,Merfolk,Zombie,Human,Angel,Sliver2Black,Sliver2Blue,Sliver2Green,Sliver2Red,Sliver2White,Assassin,Enchantment6Black,Enchantment6Blue,Enchantment6Green,Enchantment6Red,Enchantment6White,Squirrel,Multicolor,Dragon,Vampire,Vehicle2Black,Vehicle2Blue,Vehicle2Green,Vehicle2Red,Vehicle2White,Minotaur,Ogre,Dinosaur,Dwarf,Devil,Soldier,Card,Demon,Druid,Wand2Black,Wand2Blue,Wand2Green,Wand2Red,Wand2White,Bird,Nobles,Giant,SnowShop,LargeSeaCreatures,Spirit,Wolf,Knight,Random,Skeleton,Sphinx,Hydra,Spiders,SmallCats,Shapeshifter,Gods,Insects,Horrors,Mutants,Eldrazi,Pirate,Rogue,Shaman,Wizard,WhiteBoosterPackShop,BlueBoosterPackShop,BlackBoosterPackShop,RedBoosterPackShop,GreenBoosterPackShop,Instant6White,Instant6Blue,Instant6Black,Instant6Red,Instant6Green" />
+    <property name="mythicShopList" value="Planeswalker,WUBRG,PhyrexianColorless,RWB,RWU,RWG,RUB,RGB,RGU,UGB,UWG,UWB,GWB,Planeswalker4Black,Planeswalker4Blue,Planeswalker4Green,Planeswalker4Red,Planeswalker4White,Legend,Legend4Black,Legend4Blue,Legend4Green,Legend4Red,Legend4White,PhyrexianWhite,PhyrexianBlue,PhyrexianGreen,PhyrexianRed,PhyrexianBlack" />
+    <property name="noRestock" type="bool" value="true" />
+    <property name="rareShopList" value="Land4Colorless,Vehicle,White,Blue,Red,Green,Black,FlipShop,Saga,AttractionShop,ContraptionShop,Azorius,Dimir,Rakdos,Gruul,Selesnya,Orzhov,Izzet,Golgari,Boros,Simic" />
+    <property name="uncommonShopList" value="Artifact,Land,Assembly,Golem,Sliver,Wall,Equip,Enchantment,Instant,Creature,Battle,Black2,Black4,Black6,Blue2,Blue4,Blue6,Green2,Green4,Green6,Red2,Red4,Red6,White2,White4,White6,Instant4Black,Instant4Blue,Instant4Green,Instant4Red,Instant4White,Land4Blue,Land4Black,Land4Red,Land4Green,Land4White,Human4White,Sliver4Black,Sliver4Blue,Sliver4Green,Sliver4Red,Sliver4White,Enchantment4Black,Enchantment4Blue,Enchantment4Green,Enchantment4Red,Enchantment4White,Artifact4Black,Artifact4Blue,Artifact4Green,Artifact4Red,Artifact4White,Multicolor8Black,Multicolor8Blue,Multicolor8Green,Multicolor8Red,Multicolor8White,Ogre4Red,Dinosaur4Green,Dinosaur4Red,Soldier4Red,Soldier4White,Wand4Black,Wand4Blue,Wand4Green,Wand4Red,Wand4White,Bird4Blue,Bird4White,Bird4Azorius,Spirit4Blue,Spirit4White,Wolf4Green,Wolf4Red,Knight4Black,Knight4Red,Knight4White,Pirate4Blue,Rogue4Black,Rogue4Blue" />
+   </properties>
+  </object>
+  <object id="51" template="../../../../common/maps/obj/shop.tx" x="352" y="208">
+   <properties>
+    <property name="commonShopList" value="Colorless,Colorless,Artifact,Creature2Colorless,Wand,Enchantment,Instant,Creature,Black1,Black3,Black5,Blue1,Blue3,Blue5,Green1,Green3,Green5,Red1,Red3,Red5,White1,White3,White5,Graveyard,OmenStones,Instant8Black,Instant8Blue,Instant8Green,Instant8Red,Instant8White,Creature2Eldrazi,Creature2Black,Creature6Black,Creature8Black,Creature2Blue,Creature6Blue,Creature8Blue,Creature2Green,Creature6Green,Creature8Green,Creature2Red,Creature6Red,Creature8Red,Creature2White,Creature6White,Creature8White,Land8Blue,Land8Black,Land8Red,Land8Green,Land8White,Goblin,Elf,Merfolk,Zombie,Human,Angel,Sliver2Black,Sliver2Blue,Sliver2Green,Sliver2Red,Sliver2White,Assassin,Enchantment6Black,Enchantment6Blue,Enchantment6Green,Enchantment6Red,Enchantment6White,Squirrel,Multicolor,Dragon,Vampire,Vehicle2Black,Vehicle2Blue,Vehicle2Green,Vehicle2Red,Vehicle2White,Minotaur,Ogre,Dinosaur,Dwarf,Devil,Soldier,Card,Demon,Druid,Wand2Black,Wand2Blue,Wand2Green,Wand2Red,Wand2White,Bird,Nobles,Giant,SnowShop,LargeSeaCreatures,Spirit,Wolf,Knight,Random,Skeleton,Sphinx,Hydra,Spiders,SmallCats,Shapeshifter,Gods,Insects,Horrors,Mutants,Eldrazi,Pirate,Rogue,Shaman,Wizard,WhiteBoosterPackShop,BlueBoosterPackShop,BlackBoosterPackShop,RedBoosterPackShop,GreenBoosterPackShop,Instant6White,Instant6Blue,Instant6Black,Instant6Red,Instant6Green" />
+    <property name="mythicShopList" value="Planeswalker,WUBRG,PhyrexianColorless,RWB,RWU,RWG,RUB,RGB,RGU,UGB,UWG,UWB,GWB,Planeswalker4Black,Planeswalker4Blue,Planeswalker4Green,Planeswalker4Red,Planeswalker4White,Legend,Legend4Black,Legend4Blue,Legend4Green,Legend4Red,Legend4White,PhyrexianWhite,PhyrexianBlue,PhyrexianGreen,PhyrexianRed,PhyrexianBlack" />
+    <property name="noRestock" type="bool" value="true" />
+    <property name="rareShopList" value="Land4Colorless,Vehicle,White,Blue,Red,Green,Black,FlipShop,Saga,AttractionShop,ContraptionShop,Azorius,Dimir,Rakdos,Gruul,Selesnya,Orzhov,Izzet,Golgari,Boros,Simic" />
+    <property name="uncommonShopList" value="Artifact,Land,Assembly,Golem,Sliver,Wall,Equip,Enchantment,Instant,Creature,Battle,Black2,Black4,Black6,Blue2,Blue4,Blue6,Green2,Green4,Green6,Red2,Red4,Red6,White2,White4,White6,Instant4Black,Instant4Blue,Instant4Green,Instant4Red,Instant4White,Land4Blue,Land4Black,Land4Red,Land4Green,Land4White,Human4White,Sliver4Black,Sliver4Blue,Sliver4Green,Sliver4Red,Sliver4White,Enchantment4Black,Enchantment4Blue,Enchantment4Green,Enchantment4Red,Enchantment4White,Artifact4Black,Artifact4Blue,Artifact4Green,Artifact4Red,Artifact4White,Multicolor8Black,Multicolor8Blue,Multicolor8Green,Multicolor8Red,Multicolor8White,Ogre4Red,Dinosaur4Green,Dinosaur4Red,Soldier4Red,Soldier4White,Wand4Black,Wand4Blue,Wand4Green,Wand4Red,Wand4White,Bird4Blue,Bird4White,Bird4Azorius,Spirit4Blue,Spirit4White,Wolf4Green,Wolf4Red,Knight4Black,Knight4Red,Knight4White,Pirate4Blue,Rogue4Black,Rogue4Blue" />
+   </properties>
+  </object>
+  <object id="52" template="../../../../common/maps/obj/shop.tx" x="352" y="272">
+   <properties>
+    <property name="commonShopList" value="Colorless,Colorless,Artifact,Creature2Colorless,Wand,Enchantment,Instant,Creature,Black1,Black3,Black5,Blue1,Blue3,Blue5,Green1,Green3,Green5,Red1,Red3,Red5,White1,White3,White5,Graveyard,OmenStones,Instant8Black,Instant8Blue,Instant8Green,Instant8Red,Instant8White,Creature2Eldrazi,Creature2Black,Creature6Black,Creature8Black,Creature2Blue,Creature6Blue,Creature8Blue,Creature2Green,Creature6Green,Creature8Green,Creature2Red,Creature6Red,Creature8Red,Creature2White,Creature6White,Creature8White,Land8Blue,Land8Black,Land8Red,Land8Green,Land8White,Goblin,Elf,Merfolk,Zombie,Human,Angel,Sliver2Black,Sliver2Blue,Sliver2Green,Sliver2Red,Sliver2White,Assassin,Enchantment6Black,Enchantment6Blue,Enchantment6Green,Enchantment6Red,Enchantment6White,Squirrel,Multicolor,Dragon,Vampire,Vehicle2Black,Vehicle2Blue,Vehicle2Green,Vehicle2Red,Vehicle2White,Minotaur,Ogre,Dinosaur,Dwarf,Devil,Soldier,Card,Demon,Druid,Wand2Black,Wand2Blue,Wand2Green,Wand2Red,Wand2White,Bird,Nobles,Giant,SnowShop,LargeSeaCreatures,Spirit,Wolf,Knight,Random,Skeleton,Sphinx,Hydra,Spiders,SmallCats,Shapeshifter,Gods,Insects,Horrors,Mutants,Eldrazi,Pirate,Rogue,Shaman,Wizard,WhiteBoosterPackShop,BlueBoosterPackShop,BlackBoosterPackShop,RedBoosterPackShop,GreenBoosterPackShop,Instant6White,Instant6Blue,Instant6Black,Instant6Red,Instant6Green" />
+    <property name="mythicShopList" value="Planeswalker,WUBRG,PhyrexianColorless,RWB,RWU,RWG,RUB,RGB,RGU,UGB,UWG,UWB,GWB,Planeswalker4Black,Planeswalker4Blue,Planeswalker4Green,Planeswalker4Red,Planeswalker4White,Legend,Legend4Black,Legend4Blue,Legend4Green,Legend4Red,Legend4White,PhyrexianWhite,PhyrexianBlue,PhyrexianGreen,PhyrexianRed,PhyrexianBlack" />
+    <property name="noRestock" type="bool" value="true" />
+    <property name="rareShopList" value="Land4Colorless,Vehicle,White,Blue,Red,Green,Black,FlipShop,Saga,AttractionShop,ContraptionShop,Azorius,Dimir,Rakdos,Gruul,Selesnya,Orzhov,Izzet,Golgari,Boros,Simic" />
+    <property name="uncommonShopList" value="Artifact,Land,Assembly,Golem,Sliver,Wall,Equip,Enchantment,Instant,Creature,Battle,Black2,Black4,Black6,Blue2,Blue4,Blue6,Green2,Green4,Green6,Red2,Red4,Red6,White2,White4,White6,Instant4Black,Instant4Blue,Instant4Green,Instant4Red,Instant4White,Land4Blue,Land4Black,Land4Red,Land4Green,Land4White,Human4White,Sliver4Black,Sliver4Blue,Sliver4Green,Sliver4Red,Sliver4White,Enchantment4Black,Enchantment4Blue,Enchantment4Green,Enchantment4Red,Enchantment4White,Artifact4Black,Artifact4Blue,Artifact4Green,Artifact4Red,Artifact4White,Multicolor8Black,Multicolor8Blue,Multicolor8Green,Multicolor8Red,Multicolor8White,Ogre4Red,Dinosaur4Green,Dinosaur4Red,Soldier4Red,Soldier4White,Wand4Black,Wand4Blue,Wand4Green,Wand4Red,Wand4White,Bird4Blue,Bird4White,Bird4Azorius,Spirit4Blue,Spirit4White,Wolf4Green,Wolf4Red,Knight4Black,Knight4Red,Knight4White,Pirate4Blue,Rogue4Black,Rogue4Blue" />
+   </properties>
+  </object>
+  <object id="53" template="../../../../common/maps/obj/shop.tx" x="304" y="272">
+   <properties>
+    <property name="commonShopList" value="Colorless,Colorless,Artifact,Creature2Colorless,Wand,Enchantment,Instant,Creature,Black1,Black3,Black5,Blue1,Blue3,Blue5,Green1,Green3,Green5,Red1,Red3,Red5,White1,White3,White5,Graveyard,OmenStones,Instant8Black,Instant8Blue,Instant8Green,Instant8Red,Instant8White,Creature2Eldrazi,Creature2Black,Creature6Black,Creature8Black,Creature2Blue,Creature6Blue,Creature8Blue,Creature2Green,Creature6Green,Creature8Green,Creature2Red,Creature6Red,Creature8Red,Creature2White,Creature6White,Creature8White,Land8Blue,Land8Black,Land8Red,Land8Green,Land8White,Goblin,Elf,Merfolk,Zombie,Human,Angel,Sliver2Black,Sliver2Blue,Sliver2Green,Sliver2Red,Sliver2White,Assassin,Enchantment6Black,Enchantment6Blue,Enchantment6Green,Enchantment6Red,Enchantment6White,Squirrel,Multicolor,Dragon,Vampire,Vehicle2Black,Vehicle2Blue,Vehicle2Green,Vehicle2Red,Vehicle2White,Minotaur,Ogre,Dinosaur,Dwarf,Devil,Soldier,Card,Demon,Druid,Wand2Black,Wand2Blue,Wand2Green,Wand2Red,Wand2White,Bird,Nobles,Giant,SnowShop,LargeSeaCreatures,Spirit,Wolf,Knight,Random,Skeleton,Sphinx,Hydra,Spiders,SmallCats,Shapeshifter,Gods,Insects,Horrors,Mutants,Eldrazi,Pirate,Rogue,Shaman,Wizard,WhiteBoosterPackShop,BlueBoosterPackShop,BlackBoosterPackShop,RedBoosterPackShop,GreenBoosterPackShop,Instant6White,Instant6Blue,Instant6Black,Instant6Red,Instant6Green" />
+    <property name="mythicShopList" value="Planeswalker,WUBRG,PhyrexianColorless,RWB,RWU,RWG,RUB,RGB,RGU,UGB,UWG,UWB,GWB,Planeswalker4Black,Planeswalker4Blue,Planeswalker4Green,Planeswalker4Red,Planeswalker4White,Legend,Legend4Black,Legend4Blue,Legend4Green,Legend4Red,Legend4White,PhyrexianWhite,PhyrexianBlue,PhyrexianGreen,PhyrexianRed,PhyrexianBlack" />
+    <property name="noRestock" type="bool" value="true" />
+    <property name="rareShopList" value="Land4Colorless,Vehicle,White,Blue,Red,Green,Black,FlipShop,Saga,AttractionShop,ContraptionShop,Azorius,Dimir,Rakdos,Gruul,Selesnya,Orzhov,Izzet,Golgari,Boros,Simic" />
+    <property name="uncommonShopList" value="Artifact,Land,Assembly,Golem,Sliver,Wall,Equip,Enchantment,Instant,Creature,Battle,Black2,Black4,Black6,Blue2,Blue4,Blue6,Green2,Green4,Green6,Red2,Red4,Red6,White2,White4,White6,Instant4Black,Instant4Blue,Instant4Green,Instant4Red,Instant4White,Land4Blue,Land4Black,Land4Red,Land4Green,Land4White,Human4White,Sliver4Black,Sliver4Blue,Sliver4Green,Sliver4Red,Sliver4White,Enchantment4Black,Enchantment4Blue,Enchantment4Green,Enchantment4Red,Enchantment4White,Artifact4Black,Artifact4Blue,Artifact4Green,Artifact4Red,Artifact4White,Multicolor8Black,Multicolor8Blue,Multicolor8Green,Multicolor8Red,Multicolor8White,Ogre4Red,Dinosaur4Green,Dinosaur4Red,Soldier4Red,Soldier4White,Wand4Black,Wand4Blue,Wand4Green,Wand4Red,Wand4White,Bird4Blue,Bird4White,Bird4Azorius,Spirit4Blue,Spirit4White,Wolf4Green,Wolf4Red,Knight4Black,Knight4Red,Knight4White,Pirate4Blue,Rogue4Black,Rogue4Blue" />
+   </properties>
+  </object>
+  <object id="54" template="../../../../common/maps/obj/shop.tx" x="256" y="272">
+   <properties>
+    <property name="commonShopList" value="Colorless,Colorless,Artifact,Creature2Colorless,Wand,Enchantment,Instant,Creature,Black1,Black3,Black5,Blue1,Blue3,Blue5,Green1,Green3,Green5,Red1,Red3,Red5,White1,White3,White5,Graveyard,OmenStones,Instant8Black,Instant8Blue,Instant8Green,Instant8Red,Instant8White,Creature2Eldrazi,Creature2Black,Creature6Black,Creature8Black,Creature2Blue,Creature6Blue,Creature8Blue,Creature2Green,Creature6Green,Creature8Green,Creature2Red,Creature6Red,Creature8Red,Creature2White,Creature6White,Creature8White,Land8Blue,Land8Black,Land8Red,Land8Green,Land8White,Goblin,Elf,Merfolk,Zombie,Human,Angel,Sliver2Black,Sliver2Blue,Sliver2Green,Sliver2Red,Sliver2White,Assassin,Enchantment6Black,Enchantment6Blue,Enchantment6Green,Enchantment6Red,Enchantment6White,Squirrel,Multicolor,Dragon,Vampire,Vehicle2Black,Vehicle2Blue,Vehicle2Green,Vehicle2Red,Vehicle2White,Minotaur,Ogre,Dinosaur,Dwarf,Devil,Soldier,Card,Demon,Druid,Wand2Black,Wand2Blue,Wand2Green,Wand2Red,Wand2White,Bird,Nobles,Giant,SnowShop,LargeSeaCreatures,Spirit,Wolf,Knight,Random,Skeleton,Sphinx,Hydra,Spiders,SmallCats,Shapeshifter,Gods,Insects,Horrors,Mutants,Eldrazi,Pirate,Rogue,Shaman,Wizard,WhiteBoosterPackShop,BlueBoosterPackShop,BlackBoosterPackShop,RedBoosterPackShop,GreenBoosterPackShop,Instant6White,Instant6Blue,Instant6Black,Instant6Red,Instant6Green" />
+    <property name="mythicShopList" value="Planeswalker,WUBRG,PhyrexianColorless,RWB,RWU,RWG,RUB,RGB,RGU,UGB,UWG,UWB,GWB,Planeswalker4Black,Planeswalker4Blue,Planeswalker4Green,Planeswalker4Red,Planeswalker4White,Legend,Legend4Black,Legend4Blue,Legend4Green,Legend4Red,Legend4White,PhyrexianWhite,PhyrexianBlue,PhyrexianGreen,PhyrexianRed,PhyrexianBlack" />
+    <property name="noRestock" type="bool" value="true" />
+    <property name="rareShopList" value="Land4Colorless,Vehicle,White,Blue,Red,Green,Black,FlipShop,Saga,AttractionShop,ContraptionShop,Azorius,Dimir,Rakdos,Gruul,Selesnya,Orzhov,Izzet,Golgari,Boros,Simic" />
+    <property name="uncommonShopList" value="Artifact,Land,Assembly,Golem,Sliver,Wall,Equip,Enchantment,Instant,Creature,Battle,Black2,Black4,Black6,Blue2,Blue4,Blue6,Green2,Green4,Green6,Red2,Red4,Red6,White2,White4,White6,Instant4Black,Instant4Blue,Instant4Green,Instant4Red,Instant4White,Land4Blue,Land4Black,Land4Red,Land4Green,Land4White,Human4White,Sliver4Black,Sliver4Blue,Sliver4Green,Sliver4Red,Sliver4White,Enchantment4Black,Enchantment4Blue,Enchantment4Green,Enchantment4Red,Enchantment4White,Artifact4Black,Artifact4Blue,Artifact4Green,Artifact4Red,Artifact4White,Multicolor8Black,Multicolor8Blue,Multicolor8Green,Multicolor8Red,Multicolor8White,Ogre4Red,Dinosaur4Green,Dinosaur4Red,Soldier4Red,Soldier4White,Wand4Black,Wand4Blue,Wand4Green,Wand4Red,Wand4White,Bird4Blue,Bird4White,Bird4Azorius,Spirit4Blue,Spirit4White,Wolf4Green,Wolf4Red,Knight4Black,Knight4Red,Knight4White,Pirate4Blue,Rogue4Black,Rogue4Blue" />
+   </properties>
+  </object>
+  <object id="47" template="../../../../common/maps/obj/inn.tx" x="150" y="273" />
+  <object id="48" template="../../../../common/maps/obj/shop.tx" x="104" y="272">
+   <properties>
+    <property name="commonShopList" value="Equipment" />
+    <property name="noRestock" type="bool" value="true" />
+   </properties>
+  </object>
+  <object id="63" template="../../../../common/maps/obj/quest.tx" x="159" y="209" width="34" height="16">
+   <properties>
+    <property name="questtype" value="waste_town_generic" />
+   </properties>
+  </object>
+  <object id="100" template="../../../../common/maps/obj/enemy.tx" gid="2147495067" x="131.804" y="209.816">
+   <properties>
+    <property name="dialog">[ {&quot;condition&quot;: [{&quot;item&quot;: &quot;Liliana's Stone&quot;}], &quot;text&quot;: &quot;The Warden's eyes go to the black stone you carry. \&quot;You beat her down to where the binding shows. The chain lives in that stone now, Guardian. Give it to me, and I will finish what you started.\&quot;&quot;, &quot;options&quot;: [{&quot;name&quot;: &quot;(Hand him Liliana's Stone)&quot;, &quot;text&quot;: &quot;He closes his fist around the gem. Something like a scream leaves it, and then only quiet. When he opens his hand the stone hangs on a fine gold chain, cool and dark. \&quot;Her mind is her own again, and she remembers who cut the chain. Wear this, and Liliana will answer you once in every battle.\&quot;&quot;, &quot;options&quot;: [{&quot;name&quot;: &quot;(Take Liliana's Pledge)&quot;, &quot;action&quot;: [{&quot;removeItem&quot;: &quot;Liliana's Stone&quot;}, {&quot;grantRewards&quot;: [{&quot;type&quot;: &quot;item&quot;, &quot;itemName&quot;: &quot;Liliana's Pledge&quot;, &quot;count&quot;: 1}]}]}]}, {&quot;name&quot;: &quot;\&quot;Not yet.\&quot;&quot;}]}, {&quot;condition&quot;: [{&quot;item&quot;: &quot;Chandra's Stone&quot;}], &quot;text&quot;: &quot;The Warden's eyes go to the red stone you carry. \&quot;You beat her down to where the binding shows. The chain lives in that stone now, Guardian. Give it to me, and I will finish what you started.\&quot;&quot;, &quot;options&quot;: [{&quot;name&quot;: &quot;(Hand him Chandra's Stone)&quot;, &quot;text&quot;: &quot;He closes his fist around the gem. Something like a scream leaves it, and then only quiet. When he opens his hand the stone hangs on a fine gold chain, warm as a banked coal. \&quot;Her mind is her own again, and she remembers who cut the chain. Wear this, and Chandra will answer you once in every battle.\&quot;&quot;, &quot;options&quot;: [{&quot;name&quot;: &quot;(Take Chandra's Pledge)&quot;, &quot;action&quot;: [{&quot;removeItem&quot;: &quot;Chandra's Stone&quot;}, {&quot;grantRewards&quot;: [{&quot;type&quot;: &quot;item&quot;, &quot;itemName&quot;: &quot;Chandra's Pledge&quot;, &quot;count&quot;: 1}]}]}]}, {&quot;name&quot;: &quot;\&quot;Not yet.\&quot;&quot;}]}, 
+  { &quot;condition&quot;: [{&quot;item&quot;: &quot;Liliana's Stone&quot;, &quot;not&quot;: true}, {&quot;item&quot;: &quot;Chandra's Stone&quot;, &quot;not&quot;: true}], 
+    &quot;text&quot;: &quot;The Warden stands among Orazca's new roofs, the old map under his arm. \&quot;A town again,\&quot; he says. \&quot;Not yet the heart of the realm - stone and coin will make it that, when you have enough of both.\&quot;&quot;,
+    &quot;options&quot;: [
+      {
+        &quot;name&quot;: &quot;(Leave)&quot;
+      }
+    ]
+  },
+  {
+    &quot;condition&quot;: [
+      {
+        &quot;getQuestFlag&quot;: {
+          &quot;key&quot;: &quot;mainQuest&quot;,
+          &quot;op&quot;: &quot;&gt;=&quot;,
+          &quot;val&quot;: 1
+        }
+      },
+      {
+        &quot;checkQuestFlag&quot;: &quot;wardenOrazca&quot;,
+        &quot;not&quot;: true
+      }
+    ],
+    &quot;text&quot;: &quot;\&quot;You found it, then - and put roofs back on it before I could tell you how.\&quot; The Warden sets a hand on a new doorpost. \&quot;Orazca. Your seat, before the Night of Chains. The rest will not come back as easily.\&quot;&quot;,
+    &quot;options&quot;: [
+      {
+        &quot;name&quot;: &quot;\&quot;Where do I start?\&quot;&quot;,
+        &quot;text&quot;: &quot;\&quot;With the five who owe you. Benalia, Tolaria, Urborg, Shiv, Llanowar - the Ring Cities whose councils cracked your prison. Every one of them pledged you a gift and none have paid it. Walk the Ring, Guardian, collect what is owed, and come back able to build.\&quot;&quot;,
+        &quot;options&quot;: [
+          {
+            &quot;name&quot;: &quot;(Walk the Ring)&quot;,
+            &quot;action&quot;: [
+              {
+                &quot;setQuestFlag&quot;: {
+                  &quot;key&quot;: &quot;wardenOrazca&quot;,
+                  &quot;val&quot;: 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    &quot;condition&quot;: [
+      {
+        &quot;checkQuestFlag&quot;: &quot;Ch1CastlesComplete&quot;,
+        &quot;getQuestFlag&quot;: {
+          &quot;key&quot;: &quot;Ch1CastlesComplete&quot;,
+          &quot;op&quot;: &quot;&lt;&quot;,
+          &quot;val&quot;: 5
+        }
+      }
+    ],
+    &quot;text&quot;: &quot;\&quot;{var=player_name}! I feel the Seals stirring - every throne you break gives a piece of you back. Break them all, Guardian.\&quot;&quot;,
+    &quot;options&quot;: [
+      {
+        &quot;name&quot;: &quot;\&quot;Goodbye.\&quot;&quot;
+      }
+    ]
+  },
+  {
+    &quot;condition&quot;: [
+      {
+        &quot;getQuestFlag&quot;: {
+          &quot;key&quot;: &quot;Ch1CastlesComplete&quot;,
+          &quot;op&quot;: &quot;&gt;=&quot;,
+          &quot;val&quot;: 5
+        }
+      },
+      {
+        &quot;getQuestFlag&quot;: {
+          &quot;key&quot;: &quot;mainQuest&quot;,
+          &quot;op&quot;: &quot;&lt;&quot;,
+          &quot;val&quot;: 3
+        }
+      }
+    ],
+    &quot;text&quot;: &quot;\&quot;Orazca stands, and the five thrones are broken. Welcome home, {var=player_name}.\&quot;&quot;,
+    &quot;options&quot;: [
+      {
+        &quot;action&quot;: [
+          {
+            &quot;removeItem&quot;: &quot;&quot;,
+            &quot;setColorIdentity&quot;: &quot;&quot;,
+            &quot;advanceQuestFlag&quot;: &quot;&quot;,
+            &quot;advanceMapFlag&quot;: &quot;&quot;,
+            &quot;setQuestFlag&quot;: {
+              &quot;key&quot;: &quot;mainQuest&quot;,
+              &quot;val&quot;: 3
+            },
+            &quot;setMapFlag&quot;: {
+              &quot;key&quot;: &quot;&quot;
+            },
+            &quot;issueQuest&quot;: &quot;&quot;,
+            &quot;POIReference&quot;: &quot;&quot;
+          }
+        ],
+        &quot;name&quot;: &quot;\&quot;The five castles have fallen. The Seals are mine again.\&quot;&quot;,
+        &quot;text&quot;: &quot;\&quot;Then it is done - what was stolen is restored. But hear an old man's last warning: the Five did not invent your prison. They found its design.\&quot;&quot;,
+        &quot;options&quot;: [
+          {
+            &quot;name&quot;: &quot;\&quot;Found it... where?\&quot;&quot;,
+            &quot;text&quot;: &quot;\&quot;Beneath this realm there are older doors, Guardian - older than my order, older than your wardenship. Your Seals were never only bindings. They were also locks.\&quot;&quot;,
+            &quot;options&quot;: [
+              {
+                &quot;name&quot;: &quot;(Continue)&quot;,
+                &quot;text&quot;: &quot;\&quot;Now those locks sit in your pocket instead of on the doors - and whatever slept behind them has had three thousand years to grow hungry. Rest. Rebuild. And keep your deck close, Guardian.\&quot;&quot;,
+                &quot;options&quot;: [
+                  {
+                    &quot;name&quot;: &quot;(Continue)&quot;,
+                    &quot;text&quot;: &quot;[RED]Developer's note:[] You have reached the end of The Forsaken Realms' current story content - but the realm fights on: territory, research, restoration and the Five continue. Several difficult dungeons have also been added to your world map.&quot;,
+                    &quot;options&quot;: [
+                      {
+                        &quot;name&quot;: &quot;(Continue)&quot;,
+                        &quot;text&quot;: &quot;[RED]Developer's note:[] Watch for the next release to continue the story - and thanks for coming on this Adventure with us!&quot;,
+                        &quot;options&quot;: [
+                          {
+                            &quot;name&quot;: &quot;(Chapter 1 complete)&quot;
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    &quot;condition&quot;: [
+      {
+        &quot;item&quot;: &quot;Blue Key&quot;
+      },
+      {
+        &quot;item&quot;: &quot;Green Key&quot;
+      },
+      {
+        &quot;item&quot;: &quot;Black Key&quot;
+      },
+      {
+        &quot;item&quot;: &quot;White Key&quot;
+      },
+      {
+        &quot;item&quot;: &quot;Red Key&quot;
+      }
+    ],
+    &quot;text&quot;: &quot;\&quot;You have all five keys. I will take them - and give you something older in return.\&quot;&quot;,
+    &quot;options&quot;: [
+      {
+        &quot;name&quot;: &quot;I want to trade in the five colored keys for a mox of my choice and the key to Emrakul's room&quot;,
+        &quot;action&quot;: [
+          {
+            &quot;grantRewardsChoice&quot;: [
+              {
+                &quot;type&quot;: &quot;card&quot;,
+                &quot;count&quot;: 1,
+                &quot;cardName&quot;: &quot;Mox Jet&quot;
+              },
+              {
+                &quot;type&quot;: &quot;card&quot;,
+                &quot;count&quot;: 1,
+                &quot;cardName&quot;: &quot;Mox Ruby&quot;
+              },
+              {
+                &quot;type&quot;: &quot;card&quot;,
+                &quot;count&quot;: 1,
+                &quot;cardName&quot;: &quot;Mox Sapphire&quot;
+              },
+              {
+                &quot;type&quot;: &quot;card&quot;,
+                &quot;count&quot;: 1,
+                &quot;cardName&quot;: &quot;Mox Pearl&quot;
+              },
+              {
+                &quot;type&quot;: &quot;card&quot;,
+                &quot;count&quot;: 1,
+                &quot;cardName&quot;: &quot;Mox Emerald&quot;
+              }
+            ]
+          },
+          {
+            &quot;removeItem&quot;: &quot;Blue Key&quot;
+          },
+          {
+            &quot;removeItem&quot;: &quot;Green Key&quot;
+          },
+          {
+            &quot;removeItem&quot;: &quot;Black Key&quot;
+          },
+          {
+            &quot;removeItem&quot;: &quot;White Key&quot;
+          },
+          {
+            &quot;removeItem&quot;: &quot;Red Key&quot;
+          },
+          {
+            &quot;addItem&quot;: &quot;Strange Key&quot;
+          }
+        ]
+      }
+    ]
+  }
+]</property>
+    <property name="displayNameOverride" value="The Warden"/>
+    <property name="enemy" value="Adept Black Wizard"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

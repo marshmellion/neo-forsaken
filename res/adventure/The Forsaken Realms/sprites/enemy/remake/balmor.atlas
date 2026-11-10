@@ -1,0 +1,222 @@
+balmor.png
+size: 1776,1124
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 148, 106
+  footprint: 53, 28, 47, 64
+Idle
+  xy: 148, 64
+  size: 148, 106
+Idle
+  xy: 296, 64
+  size: 148, 106
+Idle
+  xy: 444, 64
+  size: 148, 106
+Idle
+  xy: 592, 64
+  size: 148, 106
+Idle
+  xy: 740, 64
+  size: 148, 106
+Idle
+  xy: 888, 64
+  size: 148, 106
+Idle
+  xy: 1036, 64
+  size: 148, 106
+Idle
+  xy: 1184, 64
+  size: 148, 106
+Idle
+  xy: 1332, 64
+  size: 148, 106
+Walk
+  xy: 0, 170
+  size: 148, 106
+Walk
+  xy: 148, 170
+  size: 148, 106
+Walk
+  xy: 296, 170
+  size: 148, 106
+Walk
+  xy: 444, 170
+  size: 148, 106
+Attack
+  xy: 0, 276
+  size: 148, 106
+Attack
+  xy: 148, 276
+  size: 148, 106
+Attack
+  xy: 296, 276
+  size: 148, 106
+Attack
+  xy: 444, 276
+  size: 148, 106
+Attack
+  xy: 592, 276
+  size: 148, 106
+Attack
+  xy: 740, 276
+  size: 148, 106
+Attack
+  xy: 888, 276
+  size: 148, 106
+Hit
+  xy: 0, 382
+  size: 148, 106
+Hit
+  xy: 148, 382
+  size: 148, 106
+Hit
+  xy: 296, 382
+  size: 148, 106
+Hit
+  xy: 444, 382
+  size: 148, 106
+Death
+  xy: 0, 488
+  size: 148, 106
+Death
+  xy: 148, 488
+  size: 148, 106
+Death
+  xy: 296, 488
+  size: 148, 106
+Death
+  xy: 444, 488
+  size: 148, 106
+Death
+  xy: 592, 488
+  size: 148, 106
+Death
+  xy: 740, 488
+  size: 148, 106
+Death
+  xy: 888, 488
+  size: 148, 106
+Death
+  xy: 1036, 488
+  size: 148, 106
+Death
+  xy: 1184, 488
+  size: 148, 106
+Death
+  xy: 1332, 488
+  size: 148, 106
+Death
+  xy: 1480, 488
+  size: 148, 106
+Death
+  xy: 1628, 488
+  size: 148, 106
+Wake
+  xy: 0, 594
+  size: 148, 106
+Wake
+  xy: 148, 594
+  size: 148, 106
+Wake
+  xy: 296, 594
+  size: 148, 106
+Wake
+  xy: 444, 594
+  size: 148, 106
+Wake
+  xy: 592, 594
+  size: 148, 106
+Wake
+  xy: 740, 594
+  size: 148, 106
+IdleUp
+  xy: 0, 700
+  size: 148, 106
+IdleUp
+  xy: 148, 700
+  size: 148, 106
+IdleUp
+  xy: 296, 700
+  size: 148, 106
+IdleUp
+  xy: 444, 700
+  size: 148, 106
+IdleUp
+  xy: 592, 700
+  size: 148, 106
+IdleUp
+  xy: 740, 700
+  size: 148, 106
+IdleUp
+  xy: 888, 700
+  size: 148, 106
+IdleUp
+  xy: 1036, 700
+  size: 148, 106
+IdleUp
+  xy: 1184, 700
+  size: 148, 106
+IdleUp
+  xy: 1332, 700
+  size: 148, 106
+IdleDown
+  xy: 0, 806
+  size: 148, 106
+IdleDown
+  xy: 148, 806
+  size: 148, 106
+IdleDown
+  xy: 296, 806
+  size: 148, 106
+IdleDown
+  xy: 444, 806
+  size: 148, 106
+IdleDown
+  xy: 592, 806
+  size: 148, 106
+IdleDown
+  xy: 740, 806
+  size: 148, 106
+IdleDown
+  xy: 888, 806
+  size: 148, 106
+IdleDown
+  xy: 1036, 806
+  size: 148, 106
+IdleDown
+  xy: 1184, 806
+  size: 148, 106
+IdleDown
+  xy: 1332, 806
+  size: 148, 106
+WalkUp
+  xy: 0, 912
+  size: 148, 106
+WalkUp
+  xy: 148, 912
+  size: 148, 106
+WalkUp
+  xy: 296, 912
+  size: 148, 106
+WalkUp
+  xy: 444, 912
+  size: 148, 106
+WalkDown
+  xy: 0, 1018
+  size: 148, 106
+WalkDown
+  xy: 148, 1018
+  size: 148, 106
+WalkDown
+  xy: 296, 1018
+  size: 148, 106
+WalkDown
+  xy: 444, 1018
+  size: 148, 106

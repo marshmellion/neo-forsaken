@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="17" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="70">
+ <editorsettings>
+  <export target="wastetown..tmx" format="tmx"/>
+ </editorsettings>
+ <tileset firstgid="1" source="../../../../common/maps/tileset/main.tsx"/>
+ <tileset firstgid="10113" source="../../../../common/maps/tileset/buildings.tsx"/>
+ <tileset firstgid="11905" source="../../../../common/maps/tileset/dungeon.tsx"/>
+ <layer id="1" name="Background" width="30" height="17">
+  <data encoding="base64" compression="zlib">
+   eJx7zcLA8JoOOIwTFdPLDnrYO1D+pae9bpwQTGt7RdlR7aO1vSD7kDGx9qLbT4mdpNpLrXDGZj+MTyt70d1AyF5apGdc/qalvej+wxXX1LQX3U5kf9MynLGlb3RMy/glxk0DYS81/EusPkL+BQCEeH08
+  </data>
+ </layer>
+ <layer id="2" name="Ground" width="30" height="17">
+  <data encoding="base64" compression="zlib">
+   eJxbxcHAsJpEvAaIV5Eo7saJij2AOAyKRdmJx+iAkHpc9qLrJcYsXPi9ACrGZrcHEf4kxV/Y7MdlL6lhTEpc4AtnWtgHA0zmCExLe9HtwmUvtf0KswOZLW2IGdbUClNscQqzD1scUzv94MPE5F9q24nPXmyA2PAlxi2U2EuuHDZ7s3nI9y829fjKIUrDmVg/vuDEby85dRIyxlYP4PPvMyB+joRh8ujiIIzudnIwzF4A3fFjOA==
+  </data>
+ </layer>
+ <layer id="3" name="Foreground" width="30" height="17">
+  <data encoding="base64" compression="zlib">
+   eJzLFGFgWGDEwMBkjh2D5NAxLrWEcKYIAlNqFqX2D4S99LQTFnf0tnMUj+LhhgcyHw1EOTmKaRuXyPUQet1ASR2JTS8u+wDet4OO
+  </data>
+ </layer>
+ <layer id="6" name="Walls" width="30" height="17">
+  <properties>
+   <property name="spriteLayer" type="bool" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eNq1VUtSwzAMdWETX4EV3CEMC9gmQI4I07JsKByht+mHHANp7Dd9qHKSYUAzGtuNrPf0LLttDKE1vqlC+BD/rM6//Zcr5kFGtV1M+Or7mHhsCnzAFXztegr3SXxZh7CW2F78KybX+SDjo3iTccAF+2DK92DWJWzw41q9WMXlvDrf5/XVbTgz/OblY22vJe6mEMtxFmMpvgpJJ9XnvUpzHWGdU4ONYY1wvqydxbtfhPCwSLnBr8m5S7jHeDq7kl3cneasCfCA3+R8WsPO6D+l9ZRBy540BX5DGoIvc+4K/cS5++pnbk8v8OV6GZfPb53vREuavMjdea3Hc3vfcH9QL/c33ynGbA02m5fbu4/oSWiCuq11hfdC93O/jOHyd93HPYy61Vai31s9/R7MqRfnwbjcw88jvenVzFpvL+fVy/cUHBi31FMeNt7joYCLs+AabQ9zjqOTb657fdeY9xo9PPzx/6PFZtzfYH0DgEbMLw==
+  </data>
+ </layer>
+ <objectgroup id="4" name="Objects">
+  <object id="38" template="../../../../common/maps/obj/entry_up.tx" x="180.619" y="273.324" width="57.2902" height="16">
+   <properties>
+    <property name="teleport" value=""/>
+   </properties>
+  </object>
+  <object id="49" template="../../../../common/maps/obj/gold.tx" x="320" y="64"/>
+  <object id="53" template="../../../../common/maps/obj/enemy.tx" x="352" y="64">
+   <properties>
+    <property name="effect" value="{&quot;startBattleWithCard&quot;: [&quot;Baneful Omen&quot;]}"/>
+    <property name="enemy" value="Axelrod Gunnarson"/>
+    <property name="speedModifier" type="float" value="20"/>
+    <property name="threatRange" type="int" value="30"/>
+   </properties>
+  </object>
+  <object id="68" template="../../../../common/maps/obj/gold.tx" x="400" y="64"/>
+  <object id="69" template="../../../../common/maps/obj/dialog.tx" x="141" y="240.75" width="104" height="15.5" visible="1">
+   <properties>
+    <property name="dialog">[
+{
+   &quot;text&quot;: &quot;You enter a dark cavern, a sense of doom and unease filling you. A giant crouches and huddles ahead. 
+
+'Come, traveler. Let me discern your fate.'&quot;,
+   &quot;options&quot;: [{
+      &quot;name&quot;: &quot;(Continue)&quot;, &quot;action&quot;: [{&quot;deleteMapObject&quot;:-1}]}]
+}
+]</property>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

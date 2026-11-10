@@ -1,0 +1,2986 @@
+dungeon_entrances_2.png
+size: 512,1338
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+E_CaveDragon
+  rotate: false
+  xy: 0, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveR
+  rotate: false
+  xy: 34, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveR1
+  rotate: false
+  xy: 68, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveR3
+  rotate: false
+  xy: 102, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 10, 24, 22
+E_CaveR4
+  rotate: false
+  xy: 136, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveR5
+  rotate: false
+  xy: 170, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveR6
+  rotate: false
+  xy: 204, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 10, 23, 22
+E_CaveR7
+  rotate: false
+  xy: 238, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 10, 23, 22
+E_CaveR8
+  rotate: false
+  xy: 272, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveR9
+  rotate: false
+  xy: 306, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveRA
+  rotate: false
+  xy: 340, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveRB
+  rotate: false
+  xy: 374, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 10, 23, 22
+E_CaveRC
+  rotate: false
+  xy: 408, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveRE
+  rotate: false
+  xy: 442, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveRG
+  rotate: false
+  xy: 476, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveRGen01
+  rotate: false
+  xy: 0, 34
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveRGen02
+  rotate: false
+  xy: 34, 34
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveRGen03
+  rotate: false
+  xy: 68, 34
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveRGen04
+  rotate: false
+  xy: 102, 34
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveRGen05
+  rotate: false
+  xy: 136, 34
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveRGen06
+  rotate: false
+  xy: 170, 34
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveRGen07
+  rotate: false
+  xy: 204, 34
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveRGen08
+  rotate: false
+  xy: 238, 34
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 8, 24, 24
+E_CaveRGen09
+  rotate: false
+  xy: 272, 34
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveRGen10
+  rotate: false
+  xy: 306, 34
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveRGen11
+  rotate: false
+  xy: 462, 556
+  size: 48, 32
+  orig: 48, 32
+  offset: 0, 0
+  index: -1
+E_CaveRGen12
+  rotate: false
+  xy: 374, 34
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveRGen13
+  rotate: false
+  xy: 408, 34
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveRH
+  rotate: false
+  xy: 442, 34
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveRJ
+  rotate: false
+  xy: 476, 34
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_DragonsLairRed
+  rotate: false
+  xy: 200, 606
+  size: 48, 34
+  orig: 48, 34
+  offset: 0, 0
+  index: -1
+E_CaveC
+  rotate: false
+  xy: 34, 68
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveC1
+  rotate: false
+  xy: 68, 68
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveC2
+  rotate: false
+  xy: 102, 68
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveC3
+  rotate: false
+  xy: 136, 68
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveC4
+  rotate: false
+  xy: 170, 68
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveC5
+  rotate: false
+  xy: 204, 68
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveC6
+  rotate: false
+  xy: 238, 68
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveC7
+  rotate: false
+  xy: 272, 68
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveC8
+  rotate: false
+  xy: 306, 68
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveC9
+  rotate: false
+  xy: 340, 68
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 5, 24, 27
+E_CaveCA
+  rotate: false
+  xy: 374, 68
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveCB
+  rotate: false
+  xy: 408, 68
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveCE
+  rotate: false
+  xy: 442, 68
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveCGen01
+  rotate: false
+  xy: 476, 68
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_CaveCGen02_r401
+  rotate: false
+  xy: 0, 102
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveCGen03
+  rotate: false
+  xy: 34, 102
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveCGen04
+  rotate: false
+  xy: 68, 102
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveCGen05
+  rotate: false
+  xy: 102, 102
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 4, 24, 28
+E_CaveCGen06
+  rotate: false
+  xy: 362, 556
+  size: 48, 38
+  orig: 48, 38
+  offset: 0, 0
+  index: -1
+  footprint: 4, 0, 39, 38
+E_CaveCGen07
+  rotate: false
+  xy: 170, 102
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveCGen08
+  rotate: false
+  xy: 204, 102
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_CaveCGen09
+  rotate: false
+  xy: 412, 556
+  size: 48, 35
+  orig: 48, 35
+  offset: 0, 0
+  index: -1
+Spare_E_CaveCGen10
+  rotate: false
+  xy: 272, 102
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveCGen11
+  rotate: false
+  xy: 306, 102
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveCGen12
+  rotate: false
+  xy: 340, 102
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveCGen13
+  rotate: false
+  xy: 374, 102
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveEldrazi
+  rotate: false
+  xy: 408, 102
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 4, 23, 28
+E_CaveTroll
+  rotate: false
+  xy: 442, 102
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveB
+  rotate: false
+  xy: 476, 102
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveB1
+  rotate: false
+  xy: 0, 136
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveB2
+  rotate: false
+  xy: 34, 136
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveB3
+  rotate: false
+  xy: 68, 136
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveB4
+  rotate: false
+  xy: 102, 136
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveB5
+  rotate: false
+  xy: 136, 136
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveB6
+  rotate: false
+  xy: 170, 136
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 10, 23, 22
+E_CaveB8
+  rotate: false
+  xy: 204, 136
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveBA
+  rotate: false
+  xy: 238, 136
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveBGen01
+  rotate: false
+  xy: 272, 136
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveBGen02
+  rotate: false
+  xy: 306, 136
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveBGen03
+  rotate: false
+  xy: 340, 136
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveBGen04
+  rotate: false
+  xy: 318, 556
+  size: 42, 48
+  orig: 42, 48
+  offset: 0, 0
+  index: -1
+  footprint: 5, 1, 37, 47
+E_CaveBGen05
+  rotate: false
+  xy: 408, 136
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveBGen06
+  rotate: false
+  xy: 442, 136
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveBGen07
+  rotate: false
+  xy: 476, 136
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveBGen08
+  rotate: false
+  xy: 0, 170
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveBGen09
+  rotate: false
+  xy: 34, 170
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveBGen10
+  rotate: false
+  xy: 68, 170
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveBGen11
+  rotate: false
+  xy: 102, 170
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveBGen12
+  rotate: false
+  xy: 136, 170
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveBGen13
+  rotate: false
+  xy: 170, 170
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveKobold
+  rotate: false
+  xy: 204, 170
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveLarge1
+  rotate: false
+  xy: 238, 170
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveZombie
+  rotate: false
+  xy: 272, 170
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+SpareLow_E_DragonsLairBlack
+  rotate: false
+  xy: 306, 170
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveG
+  rotate: false
+  xy: 340, 170
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveG1
+  rotate: false
+  xy: 374, 170
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveG2
+  rotate: false
+  xy: 408, 170
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveG3
+  rotate: false
+  xy: 442, 170
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveG4
+  rotate: false
+  xy: 476, 170
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 10, 24, 22
+E_CaveG5
+  rotate: false
+  xy: 0, 204
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveG6
+  rotate: false
+  xy: 34, 204
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveG9
+  rotate: false
+  xy: 68, 204
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveGGen01
+  rotate: false
+  xy: 102, 204
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveGGen02
+  rotate: false
+  xy: 136, 204
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveGGen03
+  rotate: false
+  xy: 170, 204
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveGGen04
+  rotate: false
+  xy: 204, 204
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveGGen05
+  rotate: false
+  xy: 238, 204
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveGGen06
+  rotate: false
+  xy: 272, 204
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 11, 24, 21
+E_CaveGGen07
+  rotate: false
+  xy: 306, 204
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveGGen08
+  rotate: false
+  xy: 340, 204
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveGGen09
+  rotate: false
+  xy: 374, 204
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveGGen10
+  rotate: false
+  xy: 408, 204
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 10, 24, 22
+E_CaveGGen11
+  rotate: false
+  xy: 442, 204
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveGGen12
+  rotate: false
+  xy: 476, 204
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveGGen13
+  rotate: false
+  xy: 0, 238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveReptile
+  rotate: false
+  xy: 34, 238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveW
+  rotate: false
+  xy: 68, 238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveW1
+  rotate: false
+  xy: 102, 238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveW2
+  rotate: false
+  xy: 136, 238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 9, 23, 23
+E_CaveW3
+  rotate: false
+  xy: 170, 238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveW4
+  rotate: false
+  xy: 204, 238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 10, 23, 22
+E_CaveW5
+  rotate: false
+  xy: 238, 238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 13, 23, 19
+E_CaveW6
+  rotate: false
+  xy: 272, 238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveWGen01
+  rotate: false
+  xy: 306, 238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 2, 23, 30
+E_CaveWGen02
+  rotate: false
+  xy: 340, 238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 4, 23, 28
+E_CaveWGen03
+  rotate: false
+  xy: 374, 238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveWGen04
+  rotate: false
+  xy: 100, 606
+  size: 48, 45
+  orig: 48, 45
+  offset: 0, 0
+  index: -1
+  footprint: 6, 0, 42, 45
+E_CaveWGen05
+  rotate: false
+  xy: 442, 238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveWGen06
+  rotate: false
+  xy: 476, 238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 3, 2, 25, 30
+E_CaveWGen07
+  rotate: false
+  xy: 0, 272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveWGen08
+  rotate: false
+  xy: 34, 272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveWGen09
+  rotate: false
+  xy: 68, 272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 5, 4, 21, 28
+E_CaveWGen10
+  rotate: false
+  xy: 102, 272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveWGen11
+  rotate: false
+  xy: 136, 272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveWGen12
+  rotate: false
+  xy: 170, 272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveWGen13
+  rotate: false
+  xy: 204, 272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveU
+  rotate: false
+  xy: 238, 272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveU1
+  rotate: false
+  xy: 272, 272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveU2
+  rotate: false
+  xy: 306, 272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveU3
+  rotate: false
+  xy: 340, 272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveU4
+  rotate: false
+  xy: 374, 272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveUGen01
+  rotate: false
+  xy: 408, 272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveUGen02
+  rotate: false
+  xy: 442, 272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveUGen04
+  rotate: false
+  xy: 476, 272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 5, 24, 27
+E_CaveUGen05
+  rotate: false
+  xy: 0, 606
+  size: 48, 22
+  orig: 48, 22
+  offset: 0, 0
+  index: -1
+E_CaveUGen06
+  rotate: false
+  xy: 34, 306
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveUGen07
+  rotate: false
+  xy: 68, 306
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveUGen08
+  rotate: false
+  xy: 50, 606
+  size: 48, 32
+  orig: 48, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 0, 44, 32
+E_CaveUGen09
+  rotate: false
+  xy: 136, 306
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 3, 6, 25, 26
+E_CaveUGen10
+  rotate: false
+  xy: 170, 306
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveUGen11
+  rotate: false
+  xy: 204, 306
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveUGen12
+  rotate: false
+  xy: 238, 306
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveUGen13
+  rotate: false
+  xy: 272, 306
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+SpareLow_E_DragonsLairBlue
+  rotate: false
+  xy: 306, 306
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 3, 24, 29
+E_AncientDiamondMine
+  rotate: false
+  xy: 268, 556
+  size: 48, 28
+  orig: 48, 28
+  offset: 0, 0
+  index: -1
+  footprint: 4, 0, 44, 28
+E_CaveAmphin
+  rotate: false
+  xy: 374, 306
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveCerodon
+  rotate: false
+  xy: 408, 306
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveRat
+  rotate: false
+  xy: 442, 306
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_DemonsBargain
+  rotate: false
+  xy: 150, 606
+  size: 48, 47
+  orig: 48, 47
+  offset: 0, 0
+  index: -1
+  footprint: 12, 0, 36, 47
+E_Kavu_Lair
+  rotate: false
+  xy: 0, 340
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_RiddlesLair
+  rotate: false
+  xy: 50, 656
+  size: 48, 40
+  orig: 48, 40
+  offset: 0, 0
+  index: -1
+E_EvilGrove1
+  rotate: false
+  xy: 68, 340
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_EvilGrove2
+  rotate: false
+  xy: 250, 606
+  size: 46, 48
+  orig: 46, 48
+  offset: 0, 0
+  index: -1
+  footprint: 11, 4, 32, 44
+E_EvilGrove3
+  rotate: false
+  xy: 136, 340
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_EvilGrove4
+  rotate: false
+  xy: 170, 340
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 11, 23, 21
+SpareLow_E_EvilGrove5
+  rotate: false
+  xy: 204, 340
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_EvilGrove6
+  rotate: false
+  xy: 238, 340
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 10, 24, 22
+E_Grove1
+  rotate: false
+  xy: 272, 340
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Grove2
+  rotate: false
+  xy: 306, 340
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Grove3
+  rotate: false
+  xy: 340, 340
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Grove4
+  rotate: false
+  xy: 298, 606
+  size: 41, 48
+  orig: 41, 48
+  offset: 0, 0
+  index: -1
+E_Grove5
+  rotate: false
+  xy: 341, 606
+  size: 48, 38
+  orig: 48, 38
+  offset: 0, 0
+  index: -1
+SpareLow_E_Grove6
+  rotate: false
+  xy: 442, 340
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Grove7
+  rotate: false
+  xy: 391, 606
+  size: 48, 47
+  orig: 48, 47
+  offset: 0, 0
+  index: -1
+  footprint: 5, 0, 43, 47
+E_Grove8
+  rotate: false
+  xy: 0, 374
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_GroveBamboo
+  rotate: false
+  xy: 34, 374
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_GroveFaerieDragon
+  rotate: false
+  xy: 68, 374
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_GroveGreenDragon
+  rotate: false
+  xy: 102, 374
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_inn_dark_forest
+  rotate: false
+  xy: 136, 374
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Teferi_Hideout
+  rotate: false
+  xy: 170, 374
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_MerfolkPool3
+  rotate: false
+  xy: 0, 656
+  size: 48, 42
+  orig: 48, 42
+  offset: 0, 0
+  index: -1
+SpareLow_E_MerfolkPool4
+  rotate: false
+  xy: 238, 374
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_MerfolkPool5
+  rotate: false
+  xy: 272, 374
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Oasis
+  rotate: false
+  xy: 306, 374
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+SpareLow_E_VampireCastle3
+  rotate: false
+  xy: 340, 374
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 6, 6, 19, 26
+E_Omenport
+  rotate: false
+  xy: 374, 374
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 6, 1, 19, 31
+SpareLow_E_Lorehold_Classroom
+  rotate: false
+  xy: 408, 374
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 1, 24, 31
+E_CaveCD
+  rotate: false
+  xy: 0, 408
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+E_CaveGB
+  rotate: false
+  xy: 50, 408
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+SpareLow_E_DragonsLairGreen
+  rotate: false
+  xy: 100, 408
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+SpareLow_E_DragonsLairWhite
+  rotate: false
+  xy: 150, 408
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+E_CaveUGen03
+  rotate: false
+  xy: 200, 408
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+Spare_E_Camel_Cave
+  rotate: false
+  xy: 250, 408
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+E_Castle3
+  rotate: false
+  xy: 0, 456
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_Scarecrow_Farm
+  rotate: false
+  xy: 32, 456
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_Squirrel_Farm
+  rotate: false
+  xy: 64, 456
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_Zedruu_City
+  rotate: false
+  xy: 96, 456
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+Spare_E_CaveB6
+  rotate: false
+  xy: 0, 522
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_CaveBGen04
+  rotate: false
+  xy: 34, 522
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_CaveCE
+  rotate: false
+  xy: 68, 522
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_CaveCGen02
+  rotate: false
+  xy: 102, 522
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_CaveCGen13
+  rotate: false
+  xy: 136, 522
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_CaveDragon
+  rotate: false
+  xy: 170, 522
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_CaveG4
+  rotate: false
+  xy: 204, 522
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_CaveGGen02
+  rotate: false
+  xy: 238, 522
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_CaveGGen03
+  rotate: false
+  xy: 272, 522
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_CaveGGen06
+  rotate: false
+  xy: 306, 522
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_CaveGGen10
+  rotate: false
+  xy: 340, 522
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_CaveLarge1
+  rotate: false
+  xy: 374, 522
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_CaveTroll
+  rotate: false
+  xy: 408, 522
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_CaveUGen05
+  rotate: false
+  xy: 442, 522
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 7, 2, 18, 30
+Spare_E_CaveW4
+  rotate: false
+  xy: 476, 522
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_CaveWGen01
+  rotate: false
+  xy: 0, 556
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_EvilGrove4
+  rotate: false
+  xy: 34, 556
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_Grove4
+  rotate: false
+  xy: 68, 556
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_Kenriths_Court
+  rotate: false
+  xy: 102, 556
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_SkullCaveR
+  rotate: false
+  xy: 136, 556
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_GreyPalace_Snow_Abbey
+  rotate: false
+  xy: 170, 556
+  size: 48, 32
+  orig: 48, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 0, 44, 32
+E_SandPalace_Djinn_s_Palace
+  rotate: false
+  xy: 220, 556
+  size: 46, 48
+  orig: 46, 48
+  offset: 0, 0
+  index: -1
+  footprint: 5, 0, 41, 48
+E_Kenriths_Court
+  rotate: false
+  xy: 441, 606
+  size: 46, 48
+  orig: 46, 48
+  offset: 0, 0
+  index: -1
+E_SkullCaveR
+  rotate: false
+  xy: 100, 656
+  size: 48, 43
+  orig: 48, 43
+  offset: 0, 0
+  index: -1
+  footprint: 5, 0, 43, 43
+Spare_E_SkullCaveR1
+  rotate: false
+  xy: 150, 656
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Building157_Vampire_Castle
+  rotate: false
+  xy: 184, 656
+  size: 47, 48
+  orig: 47, 48
+  offset: 0, 0
+  index: -1
+E_Building52_Black_Tower
+  rotate: false
+  xy: 233, 656
+  size: 48, 46
+  orig: 48, 46
+  offset: 0, 0
+  index: -1
+  footprint: 5, 1, 43, 45
+E_MageTower_Witherbloom_Classroom
+  rotate: false
+  xy: 283, 656
+  size: 40, 48
+  orig: 40, 48
+  offset: 0, 0
+  index: -1
+  footprint: 6, 0, 33, 48
+E_Great_Aurora_Eclipsed_Elven_Court
+  rotate: false
+  xy: 325, 656
+  size: 48, 34
+  orig: 48, 34
+  offset: 0, 0
+  index: -1
+E_Grove_The_Honey_Cove
+  rotate: false
+  xy: 375, 656
+  size: 43, 48
+  orig: 43, 48
+  offset: 0, 0
+  index: -1
+E_Slobad_Slobad_s_Factory
+  rotate: false
+  xy: 420, 656
+  size: 48, 44
+  orig: 48, 44
+  offset: 0, 0
+  index: -1
+E_VampireCastle_Vampire_Castle
+  rotate: false
+  xy: 0, 706
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+  footprint: 5, 0, 43, 48
+E_CatLair_Leonin_Camp
+  rotate: false
+  xy: 50, 706
+  size: 48, 22
+  orig: 48, 22
+  offset: 0, 0
+  index: -1
+E_Slimefoot_Slimefoot_s_Lair
+  rotate: false
+  xy: 100, 706
+  size: 48, 41
+  orig: 48, 41
+  offset: 0, 0
+  index: -1
+  footprint: 8, 0, 40, 41
+E_WhiteCastle_Von_Gant_s_Fortress
+  rotate: false
+  xy: 150, 706
+  size: 48, 35
+  orig: 48, 35
+  offset: 0, 0
+  index: -1
+Spare_E_FurnaceBase_Furnace_Host_Base
+  rotate: false
+  xy: 200, 706
+  size: 48, 32
+  orig: 48, 32
+  offset: 0, 0
+  index: -1
+  footprint: 7, 0, 40, 31
+Spare_E_GitLabSmall_Gitaxian_Laboratory
+  rotate: false
+  xy: 250, 706
+  size: 28, 48
+  orig: 28, 48
+  offset: 0, 0
+  index: -1
+  footprint: 8, 1, 19, 47
+E_Aerie
+  rotate: false
+  xy: 0, 756
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_BarbarianCamp1
+  rotate: false
+  xy: 34, 756
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_KorEncampment
+  rotate: false
+  xy: 417, 960
+  size: 28, 48
+  orig: 28, 48
+  offset: 0, 0
+  index: -1
+E_BarbarianCamp4
+  rotate: false
+  xy: 68, 756
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_BarbarianCamp5
+  rotate: false
+  xy: 102, 756
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_FortBlue1
+  rotate: false
+  xy: 34, 824
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_FortBlue2
+  rotate: false
+  xy: 68, 824
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_FortBlue3
+  rotate: false
+  xy: 102, 824
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_DemonTower
+  rotate: false
+  xy: 0, 790
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 3, 4, 25, 28
+E_FortBlue4
+  rotate: false
+  xy: 136, 824
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 2, 24, 30
+Spare_E_FortBlue5
+  rotate: false
+  xy: 170, 824
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Castle1
+  rotate: false
+  xy: 170, 756
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Castle2
+  rotate: false
+  xy: 204, 756
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CatLairW1
+  rotate: false
+  xy: 238, 756
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Emrakul
+  rotate: false
+  xy: 46, 1010
+  size: 54, 53
+  orig: 54, 53
+  offset: 0, 0
+  index: -1
+E_CopperhostForest
+  rotate: false
+  xy: 408, 756
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Crawlspace
+  rotate: false
+  xy: 476, 756
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Dream_Halls
+  rotate: false
+  xy: 34, 790
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_DrossOutpost
+  rotate: false
+  xy: 68, 790
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_EvilGrove
+  rotate: false
+  xy: 102, 790
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Factory
+  rotate: false
+  xy: 136, 790
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Factory1
+  rotate: false
+  xy: 170, 790
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 5, 3, 22, 29
+E_Factory2
+  rotate: false
+  xy: 204, 790
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Fort
+  rotate: false
+  xy: 238, 790
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Fort1
+  rotate: false
+  xy: 272, 790
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Fort2
+  rotate: false
+  xy: 306, 790
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_FortMultilevel
+  rotate: false
+  xy: 204, 824
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Fort3_401
+  rotate: false
+  xy: 340, 790
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Fort4
+  rotate: false
+  xy: 374, 790
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Fort5
+  rotate: false
+  xy: 408, 790
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Fort6
+  rotate: false
+  xy: 386, 960
+  size: 29, 48
+  orig: 29, 48
+  offset: 0, 0
+  index: -1
+E_Fort7
+  rotate: false
+  xy: 442, 790
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Fort8
+  rotate: false
+  xy: 476, 790
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Fort9
+  rotate: false
+  xy: 0, 824
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_FurnaceBase
+  rotate: false
+  xy: 238, 824
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Garruk_Forest
+  rotate: false
+  xy: 272, 824
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_GitaxianLab
+  rotate: false
+  xy: 306, 824
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Graveyard
+  rotate: false
+  xy: 340, 824
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Graveyard1
+  rotate: false
+  xy: 374, 824
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Graveyard2
+  rotate: false
+  xy: 408, 824
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Graveyard3
+  rotate: false
+  xy: 442, 824
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 0, 23, 32
+E_Jacehold
+  rotate: false
+  xy: 0, 858
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 6, 2, 20, 30
+E_Lavaforge_Kobold
+  rotate: false
+  xy: 102, 858
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_LavaForge1
+  rotate: false
+  xy: 34, 858
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_LavaForge2
+  rotate: false
+  xy: 68, 858
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Lich_s_Mirror
+  rotate: false
+  xy: 136, 858
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_MageTowerC3
+  rotate: false
+  xy: 238, 858
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_MageTowerC6
+  rotate: false
+  xy: 272, 858
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 7, 2, 18, 30
+E_MageTower7Church
+  rotate: false
+  xy: 204, 858
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_MageTowerC8
+  rotate: false
+  xy: 306, 858
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_MageTowerX
+  rotate: false
+  xy: 0, 892
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 2, 24, 30
+E_MageTowerCE
+  rotate: false
+  xy: 340, 858
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_MageTowerU2
+  rotate: false
+  xy: 408, 858
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_MageTowerU4
+  rotate: false
+  xy: 442, 858
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_MageTowerU5
+  rotate: false
+  xy: 476, 858
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_MageTowerRats
+  rotate: false
+  xy: 374, 858
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Maze
+  rotate: false
+  xy: 34, 892
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+SpareLow_E_MerfolkPool_401
+  rotate: false
+  xy: 136, 892
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+SpareLow_E_MerfolkPool1_401
+  rotate: false
+  xy: 68, 892
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_MerfolkPool2_401
+  rotate: false
+  xy: 102, 892
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Monastery
+  rotate: false
+  xy: 170, 892
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Monastery2
+  rotate: false
+  xy: 204, 892
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Monastery3
+  rotate: false
+  xy: 238, 892
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Monastery4
+  rotate: false
+  xy: 272, 892
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Quest_BanditCave
+  rotate: false
+  xy: 408, 892
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Quest_DigSite
+  rotate: false
+  xy: 442, 892
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Quest_FrostbittenCavern
+  rotate: false
+  xy: 476, 892
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Quest_LibraryOfVarsil
+  rotate: false
+  xy: 0, 926
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Quest_PrimalJungle
+  rotate: false
+  xy: 34, 926
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Quest_ShardMines
+  rotate: false
+  xy: 68, 926
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_SkullCaveR1_401
+  rotate: false
+  xy: 238, 926
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_SkullCaveR2_401
+  rotate: false
+  xy: 272, 926
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_SnowAbbey
+  rotate: false
+  xy: 306, 926
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_SnowAbbey1
+  rotate: false
+  xy: 340, 926
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Camel_Cave_401
+  rotate: false
+  xy: 136, 756
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Scarecrow_Farm_401
+  rotate: false
+  xy: 102, 926
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_SkullCaveB1
+  rotate: false
+  xy: 170, 926
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_SkullCaveB2
+  rotate: false
+  xy: 204, 926
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+SpareLow_E_Temple_of_Chandra
+  rotate: false
+  xy: 374, 926
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Temple_of_Liliana
+  rotate: false
+  xy: 408, 926
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Tibalts_Fortress
+  rotate: false
+  xy: 447, 960
+  size: 40, 48
+  orig: 40, 48
+  offset: 0, 0
+  index: -1
+E_UnhallowedAbbey
+  rotate: false
+  xy: 0, 1010
+  size: 44, 48
+  orig: 44, 48
+  offset: 0, 0
+  index: -1
+E_VampireCastle1
+  rotate: false
+  xy: 286, 960
+  size: 48, 46
+  orig: 48, 46
+  offset: 0, 0
+  index: -1
+E_VampireCastle3_401
+  rotate: false
+  xy: 336, 960
+  size: 48, 46
+  orig: 48, 46
+  offset: 0, 0
+  index: -1
+E_WurmPond
+  rotate: false
+  xy: 0, 960
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Xiras_Hive
+  rotate: false
+  xy: 136, 960
+  size: 48, 39
+  orig: 48, 39
+  offset: 0, 0
+  index: -1
+E_Zedruu_City_401
+  rotate: false
+  xy: 34, 960
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Wizard_Palace_401
+  rotate: false
+  xy: 476, 926
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Squirrel_Farm_401
+  rotate: false
+  xy: 236, 960
+  size: 48, 46
+  orig: 48, 46
+  offset: 0, 0
+  index: -1
+E_Gitrog_Bog
+  rotate: false
+  xy: 186, 960
+  size: 48, 44
+  orig: 48, 44
+  offset: 0, 0
+  index: -1
+E_Valor_s_Reach_Arena
+  rotate: false
+  xy: 442, 926
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Church_of_Valgavoth
+  rotate: false
+  xy: 374, 756
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Court_of_Paliano
+  rotate: false
+  xy: 442, 756
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Prismari_Classroom
+  rotate: false
+  xy: 340, 892
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 5, 0, 21, 32
+E_Silverquill_Classroom
+  rotate: false
+  xy: 136, 926
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Lorehold_Classroom_401
+  rotate: false
+  xy: 170, 858
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Quandrix_Classroom
+  rotate: false
+  xy: 374, 892
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Eldrazi_Prison
+  rotate: false
+  xy: 102, 1010
+  size: 55, 58
+  orig: 55, 58
+  offset: 0, 0
+  index: -1
+E_inn_forgotten_lodge_1
+  rotate: false
+  xy: 68, 960
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 7, 2, 18, 30
+E_inn_lodge_1
+  rotate: false
+  xy: 102, 960
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Isolated_Hut
+  rotate: false
+  xy: 476, 824
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Planeswalker_Dueling_Club
+  rotate: false
+  xy: 306, 892
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveCGen02_401
+  rotate: false
+  xy: 272, 756
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveCGen09_401
+  rotate: false
+  xy: 306, 756
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveCGen10_401
+  rotate: false
+  xy: 340, 756
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_DragonsLairWhite_593
+  rotate: false
+  xy: 238, 1070
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_DragonsLairBlue_593
+  rotate: false
+  xy: 136, 1070
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_DragonsLairBlack_593
+  rotate: false
+  xy: 102, 1070
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_DragonsLairRed_593
+  rotate: false
+  xy: 204, 1070
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_DragonsLairGreen_593
+  rotate: false
+  xy: 170, 1070
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_EvilGrove5_593
+  rotate: false
+  xy: 306, 1070
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_SkullCaveB
+  rotate: false
+  xy: 136, 1104
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveG8
+  rotate: false
+  xy: 34, 1070
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveR2
+  rotate: false
+  xy: 68, 1070
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_MerfolkPool
+  rotate: false
+  xy: 0, 1104
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_MerfolkPool1
+  rotate: false
+  xy: 34, 1104
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_MerfolkPool4_593
+  rotate: false
+  xy: 68, 1104
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_FortBlue5_593
+  rotate: false
+  xy: 340, 1070
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Temple_of_Chandra_593
+  rotate: false
+  xy: 170, 1104
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Grove6_593
+  rotate: false
+  xy: 374, 1070
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Monastery1
+  rotate: false
+  xy: 102, 1104
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 2, 24, 30
+E_ElfTown
+  rotate: false
+  xy: 272, 1070
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Maze1
+  rotate: false
+  xy: 408, 1070
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Maze2
+  rotate: false
+  xy: 442, 1070
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Maze3
+  rotate: false
+  xy: 476, 1070
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Ancient_Opal_Cavern
+  rotate: false
+  xy: 0, 1070
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 2, 24, 30
+E_inn_Cave_river
+  rotate: false
+  xy: 204, 1104
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_GauntletAnvilLabyrinth
+  rotate: false
+  xy: 0, 1138
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+E_GauntletBoneOrchard
+  rotate: false
+  xy: 50, 1138
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+E_GauntletBrassPalace
+  rotate: false
+  xy: 100, 1138
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+E_GauntletBuriedNecropolis
+  rotate: false
+  xy: 150, 1138
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+E_GauntletClockworkOrrery
+  rotate: false
+  xy: 200, 1138
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+  footprint: 4, 0, 39, 48
+E_GauntletDawnCathedral
+  rotate: false
+  xy: 250, 1138
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+E_GauntletDrownedLibrary
+  rotate: false
+  xy: 300, 1138
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+E_GauntletGildedMausoleum
+  rotate: false
+  xy: 350, 1138
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+E_GauntletHollowRift
+  rotate: false
+  xy: 400, 1138
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+  footprint: 3, 0, 41, 48
+E_GauntletHollowTiltyard
+  rotate: false
+  xy: 450, 1138
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+E_GauntletJadeZiggurat
+  rotate: false
+  xy: 0, 1188
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+E_GauntletKilnFoundry
+  rotate: false
+  xy: 50, 1188
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+E_GauntletMarbleGallery
+  rotate: false
+  xy: 100, 1188
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+E_GauntletSkyBridgeMonastery
+  rotate: false
+  xy: 150, 1188
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+E_GauntletSporeCathedral
+  rotate: false
+  xy: 200, 1188
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+E_GauntletStarglassObservatory
+  rotate: false
+  xy: 250, 1188
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+  footprint: 6, 0, 35, 48
+E_GauntletSunkenBathhouse
+  rotate: false
+  xy: 300, 1188
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+E_GauntletThornwingHive
+  rotate: false
+  xy: 350, 1188
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+E_MageTowerU3_Clockwork2
+  rotate: false
+  xy: 400, 1188
+  size: 24, 48
+  orig: 24, 48
+  offset: 0, 0
+  index: -1
+E_AssemblyGround_Marble4
+  rotate: false
+  xy: 426, 1188
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Fort8_Jungle4
+  rotate: false
+  xy: 460, 1188
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_MageTowerC5_Jungle3
+  rotate: false
+  xy: 0, 1238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_MageTowerC8_Startower1
+  rotate: false
+  xy: 34, 1238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 0, 23, 32
+E_MageTowerU4_Jade3
+  rotate: false
+  xy: 68, 1238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_MageTowerUD_Haunted3
+  rotate: false
+  xy: 102, 1238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Maze1_Redfort2
+  rotate: false
+  xy: 136, 1238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Maze2_Factory1
+  rotate: false
+  xy: 170, 1238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Maze3_Arena4
+  rotate: false
+  xy: 204, 1238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Maze_Arena2
+  rotate: false
+  xy: 238, 1238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_MerfolkPool1_Sunkenhall1
+  rotate: false
+  xy: 272, 1238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Monastery2_Whitetemple2
+  rotate: false
+  xy: 306, 1238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Monastery3_Statuetemple4
+  rotate: false
+  xy: 340, 1238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_Monastery4_Cathedral2
+  rotate: false
+  xy: 374, 1238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_NekoruNest_Lavafort3
+  rotate: false
+  xy: 408, 1238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_TheoristsSanctum_Steamdome2
+  rotate: false
+  xy: 442, 1238
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveBGen02_Eggs1
+  rotate: false
+  xy: 0, 1272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveC2_Falls24Dry
+  rotate: false
+  xy: 34, 1272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveC3_Tribalden4Bleached
+  rotate: false
+  xy: 68, 1272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveCGen01_Firetotem4Ash
+  rotate: false
+  xy: 102, 1272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 5, 0, 22, 32
+E_CaveCGen04_Heartfort4Dried
+  rotate: false
+  xy: 136, 1272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveGGen10_Jungleden3
+  rotate: false
+  xy: 170, 1272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveGGen12_Tribalden1
+  rotate: false
+  xy: 204, 1272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveR7_Maw22
+  rotate: false
+  xy: 238, 1272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveRB_Eggs23
+  rotate: false
+  xy: 272, 1272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveRGen01_Volcanic2
+  rotate: false
+  xy: 306, 1272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 0, 23, 32
+E_CaveRGen13_Tribalden2
+  rotate: false
+  xy: 340, 1272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveUGen04_Maw1Sea
+  rotate: false
+  xy: 374, 1272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_EvilGrove4_Maw3
+  rotate: false
+  xy: 408, 1272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_EvilGrove6_Jungleden4
+  rotate: false
+  xy: 442, 1272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_HermitsHideout_Falls1
+  rotate: false
+  xy: 476, 1272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveC6_Dolmen3
+  rotate: false
+  xy: 0, 1306
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveCB_Eltomb1
+  rotate: false
+  xy: 34, 1306
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveCGen07_Boulder21
+  rotate: false
+  xy: 68, 1306
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveR1_Fantasy4
+  rotate: false
+  xy: 102, 1306
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_CaveUGen10_Arch1
+  rotate: false
+  xy: 136, 1306
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+
+../../../common/maps/tileset/buildings.png
+size: 448,1024
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+E_DjinnPalace
+  rotate: false
+  xy: 128, 272
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_Wizard_Palace
+  rotate: false
+  xy: 320, 432
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_Fort3
+  rotate: false
+  xy: 160, 274
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_MerfolkPool
+  rotate: false
+  xy: 320, 208
+  size: 32, 16
+  orig: 32, 16
+  offset: 0, 0
+  index: -1
+Spare_E_MerfolkPool1
+  rotate: false
+  xy: 64, 112
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_MerfolkPool2
+  rotate: false
+  xy: 352, 32
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_NestU
+  rotate: false
+  xy: 321, 400
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+E_NestW
+  rotate: false
+  xy: 256, 304
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Spare_E_SkullCaveR2
+  rotate: false
+  xy: 256, 336
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+  footprint: 4, 0, 25, 32

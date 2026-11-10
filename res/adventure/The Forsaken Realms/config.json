@@ -1,0 +1,407 @@
+{
+  "screenWidth": 480,
+  "screenHeight": 270,
+  "skin": "skin/ui_skin.json",
+  "playerBaseSpeed": 40,
+  "minDeckSize": 40,
+  "maxNumberOfDecks": 50,
+  "colorIds":["W","U","B","R","G"],  
+  "colorIdNames":["tr(lblWhite) [+W]","tr(lblBlue) [+U]","tr(lblBlack) [+B]","tr(lblRed) [+R]","tr(lblGreen) [+G]"],
+  // restrictedCards moved 2026-08-22 to "config tables/restricted_cards.json" - easier to
+  // hand-edit there, same as settings.json. See RestrictedCardsData.java/Config.java.
+  "restrictedEditions": [
+    "DBL",
+    "HTR",
+    "HTR17",
+    "HTR18",
+    "HTR19",
+    "HTR20",
+    "PCEL",
+    "HHO",
+    "CMB1",
+    "UST",
+    "UGL",
+    "UNH", 
+    "PPC1",
+    "UND",
+    "PUST",
+    "DA1",
+    "UNF",
+    // round 403: SUNF = the Unfinity Sticker Sheets, a new upstream edition (the 10.01 merge) - blocked with Unfinity
+    "SUNF"
+  ],
+  // Round 395 (a player on Discord: "is it meant to include online/arena cards and/or Alchemy cards? ... The Arena
+  // cards that permanently change a card"): the MTG Arena sets with digital-only mechanics - perpetually, seek,
+  // conjure, spellbooks, the "A-" rebalanced cards. Online sets that only reprint paper cards (the Remastered sets,
+  // Vintage Masters, Masters Edition, the anthologies, MTGO promos) stay. Enemy decks drop a card whose every
+  // printing is in one of these (CommanderCards.isDigitalOnly).
+  // Round 410: their own list now. They join restrictedEditions at startup unless the player ticks "Allow digital-only
+  // cards" in Settings (SettingData.allowDigitalOnlyCards, kept in the player's profile, so it survives updates).
+  "digitalOnlyEditions": [
+    "YMID", "YNEO", "YSNC", "YDMU", "YBRO", "YONE", "YWOE", "YLCI", "YMKM", "YOTJ", "YBLB", "YDSK", "YDFT", "YTDM",
+    "YEOE", "YECL", "YSOS", "YFRA",
+    "HBG", "J21", "AJMP"
+  ],
+  "restrictedEvents": [
+    "LEA",
+    "LEB",
+    "2ED",
+    "30A",
+    "CNS",
+    "CN2",
+    "CMR",
+    "CLB",
+    "CMM"
+  ],
+  "usePriceListPrices": true,
+  "difficulties": [
+    {
+      "name": "Easy",
+      "startingLife": 20,
+      "startingShards": 15,
+      "startingSets": 4,
+      "startingMoney": 500,
+      "startingWood": 200,
+      "startingStone": 200,
+      "enemyLifeFactor": 0.8,
+      "spawnRank": 0,          
+      "goldLoss": 0.02,          
+      "lifeLoss": 0.1,
+      "rewardMaxFactor" : 1.5,
+      "sellFactor": 0.6,  
+      "shardSellRatio": 0.95,
+      // Round 150: Standard now generates from the RACE's own sets too. The old
+      // "<color>_<difficulty>.json" files were three jumpstartPacks, and jumpstart-style
+      // boosters exist for only 18 editions - just SIX of the sixteen races have one in
+      // their four sets, so a race restriction there would have picked from an empty pool.
+      // These are ordinary mainDeck reward filters, which any expansion can fill.
+      "starterDecks": {
+        "W":"decks/starter/standard_white.json",
+        "B":"decks/starter/standard_black.json",
+        "U":"decks/starter/standard_blue.json",
+        "R":"decks/starter/standard_red.json",
+        "G":"decks/starter/standard_green.json"
+      },
+      // Round 149: generated at new-game time from the player's RACE editions (see
+      // Config.starterDeck + EditionProgression.raceEditionCodes). The old "Adventure - Low <name>"
+      // lists drew on fifteen expansions unrelated to any race's four sets, and Normal/Hard/Insane
+      // handed out two-color guild decks whose mana would be unreliable once narrowed to four sets;
+      // every difficulty is mono-color now, matching the color the player actually picked.
+      "constructedStarterDecks": {
+        "W":"decks/starter/constructed_white_50.json",
+        "B":"decks/starter/constructed_black_50.json",
+        "U":"decks/starter/constructed_blue_50.json",
+        "R":"decks/starter/constructed_red_50.json",
+        "G":"decks/starter/constructed_green_50.json"
+      },
+      "pileDecks": {
+        "W":"decks/starter/pile_white_e.json",
+        "B":"decks/starter/pile_black_e.json",
+        "U":"decks/starter/pile_blue_e.json",
+        "R":"decks/starter/pile_red_e.json",
+        "G":"decks/starter/pile_green_e.json"
+      },
+      "startItems": [
+        "Manasight Amulet",
+        "Leather Boots"
+      ]
+    },{
+      "name": "Normal",
+      "startingLife": 15,
+      "startingShards": 10,
+      "startingSets": 3,
+      "startingMoney": 250,
+      "startingWood": 100,
+      "startingStone": 100,
+      "startingDifficulty": true,
+      "enemyLifeFactor": 1.0,
+      "rewardMaxFactor" : 1.0,
+      "spawnRank": 1,                   
+      "goldLoss": 0.1,             
+      "lifeLoss": 0.2,  
+      "sellFactor": 0.5,      
+      "shardSellRatio": 0.8,
+      // Round 150: Standard now generates from the RACE's own sets too. The old
+      // "<color>_<difficulty>.json" files were three jumpstartPacks, and jumpstart-style
+      // boosters exist for only 18 editions - just SIX of the sixteen races have one in
+      // their four sets, so a race restriction there would have picked from an empty pool.
+      // These are ordinary mainDeck reward filters, which any expansion can fill.
+      "starterDecks": {
+        "W":"decks/starter/standard_white.json",
+        "B":"decks/starter/standard_black.json",
+        "U":"decks/starter/standard_blue.json",
+        "R":"decks/starter/standard_red.json",
+        "G":"decks/starter/standard_green.json"
+      },
+      // Round 149: generated at new-game time from the player's RACE editions (see
+      // Config.starterDeck + EditionProgression.raceEditionCodes). The old "Adventure - Low <name>"
+      // lists drew on fifteen expansions unrelated to any race's four sets, and Normal/Hard/Insane
+      // handed out two-color guild decks whose mana would be unreliable once narrowed to four sets;
+      // every difficulty is mono-color now, matching the color the player actually picked.
+      "constructedStarterDecks": {
+        "W":"decks/starter/constructed_white_50.json",
+        "B":"decks/starter/constructed_black_50.json",
+        "U":"decks/starter/constructed_blue_50.json",
+        "R":"decks/starter/constructed_red_50.json",
+        "G":"decks/starter/constructed_green_50.json"
+      },
+      "pileDecks": {
+        "W":"decks/starter/pile_white_n.json",
+        "B":"decks/starter/pile_black_n.json",
+        "U":"decks/starter/pile_blue_n.json",
+        "R":"decks/starter/pile_red_n.json",
+        "G":"decks/starter/pile_green_n.json"
+      },
+      "startItems": [
+        "Leather Boots"
+      ]
+    },{
+      "name": "Hard",
+      "startingLife": 10,
+      "startingWood": 50,
+      "startingStone": 50,
+      "startingShards": 7,
+      "startingSets": 2,
+      "startingMoney": 125,
+      "enemyLifeFactor": 1.5,
+      "rewardMaxFactor" : 0.5,
+      "spawnRank": 2,         
+      "goldLoss": 0.3,
+      "lifeLoss": 0.3,  
+      "sellFactor": 0.3, // round 548 (the user: "Change the card sell price to Hard 30%. Insane 20%"): was 0.25
+      "shardSellRatio": 0.6,
+      // Round 150: Standard now generates from the RACE's own sets too. The old
+      // "<color>_<difficulty>.json" files were three jumpstartPacks, and jumpstart-style
+      // boosters exist for only 18 editions - just SIX of the sixteen races have one in
+      // their four sets, so a race restriction there would have picked from an empty pool.
+      // These are ordinary mainDeck reward filters, which any expansion can fill.
+      "starterDecks": {
+        "W":"decks/starter/standard_white.json",
+        "B":"decks/starter/standard_black.json",
+        "U":"decks/starter/standard_blue.json",
+        "R":"decks/starter/standard_red.json",
+        "G":"decks/starter/standard_green.json"
+      },
+      // Round 149: generated at new-game time from the player's RACE editions (see
+      // Config.starterDeck + EditionProgression.raceEditionCodes). The old "Adventure - Low <name>"
+      // lists drew on fifteen expansions unrelated to any race's four sets, and Normal/Hard/Insane
+      // handed out two-color guild decks whose mana would be unreliable once narrowed to four sets;
+      // every difficulty is mono-color now, matching the color the player actually picked.
+      "constructedStarterDecks": {
+        "W":"decks/starter/constructed_white_60.json",
+        "B":"decks/starter/constructed_black_60.json",
+        "U":"decks/starter/constructed_blue_60.json",
+        "R":"decks/starter/constructed_red_60.json",
+        "G":"decks/starter/constructed_green_60.json"
+      },
+      "pileDecks": {
+        "W":"decks/starter/pile_white_h.json",
+        "B":"decks/starter/pile_black_h.json",
+        "U":"decks/starter/pile_blue_h.json",
+        "R":"decks/starter/pile_red_h.json",
+        "G":"decks/starter/pile_green_h.json"
+      }
+    },{
+      "name": "Insane",
+      "startingLife": 5,
+      "startingWood": 25,
+      "startingStone": 25,
+      "startingShards": 5,
+      "startingSets": 1,
+      "startingMoney": 50,
+      "enemyLifeFactor": 2.5,
+      "rewardMaxFactor" : 0.5,
+      "spawnRank": 3,
+      "goldLoss": 0.5,
+      "lifeLoss": 0.3,
+      "sellFactor": 0.2, // round 548: was 0.05
+      "shardSellRatio": 0.3,
+      // Round 150: Standard now generates from the RACE's own sets too. The old
+      // "<color>_<difficulty>.json" files were three jumpstartPacks, and jumpstart-style
+      // boosters exist for only 18 editions - just SIX of the sixteen races have one in
+      // their four sets, so a race restriction there would have picked from an empty pool.
+      // These are ordinary mainDeck reward filters, which any expansion can fill.
+      "starterDecks": {
+        "W":"decks/starter/standard_white.json",
+        "B":"decks/starter/standard_black.json",
+        "U":"decks/starter/standard_blue.json",
+        "R":"decks/starter/standard_red.json",
+        "G":"decks/starter/standard_green.json"
+      },
+      // Round 149: generated at new-game time from the player's RACE editions (see
+      // Config.starterDeck + EditionProgression.raceEditionCodes). The old "Adventure - Low <name>"
+      // lists drew on fifteen expansions unrelated to any race's four sets, and Normal/Hard/Insane
+      // handed out two-color guild decks whose mana would be unreliable once narrowed to four sets;
+      // every difficulty is mono-color now, matching the color the player actually picked.
+      "constructedStarterDecks": {
+        "W":"decks/starter/constructed_white_60.json",
+        "B":"decks/starter/constructed_black_60.json",
+        "U":"decks/starter/constructed_blue_60.json",
+        "R":"decks/starter/constructed_red_60.json",
+        "G":"decks/starter/constructed_green_60.json"
+      },
+      // Round 153: Insane gets its OWN pile templates. It shared Hard's until now, which is
+      // why Easy and Normal each rolled nine rares while Hard and Insane rolled none - the
+      // difficulty scaling ran backwards. Rares in the 9-slot top bucket are 7/4/2/1 across
+      // Easy/Normal/Hard/Insane, remainder filled to nine with uncommons (user spec).
+      "pileDecks": {
+        "W":"decks/starter/pile_white_i.json",
+        "B":"decks/starter/pile_black_i.json",
+        "U":"decks/starter/pile_blue_i.json",
+        "R":"decks/starter/pile_red_i.json",
+        "G":"decks/starter/pile_green_i.json"
+      }
+    }
+  ],
+  "starterEditions": [
+      "JMP",
+      "DMU",
+      "BRO",
+      "J22",
+      "ONE",
+      "MOM",
+      "LTR",
+      "J25",
+      "TLA",
+      "(All)"
+  ],
+    "starterEditionNames": [
+      "Jumpstart",
+      "Dominaria United",
+      "The Brothers' War",
+      "Jumpstart 22",
+      "Phyrexia: ONE",
+      "March of the Machine",
+      "Lord of the Rings",
+      "Jumpstart 25",
+      "The Last Airbender",
+      "(All)"
+    ],
+    "fogOfWarEnabled": true,
+    // Round 300: the overworld ground is baked at 2x (32 texels per 16 px tile), so 32 px tile sets show at full
+    // detail; 16 px sheets are enlarged pixel-exact and look as before.
+    "terrainScale": 2,
+    "warTownAssaultEnabled": true,
+    // Round 101: the player starts with nothing - the five Ring Cities hand over the difficulty's starting gold/shards/wood/stone/items.
+    "ringGiftStart": true,
+    "dayNightCycleEnabled": true,
+    "townReconstructionEnabled": true,
+    "territoryControlEnabled": true,
+    "colorReputationEnabled": true,
+    "resourceSpawnsEnabled": true,
+    "treasureHuntEnabled": true,
+    "tfrAchievementsEnabled": true,
+    "reloadJabEnabled": true,
+    "pillageEnabled": true,
+    // Round 760: town specialties (new games and New Game+ only; an older save never sees them).
+    "townSpecialtiesEnabled": true,
+    // Round 774: realm milestones - every 10 towns, a realm boon (new games and New Game+ only).
+    "realmMilestonesEnabled": true,
+    "ascendanceEnabled": true,
+    "dungeonRotationEnabled": true,
+    "sideQuestTimerEnabled": true,
+    // Round 932: the Spellsmith charges a pull before the card shows; the card is kept (no Decline).
+    "spellsmithPaysFirst": true,
+    // Round 945: Adventure only - always starts in the adventure, Classic is unreachable.
+    "adventureOnly": true,
+    // Round 957: the plane's music/<playlist>/ tracks play alongside common's instead of replacing them.
+    "planeMusicAddsToCommon": true,
+    // Round 954: AI color towns' Inns use their color shard too, blocks are picked evenly, and an Inn skips sets
+    // already showing at the 6 nearest towns' Inns.
+    "innColorShardEvents": true,
+    "innUniformBlockPick": true,
+    "innSpreadNearbyTowns": 6,
+    // Round 954 (follow-up): a neutral (Waste) town's Inn also uses the nearest AI color town's color shard.
+    "innNeutralNearestColor": true,
+    // Round 992: visible help text (Abandon cost, Repair price, deck N/40, Armory days left, Speed-Up 50x).
+    "tfrHelpLabels": true,
+    // Round 993: hover tips (util/TfrTips, texts in config tables/tips.json) and the "Show tooltips: Auto / On / Off" setting.
+    "tfrTooltips": true,
+    "resourceLootVarietyEnabled": false,
+    // Time- and venue-gated Armory item rarity - see "config tables/armory_rarity.json".
+    "armoryRarityGatingEnabled": true,
+    "spawnDuplicateLimitEnabled": true,
+    "editionProgressionEnabled": true,
+    "armoryGuardsEnabled": true,
+    "shopTypeRerollEnabled": true,
+    "arenaUpgradesEnabled": true,
+    "contentFilterTablesEnabled": true,
+    "showEnemyTierInName": true,
+    "enemyInfoPlatesEnabled": true,
+    "realmJournalEnabled": true,
+    "wrathHuntEnabled": true,
+    "cleanFontEnabled": true,
+    "weightedSpawnTiersEnabled": true,
+    "functioningNeutralTownsEnabled": true,
+    // round 856: bosses keep the player's AI setting (upstream gives them Hardest)
+    "bossAiFollowsSetting": true,
+    "modVersion": "1.28",
+    "modVersionDate": "11.09",
+    "engineBuildVersion": "2.0.16-SNAPSHOT-11.09",
+    "disableGeneticDeckOverrides": true,
+    "caveChampionChance": 0.25,
+    "welcomePopupText": "Thanks for playing The Forsaken Realms!\n\nFound a bug, or have thoughts on balance? Tell us on Discord - every report helps shape the next update. Settings > Export Logs saves your logs as one zip to attach.\n\nNew here? The Game Guide & FAQ explains how the Realms work - reputation, territory, dungeons, your Capitol and more - and answers the common questions. On a computer it is also in your game folder as GAME_GUIDE.html.\n\nWant it easier or harder? Settings > Difficulty > Edit... changes your game's difficulty mid-game.\n\nRecommended settings (already on): Fog of War, Play for Ante and Match Ante Rarity - change them under Settings.\n\nEnjoying the Realms? TFR is free, and the Support TFR button above opens the developer's Ko-fi page.\n\nHave fun out there, planeswalker!",
+    "welcomePopupLink": "https://discord.gg/TTRPKc9HYJ",
+    "welcomeGuideLink": "https://github.com/TheSAguy/The-Forsaken-Realms/blob/master/forge-gui/res/adventure/The%20Forsaken%20Realms/GUIDE.md",
+    "supportLink": "https://ko-fi.com/thesaguy",
+    "updateCheckUrl": "https://api.github.com/repos/TheSAguy/The-Forsaken-Realms/releases/latest",
+    "releasePageUrl": "https://github.com/TheSAguy/The-Forsaken-Realms/releases/latest",
+    "raceEditions": [
+        { "race": "Devil",        "editions": ["RNA", "TOR", "SOI", "VOW"] },
+        { "race": "Kor",          "editions": ["ZEN", "BFZ", "ZNR", "ROE"] },
+        { "race": "Human",        "editions": ["DOM", "DMU", "M20", "M21"] },
+        { "race": "Elf",          "editions": ["LRW", "MOR", "KHM", "ELD"] },
+        { "race": "Metathran",    "editions": ["INV", "PLS", "APC", "8ED"] },
+        { "race": "Undead",       "editions": ["AKH", "HOU", "ISD", "DKA"] },
+        { "race": "Viashino",     "editions": ["GRN", "ALA", "ARB", "DGM"] },
+        { "race": "Phyrexian",    "editions": ["SOM", "MBS", "NPH", "ONE"] },
+        { "race": "Dwarf",        "editions": ["KLD", "AER", "KHM", "BRO"] },
+        { "race": "Werewolf",     "editions": ["ISD", "MID", "EMN", "DKA"] },
+        { "race": "Leonin",       "editions": ["MRD", "DST", "AKH", "IKO"] },
+        { "race": "Red Dragon",   "editions": ["DTK", "TDM", "M19", "IKO"] },
+        { "race": "White Dragon", "editions": ["DTK", "TDM", "M20", "AFR"] },
+        { "race": "Blue Dragon",  "editions": ["DTK", "TDM", "M21", "MH1"] },
+        { "race": "Green Dragon", "editions": ["DTK", "TDM", "IKO", "KHM"] },
+        { "race": "Black Dragon", "editions": ["DTK", "TDM", "AFR", "VOW"] },
+        { "race": "Goblin",       "editions": ["ONS", "LGN", "SCG", "10E"] },
+        { "race": "Angel",        "editions": ["AVR", "SNC", "FDN", "KHM"] },
+        { "race": "Merfolk",      "editions": ["LRW", "SHM", "EVE", "ECL"] },
+        { "race": "Vampire",      "editions": ["VOW", "XLN", "RIX", "LCI"] },
+        // Round 879: no sets of its own - its pool is every set in the rows above, and each game rolls its own four
+        { "race": "Doppelganger", "anySet": true }
+    ],
+
+    "shopBlueprintsEnabled": true,
+    // Which color-numbered shops a new game grants for the chosen color. Odd = the COMMON
+    // tier trio; the even/uncommon trio and the plain <Color> rare shop are blueprint targets.
+    "startingColorShopSuffixes": ["1", "3", "5"],
+    // Blueprint purchase price in SHARDS, by the shop's own tier.
+    "blueprintShardCostCommon": 20,
+    "blueprintShardCostUncommon": 40,
+    "blueprintShardCostRare": 100,
+    "blueprintShardCostMythic": 200,
+    "raceShops": [
+        { "race": "Devil",       "shops": ["Devil", "Demon"] },
+        { "race": "Kor",         "shops": ["Angel", "Eldrazi"] },
+        { "race": "Human",       "shops": ["Human", "Soldier"] },
+        { "race": "Elf",         "shops": ["Elf", "Druid"] },
+        { "race": "Metathran",   "shops": ["Wizard", "Sphinx"] },
+        { "race": "Undead",      "shops": ["Zombie", "Skeleton"] },
+        { "race": "Viashino",    "shops": ["Goblin", "Dinosaur"] },
+        { "race": "Phyrexian",   "shops": ["Horrors", "Mutants"] },
+        { "race": "Dwarf",       "shops": ["Dwarf", "Giant"] },
+        { "race": "Werewolf",    "shops": ["Wolf", "Spirit"] },
+        { "race": "Leonin",      "shops": ["SmallCats", "Knight"] },
+        { "race": "Red Dragon",  "shops": ["Dragon", "Minotaur"] },
+        { "race": "White Dragon", "shops": ["Dragon", "Angel"] },
+        { "race": "Blue Dragon", "shops": ["Dragon", "Sphinx"] },
+        { "race": "Green Dragon", "shops": ["Dragon", "Hydra"] },
+        { "race": "Black Dragon", "shops": ["Dragon", "Vampire"] },
+        { "race": "Goblin",       "shops": ["Goblin", "Shaman"] },
+        { "race": "Angel",        "shops": ["Angel", "Spirit"] },
+        { "race": "Merfolk",      "shops": ["Merfolk", "Wizard"] },
+        { "race": "Vampire",      "shops": ["Vampire", "Nobles"] },
+        { "race": "Doppelganger", "shops": ["Shapeshifter", "Rogue"] }
+    ]
+}
+

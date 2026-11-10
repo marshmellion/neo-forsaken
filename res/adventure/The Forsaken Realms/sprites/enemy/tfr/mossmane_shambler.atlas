@@ -1,0 +1,102 @@
+mossmane_shambler.png
+size: 864,600
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 65, 65
+Idle
+  xy: 0, 65
+  size: 96, 107
+  footprint: 16, 2, 70, 102
+Idle
+  xy: 96, 65
+  size: 96, 107
+Idle
+  xy: 192, 65
+  size: 96, 107
+Idle
+  xy: 288, 65
+  size: 96, 107
+Idle
+  xy: 384, 65
+  size: 96, 107
+Idle
+  xy: 480, 65
+  size: 96, 107
+Idle
+  xy: 576, 65
+  size: 96, 107
+Walk
+  xy: 0, 172
+  size: 96, 107
+Walk
+  xy: 96, 172
+  size: 96, 107
+Walk
+  xy: 192, 172
+  size: 96, 107
+Walk
+  xy: 288, 172
+  size: 96, 107
+Walk
+  xy: 384, 172
+  size: 96, 107
+Walk
+  xy: 480, 172
+  size: 96, 107
+Walk
+  xy: 576, 172
+  size: 96, 107
+Attack
+  xy: 0, 279
+  size: 96, 107
+Attack
+  xy: 96, 279
+  size: 96, 107
+Attack
+  xy: 192, 279
+  size: 96, 107
+Attack
+  xy: 288, 279
+  size: 96, 107
+Attack
+  xy: 384, 279
+  size: 96, 107
+Attack
+  xy: 480, 279
+  size: 96, 107
+Attack
+  xy: 576, 279
+  size: 96, 107
+Attack
+  xy: 672, 279
+  size: 96, 107
+Attack
+  xy: 768, 279
+  size: 96, 107
+Hit
+  xy: 0, 386
+  size: 96, 107
+Death
+  xy: 0, 493
+  size: 96, 107
+Death
+  xy: 96, 493
+  size: 96, 107
+Death
+  xy: 192, 493
+  size: 96, 107
+Death
+  xy: 288, 493
+  size: 96, 107
+Death
+  xy: 384, 493
+  size: 96, 107
+Death
+  xy: 480, 493
+  size: 96, 107
+Death
+  xy: 576, 493
+  size: 96, 107

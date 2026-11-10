@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="154">
+ <editorsettings>
+  <export target="wastetown..tmx" format="tmx"/>
+ </editorsettings>
+ <properties>
+ </properties>
+ <tileset firstgid="1" source="../../../../common/maps/tileset/main.tsx"/>
+ <tileset firstgid="10113" source="../../../../common/maps/tileset/buildings.tsx"/>
+ <tileset firstgid="11905" source="../../../../common/maps/tileset/dungeon/dungeon_bis.tsx"/>
+ <layer id="1" name="Background" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJyr4GZgqBjFo5hEvJYFggfCTmRMC3OJEaOWvfj8Rm17CfkRHyYnbrDZR297ycW0sleBj3y7aWUfLeylRngPdXvncZJvLz69tLCXGv4m115axDW5ZT+lYUFumYyLjc8ecu2kRjxQaicx4YBuF7XtxWY+PfxLir20COuBsJfe6Yqe4TicMABR4A3L
+  </data>
+ </layer>
+ <layer id="2" name="Ground" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztlUEOgjAQRYuwsHUBie6N5wCrS+MtPIMnUO9hvIi68lzahk4cSivTujGmP/kBEfo6v2VgLCnp9/QcM7YSrRnvGl/LOG28M+8bjwWstXDfO1Ju1H+5OhbKUtDYj6l7PKql6M/Nx4bMdD2+Og4lY0fjU0mfB9S/FC0L5+ZjYc+r9/mionOhfqi3CMzP5u5mranPXwyXUiOFi/0pa8g5dL/E5oxr1dJrHZJ1DFfX6XqX6gB2DFeiPYtr1u8PdZ0p3C0hax9z8wV3PxnmAtPua75+9c2+gswzw9Ms2N+w3j7uVbFuxvcILrCl1eehf2mu7RiGzznKVx9tF2iOQ9866LXwbM67xteHVDvm0lhj4994vZKSkv5TLzcW4hs=
+  </data>
+ </layer>
+ <layer id="3" name="Walls" width="30" height="30">
+  <properties>
+   <property name="spriteLayer" type="bool" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxz42RgcBvFOHEGDwQPhJ0we2ltP7J9yHZhE6OVndjsoKbdqzgYGFaTiddwkO9HDyC9QpSBoVAEgguA+LIwhIbhQixiID1eFIQtzF50DALcvAiMTQ017MUGFAQgGAb28yBoWvoX2d6B9C8sDRRSGL8gPBD+RbYXlk7x+RcZkGsvLP8PdPwi500YRra3EBoWyPn3hSD59s4Qwu4XEIbZi0ueGv5FTqsgnMODsBdUbqDL0yo9L9BlYGizYGBoB+JcHuqn52dQe59zIjCoLG4RZ2Bgs2RgYLeEsEFiyGrA8UuBvcTgAhlMTEv7RvEoHsUjGwMAUz1Hcg==
+  </data>
+ </layer>
+ <objectgroup id="4" name="Objects">
+  <object id="69" template="../../../../common/maps/obj/enemy.tx" gid="11419" x="215.166" y="258.333">
+   <properties>
+    <property name="threatRange" type="int" value="20"/>
+    <property name="defeatDialog">[
+  {
+    &quot;text&quot;: &quot;After a battle of unrivaled intensity, Jodah finally falls. A smile crosses his face as his blood pools on the stone. 'Excellent... well done, {var=player_name}. The door is yours now. Keep it better than I did.' With that he collapses, dead despite his immortality.&quot;,
+    &quot;options&quot;: [
+      {
+        &quot;name&quot;: &quot;(Continue)&quot;,
+        &quot;text&quot;: &quot;The Hall falls silent. Beyond the mirror, nothing stirs - for now.
+
+[RED]Developer's note:[] You have beaten the hardest fight in the Forsaken Realms. The realm fights on - territory, research, restoration and the Five continue - and New Game+ waits on the Load Game screen whenever you want to carry your collection into a fresh run.&quot;,
+        &quot;options&quot;: [
+          {
+            &quot;name&quot;: &quot;(Continue)&quot;,
+            &quot;action&quot;: [
+              {
+                &quot;deleteMapObject&quot;: -1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]</property>
+    <property name="effect" value="{&quot;startBattleWithCard&quot;: [&quot;Command Tower|CM1&quot;, &quot;Command Beacon|C15&quot;, &quot;Plaza of Heroes|DMU&quot;, &quot;Helm of the Host|DOM&quot;, &quot;Platinum Angel|MRD&quot;, &quot;Jodah's Codex|DMU&quot;]}"/>
+    <property name="enemy" value="Jodah"/>
+    <property name="spawn.Easy" type="bool" value="false"/>
+    <property name="spawn.Normal" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="70" template="../../../../common/maps/obj/entry_down.tx" x="216.333" y="156.666">
+   <properties>
+    <property name="noExit" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="78" template="../../../../common/maps/obj/portal.tx" type="portal" x="216" y="118.583">
+   <properties>
+    <property name="portalState" value="active"/>
+    <property name="sprite" value="sprites/portal3.atlas"/>
+    <property name="teleport" value=""/>
+   </properties>
+  </object>
+  <object id="144" template="../../../../common/maps/obj/dialog.tx" x="182.068" y="184.69" width="83.1977" height="10.1913" visible="1">
+   <properties>
+    <property name="dialog">[
+  {
+    &quot;text&quot;: &quot;The mysterious mage stands before you - the same hooded figure who has sold you spells in the realm's far corners. He lowers his hood.
+
+'You know my face, Guardian, even if you never asked my name. I have been watching you since the Ring cracked your prison. I imagine you have questions - why I helped you, and what I am doing at the bottom of your realm.'&quot;,
+    &quot;options&quot;: [
+      {
+        &quot;name&quot;: &quot;So, care to explain?&quot;,
+        &quot;text&quot;: &quot;'I am Jodah, once called the Unifier. I am not of this realm. I came here long before your Night of Chains, chasing a rumor of doors beneath the world that were never meant to open - and I found them. This prison is one of them. I have kept its wards fed for longer than your wardens kept your vigil.'&quot;,
+        &quot;options&quot;: [
+          {
+            &quot;name&quot;: &quot;(Continue)&quot;,
+            &quot;text&quot;: &quot;'The titans you fought were never the worst of it. They are what the door lets you see. Its locks are older than your Seals, and when the Five came to bind you they had learned their craft from somewhere. Draw your own conclusions. I drew mine long ago.'&quot;,
+            &quot;options&quot;: [
+              {
+                &quot;name&quot;: &quot;(Continue)&quot;,
+                &quot;text&quot;: &quot;'I hid the keys to this hall behind the mightiest of the realm's stranded legends because I needed an answer: is the one who wakes strong enough to hold this door, or only strong enough to open it? Every fight you have won down here was a question. This is the last of them.'&quot;,
+                &quot;options&quot;: [
+                  {
+                    &quot;name&quot;: &quot;(Continue)&quot;,
+                    &quot;text&quot;: &quot;'There are a few final gifts here, the last of my rare spells. A small token - you have earned far more, but it is all I have left to give.'&quot;,
+                    &quot;options&quot;: [
+                      {
+                        &quot;name&quot;: &quot;(Continue)&quot;,
+                        &quot;text&quot;: &quot;'And here is my confession. A door works on its keeper as surely as the keeper works on the door. What waits behind it whispers, and I have listened for far too long. I have been holding back the urge to crush you since you walked in, and I can feel that restraint slipping.'&quot;,
+                        &quot;options&quot;: [
+                          {
+                            &quot;name&quot;: &quot;(Continue)&quot;,
+                            &quot;text&quot;: &quot;'So, Guardian. Before you go any further, you go through me. Call it the last lock.'&quot;,
+                            &quot;options&quot;: [
+                              {
+                                &quot;name&quot;: &quot;It's a duel.&quot;,
+                                &quot;text&quot;: &quot;'Good. I am rooting for you, though it may not seem like it. Win, and the door is yours - to keep shut, or to open. Choose better than I did.'&quot;,
+                                &quot;options&quot;: [
+                                  {
+                                    &quot;name&quot;: &quot;You ready yourself for the final battle&quot;,
+                                    &quot;action&quot;: [
+                                      {
+                                        &quot;deleteMapObject&quot;: -1
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]</property>
+   </properties>
+  </object>
+  <object id="146" template="../../../../common/maps/obj/treasure.tx" x="192.25" y="224">
+   <properties>
+    <property name="noGuard" type="bool" value="true"/>
+    <property name="reward">[{
+        &quot;type&quot;: &quot;card&quot;
+        &quot;count&quot;: 20,
+        &quot;rarity&quot;: [&quot;rare&quot;, &quot;mythic rare&quot;]
+ }
+]
+</property>
+   </properties>
+  </object>
+  <object id="148" template="../../../../common/maps/obj/dialog.tx" x="189.5" y="278.917" width="70.0001" height="10.5" rotation="0" visible="1">
+   <properties>
+    <property name="dialog">[
+  {
+    &quot;text&quot;: &quot;The mirror ahead ripples and shimmers. Whatever it once opened onto, it now shows only the way back out.&quot;,
+    &quot;options&quot;: [
+      {
+        &quot;name&quot;: &quot;(Continue)&quot;,
+        &quot;action&quot;: [
+          {
+            &quot;deleteMapObject&quot;: -1
+          }
+        ]
+      }
+    ]
+  }
+]</property>
+   </properties>
+  </object>
+  <object id="149" template="../../../../common/maps/obj/treasure.tx" x="240.333" y="224">
+   <properties>
+    <property name="noGuard" type="bool" value="true"/>
+    <property name="reward">[{
+        &quot;type&quot;: &quot;card&quot;
+        &quot;count&quot;: 20,
+        &quot;rarity&quot;: [&quot;rare&quot;, &quot;mythic rare&quot;]
+ }
+]
+</property>
+   </properties>
+  </object>
+  <object id="150" template="../../../../common/maps/obj/door_down.tx" x="203.333" y="301" width="42.6667" height="16">
+   <properties>
+    <property name="teleport" value=""/>
+    <property name="teleportObjectId" value="70"/>
+   </properties>
+  </object>
+  <object id="151" template="../../../../common/maps/obj/collision.tx" x="109.623" y="99.0039" width="17.4208" height="221.992"/>
+  <object id="152" template="../../../../common/maps/obj/collision.tx" x="319.623" y="99.0039" width="17.4208" height="221.992"/>
+  <object id="153" template="../../../../common/maps/obj/enemy.tx" gid="11419" x="215.636" y="258.182">
+   <properties>
+    <property name="threatRange" type="int" value="20"/>
+    <property name="defeatDialog">[
+  {
+    &quot;text&quot;: &quot;After a battle of unrivaled intensity, Jodah finally falls. A smile crosses his face as his blood pools on the stone. 'Excellent... well done, {var=player_name}. The door is yours now. Keep it better than I did.' With that he collapses, dead despite his immortality.&quot;,
+    &quot;options&quot;: [
+      {
+        &quot;name&quot;: &quot;(Continue)&quot;,
+        &quot;text&quot;: &quot;The Hall falls silent. Beyond the mirror, nothing stirs - for now.
+
+[RED]Developer's note:[] You have beaten the hardest fight in the Forsaken Realms. The realm fights on - territory, research, restoration and the Five continue - and New Game+ waits on the Load Game screen whenever you want to carry your collection into a fresh run.&quot;,
+        &quot;options&quot;: [
+          {
+            &quot;name&quot;: &quot;(Continue)&quot;,
+            &quot;action&quot;: [
+              {
+                &quot;deleteMapObject&quot;: -1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]</property>
+    <property name="effect" value="{&quot;startBattleWithCard&quot;: [&quot;Command Tower|CM1&quot;, &quot;Plaza of Heroes|DMU&quot;, &quot;Platinum Angel|MRD&quot;, &quot;Jodah's Codex|DMU&quot;]}"/>
+    <property name="enemy" value="Jodah"/>
+    <property name="spawn.Hard" type="bool" value="false"/>
+    <property name="spawn.Insane" type="bool" value="false"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,270 @@
+kyodai.png
+size: 1920,904
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 128, 84
+  footprint: 14, 2, 104, 79
+Idle
+  xy: 128, 64
+  size: 128, 84
+Idle
+  xy: 256, 64
+  size: 128, 84
+Idle
+  xy: 384, 64
+  size: 128, 84
+Idle
+  xy: 512, 64
+  size: 128, 84
+Idle
+  xy: 640, 64
+  size: 128, 84
+Idle
+  xy: 768, 64
+  size: 128, 84
+Idle
+  xy: 896, 64
+  size: 128, 84
+Idle
+  xy: 1024, 64
+  size: 128, 84
+Idle
+  xy: 1152, 64
+  size: 128, 84
+Walk
+  xy: 0, 148
+  size: 128, 84
+Walk
+  xy: 128, 148
+  size: 128, 84
+Walk
+  xy: 256, 148
+  size: 128, 84
+Walk
+  xy: 384, 148
+  size: 128, 84
+Walk
+  xy: 512, 148
+  size: 128, 84
+Walk
+  xy: 640, 148
+  size: 128, 84
+Attack
+  xy: 0, 232
+  size: 128, 84
+Attack
+  xy: 128, 232
+  size: 128, 84
+Attack
+  xy: 256, 232
+  size: 128, 84
+Attack
+  xy: 384, 232
+  size: 128, 84
+Attack
+  xy: 512, 232
+  size: 128, 84
+Attack
+  xy: 640, 232
+  size: 128, 84
+Attack
+  xy: 768, 232
+  size: 128, 84
+Attack
+  xy: 896, 232
+  size: 128, 84
+Attack
+  xy: 1024, 232
+  size: 128, 84
+Attack
+  xy: 1152, 232
+  size: 128, 84
+Hit
+  xy: 0, 316
+  size: 128, 84
+Hit
+  xy: 128, 316
+  size: 128, 84
+Hit
+  xy: 256, 316
+  size: 128, 84
+Hit
+  xy: 384, 316
+  size: 128, 84
+Hit
+  xy: 512, 316
+  size: 128, 84
+Hit
+  xy: 640, 316
+  size: 128, 84
+Death
+  xy: 0, 400
+  size: 128, 84
+Death
+  xy: 128, 400
+  size: 128, 84
+Death
+  xy: 256, 400
+  size: 128, 84
+Death
+  xy: 384, 400
+  size: 128, 84
+Death
+  xy: 512, 400
+  size: 128, 84
+Death
+  xy: 640, 400
+  size: 128, 84
+Death
+  xy: 768, 400
+  size: 128, 84
+Death
+  xy: 896, 400
+  size: 128, 84
+Death
+  xy: 1024, 400
+  size: 128, 84
+Death
+  xy: 1152, 400
+  size: 128, 84
+Death
+  xy: 1280, 400
+  size: 128, 84
+Death
+  xy: 1408, 400
+  size: 128, 84
+Death
+  xy: 1536, 400
+  size: 128, 84
+Death
+  xy: 1664, 400
+  size: 128, 84
+Death
+  xy: 1792, 400
+  size: 128, 84
+Wake
+  xy: 0, 484
+  size: 128, 84
+Wake
+  xy: 128, 484
+  size: 128, 84
+Wake
+  xy: 256, 484
+  size: 128, 84
+Wake
+  xy: 384, 484
+  size: 128, 84
+Wake
+  xy: 512, 484
+  size: 128, 84
+Wake
+  xy: 640, 484
+  size: 128, 84
+Wake
+  xy: 768, 484
+  size: 128, 84
+Wake
+  xy: 896, 484
+  size: 128, 84
+IdleUp
+  xy: 0, 568
+  size: 128, 84
+IdleUp
+  xy: 128, 568
+  size: 128, 84
+IdleUp
+  xy: 256, 568
+  size: 128, 84
+IdleUp
+  xy: 384, 568
+  size: 128, 84
+IdleUp
+  xy: 512, 568
+  size: 128, 84
+IdleUp
+  xy: 640, 568
+  size: 128, 84
+IdleUp
+  xy: 768, 568
+  size: 128, 84
+IdleUp
+  xy: 896, 568
+  size: 128, 84
+IdleUp
+  xy: 1024, 568
+  size: 128, 84
+IdleUp
+  xy: 1152, 568
+  size: 128, 84
+IdleDown
+  xy: 0, 652
+  size: 128, 84
+IdleDown
+  xy: 128, 652
+  size: 128, 84
+IdleDown
+  xy: 256, 652
+  size: 128, 84
+IdleDown
+  xy: 384, 652
+  size: 128, 84
+IdleDown
+  xy: 512, 652
+  size: 128, 84
+IdleDown
+  xy: 640, 652
+  size: 128, 84
+IdleDown
+  xy: 768, 652
+  size: 128, 84
+IdleDown
+  xy: 896, 652
+  size: 128, 84
+IdleDown
+  xy: 1024, 652
+  size: 128, 84
+IdleDown
+  xy: 1152, 652
+  size: 128, 84
+WalkUp
+  xy: 0, 736
+  size: 128, 84
+WalkUp
+  xy: 128, 736
+  size: 128, 84
+WalkUp
+  xy: 256, 736
+  size: 128, 84
+WalkUp
+  xy: 384, 736
+  size: 128, 84
+WalkUp
+  xy: 512, 736
+  size: 128, 84
+WalkUp
+  xy: 640, 736
+  size: 128, 84
+WalkDown
+  xy: 0, 820
+  size: 128, 84
+WalkDown
+  xy: 128, 820
+  size: 128, 84
+WalkDown
+  xy: 256, 820
+  size: 128, 84
+WalkDown
+  xy: 384, 820
+  size: 128, 84
+WalkDown
+  xy: 512, 820
+  size: 128, 84
+WalkDown
+  xy: 640, 820
+  size: 128, 84

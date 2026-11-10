@@ -1,0 +1,32 @@
+new_buildings.png
+size: 488,48
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Outlook
+  xy: 0, 0
+  size: 16, 32
+Arena
+  xy: 272, 0
+  size: 48, 48
+Spellsmith
+  xy: 448, 0
+  size: 40, 40
+ArenaLevel1
+  xy: 320, 0
+  size: 48, 24
+ArmoryLevel1
+  xy: 112, 0
+  size: 32, 32
+ArmoryLevel2
+  xy: 144, 0
+  size: 32, 32
+Archaeologist
+  xy: 408, 0
+  size: 40, 40
+Trader
+  xy: 208, 0
+  size: 32, 32
+Temple
+  xy: 368, 0
+  size: 40, 40

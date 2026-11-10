@@ -1,0 +1,273 @@
+cave_spider.png
+size: 1600,904
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 100, 84
+  footprint: 8, 17, 72, 62
+Idle
+  xy: 100, 64
+  size: 100, 84
+Idle
+  xy: 200, 64
+  size: 100, 84
+Idle
+  xy: 300, 64
+  size: 100, 84
+Idle
+  xy: 400, 64
+  size: 100, 84
+Idle
+  xy: 500, 64
+  size: 100, 84
+Idle
+  xy: 600, 64
+  size: 100, 84
+Idle
+  xy: 700, 64
+  size: 100, 84
+Idle
+  xy: 800, 64
+  size: 100, 84
+Idle
+  xy: 900, 64
+  size: 100, 84
+Walk
+  xy: 0, 148
+  size: 100, 84
+Walk
+  xy: 100, 148
+  size: 100, 84
+Walk
+  xy: 200, 148
+  size: 100, 84
+Walk
+  xy: 300, 148
+  size: 100, 84
+Walk
+  xy: 400, 148
+  size: 100, 84
+Walk
+  xy: 500, 148
+  size: 100, 84
+Attack
+  xy: 0, 232
+  size: 100, 84
+Attack
+  xy: 100, 232
+  size: 100, 84
+Attack
+  xy: 200, 232
+  size: 100, 84
+Attack
+  xy: 300, 232
+  size: 100, 84
+Attack
+  xy: 400, 232
+  size: 100, 84
+Attack
+  xy: 500, 232
+  size: 100, 84
+Attack
+  xy: 600, 232
+  size: 100, 84
+Attack
+  xy: 700, 232
+  size: 100, 84
+Attack
+  xy: 800, 232
+  size: 100, 84
+Attack
+  xy: 900, 232
+  size: 100, 84
+Hit
+  xy: 0, 316
+  size: 100, 84
+Hit
+  xy: 100, 316
+  size: 100, 84
+Hit
+  xy: 200, 316
+  size: 100, 84
+Hit
+  xy: 300, 316
+  size: 100, 84
+Hit
+  xy: 400, 316
+  size: 100, 84
+Hit
+  xy: 500, 316
+  size: 100, 84
+Death
+  xy: 0, 400
+  size: 100, 84
+Death
+  xy: 100, 400
+  size: 100, 84
+Death
+  xy: 200, 400
+  size: 100, 84
+Death
+  xy: 300, 400
+  size: 100, 84
+Death
+  xy: 400, 400
+  size: 100, 84
+Death
+  xy: 500, 400
+  size: 100, 84
+Death
+  xy: 600, 400
+  size: 100, 84
+Death
+  xy: 700, 400
+  size: 100, 84
+Death
+  xy: 800, 400
+  size: 100, 84
+Death
+  xy: 900, 400
+  size: 100, 84
+Death
+  xy: 1000, 400
+  size: 100, 84
+Death
+  xy: 1100, 400
+  size: 100, 84
+Death
+  xy: 1200, 400
+  size: 100, 84
+Death
+  xy: 1300, 400
+  size: 100, 84
+Death
+  xy: 1400, 400
+  size: 100, 84
+Death
+  xy: 1500, 400
+  size: 100, 84
+Wake
+  xy: 0, 484
+  size: 100, 84
+Wake
+  xy: 100, 484
+  size: 100, 84
+Wake
+  xy: 200, 484
+  size: 100, 84
+Wake
+  xy: 300, 484
+  size: 100, 84
+Wake
+  xy: 400, 484
+  size: 100, 84
+Wake
+  xy: 500, 484
+  size: 100, 84
+Wake
+  xy: 600, 484
+  size: 100, 84
+Wake
+  xy: 700, 484
+  size: 100, 84
+IdleUp
+  xy: 0, 568
+  size: 100, 84
+IdleUp
+  xy: 100, 568
+  size: 100, 84
+IdleUp
+  xy: 200, 568
+  size: 100, 84
+IdleUp
+  xy: 300, 568
+  size: 100, 84
+IdleUp
+  xy: 400, 568
+  size: 100, 84
+IdleUp
+  xy: 500, 568
+  size: 100, 84
+IdleUp
+  xy: 600, 568
+  size: 100, 84
+IdleUp
+  xy: 700, 568
+  size: 100, 84
+IdleUp
+  xy: 800, 568
+  size: 100, 84
+IdleUp
+  xy: 900, 568
+  size: 100, 84
+IdleDown
+  xy: 0, 652
+  size: 100, 84
+IdleDown
+  xy: 100, 652
+  size: 100, 84
+IdleDown
+  xy: 200, 652
+  size: 100, 84
+IdleDown
+  xy: 300, 652
+  size: 100, 84
+IdleDown
+  xy: 400, 652
+  size: 100, 84
+IdleDown
+  xy: 500, 652
+  size: 100, 84
+IdleDown
+  xy: 600, 652
+  size: 100, 84
+IdleDown
+  xy: 700, 652
+  size: 100, 84
+IdleDown
+  xy: 800, 652
+  size: 100, 84
+IdleDown
+  xy: 900, 652
+  size: 100, 84
+WalkUp
+  xy: 0, 736
+  size: 100, 84
+WalkUp
+  xy: 100, 736
+  size: 100, 84
+WalkUp
+  xy: 200, 736
+  size: 100, 84
+WalkUp
+  xy: 300, 736
+  size: 100, 84
+WalkUp
+  xy: 400, 736
+  size: 100, 84
+WalkUp
+  xy: 500, 736
+  size: 100, 84
+WalkDown
+  xy: 0, 820
+  size: 100, 84
+WalkDown
+  xy: 100, 820
+  size: 100, 84
+WalkDown
+  xy: 200, 820
+  size: 100, 84
+WalkDown
+  xy: 300, 820
+  size: 100, 84
+WalkDown
+  xy: 400, 820
+  size: 100, 84
+WalkDown
+  xy: 500, 820
+  size: 100, 84

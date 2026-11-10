@@ -1,0 +1,246 @@
+ojer_pakpatiq.png
+size: 1326,694
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 102, 63
+  footprint: 2, 31, 84, 30
+Idle
+  xy: 102, 64
+  size: 102, 63
+Idle
+  xy: 204, 64
+  size: 102, 63
+Idle
+  xy: 306, 64
+  size: 102, 63
+Idle
+  xy: 408, 64
+  size: 102, 63
+Idle
+  xy: 510, 64
+  size: 102, 63
+Idle
+  xy: 612, 64
+  size: 102, 63
+Idle
+  xy: 714, 64
+  size: 102, 63
+Idle
+  xy: 816, 64
+  size: 102, 63
+Idle
+  xy: 918, 64
+  size: 102, 63
+Walk
+  xy: 0, 127
+  size: 102, 63
+Walk
+  xy: 102, 127
+  size: 102, 63
+Walk
+  xy: 204, 127
+  size: 102, 63
+Walk
+  xy: 306, 127
+  size: 102, 63
+Walk
+  xy: 408, 127
+  size: 102, 63
+Walk
+  xy: 510, 127
+  size: 102, 63
+Attack
+  xy: 0, 190
+  size: 102, 63
+Attack
+  xy: 102, 190
+  size: 102, 63
+Attack
+  xy: 204, 190
+  size: 102, 63
+Attack
+  xy: 306, 190
+  size: 102, 63
+Attack
+  xy: 408, 190
+  size: 102, 63
+Attack
+  xy: 510, 190
+  size: 102, 63
+Hit
+  xy: 0, 253
+  size: 102, 63
+Hit
+  xy: 102, 253
+  size: 102, 63
+Hit
+  xy: 204, 253
+  size: 102, 63
+Hit
+  xy: 306, 253
+  size: 102, 63
+Hit
+  xy: 408, 253
+  size: 102, 63
+Death
+  xy: 0, 316
+  size: 102, 63
+Death
+  xy: 102, 316
+  size: 102, 63
+Death
+  xy: 204, 316
+  size: 102, 63
+Death
+  xy: 306, 316
+  size: 102, 63
+Death
+  xy: 408, 316
+  size: 102, 63
+Death
+  xy: 510, 316
+  size: 102, 63
+Death
+  xy: 612, 316
+  size: 102, 63
+Death
+  xy: 714, 316
+  size: 102, 63
+Death
+  xy: 816, 316
+  size: 102, 63
+Death
+  xy: 918, 316
+  size: 102, 63
+Death
+  xy: 1020, 316
+  size: 102, 63
+Death
+  xy: 1122, 316
+  size: 102, 63
+Death
+  xy: 1224, 316
+  size: 102, 63
+Wake
+  xy: 0, 379
+  size: 102, 63
+Wake
+  xy: 102, 379
+  size: 102, 63
+Wake
+  xy: 204, 379
+  size: 102, 63
+Wake
+  xy: 306, 379
+  size: 102, 63
+Wake
+  xy: 408, 379
+  size: 102, 63
+Wake
+  xy: 510, 379
+  size: 102, 63
+Wake
+  xy: 612, 379
+  size: 102, 63
+IdleUp
+  xy: 0, 442
+  size: 102, 63
+IdleUp
+  xy: 102, 442
+  size: 102, 63
+IdleUp
+  xy: 204, 442
+  size: 102, 63
+IdleUp
+  xy: 306, 442
+  size: 102, 63
+IdleUp
+  xy: 408, 442
+  size: 102, 63
+IdleUp
+  xy: 510, 442
+  size: 102, 63
+IdleUp
+  xy: 612, 442
+  size: 102, 63
+IdleUp
+  xy: 714, 442
+  size: 102, 63
+IdleUp
+  xy: 816, 442
+  size: 102, 63
+IdleUp
+  xy: 918, 442
+  size: 102, 63
+IdleDown
+  xy: 0, 505
+  size: 102, 63
+IdleDown
+  xy: 102, 505
+  size: 102, 63
+IdleDown
+  xy: 204, 505
+  size: 102, 63
+IdleDown
+  xy: 306, 505
+  size: 102, 63
+IdleDown
+  xy: 408, 505
+  size: 102, 63
+IdleDown
+  xy: 510, 505
+  size: 102, 63
+IdleDown
+  xy: 612, 505
+  size: 102, 63
+IdleDown
+  xy: 714, 505
+  size: 102, 63
+IdleDown
+  xy: 816, 505
+  size: 102, 63
+IdleDown
+  xy: 918, 505
+  size: 102, 63
+WalkUp
+  xy: 0, 568
+  size: 102, 63
+WalkUp
+  xy: 102, 568
+  size: 102, 63
+WalkUp
+  xy: 204, 568
+  size: 102, 63
+WalkUp
+  xy: 306, 568
+  size: 102, 63
+WalkUp
+  xy: 408, 568
+  size: 102, 63
+WalkUp
+  xy: 510, 568
+  size: 102, 63
+WalkDown
+  xy: 0, 631
+  size: 102, 63
+WalkDown
+  xy: 102, 631
+  size: 102, 63
+WalkDown
+  xy: 204, 631
+  size: 102, 63
+WalkDown
+  xy: 306, 631
+  size: 102, 63
+WalkDown
+  xy: 408, 631
+  size: 102, 63
+WalkDown
+  xy: 510, 631
+  size: 102, 63

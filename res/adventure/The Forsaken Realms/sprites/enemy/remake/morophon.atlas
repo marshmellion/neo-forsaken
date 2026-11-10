@@ -1,0 +1,240 @@
+morophon.png
+size: 1650,1064
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 110, 100
+  footprint: 25, 33, 66, 64
+Idle
+  xy: 110, 64
+  size: 110, 100
+Idle
+  xy: 220, 64
+  size: 110, 100
+Idle
+  xy: 330, 64
+  size: 110, 100
+Idle
+  xy: 440, 64
+  size: 110, 100
+Idle
+  xy: 550, 64
+  size: 110, 100
+Idle
+  xy: 660, 64
+  size: 110, 100
+Idle
+  xy: 770, 64
+  size: 110, 100
+Idle
+  xy: 880, 64
+  size: 110, 100
+Idle
+  xy: 990, 64
+  size: 110, 100
+Walk
+  xy: 0, 164
+  size: 110, 100
+Walk
+  xy: 110, 164
+  size: 110, 100
+Walk
+  xy: 220, 164
+  size: 110, 100
+Walk
+  xy: 330, 164
+  size: 110, 100
+Attack
+  xy: 0, 264
+  size: 110, 100
+Attack
+  xy: 110, 264
+  size: 110, 100
+Attack
+  xy: 220, 264
+  size: 110, 100
+Attack
+  xy: 330, 264
+  size: 110, 100
+Attack
+  xy: 440, 264
+  size: 110, 100
+Attack
+  xy: 550, 264
+  size: 110, 100
+Attack
+  xy: 660, 264
+  size: 110, 100
+Hit
+  xy: 0, 364
+  size: 110, 100
+Hit
+  xy: 110, 364
+  size: 110, 100
+Hit
+  xy: 220, 364
+  size: 110, 100
+Hit
+  xy: 330, 364
+  size: 110, 100
+Hit
+  xy: 440, 364
+  size: 110, 100
+Hit
+  xy: 550, 364
+  size: 110, 100
+Death
+  xy: 0, 464
+  size: 110, 100
+Death
+  xy: 110, 464
+  size: 110, 100
+Death
+  xy: 220, 464
+  size: 110, 100
+Death
+  xy: 330, 464
+  size: 110, 100
+Death
+  xy: 440, 464
+  size: 110, 100
+Death
+  xy: 550, 464
+  size: 110, 100
+Death
+  xy: 660, 464
+  size: 110, 100
+Death
+  xy: 770, 464
+  size: 110, 100
+Death
+  xy: 880, 464
+  size: 110, 100
+Death
+  xy: 990, 464
+  size: 110, 100
+Death
+  xy: 1100, 464
+  size: 110, 100
+Death
+  xy: 1210, 464
+  size: 110, 100
+Death
+  xy: 1320, 464
+  size: 110, 100
+Death
+  xy: 1430, 464
+  size: 110, 100
+Death
+  xy: 1540, 464
+  size: 110, 100
+Wake
+  xy: 0, 564
+  size: 110, 100
+Wake
+  xy: 110, 564
+  size: 110, 100
+Wake
+  xy: 220, 564
+  size: 110, 100
+Wake
+  xy: 330, 564
+  size: 110, 100
+Wake
+  xy: 440, 564
+  size: 110, 100
+Wake
+  xy: 550, 564
+  size: 110, 100
+Wake
+  xy: 660, 564
+  size: 110, 100
+IdleUp
+  xy: 0, 664
+  size: 110, 100
+IdleUp
+  xy: 110, 664
+  size: 110, 100
+IdleUp
+  xy: 220, 664
+  size: 110, 100
+IdleUp
+  xy: 330, 664
+  size: 110, 100
+IdleUp
+  xy: 440, 664
+  size: 110, 100
+IdleUp
+  xy: 550, 664
+  size: 110, 100
+IdleUp
+  xy: 660, 664
+  size: 110, 100
+IdleUp
+  xy: 770, 664
+  size: 110, 100
+IdleUp
+  xy: 880, 664
+  size: 110, 100
+IdleUp
+  xy: 990, 664
+  size: 110, 100
+IdleDown
+  xy: 0, 764
+  size: 110, 100
+IdleDown
+  xy: 110, 764
+  size: 110, 100
+IdleDown
+  xy: 220, 764
+  size: 110, 100
+IdleDown
+  xy: 330, 764
+  size: 110, 100
+IdleDown
+  xy: 440, 764
+  size: 110, 100
+IdleDown
+  xy: 550, 764
+  size: 110, 100
+IdleDown
+  xy: 660, 764
+  size: 110, 100
+IdleDown
+  xy: 770, 764
+  size: 110, 100
+IdleDown
+  xy: 880, 764
+  size: 110, 100
+IdleDown
+  xy: 990, 764
+  size: 110, 100
+WalkUp
+  xy: 0, 864
+  size: 110, 100
+WalkUp
+  xy: 110, 864
+  size: 110, 100
+WalkUp
+  xy: 220, 864
+  size: 110, 100
+WalkUp
+  xy: 330, 864
+  size: 110, 100
+WalkDown
+  xy: 0, 964
+  size: 110, 100
+WalkDown
+  xy: 110, 964
+  size: 110, 100
+WalkDown
+  xy: 220, 964
+  size: 110, 100
+WalkDown
+  xy: 330, 964
+  size: 110, 100

@@ -1,0 +1,294 @@
+tanazir.png
+size: 3312,2664
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 184, 260
+  footprint: 7, 63, 177, 134
+Idle
+  xy: 184, 64
+  size: 184, 260
+Idle
+  xy: 368, 64
+  size: 184, 260
+Idle
+  xy: 552, 64
+  size: 184, 260
+Idle
+  xy: 736, 64
+  size: 184, 260
+Idle
+  xy: 920, 64
+  size: 184, 260
+Idle
+  xy: 1104, 64
+  size: 184, 260
+Idle
+  xy: 1288, 64
+  size: 184, 260
+Idle
+  xy: 1472, 64
+  size: 184, 260
+Idle
+  xy: 1656, 64
+  size: 184, 260
+Walk
+  xy: 0, 324
+  size: 184, 260
+Walk
+  xy: 184, 324
+  size: 184, 260
+Walk
+  xy: 368, 324
+  size: 184, 260
+Walk
+  xy: 552, 324
+  size: 184, 260
+Walk
+  xy: 736, 324
+  size: 184, 260
+Walk
+  xy: 920, 324
+  size: 184, 260
+Attack
+  xy: 0, 584
+  size: 184, 260
+Attack
+  xy: 184, 584
+  size: 184, 260
+Attack
+  xy: 368, 584
+  size: 184, 260
+Attack
+  xy: 552, 584
+  size: 184, 260
+Attack
+  xy: 736, 584
+  size: 184, 260
+Attack
+  xy: 920, 584
+  size: 184, 260
+Attack
+  xy: 1104, 584
+  size: 184, 260
+Attack
+  xy: 1288, 584
+  size: 184, 260
+Attack
+  xy: 1472, 584
+  size: 184, 260
+Attack
+  xy: 1656, 584
+  size: 184, 260
+Attack
+  xy: 1840, 584
+  size: 184, 260
+Hit
+  xy: 0, 844
+  size: 184, 260
+Hit
+  xy: 184, 844
+  size: 184, 260
+Hit
+  xy: 368, 844
+  size: 184, 260
+Hit
+  xy: 552, 844
+  size: 184, 260
+Hit
+  xy: 736, 844
+  size: 184, 260
+Hit
+  xy: 920, 844
+  size: 184, 260
+Hit
+  xy: 1104, 844
+  size: 184, 260
+Hit
+  xy: 1288, 844
+  size: 184, 260
+Death
+  xy: 0, 1104
+  size: 184, 260
+Death
+  xy: 184, 1104
+  size: 184, 260
+Death
+  xy: 368, 1104
+  size: 184, 260
+Death
+  xy: 552, 1104
+  size: 184, 260
+Death
+  xy: 736, 1104
+  size: 184, 260
+Death
+  xy: 920, 1104
+  size: 184, 260
+Death
+  xy: 1104, 1104
+  size: 184, 260
+Death
+  xy: 1288, 1104
+  size: 184, 260
+Death
+  xy: 1472, 1104
+  size: 184, 260
+Death
+  xy: 1656, 1104
+  size: 184, 260
+Death
+  xy: 1840, 1104
+  size: 184, 260
+Death
+  xy: 2024, 1104
+  size: 184, 260
+Death
+  xy: 2208, 1104
+  size: 184, 260
+Death
+  xy: 2392, 1104
+  size: 184, 260
+Death
+  xy: 2576, 1104
+  size: 184, 260
+Death
+  xy: 2760, 1104
+  size: 184, 260
+Death
+  xy: 2944, 1104
+  size: 184, 260
+Death
+  xy: 3128, 1104
+  size: 184, 260
+Wake
+  xy: 0, 1364
+  size: 184, 260
+Wake
+  xy: 184, 1364
+  size: 184, 260
+Wake
+  xy: 368, 1364
+  size: 184, 260
+Wake
+  xy: 552, 1364
+  size: 184, 260
+Wake
+  xy: 736, 1364
+  size: 184, 260
+Wake
+  xy: 920, 1364
+  size: 184, 260
+Wake
+  xy: 1104, 1364
+  size: 184, 260
+Wake
+  xy: 1288, 1364
+  size: 184, 260
+Wake
+  xy: 1472, 1364
+  size: 184, 260
+Wake
+  xy: 1656, 1364
+  size: 184, 260
+IdleUp
+  xy: 0, 1624
+  size: 184, 260
+IdleUp
+  xy: 184, 1624
+  size: 184, 260
+IdleUp
+  xy: 368, 1624
+  size: 184, 260
+IdleUp
+  xy: 552, 1624
+  size: 184, 260
+IdleUp
+  xy: 736, 1624
+  size: 184, 260
+IdleUp
+  xy: 920, 1624
+  size: 184, 260
+IdleUp
+  xy: 1104, 1624
+  size: 184, 260
+IdleUp
+  xy: 1288, 1624
+  size: 184, 260
+IdleUp
+  xy: 1472, 1624
+  size: 184, 260
+IdleUp
+  xy: 1656, 1624
+  size: 184, 260
+IdleDown
+  xy: 0, 1884
+  size: 184, 260
+IdleDown
+  xy: 184, 1884
+  size: 184, 260
+IdleDown
+  xy: 368, 1884
+  size: 184, 260
+IdleDown
+  xy: 552, 1884
+  size: 184, 260
+IdleDown
+  xy: 736, 1884
+  size: 184, 260
+IdleDown
+  xy: 920, 1884
+  size: 184, 260
+IdleDown
+  xy: 1104, 1884
+  size: 184, 260
+IdleDown
+  xy: 1288, 1884
+  size: 184, 260
+IdleDown
+  xy: 1472, 1884
+  size: 184, 260
+IdleDown
+  xy: 1656, 1884
+  size: 184, 260
+WalkUp
+  xy: 0, 2144
+  size: 184, 260
+WalkUp
+  xy: 184, 2144
+  size: 184, 260
+WalkUp
+  xy: 368, 2144
+  size: 184, 260
+WalkUp
+  xy: 552, 2144
+  size: 184, 260
+WalkUp
+  xy: 736, 2144
+  size: 184, 260
+WalkUp
+  xy: 920, 2144
+  size: 184, 260
+WalkDown
+  xy: 0, 2404
+  size: 184, 260
+WalkDown
+  xy: 184, 2404
+  size: 184, 260
+WalkDown
+  xy: 368, 2404
+  size: 184, 260
+WalkDown
+  xy: 552, 2404
+  size: 184, 260
+WalkDown
+  xy: 736, 2404
+  size: 184, 260
+WalkDown
+  xy: 920, 2404
+  size: 184, 260

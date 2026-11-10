@@ -1,0 +1,293 @@
+vaevictis_asmadi.png
+size: 2988,2324
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 166, 226
+Idle
+  xy: 166, 64
+  size: 166, 226
+Idle
+  xy: 332, 64
+  size: 166, 226
+Idle
+  xy: 498, 64
+  size: 166, 226
+Idle
+  xy: 664, 64
+  size: 166, 226
+Idle
+  xy: 830, 64
+  size: 166, 226
+Idle
+  xy: 996, 64
+  size: 166, 226
+Idle
+  xy: 1162, 64
+  size: 166, 226
+Idle
+  xy: 1328, 64
+  size: 166, 226
+Idle
+  xy: 1494, 64
+  size: 166, 226
+Walk
+  xy: 0, 290
+  size: 166, 226
+Walk
+  xy: 166, 290
+  size: 166, 226
+Walk
+  xy: 332, 290
+  size: 166, 226
+Walk
+  xy: 498, 290
+  size: 166, 226
+Walk
+  xy: 664, 290
+  size: 166, 226
+Walk
+  xy: 830, 290
+  size: 166, 226
+Attack
+  xy: 0, 516
+  size: 166, 226
+Attack
+  xy: 166, 516
+  size: 166, 226
+Attack
+  xy: 332, 516
+  size: 166, 226
+Attack
+  xy: 498, 516
+  size: 166, 226
+Attack
+  xy: 664, 516
+  size: 166, 226
+Attack
+  xy: 830, 516
+  size: 166, 226
+Attack
+  xy: 996, 516
+  size: 166, 226
+Attack
+  xy: 1162, 516
+  size: 166, 226
+Attack
+  xy: 1328, 516
+  size: 166, 226
+Attack
+  xy: 1494, 516
+  size: 166, 226
+Attack
+  xy: 1660, 516
+  size: 166, 226
+Hit
+  xy: 0, 742
+  size: 166, 226
+Hit
+  xy: 166, 742
+  size: 166, 226
+Hit
+  xy: 332, 742
+  size: 166, 226
+Hit
+  xy: 498, 742
+  size: 166, 226
+Hit
+  xy: 664, 742
+  size: 166, 226
+Hit
+  xy: 830, 742
+  size: 166, 226
+Hit
+  xy: 996, 742
+  size: 166, 226
+Hit
+  xy: 1162, 742
+  size: 166, 226
+Death
+  xy: 0, 968
+  size: 166, 226
+Death
+  xy: 166, 968
+  size: 166, 226
+Death
+  xy: 332, 968
+  size: 166, 226
+Death
+  xy: 498, 968
+  size: 166, 226
+Death
+  xy: 664, 968
+  size: 166, 226
+Death
+  xy: 830, 968
+  size: 166, 226
+Death
+  xy: 996, 968
+  size: 166, 226
+Death
+  xy: 1162, 968
+  size: 166, 226
+Death
+  xy: 1328, 968
+  size: 166, 226
+Death
+  xy: 1494, 968
+  size: 166, 226
+Death
+  xy: 1660, 968
+  size: 166, 226
+Death
+  xy: 1826, 968
+  size: 166, 226
+Death
+  xy: 1992, 968
+  size: 166, 226
+Death
+  xy: 2158, 968
+  size: 166, 226
+Death
+  xy: 2324, 968
+  size: 166, 226
+Death
+  xy: 2490, 968
+  size: 166, 226
+Death
+  xy: 2656, 968
+  size: 166, 226
+Death
+  xy: 2822, 968
+  size: 166, 226
+Wake
+  xy: 0, 1194
+  size: 166, 226
+Wake
+  xy: 166, 1194
+  size: 166, 226
+Wake
+  xy: 332, 1194
+  size: 166, 226
+Wake
+  xy: 498, 1194
+  size: 166, 226
+Wake
+  xy: 664, 1194
+  size: 166, 226
+Wake
+  xy: 830, 1194
+  size: 166, 226
+Wake
+  xy: 996, 1194
+  size: 166, 226
+Wake
+  xy: 1162, 1194
+  size: 166, 226
+Wake
+  xy: 1328, 1194
+  size: 166, 226
+Wake
+  xy: 1494, 1194
+  size: 166, 226
+IdleUp
+  xy: 0, 1420
+  size: 166, 226
+IdleUp
+  xy: 166, 1420
+  size: 166, 226
+IdleUp
+  xy: 332, 1420
+  size: 166, 226
+IdleUp
+  xy: 498, 1420
+  size: 166, 226
+IdleUp
+  xy: 664, 1420
+  size: 166, 226
+IdleUp
+  xy: 830, 1420
+  size: 166, 226
+IdleUp
+  xy: 996, 1420
+  size: 166, 226
+IdleUp
+  xy: 1162, 1420
+  size: 166, 226
+IdleUp
+  xy: 1328, 1420
+  size: 166, 226
+IdleUp
+  xy: 1494, 1420
+  size: 166, 226
+IdleDown
+  xy: 0, 1646
+  size: 166, 226
+IdleDown
+  xy: 166, 1646
+  size: 166, 226
+IdleDown
+  xy: 332, 1646
+  size: 166, 226
+IdleDown
+  xy: 498, 1646
+  size: 166, 226
+IdleDown
+  xy: 664, 1646
+  size: 166, 226
+IdleDown
+  xy: 830, 1646
+  size: 166, 226
+IdleDown
+  xy: 996, 1646
+  size: 166, 226
+IdleDown
+  xy: 1162, 1646
+  size: 166, 226
+IdleDown
+  xy: 1328, 1646
+  size: 166, 226
+IdleDown
+  xy: 1494, 1646
+  size: 166, 226
+WalkUp
+  xy: 0, 1872
+  size: 166, 226
+WalkUp
+  xy: 166, 1872
+  size: 166, 226
+WalkUp
+  xy: 332, 1872
+  size: 166, 226
+WalkUp
+  xy: 498, 1872
+  size: 166, 226
+WalkUp
+  xy: 664, 1872
+  size: 166, 226
+WalkUp
+  xy: 830, 1872
+  size: 166, 226
+WalkDown
+  xy: 0, 2098
+  size: 166, 226
+WalkDown
+  xy: 166, 2098
+  size: 166, 226
+WalkDown
+  xy: 332, 2098
+  size: 166, 226
+WalkDown
+  xy: 498, 2098
+  size: 166, 226
+WalkDown
+  xy: 664, 2098
+  size: 166, 226
+WalkDown
+  xy: 830, 2098
+  size: 166, 226

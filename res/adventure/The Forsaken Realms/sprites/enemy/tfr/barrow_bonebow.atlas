@@ -1,0 +1,72 @@
+barrow_bonebow.png
+size: 856,632
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 57, 57
+Idle
+  xy: 0, 57
+  size: 107, 115
+  footprint: 23, 15, 58, 86
+Idle
+  xy: 107, 57
+  size: 107, 115
+Idle
+  xy: 214, 57
+  size: 107, 115
+Idle
+  xy: 321, 57
+  size: 107, 115
+Idle
+  xy: 428, 57
+  size: 107, 115
+Idle
+  xy: 535, 57
+  size: 107, 115
+Walk
+  xy: 0, 172
+  size: 107, 115
+Walk
+  xy: 107, 172
+  size: 107, 115
+Walk
+  xy: 214, 172
+  size: 107, 115
+Walk
+  xy: 321, 172
+  size: 107, 115
+Attack
+  xy: 0, 287
+  size: 107, 115
+Attack
+  xy: 107, 287
+  size: 107, 115
+Attack
+  xy: 214, 287
+  size: 107, 115
+Attack
+  xy: 321, 287
+  size: 107, 115
+Attack
+  xy: 428, 287
+  size: 107, 115
+Attack
+  xy: 535, 287
+  size: 107, 115
+Attack
+  xy: 642, 287
+  size: 107, 115
+Attack
+  xy: 749, 287
+  size: 107, 115
+Hit
+  xy: 0, 402
+  size: 107, 115
+Death
+  xy: 0, 517
+  size: 107, 115
+Death
+  xy: 107, 517
+  size: 107, 115

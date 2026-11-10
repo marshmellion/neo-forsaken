@@ -1,0 +1,785 @@
+{
+    // ============================================================================
+    // The Forsaken Realms - game balance settings. Edit values, restart the game.
+    // Comments (// lines) are supported by the game's JSON reader - leave them in.
+    // Deleting this file resets everything to the built-in defaults.
+    // ============================================================================
+
+    // Real-world seconds per in-game day (at normal 1x speed). Lowered 400 -> 300 (2026-08-23
+    // user request) - a shorter real-world day means the same in-game week/day milestones (the
+    // weighted spawn tier system's week brackets included) arrive faster in wall-clock time.
+    // Round 268: 300 -> 270, the user's "I meant game speed as in how long a day lasts. Speed that
+    // up by 10%" - THE CLOCK, not the walking speed round 267 raised by mistake (playerBaseSpeed is
+    // back at 40). A day now passes in 4m30s of wall clock instead of 5m, so every day- and
+    // week-keyed milestone arrives 10% sooner, while everything measured IN days - quest timers,
+    // dungeon rotation, mage travel - is untouched.
+    // Round 449: 270 -> 243, the user's "Let's have a day go by a little faster... speed it up by 10%"
+    // - the same 10% step as round 268. A day now passes in 4m03s of wall clock.
+    // Round 585: 243 -> 194.4, the user's "I want to speed the day length up by 20% ... how fast a day goes by needs
+    // to be 20% faster" - 20% shorter, the method of rounds 268 and 449. A day now passes in 3m14s of wall clock.
+    "dayLengthSeconds": 194.4,
+
+    // Territory growth: how fast the player's Capitol claims land (tiles per day).
+    "capitolExpansionTilesPerDay": 1,
+    // Player towns earn 1 territory tile per this many days (higher = slower towns).
+    "townExpansionDaysPerTile": 7,
+    // How fast each AI color's castle claims land (tiles per day).
+    "aiCastleExpansionTilesPerDay": 1,
+
+    // Maximum territory radius (in tiles) a Capitol or AI castle can ever reach.
+    "maxTerritoryRadius": 450,
+    // Maximum territory radius for ordinary towns. Raised 20 -> 25 (2026-08-24) after the town-
+    // count reduction to 50/color - fewer towns need to reach further to keep total map coverage
+    // from shrinking. Freely retune this number directly - see townProtectedRadiusCap below for
+    // why raising this alone no longer also grows a town's inviolable protected core.
+    "townMaxTerritoryRadius": 450,
+    // Cap on a town's PROTECTED core (rivals can never touch it), kept separate from the growth
+    // cap above (2026-08-24 user spec: "increase how far... towns can grow... starting radius and
+    // protected radius should stay unchanged"). Protected radius = min(currentRadius, this) / 2,
+    // so pinning this at the ORIGINAL townMaxTerritoryRadius (20) keeps the protected core's
+    // ceiling exactly what it is today (20/2=10) even as the outer territory disc now reaches to 25.
+    "townProtectedRadiusCap": 20,
+
+    // Round 294 (the barrier): how far inside each decorated circle - the wasteland's and the five colors' - the
+    // barrier's mountains begin. Where two circles nearly touch, the wall between them is about twice this thick.
+    // New worlds only: a world keeps the barrier it was generated with. -1 = no barrier on new worlds.
+    "worldBarrierMarginTiles": 8,
+
+    // Game speed when the HUD "Speed-Up" toggle is on (multiplier over normal time).
+    "speedUpMultiplier": 50.0,
+
+    // Overworld walking-speed modifiers by whose land you are on (0.15 = 15%).
+    // Your own land is a bonus; AI land depends on your reputation with that color.
+    "playerTerritorySpeedBonus": 0.15,
+    "aiTerritoryHappySpeedBonus": 0.05,
+    "aiTerritoryPartnerSpeedBonus": 0.10,
+    "aiTerritoryUnhappySpeedPenalty": 0.05,
+    "aiTerritoryWarSpeedPenalty": 0.10,
+
+    // What each built Mine pays out on payday (weekly, on days 7/14/21/28).
+    "mineWeeklyGoldPayout": 100,
+    "mineWeeklyWoodPayout": 25,
+    "mineWeeklyStonePayout": 25,
+    "mineWeeklyShardPayout": 20,
+
+    // Ante re-roll: Shard cost of the first re-roll in a duel, and how much each
+    // additional re-roll in the same duel multiplies the cost (1.5 = +50%).
+    "anteRerollBaseShardCost": 10,
+    "anteRerollEscalationRate": 1.5,
+    // Ante buy-back price = this multiplier x the card's normal sell value...
+    "anteBuyBackMultiplier": 1.5,
+    // ...but never below these floors, by card rarity.
+    "anteBuyBackMinCommon": 50,
+    "anteBuyBackMinUncommon": 100,
+    "anteBuyBackMinRare": 300,
+    "anteBuyBackMinMythic": 500,
+
+    // Maximum resource pickups (Gold/Wood/Stone/Shards/Mystery/Chest) on the world map at once.
+    // Raised 30 -> 50 (2026-08-23 user request), then 50 -> 60 (2026-08-25, to make room for the
+    // new Chest loot-spawn type without thinning out the original 5).
+    "maxResourceSpawns": 60,
+
+    // Card price multipliers: cards cost more in AI-owned towns, less in yours
+    // (applied before reputation discounts/markups).
+    "aiShopPriceMultiplier": 1.25,
+    "playerShopPriceMultiplier": 0.75,
+
+    // Days before a side quest fails after accepting it (story quests never expire). Round 367: 20 -> 15. Each quest
+    // keeps the limit it started with - a change here reaches NEW quests only; quests from before round 367 keep 20.
+    "sideQuestDays": 15,
+
+    // How many attacking mages each AI color can field at once at the start of a game, by difficulty (round 407; it
+    // was Easy 1 / Normal 2 / Hard 3 / Insane 4 since round 125). The town-count, Color Defeat and Capitol bonuses
+    // stack on top.
+    "attackingMagesEasy": 2,
+    "attackingMagesNormal": 3,
+    "attackingMagesHard": 4,
+    "attackingMagesInsane": 6,
+    // Round 422: the opening wave - how many mages each AI color sends out at once on a new world, by difficulty. They
+    // do not count toward the cap above and do not touch the color's attack schedule. 0 turns it off.
+    "openingMagesEasy": 1,
+    "openingMagesNormal": 2,
+    "openingMagesHard": 4,
+    "openingMagesInsane": 6,
+    // Round 425: a New Game+ that took its invested resources back gets one more one-off wave, per AI color, on day
+    // ngPlusWaveDay: one mage per this many towns held when the New Game+ began (rounded down), at most ngPlusWaveMaxMages.
+    // Outside the cap above, like the opening wave.
+    "ngPlusWaveTownsPerMageEasy": 5,
+    "ngPlusWaveTownsPerMageNormal": 4,
+    "ngPlusWaveTownsPerMageHard": 3,
+    "ngPlusWaveTownsPerMageInsane": 2,
+    "ngPlusWaveMaxMages": 5,
+    "ngPlusWaveDay": 8,
+
+    // Round 239 - the AI answers the player's Capitol: +this many to every color's attacking-mage cap for as
+    // long as the Capitol stands, and (capitolBuiltSendsMages) one mage from every color the moment it is built.
+    "capitolBuiltMageCapBonus": 1,
+    "capitolBuiltSendsMages": true,
+
+    // Round 239 - legend sightings: how many times longer than an ordinary roamer (20 s of travel time) a
+    // sighted frontier legend stays on the overworld before it fades. 1 = no change.
+    "legendLifetimeFactor": 3,
+    "legendLifetimeDays": 3,
+    // Round 390 - every Archmage enemy starts its duels with these cards in play ("Name|SET" picks the printing).
+    // Not in town / Ring City / capital assaults, the Capitol defense, or Inn and Arena events. [] = off.
+    "archmageStartCards": ["Wastes|EOC"],
+    // Round 404 - after this many wins in a row over one enemy (any of its decks) it starts each later duel with
+    // winStreakStartCards in play too, until it beats you. Not in Inn tournaments. Round 405: by difficulty, 0 = off.
+    "winStreakWinsEasy": 0,
+    "winStreakWinsNormal": 5,
+    "winStreakWinsHard": 4,
+    "winStreakWinsInsane": 3,
+    "winStreakStartCards": ["Wastes|EOC"],
+    // Round 467 - the streak grows: every further count of wins adds winStreakStartCards once more (Insane: 1 at 3 wins,
+    // 2 at 6, 3 at 9), up to this many times. 1 = no growth.
+    "winStreakMaxSteps": 3,
+    // Round 413 - cave champions and war champions (met outside the arena) pay their arena list through the card
+    // budget: this many times their rank's first-win card count, best rarities first, plus their signature card, and
+    // this many times their rank's resource purse. 0 = the full arena list, as before.
+    "championLootFactor": 2,
+    // Round 434 - the town-restore fee: this base, plus one step per restoreFeeStepTowns towns held (Orazca/the Capitol
+    // and towns taken by force count): +restoreFeeStepGold gold and +restoreFeeStepWoodPercent of the BASE wood, no cap.
+    // Difficulty-scaled where it is paid (Easy x0.75 .. Insane x1.5). Normal: 200g+20w, 250g+30w, 300g+40w, 350g+50w ...
+    "restoreFeeGold": 200,
+    "restoreFeeWood": 20,
+    "restoreFeeStepTowns": 5,
+    "restoreFeeStepGold": 50,
+    "restoreFeeStepWoodPercent": 50,
+    // Round 411 - NOTORIETY: your wins in a row against anyone (the duels above count; a loss takes notorietyLossPenalty
+    // off - round 753 - it once reset it). Every
+    // notorietyWinsPerLevel wins add a level, and an enemy of a reached rank starts with a Wall token - the level's
+    // entry of its rank's list (level 1 = 5-9 wins = the first). notorietyMinRank* = the lowest rank it reaches on that
+    // difficulty: 0 Apprentice, 1 Adept, 2 Master, 3 Archmage. Apprentice/Adept get the plain walls, Masters the reach
+    // walls, Archmages the flying walls (token scripts in forge-gui/res/tokenscripts). notorietyWinsPerLevel 0 = off.
+    // Round 429: 0/1, 1/2, 2/4, 3/6, then a SECOND wall - every notorietyLevelsPerWall entries are one wall, and a
+    // level past the first wall keeps it at its last entry and adds the level's own: 25 wins = 3/6 + 0/1, 40+ = 3/6 +
+    // 3/6. The lists' length caps it. The second wall's cards print 25+..40+ (dev-tools/wall_tokens).
+    "notorietyWinsPerLevel": 5,
+    "notorietyMinRankEasy": 3,
+    "notorietyMinRankNormal": 2,
+    "notorietyMinRankHard": 1,
+    "notorietyMinRankInsane": 0,
+    // Round 753: a lost duel takes this much off notoriety (floor 0) instead of resetting it - one level at 5. Since
+    // then notoriety is a score (+1 a win), not wins in a row; the Wall cards print "Each loss takes 5 off". 0 = reset.
+    "notorietyLossPenalty": 5,
+    "notorietyLevelsPerWall": 4,
+    "notorietyWallsPlain": ["tfr_wall_0_1", "tfr_wall_1_2", "tfr_wall_2_4", "tfr_wall_3_6",
+        "tfr_wall2_0_1", "tfr_wall2_1_2", "tfr_wall2_2_4", "tfr_wall2_3_6"],
+    "notorietyWallsReach": ["tfr_wall_reach_0_1", "tfr_wall_reach_1_2", "tfr_wall_reach_2_4", "tfr_wall_reach_3_6",
+        "tfr_wall2_reach_0_1", "tfr_wall2_reach_1_2", "tfr_wall2_reach_2_4", "tfr_wall2_reach_3_6"],
+    "notorietyWallsFlying": ["tfr_wall_flying_0_1", "tfr_wall_flying_1_2", "tfr_wall_flying_2_4", "tfr_wall_flying_3_6",
+        "tfr_wall2_flying_0_1", "tfr_wall2_flying_1_2", "tfr_wall2_flying_2_4", "tfr_wall2_flying_3_6"],
+    // Round 445: bonus walls on top of the two above - each once the wins in a row reach its count (45 = duel 46),
+    // for EVERY rank on every difficulty (notorietyMinRank* does not gate them). Parallel lists; a flying 3/6 each.
+    "notorietyBonusWallWins": [45, 50],
+    "notorietyBonusWalls": ["tfr_wall3_flying_3_6", "tfr_wall4_flying_3_6"],
+    // Round 446: each bonus wall reached also adds this much to the enemy's starting life, summed (45+ = +25%, 50+ = +50%).
+    "notorietyBonusWallLifePercent": [25, 25],
+    // Round 793, reworked in round 799: an enemy also starts with one random permanent from its own deck (moved out of
+    // the deck), on top of its Walls, from the difficulty's notoriety in notorietyDeckCardWinsByDifficulty (Easy,
+    // Normal, Hard, Insane; 0 = never) - notorietyDeckCardRatioLevels levels (x notorietyWinsPerLevel) sooner while at
+    // least notorietyDeckCardRatioMinDuels duels are on record and notorietyDeckCardRatioAtLeast of them won. Never in the
+    // Arena. Mana value MinCost-MaxCost, rarity at most the rank's entry (Apprentice, Adept, Master, Archmage), never a
+    // name in notorietyDeckCardExclude. notorietyDeckCardEtb: "keep", "noHostile" (no card whose own enter trigger
+    // targets, sacrifices or reaches an opponent) or "none" (no enter triggers at all). No eligible card: none.
+    "notorietyDeckCardWinsByDifficulty": [0, 50, 45, 40],
+    "notorietyDeckCardRatioAtLeast": 0.95,
+    "notorietyDeckCardRatioMinDuels": 50,
+    "notorietyDeckCardRatioLevels": 1,
+    "notorietyDeckCardMinCost": 1,
+    "notorietyDeckCardMaxCost": 3,
+    "notorietyDeckCardRarityByRank": ["Common", "Uncommon", "Rare", "Mythic"],
+    "notorietyDeckCardExclude": [],
+    "notorietyDeckCardEtb": "noHostile",
+    // Round 447: from this many wins in a row a spawn rolls against the NEXT lifetime-win rank (0.5 -> 1 -> 2 -> 10), so a
+    // player under 150 lifetime wins can meet roaming Archmages. 0 = off. (The rank odds' own streak tilt is in
+    // spawn_tier_weighting.json.)
+    "notorietyRankStepWins": 30,
+    // Round 447: dungeon placements by win streak - on the first visit of a level of a rotating dungeon or cave, each
+    // ordinary placement may step up two ranks (PlusTwo %) or one (PlusOne %), by the highest Wins reached; kept until
+    // the place rotates away. 30 wins: 25% one rank up, 20% two.
+    "dungeonUpgradeWins": [10, 20, 30, 40, 50],
+    "dungeonUpgradePlusOne": [20, 25, 25, 25, 25],
+    "dungeonUpgradePlusTwo": [0, 5, 20, 30, 40],
+
+    // Fraction of an edition's own card count you must have found before the Research
+    // Lab offers to unlock it (e.g. 0.10 = 10%). Floored at 5 cards regardless of this
+    // value, so a tiny supplemental set can't become a 1-2 card unlock.
+    "researchThresholdFraction": 0.10,
+    // Research Lab: in-game days from clicking Research until an edition unlocks. Each edition
+    // runs on its own timer, so several can be in progress at once. Round 751: this and the threshold above are the
+    // classic research, kept by saves from before round 751; a newer game runs research v2 (below).
+    "researchDays": 7,
+    // Research Lab: base shard price per edition (difficulty scaling applies on top: Easy x0.75,
+    // Normal x1, Hard x1.25, Insane x1.5). Round 449: 50 -> 40, the user's "On Insane it should be
+    // 60" - 30 / 40 / 50 / 60 shards from Easy to Insane.
+    "researchShardCost": 40,
+    // Round 751 - research v2, for games started on round 751 or later (older saves keep the three values above, the
+    // classic research). Every set can be researched from day 1. Round 771: a set's meter holds researchMeterBoosters
+    // boosters of its own cards at researchMeterPointsPerCard points each (a card's average when sacrificed, rarity and
+    // the odd duplicate included) - the cards per booster are its booster template's slots less the land and Guest
+    // slots (DOM 14, 5ED 15, Bloomburrow 12, Arabian Nights 8; researchMeterCardsNoBooster without a template), at least
+    // researchMeterMin points: about 3 boosters sacrificed, or 6 sold, reach Ready in any set (DOM 105 points, ARN 60).
+    // Before round 771 the meter was 10% of the set's card count, and one sacrificed booster made a set Ready. A card
+    // sold anywhere, or sacrificed at the Lab, fills its own set's meter: the first copy of a card ever fed counts
+    // researchPointsByRarity (Common, Uncommon, Rare, Mythic), every later copy researchCopyShare of that, and a sacrifice researchSacrificeFactor times. Research costs
+    // researchShardCost (difficulty-scaled) and takes researchDaysV2 days with an empty meter; a fuller meter cuts both
+    // along the square root of its fill: a full one takes researchShardCutAtFull off the shards (0.5 = half price) and
+    // all of the days. Round 764: the player never sees the meter - the Lab shows days, Shards and how many new commons
+    // take the next day off; a full meter is "Ready" (0 days), stores no more points and offers no Sacrifice; a running
+    // research fed to 0 days left finishes at once (its start Shards stay spent). Grep forge.log for [TFR-Research].
+    // Round 771: 28 -> 40 days with nothing given (the user: "Since you also do get the towns that can help you").
+    "researchDaysV2": 40,
+    "researchMeterBoosters": 3,
+    "researchMeterPointsPerCard": 2.5,
+    "researchMeterCardsNoBooster": 14,
+    "researchMeterMin": 8,
+    "researchPointsByRarity": [1, 2, 3, 5],
+    "researchCopyShare": 0.25,
+    "researchSacrificeFactor": 2,
+    "researchShardCutAtFull": 0.5,
+    // Round 760 - town specialties (new games and New Game+ only). Mining: that town's mines pay x specialtyMineFactor.
+    // Research: each Research town makes research specialtyResearchPerTown faster, at most specialtyResearchCap - the
+    // days / (1 + b) (40 days -> 27 at the cap); round 771: the days only, the points fed and the shard price are the
+    // same with or without towns. specialtyResearchTimeCut true reads it as days x(1 - b) instead (40 -> 20 at the cap).
+    // Outpost and Garrison come off the capture roll (the 5% floor stays).
+    // Market: card shops x specialtyMarketPriceFactor. A change costs specialtyChangeFeeShare of the restore fee's gold,
+    // then the town is locked for specialtyChangeLockDays days.
+    "specialtyMineFactor": 1.5,
+    "specialtyResearchPerTown": 0.05,
+    "specialtyResearchCap": 0.5,
+    "specialtyResearchTimeCut": false,
+    "specialtyOutpostDefense": 0.05,
+    "specialtyGarrisonDefense": 0.20,
+    "specialtyMarketPriceFactor": 0.9,
+    "specialtyChangeFeeShare": 0.5,
+    "specialtyChangeLockDays": 7,
+    // Round 774 - realm milestones (new games and New Game+ only): every milestoneEveryTowns of the most towns ever held
+    // at once, pick 1 of 3 realm boons. Masteries upgrade a specialty in every town that has it (offered from
+    // milestoneMasteryMinTowns towns of it): Deep Veins (Mining mines x2), Grand Library (Research +7.5% a town, cap
+    // 75%), Watchtowers (Outpost light x3 / x4 with an Outlook, defense 15%), Master Smiths (a Smithy town's Armory
+    // x0.8), Iron Garrisons (defense 35%), Merchant Guild (Market card shops x0.8). Realm boons: Tithe (gold a held town
+    // each payday, a pick, 2 picks), Town Watch (capture defense in every held town, a pick, 2 picks), Lamplighters
+    // (every held town lights more tiles), Royal Grant (the next research is free and done at once, 2 picks).
+    "milestoneEveryTowns": 10,
+    "milestoneMasteryMinTowns": 2,
+    "milestoneDeepVeinsMineFactor": 2.0,
+    "milestoneLibraryPerTown": 0.075,
+    "milestoneLibraryCap": 0.75,
+    "milestoneWatchtowerLight": 1,
+    "milestoneWatchtowerDefense": 0.15,
+    "milestoneSmithsArmoryFactor": 0.8,
+    "milestoneIronGarrisonDefense": 0.35,
+    "milestoneMerchantPriceFactor": 0.8,
+    "milestoneTitheGold": 15,
+    "milestoneTownWatchDefense": 0.10,
+    "milestoneLamplighterTiles": 1,
+    // Bank: the gold one Deposit or Withdraw press moves (Deposit All / Withdraw All move everything).
+    // Round 457: 100 -> 500 (a player asked for 1,000).
+    "bankStepGold": 500,
+    // Round 695: once a job board offers a side quest, no board offers it again for this many in-game days (0 = off).
+    // A board whose every quest is resting offers from its full list.
+    "questOfferCooldownDays": 10,
+    // Invasion quests (round 461; the 11 quests.json templates marked "tfrInvasion"). The first stage asks for this
+    // many wins against the invaders, Easy / Normal / Hard / Insane.
+    "invasionMinionsByDifficulty": [2, 3, 3, 4],
+    // The leader is picked near your rank (lifetime wins; a step up on a long streak) - and one rank tougher once the
+    // town that asks has at least this much reputation with you (0 = never). Round 481: that pick only stands in until
+    // the leader stage opens - the leader is then one rank above the toughest invader you beat (Archmage at most).
+    "invasionTrustReputation": 10,
+    // The reward follows the leader's rank, Apprentice / Adept / Master / Archmage: gold, and local reputation.
+    "invasionGoldByTier": [300, 500, 800, 1200],
+    "invasionReputationByTier": [2, 2, 3, 3],
+    // Round 481: the leader starts with these cards in play, from this difficulty on (0 Easy, 1 Normal, 2 Hard,
+    // 3 Insane).
+    "invasionLeaderStartCards": ["Gemstone Mine"],
+    "invasionLeaderStartMinDifficulty": 2,
+    // A town being pillaged (round 484). Once a week every town that qualifies - your towns and Capitol, and neutral
+    // towns you have entered, not ruined, with at least pillageDungeonsNeeded dungeons or caves on the map within
+    // pillageRadiusTiles - rolls this percent; at most pillageMaxPerWeek start a week. Raiders come out 3-4 at a time
+    // (pillageRaidersAtOnce, low/high) once you are within pillageSpawnRangeTiles of the town; beat pillageKills of
+    // them within pillageDays for the reward, or lose pillageFailReputation with that town.
+    "pillageChancePercent": 10,
+    "pillageMaxPerWeek": 2,
+    "pillageDungeonsNeeded": 4,
+    "pillageRadiusTiles": 15,
+    // Round 610 (the user: "Let's have it scale. 15 Week 1 ... Then 17 week 2, finally 20 week 3 (day 22+)"): the radius
+    // by calendar week - days 1-7, 8-14, 15-21, then 22 on (the last entry holds); it replaces pillageRadiusTiles, which
+    // only counts when this is empty. Raids still start no earlier than pillageFirstWeekByDifficulty below.
+    "pillageRadiusByWeek": [15, 15, 17, 20],
+    // Round 668: the day a level-gated place (points_of_interest.json appearsAtLevel - Hexhaven Tower, the Echoverse
+    // Overlay, the Theorist's Sanctum at level 20) appears for a character without Ascendance. 0 = never.
+    "levelPlacesFallbackDay": 60,
+    "pillageKills": 5,
+    "pillageDays": 7,
+    "pillageRaidersAtOnce": [3, 4],
+    "pillageSpawnRangeTiles": 20,
+    "pillageRewardReputation": 1,
+    "pillageRewardWood": 50,
+    "pillageRewardStone": 50,
+    "pillageFailReputation": 2,
+    // Round 541 (the user: "make sure no Raids can happen week 1. and non for the first 2 weeks on Easy"): the first
+    // calendar week whose roll may start a pillage (0 = days 1-7, 1 = from day 8, 2 = from day 15), by difficulty -
+    // Easy, Normal, Hard, Insane.
+    "pillageFirstWeekByDifficulty": [2, 1, 1, 1],
+    // Round 488: the Archaeologist's chance of a treasure-map fragment per expedition (0-1). -1 = as often as a
+    // Rare item from the dig (5% item chance x the pool's Rare share, about 1.5%).
+    "archaeologistMapFragmentChance": -1,
+    // Round 781: items a player keeps only one of - once one is owned (inventory, worn, Armory storage, a guard), an
+    // enemy's payout drops it instead of paying a second. Witch-Maw Slippers come from a 25% roll on the Mythic bosses
+    // Akroma and Lathliss (their castles), Kozilek and Guardian Angel, and Atraxa's fixed drop.
+    "uniqueDropItems": ["Witch-Maw Slippers"],
+    // AI towns: in-game days of unbroken AI ownership per guard-dot level (4 levels; the clock
+    // starts when the town is first seen held, not retroactively). Level sets the assault defender:
+    // none = Apprentice, 1 = Adept, 2 = Master, 3 = Archmage, 4 = Archmage with two starting lands.
+    "aiTownGuardDaysPerLevel": 28,
+    // A given AI town can be attacked once per this many in-game days; the guards' dialog says
+    // how many days remain if you come back sooner.
+    "aiTownAssaultCooldownDays": 7,
+    // Town-assault defender life multiplier per difficulty [Easy, Normal, Hard, Insane], on top of
+    // the usual difficulty enemy life factor.
+    "townDefenderLifeFactorByDifficulty": [1.0, 1.5, 1.75, 2.0],
+    // Reputation lost with the attacked color when you START an assault, and the extra loss when
+    // you CAPTURE the town (allies lose half, that color's enemies gain the same).
+    "townAssaultReputationPenalty": 4,
+    "townCaptureReputationPenalty": 8,
+    // Center Towns: you lose the game when a single AI color holds this many of the five star
+    // towns around the campfire (new worlds only).
+    "starTownsLossCount": 3,
+    // Center Towns: no other town may generate within this many tiles of the campfire.
+    "starTownExclusionRadiusTiles": 24,
+    // Minimum distance (tiles) between an ordinary town and every town placed before it.
+    "townMinSpacingTiles": 10,
+    // Minimum distance (tiles) between an ordinary town and any of the five Ring Cities.
+    "ringCityTownExclusionTiles": 14,
+    // Ring City shops: card price multiplier, restock multiplier (applied again per restock that week), and the
+    // Ring City territory pull factor (x a regular town).
+    "ringShopPriceMultiplier": 2.0,
+    "ringShopRestockMultiplier": 3.0,
+    "ringCityPullFactor": 3.0,
+    // World-gen town roads: this share of the nearest-neighbor edges is skipped (star roads never are).
+    "initialTownRoadSkipFraction": 0.25,
+    // World-gen: every town starts with at least one road link and never more than this many (Ring/Spawn edges uncounted).
+    "townMaxRoadLinks": 5,
+    // Ring Towns (the five Center Towns): an AI color may target a given Ring Town once per this many days.
+    "ringTownTargetCooldownDays": 7,
+    // Once a Ring Town is among a color's five nearest candidates, its pick weight is multiplied by 1 + this.
+    "ringTownTargetWeightBonus": 0.25,
+    // Round 355: while a color stands at Unhappy / War with you and your Capitol is among its five nearest targets,
+    // the Capitol's chance of being picked rises by this many points (0.05 = +5 points; at War on top of the War share).
+    "capitolNearestTargetBonusUnhappy": 0.05,
+    "capitolNearestTargetBonusWar": 0.10,
+    // ...and a mage that color sends at your Capitol steps up one tier with this chance (still under the week's cap).
+    "capitolAttackerTierUpChanceUnhappy": 0.05,
+    "capitolAttackerTierUpChanceWar": 0.10,
+    // AI-vs-AI assaults: the defending AI town's guard dot fights first (table in MOD_CHANGELOG round 99).
+    "aiTownGuardDefenseEnabled": true,
+    // An Archmage with two lands (guard level 4) defends at Mythic power x this factor.
+    "aiGuardTwoLandPowerFactor": 1.5,
+
+    // Weighted spawn tier system, Layer 3 - per-enemy kill-decay (2026-08-23, redesigned
+    // 2026-08-25 to a permanent, uncapped halving with no time recovery - no longer tunable via
+    // flat scalars here; see SpawnTierWeighting.rawSpawnWeight()). The week-progression/territory
+    // tables still live in their own file, "config tables/spawn_tier_weighting.json".
+
+    // Shard cost to re-roll an Inn Tournament's draft/sealed card pool before entering
+    // (2026-08-24). The new pool is drawn from the same edition-progression-gated set as
+    // the original roll - re-rolling never lets you into editions you haven't unlocked.
+    "innTournamentRerollShardCost": 15,
+
+    // How many neutral ("Waste Town") POIs get pre-seeded as already-functioning (real shops,
+    // no rubble) at world-gen, out of however many neutral towns end up on the map (2026-08-24
+    // user request). Their shops are still gated to editions the "neutral" shard has access to,
+    // same as every other unrestored neutral town's shop - see TownRestoration.
+    // seedFunctioningNeutralTowns().
+    // Per-color lockout on attacking the player's Capitol, in in-game days (user spec 2026-08-31:
+    // "once a week... from each color"). Rolling: a dispatch on day 6 blocks that color until 13.
+    // 0 disables the cooldown.
+    "capitolTargetCooldownDays": 7,
+    "functioningNeutralTownCount": 20,
+    // Round 241 (user: "World Gen: Reduce the number of Neutral towns / Ruined towns per difficulty"). How many
+    // FEWER wasteland towns a NEW world gets, by difficulty - an existing save is not touched.
+    // NeutralTownCut comes off functioningNeutralTownCount above (the five star towns are never cut).
+    // NeutralTownCut + RuinedTownCut is how many fewer ordinary Waste Towns are placed at all, so a cut
+    // Neutral town is gone rather than left as one more ruin.
+    // For scale: a world holds about 283 ordinary Waste Towns, some 260 of them ruins - so -18 ruins is
+    // about 7%, where -3 of the 20 Neutral towns is 15%. Round 244: the user raised the Ruined cuts from
+    // 3 / 6 / 9 to 6 / 9 / 18. The ceiling is 57 towns in all (Neutral + Ruined): only the 60 the waste
+    // biome places itself can be cut, and each of its three kinds keeps at least one.
+    "worldGenNeutralTownCutEasy": 0,
+    "worldGenNeutralTownCutNormal": 1,
+    "worldGenNeutralTownCutHard": 2,
+    "worldGenNeutralTownCutInsane": 3,
+    "worldGenRuinedTownCutEasy": 0,
+    "worldGenRuinedTownCutNormal": 6,
+    "worldGenRuinedTownCutHard": 9,
+    "worldGenRuinedTownCutInsane": 18,
+
+    // Roaming-spawn duplicate limiting (user report 2026-09-01: three Khenra Warriors standing
+    // together). A fresh roll of an enemy that already has maxSameEnemyNearby of itself alive
+    // within sameEnemyNearbyRadius world units of the player is re-rolled up to
+    // sameEnemySpawnRerolls times; after that it spawns anyway, so a short biome list still
+    // populates. Set maxSameEnemyNearby or sameEnemySpawnRerolls to 0 to switch the rule off
+    // without touching config.json. Roaming spawns land 45-180 units out, so 220 covers the whole
+    // spawn ring. Grep forge.log for "[TFR-SpawnDedupe]" to see it firing.
+    "maxSameEnemyNearby": 2,
+    "sameEnemyNearbyRadius": 220,
+    "sameEnemySpawnRerolls": 4,
+
+    // Torch pulse (round 124): using a Torch / Grand Torch (1 shard, the item's shardsNeeded) flares your
+    // fog-of-war vision to torchPulseMultiplier x its current radius for torchPulseSeconds; tiles it touches
+    // stay explored (hazed) afterwards. torchPulseMaxRadiusTiles caps the flared radius - the repaint cost
+    // grows with the square of it. Grep forge.log for "[TFR-TorchPulse]".
+    "torchPulseMultiplier": 3.0,
+    "torchPulseSeconds": 2.0,
+    "torchPulseMaxRadiusTiles": 24,
+
+    // Fog zones (round 338, user spec 2026-09-25): where a roaming enemy SPAWNS decides how often and what. Lit = the
+    // tile is in view right now (your own light, your land, a town's or a bonfire's lift); dark = explored-but-dim or
+    // unexplored. A lit roll goes ahead with fogLitSpawnChance; after a dark one the next roll comes fogDarkSpawnRate x
+    // as fast; the tier row tilts per spawn_tier_weighting.json fogZoneFactors. An enemy standing in the dark moves
+    // fogDarkEnemySpeed x as fast. Grep forge.log for "fog=" on [TFR-Spawn] and for [TFR-FogZone].
+    // Round 339 (user: "tweak spawn spot: 3 to 13 tiles"): how far from the player a roaming enemy appears, in tiles,
+    // at a random angle (was 2.8-11.25). Quest sprites take the same span times their own multiplier.
+    "spawnMinTiles": 3,
+    "spawnMaxTiles": 13,
+    "fogLitSpawnChance": 0.75,
+    "fogDarkSpawnRate": 1.25,
+    "fogDarkEnemySpeed": 1.1,
+    // Round 346: the player road (laid from the Capitol to the player's towns) moves the player this much faster
+    // than the old road (old road = 1.5x, so 1.15 -> 1.725x). Grep forge.log for [TFR-Roads].
+    "playerRoadSpeedBonus": 1.15,
+    // Round 346c/346d: the cobble plaza under the Capitol and under every held town - a square this many tiles across,
+    // centred on the icon (the Capitol icon is 4 tiles, a wasteland town 3).
+    // Round 368: 6 / 5 = one tile of cobbles all round the icon (the user's pick; an odd size can't center under the
+    // Capitol's 4-tile icon). Laid again on every load at these sizes, so a larger value reaches existing saves.
+    "playerRoadPlazaCapitol": 6,
+    "playerRoadPlazaTown": 5,
+    // Round 370b: rows left off the TOP of each plaza (the art stays centred on the full square).
+    "playerRoadPlazaTopCut": 1,
+
+    // Looted-dungeon timer (round 128, user request): a rotatable dungeon/cave the player walks out of
+    // having taken every reward pickup, while live enemies are still inside, keeps this fraction of the
+    // days remaining on its despawn timer - 0.5 = cut in half. Applied once per visible lifetime, and
+    // never to a dungeon an active quest points at. Set to 1.0 to switch the rule off. Grep forge.log
+    // for "[TFR-DungeonLooted]".
+    // Round 244 (user: "let's remove 75% of remaining time left"): 0.5 -> 0.25 - a looted dungeon keeps a quarter
+    // of the days it had left.
+    "dungeonLootedDespawnFactor": 0.25,
+    // Round 244 - how long a rotatable dungeon or cave stays on the map, in in-game days (rolled evenly between
+    // the two; it was 20-60 until the user trimmed the top to 40), and how long the spot it leaves stays empty
+    // before another can appear there. Clearing a dungeon, or losing a duel inside one, still removes it at once;
+    // a side-quest target gets 30 days on top. A dungeon already on the map with more days left than the ceiling
+    // is pulled in to it on the next day - quest targets excepted.
+    // Round 252: an enemy whose map sets neither threatRange nor fleeRange (obj/enemy.tx defaults both to 0) reacts
+    // to nothing - 378 of the plane's 2,359 map enemies. Each of those is given this radius at load, in PIXELS (a
+    // tile is 16), with the pursue range below it. An authored range wins; a negative threatRange in a map means
+    // "never reacts"; 0 here switches the default off.
+    "mapEnemyDefaultThreatRange": 32,
+    "mapEnemyDefaultPursueRange": 64,
+    "dungeonLifespanMinDays": 20,
+    "dungeonLifespanMaxDays": 40,
+    "dungeonSpotRestMinDays": 10,
+    "dungeonSpotRestMaxDays": 30,
+    // Round 377 - dungeons as sources of enemies (util/DungeonSources), reweighted in round 383 (the user: "85% of
+    // spawns should come from dungeons and the remaining 15% from the land. So if you clear out all the dungeons in an
+    // area, it will feel safe"). An active regular dungeon or cave (a hostile one that rotates - never a story, quest or
+    // NoRotate map, a boss lair or a castle) pulls at full strength within dungeonSourceRadiusTiles of its footprint,
+    // fading to nothing at dungeonSourceReachTiles. Each spawn roll sends dungeonSourceShare x the pull of the sources
+    // in reach - their falloffs summed but at most 1 (one dungeon close by is full strength, a crowd is not more),
+    // times their escalation and dungeonSourceRateFactor, capped at dungeonSourceMaxPerRoll; the fraction a coin flip -
+    // of their creatures towards the player: a source's color before the first visit, its living inhabitants after (never a
+    // boss, a champion, a legend, a quest enemy or a dialog NPC). The land's own pick goes ahead on landSpawnShare of
+    // the rolls. Quest creatures roll on their own and are never thinned. Each week a source stands adds
+    // dungeonSourceEscalationPerWeek to its pull, up to dungeonSourceEscalationMax x. Clearing its enemies silences it
+    // and pays dungeonSourceClearReputation reputation in the nearest town. dungeonSourceShare 0 switches the sources
+    // off (and landSpawnShare 1 gives the land its old rate back). Grep forge.log for [TFR-DungeonSource] and
+    // [TFR-SpawnBudget].
+    // Round 384 (the user: "15% attribution to spawns from Terrain is good for the player, but low for other areas"):
+    // the land's own pick's share of a roll, by the land the player stands on (under a road, the land beneath) and,
+    // on a color's land, the player's standing with that color. The dungeons in reach take the rest (1 - this), times
+    // their pull. dungeonSourceShare below is now only the switch: 0 = no dungeon sources.
+    "landSpawnSharePlayer": 0.15,
+    "landSpawnShareWaste": 0.25,
+    "landSpawnSharePartner": 0.15,
+    "landSpawnShareHappy": 0.20,
+    "landSpawnShareNeutral": 0.25,
+    "landSpawnShareUnhappy": 0.30,
+    "landSpawnShareWar": 0.40,
+    "dungeonSourceRadiusTiles": 10,
+    "dungeonSourceReachTiles": 28,
+    "dungeonSourceRateFactor": 1.0,
+    "dungeonSourceShare": 1.0,
+    "dungeonSourceMaxPerRoll": 2.0,
+    "dungeonSourceEscalationPerWeek": 0.25,
+    "dungeonSourceEscalationMax": 2.0,
+    "dungeonSourceClearReputation": 1,
+    // Round 383 (the user: "Enemy spawns are timed in real time, so fast time means fewer spawns per game day - should
+    // increase with speed-up"). The spawn clock runs on game time: Speed-Up and the run key make the rolls come as much
+    // faster as they make the day. So the screen does not fill at 50x, a roll waits while spawnCrowdLimit ordinary
+    // roamers (not legends, not territory mages) are already within spawnCrowdRadiusTiles of the player.
+    // spawnClockFollowsSpeedUp false = the old real-time clock; spawnCrowdLimit 0 = no limit.
+    "spawnClockFollowsSpeedUp": true,
+    "spawnCrowdLimit": 14,
+    "spawnCrowdRadiusTiles": 24,
+    // Round 383b (the user: "week 1, enemy health is 50% normal, but not lower than 20 health (unless they already have
+    // less). Week 2, 75%, but not less than 25"). The life a duel starts with (after the difficulty factor and the
+    // day/night terrain) x the week's factor, raised to the floor, never above what it had. Days 1-7 = week 1, 8-14 =
+    // week 2. Every ordinary enemy, outside and inside places; not bosses, legends or roaming champions, Arena or Inn
+    // fights, territory mages, a guard's fight, nor New Game+. Factor 1 switches a week off. [TFR-EarlyLife].
+    "earlyLifeWeek1Factor": 0.5,
+    "earlyLifeWeek1Floor": 20,
+    "earlyLifeWeek2Factor": 0.75,
+    "earlyLifeWeek2Floor": 25,
+    // Round 299: a cleared boss lair comes back after the spot rest above; every visit after that pays gold /
+    // shards / wood / stone x this (rounded up) and the NUMBER of cards x this (a lone card drops half the
+    // time), and each non-signature item drops with the chance below. +Life and a boss's own signature item
+    // are paid once per place, never again.
+    "lairReturnRewardFactor": 0.5,
+    "lairReturnItemChance": 0.5,
+    // Round 383: a beaten legend (the frontier legends and the roaming champions) pays its gold x the first
+    // (rounded up) and keeps the second's share of its cards (the fraction a coin flip; its own named card goes
+    // last). Shards, items and +Life are untouched; 1 and 1 pay the whole list again. Grep forge.log for
+    // [TFR-LegendReward].
+    "legendRewardGoldFactor": 0.5,
+    "legendRewardCardFactor": 0.667,
+
+    // Enemy size by tier (round 178, user decision: one size per rank, so the size tells you the rank).
+    // Every non-boss enemy's "scale" in world/enemies.json draws its BODY at the hero's body size
+    // (dev-tools/enemy_scale.py - the body box ignores thin swords, tails and staffs), and these four
+    // multiply straight on top: Apprentice 13 / Adept 16 (the hero) / Master 20 / Archmage 24 px.
+    // A rat and a dragon of the same rank are the same size. Bosses keep their hand-set sizes. The
+    // roaming guards get the same cue. Collision boxes move with the art, as they always have.
+    "enemyTierScaleCommon": 0.8125,
+    "enemyTierScaleUncommon": 1.0,
+    "enemyTierScaleRare": 1.25,
+    "enemyTierScaleMythic": 1.5,
+
+    // Round 261 (user, on an Archmage that filled the screen: "even a named legendary creature can never be
+    // that big"). A rank sets the size of a creature's BODY; what gets drawn is the whole frame, and art with
+    // wings, a tail or an aura draws far past its body - up to 4.7x before this. The ceiling below is a
+    // multiple of the rank's own body, so an Archmage may reach 33.6px and a Master 28px, and the size still
+    // reads as rank. Bosses and keepSize set pieces are exempt. 0 turns the ceiling off.
+    "enemySpriteFrameCap": 1.4,
+
+    // Round 280 (user: "If the Booster or Chest is taken, and the guard is still alive, to have the guard chase
+    // the player?"). How fast a robbed guard becomes, as a multiple of playerBaseSpeed - so retuning the player
+    // carries the guards with it. It has to exceed 1.0 for the chase to mean anything: the median enemy runs 30
+    // against the player's 40 and only 434 of 1,974 enemies are faster than the player, so at 1.0 or below the
+    // guard follows the thief to the door and never closes. 1.1 catches a player who dawdles and loses one who
+    // runs for the exit. Set 0 for a chase the player can always outrun.
+    "robbedGuardSpeedFactor": 1.1,
+
+    // Round 359 (user spec): losing a duel costs defeatGoldLossPercent* PERCENT of the gold you carry (2 = 2%),
+    // but at least defeatGoldLossMin* gold - and never more than you carry (have less, lose it all). Gold in the
+    // bank is safe. Replaces the difficulty's percentage (config.json "goldLoss", still the fallback when both
+    // values here are 0). A Bronze Coin handed over on the ante prompt still waives it. Applies to existing
+    // characters. (Round 177 had the flat amounts alone.)
+    "defeatGoldLossPercentEasy": 2,
+    "defeatGoldLossPercentNormal": 5,
+    "defeatGoldLossPercentHard": 10,
+    "defeatGoldLossPercentInsane": 15,
+    "defeatGoldLossMinEasy": 50,
+    "defeatGoldLossMinNormal": 100,
+    "defeatGoldLossMinHard": 150,
+    "defeatGoldLossMinInsane": 200,
+    // Round 785 (the user: "in week 1 a defeat on Hard takes only the 10%, no 150-gold minimum"): in the world's first
+    // this-many weeks a lost duel takes only the percentage above, on every difficulty - no minimum. 0 = never.
+    "defeatGoldLossMinWaivedWeeks": 1,
+    // Round 797 (the user: "Let's say no Duel can roll the first week"): in the world's first this-many weeks no overworld
+    // chest rolls Dangerous Enemy and no diamond rolls its ambush; the other outcomes keep their odds. 0 = never.
+    "chestDuelFreeWeeks": 1,
+
+    // Round 813 (the Temple's Wrath): with a Temple in the Capitol, the week's most-killed color is hunted the next week.
+    // Per-difficulty switches are Easy, Normal, Hard, Insane (1 on, 0 off) - Easy gets the bounty only.
+    // wrathAheadBrackets: the hunted color's land rolls this many rank brackets above the week's (spawn_tier_weighting.json
+    // weekBrackets; 0 = off); wrathAheadDungeonSources: the roamers its dungeons send too.
+    "wrathAheadOnDifficulty": [0, 1, 1, 1],
+    "wrathAheadBrackets": 1,
+    "wrathAheadDungeonSources": true,
+    // The bounty: duels the Temple counts (no Arena or Inn), won against a foe with the hunted color, pay this share more
+    // gold and shards, rounded up (0.25 = +25%).
+    "wrathBountyOnDifficulty": [1, 1, 1, 1],
+    "wrathBountyGold": 0.25,
+    "wrathBountyShards": 0.25,
+    // Round 943 - THE BOUNTY (a Reddit player asked for "extra rewards if you take those enemies with these advantages";
+    // the user: "It's harder but also more rewarding. Will add."). The Temple's duels (no Arena, Inn, guard fight,
+    // fixed-deck enemy or Deck Tester), won against an enemy that started with bonus cards, pay this much more gold,
+    // shards, wood and stone, rounded up: points x the share per point (Easy, Normal, Hard, Insane; 0 = off), capped.
+    // Points for what the enemy seat started with: a Notoriety Wall by size (0/1, 1/2, 2/4, 3/6), each 45+/50+ flying
+    // Wall, the Notoriety deck card (where its gate is met), each streak Wastes (not the Archmage's own), each win-ratio
+    // Clue/Treasure. A fight against several enemies pays its largest seat's. The shares are a third of the first
+    // proposal after the inflation check (notes/r943-bounty-inflation-check.md): at Notoriety 50 an Adept+ brings ~21
+    // points, so the uncapped first numbers doubled a late-game week's purses.
+    "bountySharePerPointEasy": 0.01,
+    "bountySharePerPointNormal": 0.015,
+    "bountySharePerPointHard": 0.015,
+    "bountySharePerPointInsane": 0.02,
+    "bountyCap": 0.3,
+    "bountyPointsWall": [1, 2, 3, 4],
+    "bountyPointsBonusWall": 4,
+    "bountyPointsDeckCard": 4,
+    "bountyPointsStreakCard": 2,
+    "bountyPointsHelpToken": 1,
+    // Round 814: the Wrath hunter - one walking mage of the hunted color sets out from its castle and hunts you all week.
+    // A Master until the week below (Easy, Normal, Hard, Insane; 0 = never an Archmage). Its speed is yours when it sets out
+    // x wrathSpeedFactor (1.05 = +5%), then roads and lands as for you. Path: a straight chase within wrathDirectTiles,
+    // a re-plan when you move wrathReplanTiles from its goal or every wrathReplanSeconds, stuck = under a tile in
+    // wrathStuckSeconds; it waits wrathWaitTiles from a place you enter. The prize: a rare of its color (a mythic at
+    // wrathPrizeMythicChance) and these shards.
+    "wrathHunterOnDifficulty": [0, 1, 1, 1],
+    "wrathArchmageWeekByDifficulty": [0, 7, 4, 4],
+    "wrathMonoColorOnly": true,
+    "wrathSpeedFactor": 1.05,
+    "wrathDirectTiles": 20,
+    "wrathReplanTiles": 8,
+    "wrathReplanSeconds": 4,
+    "wrathStuckSeconds": 5,
+    "wrathWaitTiles": 5,
+    "wrathPrizeShardsByDifficulty": [0, 15, 20, 25],
+    "wrathPrizeMythicChance": 0.10,
+
+    // Round 216 (user spec): the Coin Challenge entry fee at the Capitol's Level 2 Arena - "For 50g
+    // (Easy/Normal) 100g (Hard/Insane) you can duel this enemy to try and get your coin back". The
+    // duel carries no ante and waives the defeat gold penalty, so this fee is the entire cost of a
+    // losing attempt. One attempt per opponent per week.
+    "coinChallengeFeeEasy": 50,
+    "coinChallengeFeeNormal": 50,
+    "coinChallengeFeeHard": 100,
+    "coinChallengeFeeInsane": 100,
+    // Round 241 (user: "Up 'coin duel' cost, Easy, no change. Normal +5 Shards, Hard +10 shards, Insane +15
+    // shards"). Shards charged ON TOP of the gold fee above, per attempt. 0 = gold only.
+    "coinChallengeShardFeeEasy": 0,
+    "coinChallengeShardFeeNormal": 5,
+    "coinChallengeShardFeeHard": 10,
+    "coinChallengeShardFeeInsane": 15,
+
+    // Round 185 (user, after one duel paid FOUR Oblivion Rings and the next three Angels of Light: "It's okay to
+    // sometimes get duplicate reward cards, but 4 seems extreme. Is there a way we can at least lower duplicate
+    // probability?"). Extra draws a card reward gets whenever a pick repeats a name already in that same reward.
+    // Duplicates stay possible - just much rarer, since each reroll multiplies the repeat chance by itself.
+    // Raise for fewer duplicates; 0 restores the old draw-with-replacement behaviour.
+    "rewardDuplicateRerolls": 2,
+
+    // Round 190 (user: "currently normal arena is a 50/50 chance for AI vs. AI. Let's make that 60/40 for the
+    // higher ranked opponent"). How often the higher-TIER side wins an AI-vs-AI match in an arena bracket.
+    // Applies only when the two differ in tier - an equal-tier pairing keeps the original roll weighted by life
+    // (lifeLeft / (lifeLeft + lifeRight)), which is where the "50/50" impression came from: it was never a flat
+    // coin flip, but two same-tier arena foes usually have similar life. 50 disables the rule entirely.
+    "arenaHigherTierWinPercent": 60,
+
+    // Round 197 (user: "the 5 AI's have a capitol each. I want those to act the same way an AI town would
+    // spread. But max distance be 2x that of a regular town"). Multiplier on townMaxTerritoryRadius for an AI
+    // color's own "<Noun> Capital". Those five are world-gen TOWNS that never expanded at all before this round -
+    // town growth needs a per-town radius entry and that was only ever seeded when a mage CAPTURED a town, so the
+    // originals sat inert while their color's Castle did all the spreading. They now grow like any AI town, to
+    // this multiple of the ordinary cap (still clamped to maxTerritoryRadius). 1 = an ordinary town again.
+    // The inviolable core is unaffected: it has its own townProtectedRadiusCap, so the wider disc stays
+    // contestable ground rather than becoming a bigger no-go zone.
+    "aiCapitalTerritoryRadiusFactor": 2,
+
+    // Round 202 (user, with a screenshot of FIVE copies of Befoul from one duel). Hard cap on copies of one card
+    // name in a single reward payout. rewardDuplicateRerolls makes a repeat unlikely; this makes a PILE of them
+    // impossible, which rerolling cannot do on its own - that duel's legal pool held exactly ONE distinct name
+    // (an all-Kamigawa enemy deck against unlocked black editions containing neither CHK nor BOK, so only Befoul
+    // had a legal reprint). When the cap bites the reward pays FEWER cards rather than another copy.
+    // 0 disables the cap.
+    "rewardMaxCopiesPerName": 2,
+
+    // Round 203 (user: "relax the rarity filter when the deck can't satisfy it. If it still fails, Let's give
+    // 50g per failed card"). Gold per card a "deckCard" reward promised but could not legally pay, AFTER the
+    // rarity filter was already relaxed - which by then means the enemy's whole deck sits in editions this
+    // colour has not unlocked yet. Also covers a card skipped by rewardMaxCopiesPerName above.
+    // 50 is a Common's shop price; the median enemy gold reward is also 50, so lower this to 25 if short
+    // payouts turn out to be common in play. 0 disables the fallback (the reward just pays fewer cards).
+    "deckCardFallbackGold": 50,
+
+    // Round 237 - THE CARD BUDGET (user: "cut down on the number of cards ... enemy rank to matter more ...
+    // defeating an enemy for the first time should count more than a repeat win"). How many CARDS a defeated
+    // roaming or dungeon enemy pays. Its own reward list still decides what can drop; the budget keeps this
+    // many of them - Master and Archmage keep their best rarities first, Apprentice and Adept keep random ones,
+    // and a FIRST win keeps the best first at any rank - and tops a short list up from the enemy's deck.
+    // Before this: 4.4 cards per win on average on Insane. With these values: 1.8 on a repeat win, 3.1 on a
+    // first win. Gold, shards, items, the ante card, bosses, arena/event fighters and a map's own extras on one
+    // enemy are not budgeted. Common = Apprentice, Uncommon = Adept, Rare = Master, Mythic = Archmage.
+    // Round 241: each of the eight counts below may be 1 to 5. A value outside that range is pulled back into
+    // it (and logged once as [TFR-CardBudget]); gear and the Easy bonus are added on top afterwards.
+    "cardBudgetEnabled": true,
+    "cardBudgetRepeatCommon": 1,
+    "cardBudgetRepeatUncommon": 2,
+    "cardBudgetRepeatRare": 2,
+    "cardBudgetRepeatMythic": 3,
+    "cardBudgetFirstCommon": 2,
+    "cardBudgetFirstUncommon": 3,
+    "cardBudgetFirstRare": 4,
+    "cardBudgetFirstMythic": 5,
+    // First win only: this many extra NON-LAND cards from the enemy's deck, on top of the budget - Common or
+    // Uncommon on Normal/Hard/Insane, Common/Uncommon/Rare on Easy. 0 turns it off.
+    "cardBudgetFirstWinBonusCards": 1,
+    // Extra cards per win on Easy (the old random extras no longer separate the difficulties).
+    "cardBudgetEasyBonus": 1,
+    // Rarity of a TOP-UP card (drawn from the enemy's deck when its list rolled fewer cards than the budget -
+    // the reason some enemies pay more than they used to). Relative weights, Common-heavy by the user's wish;
+    // Mythic is never rolled. Gear that adds reward cards is left as it was: it raises the budget in full.
+    "cardBudgetTopUpWeightCommon": 80,
+    "cardBudgetTopUpWeightUncommon": 17,
+    "cardBudgetTopUpWeightRare": 3,
+
+    // Round 241 - THE RESOURCE PURSE (user: "I want Green to drop more wood, Red more Stone, White more gold,
+    // Blue more Shards, black be balanced. Neutral will also be balanced, but just less than black"). What a
+    // defeated roaming or dungeon enemy pays in gold / shards / wood / stone. It REPLACES the gold and shards
+    // entries of the enemy's own reward list, and the old rule that turned a quarter of all duel gold into wood
+    // or stone. Bosses, arena/event fighters, a map's own extras on one enemy, chests and quest rewards are not
+    // touched. false = everything pays as it did before round 241.
+    "resourcePurseEnabled": true,
+    // BASE PURSE PER RANK, in gold-equivalent value (Common = Apprentice, Uncommon = Adept, Rare = Master,
+    // Mythic = Archmage). About what a win was worth before, so total income stays level.
+    "resourcePurseCommon": 60,
+    "resourcePurseUncommon": 90,
+    "resourcePurseRare": 130,
+    "resourcePurseMythic": 160,
+    // This share of the purse is always paid as gold. The rest is ONE bonus resource, rolled on the enemy's color.
+    "resourcePurseGoldShare": 0.35,
+    // Gold value of one wood / stone / shard when the bonus is paid in them (the Exchange buys 5 for 80).
+    "resourcePurseUnitValue": 16,
+    // The bonus roll. A color's own resource - White gold, Blue shards, Red stone, Green wood - gets the
+    // Favored weight and each of the other three the Other weight (55 / 15 / 15 / 15). Black and colorless are
+    // balanced (25 each); an enemy of several colors uses the average of its colors.
+    "resourcePurseFavoredWeight": 55,
+    "resourcePurseOtherWeight": 15,
+    // A colorless enemy's purse is this much of the full one.
+    "resourcePurseColorlessFactor": 0.7,
+    // The first win over an enemy pays this much more - the card budget's rule, for resources.
+    "resourcePurseFirstWinFactor": 1.5,
+    // Round 243: beating an enemy that HAD THE BETTER RECORD against you (you had lost to it more often than you
+    // had beaten it, going into the duel) pays this much more. Stacks with the first-win factor. 1 = off.
+    "resourcePurseLosingRecordFactor": 1.25,
+    // Luck: every purse is multiplied by a random 1 +- this. 0 pays identical amounts every time.
+    "resourcePurseVariance": 0.2,
+    // Difficulty.
+    "resourcePurseFactorEasy": 1.5,
+    "resourcePurseFactorNormal": 1.25,
+    "resourcePurseFactorHard": 1,
+    "resourcePurseFactorInsane": 0.8,
+
+    // Round 205 (user: "Town/Capitol reputation in player towns each reputation point should add 1% town/capitol
+    // defense when warding off mage attacks"). Defense per point of a player town's OWN reputation against an
+    // attacking war mage - subtracted from the attacker's capture chance for a town, and for the Capitol (which
+    // forces a duel instead of rolling) the chance the mage is turned away before that duel.
+    // The cap matters: reputation is unbounded, so 1%/point uncapped would make a long-held town immune. 20 is
+    // the same ceiling shop prices already use. At the cap a Mythic mage's 90% becomes 70%.
+    // The two zeroes mean OPPOSITE things: 0 in ...PerPoint disables the mechanic; 0 in ...MaxPoints removes the CAP.
+    "townReputationDefensePerPoint": 0.01,
+    "townReputationDefenseMaxPoints": 20,
+
+    // Round 207 (user: "let's add the 5% floor on the capture roll"). The smallest chance an attacking mage is
+    // ever left with against a player town, however much reputation and however many Outlooks defend it -
+    // without it a Common-tier mage's 10% hits 0% at 10 reputation and the town simply cannot be taken. Also
+    // caps the Capitol's pre-duel repel at 1 - this. 0 disables the floor and allows immunity again.
+    "townMinCaptureChance": 0.05,
+
+    // Round 177 (user request): the share of spawn rolls on your OWN territory drawn from the Wasteland roster
+    // instead of the player roster (72 enemies against the Wasteland's 305) - "slightly lesser" than the own
+    // pool's chance, so 0.4 = 40% Wasteland / 60% own. Never fired before this round (a biome-name bug).
+    "playerColorlessMixChance": 0.4
+}

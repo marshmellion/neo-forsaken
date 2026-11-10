@@ -1,0 +1,96 @@
+cracked_shieldbone.png
+size: 936,543
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 58, 58
+Idle
+  xy: 0, 58
+  size: 117, 97
+  footprint: 25, 14, 61, 82
+Idle
+  xy: 117, 58
+  size: 117, 97
+Idle
+  xy: 234, 58
+  size: 117, 97
+Idle
+  xy: 351, 58
+  size: 117, 97
+Idle
+  xy: 468, 58
+  size: 117, 97
+Idle
+  xy: 585, 58
+  size: 117, 97
+Idle
+  xy: 702, 58
+  size: 117, 97
+Idle
+  xy: 819, 58
+  size: 117, 97
+Walk
+  xy: 0, 155
+  size: 117, 97
+Walk
+  xy: 117, 155
+  size: 117, 97
+Walk
+  xy: 234, 155
+  size: 117, 97
+Walk
+  xy: 351, 155
+  size: 117, 97
+Walk
+  xy: 468, 155
+  size: 117, 97
+Walk
+  xy: 585, 155
+  size: 117, 97
+Walk
+  xy: 702, 155
+  size: 117, 97
+Walk
+  xy: 819, 155
+  size: 117, 97
+Attack
+  xy: 0, 252
+  size: 117, 97
+Attack
+  xy: 117, 252
+  size: 117, 97
+Attack
+  xy: 234, 252
+  size: 117, 97
+Attack
+  xy: 351, 252
+  size: 117, 97
+Attack
+  xy: 468, 252
+  size: 117, 97
+Attack
+  xy: 585, 252
+  size: 117, 97
+Attack
+  xy: 702, 252
+  size: 117, 97
+Attack
+  xy: 819, 252
+  size: 117, 97
+Hit
+  xy: 0, 349
+  size: 117, 97
+Death
+  xy: 0, 446
+  size: 117, 97
+Death
+  xy: 117, 446
+  size: 117, 97
+Death
+  xy: 234, 446
+  size: 117, 97
+Death
+  xy: 351, 446
+  size: 117, 97

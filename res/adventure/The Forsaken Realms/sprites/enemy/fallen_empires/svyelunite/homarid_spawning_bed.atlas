@@ -1,0 +1,50 @@
+homarid_spawning_bed.png
+size: 640,192
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 128
+  size: 64, 64
+Idle
+  xy: 0, 0
+  size: 80, 64
+Idle
+  xy: 80, 0
+  size: 80, 64
+Idle
+  xy: 160, 0
+  size: 80, 64
+Idle
+  xy: 240, 0
+  size: 80, 64
+Attack
+  xy: 0, 64
+  size: 80, 64
+Attack
+  xy: 160, 64
+  size: 80, 64
+Attack
+  xy: 400, 64
+  size: 80, 64
+Attack
+  xy: 560, 64
+  size: 80, 64
+Death
+  xy: 64, 128
+  size: 80, 64
+Death
+  xy: 144, 128
+  size: 80, 64
+Death
+  xy: 224, 128
+  size: 80, 64
+Death
+  xy: 304, 128
+  size: 80, 64
+Death
+  xy: 384, 128
+  size: 80, 64
+Death
+  xy: 464, 128
+  size: 80, 64

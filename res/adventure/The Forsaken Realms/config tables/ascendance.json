@@ -1,0 +1,234 @@
+// Ascendance - the player's level (round 493; design: docs/design/2026-10-08-xp-leveling.md, section 7).
+// New games and New Game+ only. Rank-indexed arrays: Apprentice, Adept, Master, Archmage.
+{
+  // Power needed for each next level: entry 1 is level 0 -> 1 (round 497: a character starts at level 0; 50 is the intro
+  // quest's Power, so finishing it - the tutorial or the skip - is level 1), entry 2 is 1 -> 2, the last is 29 -> 30.
+  // Built as (at-level wins for the level, 2 rising by 1.1 and capped at 13) x (one at-level win, 10 + 0.85 x level)
+  // x 1.4 (the share that is not duels), rounded to 5: level 10 at about 58 wins, 20 at about 187, 30 at about 317.
+  "xpToNext": [50, 30, 50, 75, 100, 130, 160, 190, 230, 265, 310, 350, 370, 385, 400, 415, 430, 445, 460, 475, 490,
+               505, 520, 540, 555, 570, 585, 600, 615, 630,
+               // Round 607 (the user: "We up the max level to 40 ... 31-40 would keep the perk selections"): levels
+               // 31-40, +40 a level; past 40 the post-curve pace below (2000, +250 a level) as past 30 before.
+               650, 690, 730, 770, 810, 850, 890, 930, 970, 1010],
+  // Leveling cost by difficulty (round 497): the Power every level from 1 on costs, times this. The step 0 -> 1 is not
+  // scaled, so the intro is level 1 on every difficulty. Round 545 (the user: "slow down level gain. Let's leave easy
+  // as is, increase Normal by 5%, Hard, 10% Insane 15%"): 0.8 / 1.0 / 1.2 / 1.4 became 0.8 / 1.05 / 1.32 / 1.61. A
+  // save keeps the factor its Power was priced at and is re-priced on load to the same level and share (Ascendance.load).
+  "difficultyNames": ["Easy", "Normal", "Hard", "Insane"],
+  "difficultyLevelCost": [0.8, 1.05, 1.32, 1.61],
+  // Leveling speed: every award is multiplied by this (2 = twice as fast, 0.5 = half as fast). Round 583 (the user: "I
+  // feel like XP is gained too fast"): 1.0 -> 0.85, with firstWinFactor 2 -> 1.5 below - about 28% less Power overall.
+  "levelingSpeed": 0.85,
+  // Max life given at each milestone level (lifeLevels below).
+  "milestoneLife": 1,
+  // Past level 40 (30 until round 607) there is no cap, but each level is much slower - 2,000 Power for 40 -> 41, 250
+  // more for each level after - and gives only postCapLife max life.
+  "postCapXpToNext": 2000,
+  "postCapXpStep": 250,
+  "postCapLife": 1,
+
+  // A won duel: the enemy's rank, then the highest multiplier that applies (never stacked).
+  "duelBase": [10, 18, 28, 40],
+  "bossFactor": 3,
+  "legendFactor": 2.5,
+  // Round 583: 2 -> 1.5. With about 2,000 enemy names nearly every win is a first win - 58 of the user's 72 logged wins
+  // were, 61% of all their Power - so this one doubled most duels instead of rewarding a new foe.
+  "firstWinFactor": 1.5,
+  "townFightFactor": 2,
+  "treasureGuardianFactor": 2,
+  "championFactor": 1.5,
+  "mageFactor": 1.5,
+  // Round 814: the Temple's Wrath hunter - its duel pays the rank's duelBase x this (the largest factor wins).
+  "wrathFactor": 2,
+  // Round 596 (the user: "The player should receive XP (Power) from Guards that win duels (both Roaming and Local). This
+  // only needs to be noted in the message Log"): a guard's win pays the enemy rank's duelBase times this - times
+  // mageFactor when it beat an attacking mage, less the outgrown share, none of the first-win or boss bonuses.
+  "guardWinFactor": 1.0,
+  // Outgrown: above the band top a rank's wins pay 10% less per level, never under 20%.
+  "outgrownBandTop": [8, 15, 22, 999],
+  "outgrownStep": 0.10,
+  "outgrownFloor": 0.20,
+
+  // Not duels.
+  "firstVisitTown": 5,
+  "firstVisitPlace": 3,
+  "clearCave": 8,
+  "clearDungeon": 15,
+  "restoreTown": 30,
+  "captureTown": 40,
+  "raiseCapitol": 100,
+  "sideQuest": 20,
+  "storyQuest": 50,
+  "invasion": [50, 75, 100, 150],
+  "pillageStopped": 25,
+  "arenaBracket": 40,
+  // Round 742 (the user: "let's cut Arena XP you get to 50% of normal XP gain. I don't want people to farm Arenas"):
+  // every Power the arena pays - a bracket duel, the bracket won, a Coin Challenge - times this, rounded half up.
+  "arenaPowerFactor": 0.5,
+  "innMatchWin": 15,
+  "innChampion": 30,
+  "treasureFound": 75,
+  // Round 517: the overworld chest's seventh outcome (one in seven, with Ascendance on), and the diamond's chance to pay
+  // Power instead of a resource (after its ambush, blueprint and vigor rolls).
+  "chestPower": 15,
+  "diamondPower": 25,
+  "diamondPowerChance": 0.15,
+  // Round 677: the hero grows with the level - drawn heroSizeStart px tall at level 0, heroSizeEnd at heroSizeEndLevel
+  // and after, in even steps (the ranks: Apprentice 13, Adept 16.5, Master 20.6, Archmage 24.6). heroSizeReference is
+  // what heroes.json's scale draws today (19.9 px for the people heroes); 0 keeps the hero at that size.
+  "heroSizeStart": 13,
+  "heroSizeEnd": 25,
+  "heroSizeEndLevel": 40,
+  "heroSizeReference": 19.9,
+  // Quests that pay no Power (round 496 listed the intro, 28; round 497 pays it again - it is the step to level 1).
+  "noPowerQuestIds": [],
+  // Round 505b: the intro's 50 waits for the tutorial-or-skip choice; on the tutorial path it is dropped and the tutorial
+  // quest (53, "Welcome to The Forsaken Realms", a story quest) pays its 50 when it is done - level 1 at the Warden.
+  "tutorialQuestIds": [53],
+  // Round 619 (the user: "make the intro quest pay its full 50 Power (exempt from the leveling speed) so finishing the
+  // intro reaches level 1 again"): these quests pay their Power as written, not times levelingSpeed - the intro (28)
+  // and the tutorial (53) are the step to level 1.
+  "fullPowerQuestIds": [28, 53],
+
+  // Level rewards: +1 max life at these levels; main-slot items (Head, Neck, Body, Left, Right, Legs, Boots - round 607
+  // added Head and Legs and the 6th and 7th item at 35 and 40) 1, +1 at each of mainSlotLevels; the titles; a roaming
+  // guard's main-slot items by its rank (round 629: 2 / 3 / 5 / 7 for the seven slots, so each rank reaches one gear-set
+  // tier - Adept 3 pieces, Master 5, Archmage the whole set).
+  "lifeLevels": [5, 10, 15, 20, 25, 30, 35, 40],
+  "mainSlotsBase": 1,
+  "mainSlotLevels": [5, 10, 15, 20, 35, 40],
+  "titleLevels": [5, 10, 15, 20, 25, 30, 35, 40],
+  "titles": ["Unbound", "Reclaimer", "Warden of Ash", "Seal-breaker", "Sovereign", "Ascendant", "Weavebinder", "Eternal"],
+  "guardMainSlots": [2, 3, 5, 7],
+  // Round 502, companions: worn items that start a creature on the battlefield, in any slot (the gauntlets' second
+  // hands and the Token slot too). companionBase at level 0, +1 at each of companionLevels. A character without
+  // Ascendance (an older save, or leveling switched off in Settings) may wear companionsWithoutAscendance.
+  "companionBase": 1,
+  "companionLevels": [15, 25],
+  "companionsWithoutAscendance": 3,
+
+  // Round 494: every level that is not a milestone offers offerSize of these; the player takes one. Each offer holds at
+  // least one lasting and one one-time reward while any are left; a lasting one stops at maxPicks, a one-time one with
+  // nothing to give (every blueprint owned, every map piece found) is never offered.
+  // One-time "value" scales with the level the choice was earned at; lasting "value" is per pick and stacks.
+  "offerSize": 3,
+  // Round 518: the choice dialog's Re-roll - a new offer for the waiting level, once per level, for this many shards by
+  // difficulty (difficultyNames above). The user: "50 shards on Insane and -5 per lower level".
+  "difficultyRerollCost": [35, 40, 45, 50],
+  "choices": [
+    // one-time. Round 531, the user: "For the Level up choice, increase resource value by 25% and Gold by 75%" - gold
+    // 40 -> 70, wood and stone 12 -> 15 (shards, the premium currency, stay at 4). Round 596 (the user: "Shards should be
+    // same as Wood/Stone at 15x. Let's up gold to 85x"): gold 70 -> 85, shards 4 -> 15.
+    { "id": "gold",        "value": 85 },   // 85 x level gold
+    { "id": "shards",      "value": 15 },   // 15 x level shards
+    { "id": "wood",        "value": 15 },   // 15 x level wood
+    { "id": "stone",       "value": 15 },   // 15 x level stone
+    // Round 564 (the user): rareCards doubled - 2 rares (L2-12), 4 rares (L13-22), 2 rares + 2 mythics (L23+), in
+    // AscendanceRewards; Goodwill +2 -> +3.
+    { "id": "rareCards" },                  // in the deck's colors: 2 rares (L2-12), 4 rares (L13-22), 2 rares + 2 mythics (L23+)
+    { "id": "item" },                       // Common (L2-12), Uncommon (L13-22), Rare (L23+)
+    { "id": "booster" },                    // a pack of an edition the player has unlocked
+    { "id": "mapFragment" },                // a piece of a treasure map still missing
+    { "id": "blueprint" },                  // a shop blueprint not owned, from the tiers reputation allows
+    { "id": "coins",       "value": 1 },    // Bronze Challenge Coins (round 508: 2 -> 1)
+    { "id": "goodwill",    "value": 3 },    // reputation in the player's Capitol (round 577; not offered before it exists)
+    // (round 508: "mend" - repair everything, heal the guards - became the lasting Mechanic and Medic below)
+    // lasting; "first" (round 508) is the first pick's value when it differs, each later pick adding "value"
+    { "id": "vigor",       "lasting": true, "maxPicks": 3, "value": 3 },    // +3 life in the first N duels each day
+    { "id": "haggler",     "lasting": true, "maxPicks": 3, "value": 0.05 }, // -5% shop prices a pick
+    { "id": "swiftFeet",   "lasting": true, "maxPicks": 3, "value": 0.05 }, // +5% overworld speed
+    { "id": "prospector",  "lasting": true, "maxPicks": 3, "value": 0.15 }, // +15% resource pickups and mines
+    { "id": "farSight",    "lasting": true, "maxPicks": 2, "value": 1 },    // +1 tile of sight per pick, after the light item (round 790: was +15%, which rounded away)
+    { "id": "marshal",     "lasting": true, "maxPicks": 3, "value": 4 },    // roaming guards +4 life (round 508: 2 -> 4)
+    { "id": "stubborn",    "lasting": true, "maxPicks": 2, "value": 0.25 }, // defeats cost 25% less life and gold
+    { "id": "mender",      "lasting": true, "maxPicks": 2, "value": 0.30 }, // 30%, then 60%, an item doesn't crack (round 508)
+    { "id": "spoilsman",   "lasting": true, "maxPicks": 2, "value": 1 },    // +1 card on a first win
+    { "id": "shardwell",   "lasting": true, "maxPicks": 2, "first": 2, "value": 1 }, // +2, then +3 mana shards at duel start (round 508)
+    { "id": "envoy",       "lasting": true, "maxPicks": 2, "value": 0.15 }, // -15% color reputation lost from wins
+    { "id": "architect",   "lasting": true, "maxPicks": 3, "value": 0.10 }, // -10% building and restore costs
+    { "id": "mechanic",    "lasting": true, "maxPicks": 1, "value": 0.75 }, // item repairs cost 75% less (round 508)
+    { "id": "medic",       "lasting": true, "maxPicks": 1, "value": 0.50 }, // downed guards heal in 50% less time (round 508)
+    // Round 525 (the user: "50% more likely to win coin flip to start a duel. One time perk ... you have a 75% chance of
+    // starting"): Opening Gambit - the first game's coin toss at 50% x (1 + value).
+    { "id": "coinToss",    "lasting": true, "maxPicks": 1, "value": 0.50 },
+    // Round 536 (the user: "+5%, +10% and +15% Power gain. So 3 tiers"): Zealot - every Power award more. Round 572 (the
+    // user: "Let's change Zealot to 8%, 15%, 25%"): "ranks" is the total after each pick (uneven steps).
+    { "id": "powerGain",   "lasting": true, "maxPicks": 3, "ranks": [0.08, 0.15, 0.25] },
+    // Round 536 (the user: "Re-roll Ascension perks twice at 50% cost. So if you do re-roll twice it will cost the same as
+    // without the perk. You also get to re-roll twice per level vs. 1 without"): Gambler - two re-rolls a level, each at
+    // this share of the difficulty's price (difficultyRerollCost).
+    { "id": "gambler",     "lasting": true, "maxPicks": 1, "value": 0.50 },
+    // Round 548 (the user: "Add a level perk. Card Sell Price +10%, +15%, +20%"): Appraiser - cards sell for 10%,
+    // then 15%, then 20% more (the price after the difficulty's share and the town's mood).
+    { "id": "sellPrice",   "lasting": true, "maxPicks": 3, "first": 0.10, "value": 0.05 },
+    // Round 551 (the user: "New Onetime perk: Scientist. You get 1 rare card of each color (so 5 in total). from the set
+    // you complete research on"): Scientist - "value" rares of each color with every research that completes.
+    { "id": "scientist",   "lasting": true, "maxPicks": 1, "value": 1 },
+    // Round 551 (the user: "New Onetime perk: Researcher. Reduce research cost by 50% and 3 days faster"): Researcher -
+    // research costs "value" less and takes "days" fewer days (never under one).
+    // Round 751: in a game started on research v2 (28-day research), "daysPercent" off each research's length instead;
+    // a save from before round 751 keeps the classic research and "days".
+    { "id": "researcher",  "lasting": true, "maxPicks": 1, "value": 0.50, "days": 3, "daysPercent": 25 },
+    // Round 557 (the user: "Intimidating: 5%, 10% & 15% chance of an enemy fleeing a duel. Only on Overworld. Only on
+    // enemies you have a winning record on"): a "value" chance a pick (Ascendance.intimidates).
+    { "id": "intimidating", "lasting": true, "maxPicks": 3, "value": 0.05 },
+    // Round 566 (the user: "Add a perk, one time. Double Temple rewards. Maybe Temple priest?"): the Temple's weekly
+    // offering pays "value" times the cards - offered only once the Capitol has a Temple.
+    { "id": "templePriest", "lasting": true, "maxPicks": 1, "value": 2 },
+    // Round 566 (the user: "Focused: a free mulligan (after level 15) ... you won't have to lose a card"): the player's
+    // first mulligan in each game is free (the engine's free-mulligan rule, for the player's seat); from level 15.
+    { "id": "focused",     "lasting": true, "maxPicks": 1, "minLevel": 15 },
+    // Round 566 (the user: "Roaming guard focus: a free mulligan for guards"): the player's roaming guards' first
+    // mulligan is free, in a watched fight and a headless one alike; from level 15, as Focused.
+    { "id": "guardFocus",  "lasting": true, "maxPicks": 1, "minLevel": 15 },
+    // Round 570 (the user: "Your roaming guards get 1 rare from enemies they defeat. From their decks. It will go directly
+    // into inventory"): Spoils of War - a rare (else a mythic) from the beaten enemy's deck, straight to the collection.
+    { "id": "guardSpoils", "lasting": true, "maxPicks": 1 },
+    // Round 596 (the user: "Warmonger: Opposite of Envoy. +15%/30% color reputation gain from wins. (Mutually exclusive
+    // from Envoy. So if you picked one, the other should never show.)"): the reputation a won duel gives the beaten
+    // color's enemies, times 1 + the total. Envoy and Warmonger exclude each other (Ascendance.offerable).
+    { "id": "warmonger",   "lasting": true, "maxPicks": 2, "value": 0.15 },
+    // Round 596 (the user: "Aura of fear: 10% fewer hit points for enemies (cumulative 3 times)"): an enemy's starting
+    // life in the player's own duels, times 1 - the total (not an Inn event's, not a roaming guard's fight).
+    { "id": "auraOfFear",  "lasting": true, "maxPicks": 3, "value": 0.10 },
+    // Round 596 (the user: "Legend seeker: 15% higher chance to encounter legends"): the legend sighting roll's chance,
+    // times 1 + value.
+    { "id": "legendSeeker", "lasting": true, "maxPicks": 1, "value": 0.15 },
+    // Round 596 (the user: "One more leveling perk: Get 4 perk choices vs. 3. One time. Not sure the name"): Insight -
+    // every later level's offer holds offerSize + value rewards (Ascendance.offerSize).
+    { "id": "insight",     "lasting": true, "maxPicks": 1, "value": 1 },
+    // Round 604 (the user: "For the perks you recommended. Let's implement 1-6"). Pact of Embers: +cards to the opening
+    // hand and life (negative) in the player's own duels.
+    { "id": "pactOfEmbers", "lasting": true, "maxPicks": 1, "cards": 1, "life": -4, "minLevel": 8 },
+    // Splinter Cache: rank I starts each duel with a Clue, rank II a Treasure too (token scripts); rank II from level 15.
+    { "id": "splinterCache", "lasting": true, "maxPicks": 2, "minLevel": 6, "rankLevels": [6, 15],
+      "tokens": ["c_a_clue_draw", "c_a_treasure_sac"] },
+    // Challenger's Mark: enemies start with 1 + value times their life; wins pay +cards and the purse times 1 + purse.
+    // Never with Aura of Fear.
+    { "id": "challenger",  "lasting": true, "maxPicks": 1, "value": 0.20, "cards": 1, "purse": 0.25, "minLevel": 10 },
+    // Hunter's Ledger: the value-th win over an enemy (by name) adds a rare from its deck, else a mythic.
+    { "id": "hunterLedger", "lasting": true, "maxPicks": 1, "value": 3, "minLevel": 8 },
+    // Law of Stakes: the first ante re-roll each day costs no shards.
+    { "id": "lawOfStakes", "lasting": true, "maxPicks": 1, "minLevel": 4 },
+    // Home Ground: +life in a duel fought on the player's own land (the player biome).
+    { "id": "homeGround",  "lasting": true, "maxPicks": 1, "life": 3, "minLevel": 6 },
+    // Round 986 (the user approved notes/perks-fable-1108.md: "Yes, build both" - Fable's proposals, reshaped). Bounty
+    // Hunter: the Bounty's points times 1 + the rank's total (x1.5, x2) and its cap + capBonus (30% -> 40% -> 50%);
+    // offered only while the Bounty is on. Pays almost nothing at low Notoriety, by design.
+    { "id": "bountyHunter", "lasting": true, "maxPicks": 2, "ranks": [0.5, 1.0], "capBonus": [0.10, 0.20], "minLevel": 10 },
+    // Legend Slayer: the first win over each legend (by name) with the pick pays its whole card list (no 2/3 cut; the
+    // gold cut stays) plus a mythic from its deck, else a rare.
+    { "id": "legendSlayer", "lasting": true, "maxPicks": 1, "minLevel": 10 },
+    // Treasure Seeker (not "Cartographer": the Compass and the Guild): rank I, "pieces" map pieces an obelisk; rank II, a
+    // claimed treasure's gold, shards and cards x (1 + purse) - the key or Compass and the Power once. Offered only while
+    // a treasure is unclaimed.
+    { "id": "treasureSeeker", "lasting": true, "maxPicks": 2, "pieces": 2, "purse": 1.0 },
+    // Round 987, the two town perks (same approval). Tournament Regular: Inn entry fees in gold and shards x (1 - the
+    // rank's total) - 25%, then 50% off; the Challenge Coin options are unchanged. From rank I a won bracket (3-0
+    // champion) pays "cards" extra card from the event's own set: a rare, or a mythic at "mythicChance" (1 in 8).
+    { "id": "tournamentRegular", "lasting": true, "maxPicks": 2, "ranks": [0.25, 0.5], "cards": 1, "mythicChance": 0.125 },
+    // Guild Favorite: side quests (never story quests) pay +purse gold and shards and +cards on each card reward, and a
+    // side quest accepted after the pick gets "days" more before it fails (15 -> 20 on the standard settings).
+    { "id": "guildFavorite", "lasting": true, "maxPicks": 1, "purse": 0.5, "cards": 1, "days": 5, "minLevel": 6 }
+  ]
+}

@@ -1,0 +1,240 @@
+snake.png
+size: 2744,984
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 196, 92
+  footprint: 37, 25, 57, 48
+Idle
+  xy: 196, 64
+  size: 196, 92
+Idle
+  xy: 392, 64
+  size: 196, 92
+Idle
+  xy: 588, 64
+  size: 196, 92
+Idle
+  xy: 784, 64
+  size: 196, 92
+Idle
+  xy: 980, 64
+  size: 196, 92
+Idle
+  xy: 1176, 64
+  size: 196, 92
+Idle
+  xy: 1372, 64
+  size: 196, 92
+Idle
+  xy: 1568, 64
+  size: 196, 92
+Idle
+  xy: 1764, 64
+  size: 196, 92
+Walk
+  xy: 0, 156
+  size: 196, 92
+Walk
+  xy: 196, 156
+  size: 196, 92
+Walk
+  xy: 392, 156
+  size: 196, 92
+Walk
+  xy: 588, 156
+  size: 196, 92
+Walk
+  xy: 784, 156
+  size: 196, 92
+Attack
+  xy: 0, 248
+  size: 196, 92
+Attack
+  xy: 196, 248
+  size: 196, 92
+Attack
+  xy: 392, 248
+  size: 196, 92
+Attack
+  xy: 588, 248
+  size: 196, 92
+Attack
+  xy: 784, 248
+  size: 196, 92
+Attack
+  xy: 980, 248
+  size: 196, 92
+Hit
+  xy: 0, 340
+  size: 196, 92
+Hit
+  xy: 196, 340
+  size: 196, 92
+Hit
+  xy: 392, 340
+  size: 196, 92
+Hit
+  xy: 588, 340
+  size: 196, 92
+Hit
+  xy: 784, 340
+  size: 196, 92
+Death
+  xy: 0, 432
+  size: 196, 92
+Death
+  xy: 196, 432
+  size: 196, 92
+Death
+  xy: 392, 432
+  size: 196, 92
+Death
+  xy: 588, 432
+  size: 196, 92
+Death
+  xy: 784, 432
+  size: 196, 92
+Death
+  xy: 980, 432
+  size: 196, 92
+Death
+  xy: 1176, 432
+  size: 196, 92
+Death
+  xy: 1372, 432
+  size: 196, 92
+Death
+  xy: 1568, 432
+  size: 196, 92
+Death
+  xy: 1764, 432
+  size: 196, 92
+Death
+  xy: 1960, 432
+  size: 196, 92
+Death
+  xy: 2156, 432
+  size: 196, 92
+Death
+  xy: 2352, 432
+  size: 196, 92
+Death
+  xy: 2548, 432
+  size: 196, 92
+Wake
+  xy: 0, 524
+  size: 196, 92
+Wake
+  xy: 196, 524
+  size: 196, 92
+Wake
+  xy: 392, 524
+  size: 196, 92
+Wake
+  xy: 588, 524
+  size: 196, 92
+Wake
+  xy: 784, 524
+  size: 196, 92
+Wake
+  xy: 980, 524
+  size: 196, 92
+Wake
+  xy: 1176, 524
+  size: 196, 92
+IdleUp
+  xy: 0, 616
+  size: 196, 92
+IdleUp
+  xy: 196, 616
+  size: 196, 92
+IdleUp
+  xy: 392, 616
+  size: 196, 92
+IdleUp
+  xy: 588, 616
+  size: 196, 92
+IdleUp
+  xy: 784, 616
+  size: 196, 92
+IdleUp
+  xy: 980, 616
+  size: 196, 92
+IdleUp
+  xy: 1176, 616
+  size: 196, 92
+IdleUp
+  xy: 1372, 616
+  size: 196, 92
+IdleUp
+  xy: 1568, 616
+  size: 196, 92
+IdleUp
+  xy: 1764, 616
+  size: 196, 92
+IdleDown
+  xy: 0, 708
+  size: 196, 92
+IdleDown
+  xy: 196, 708
+  size: 196, 92
+IdleDown
+  xy: 392, 708
+  size: 196, 92
+IdleDown
+  xy: 588, 708
+  size: 196, 92
+IdleDown
+  xy: 784, 708
+  size: 196, 92
+IdleDown
+  xy: 980, 708
+  size: 196, 92
+IdleDown
+  xy: 1176, 708
+  size: 196, 92
+IdleDown
+  xy: 1372, 708
+  size: 196, 92
+IdleDown
+  xy: 1568, 708
+  size: 196, 92
+IdleDown
+  xy: 1764, 708
+  size: 196, 92
+WalkUp
+  xy: 0, 800
+  size: 196, 92
+WalkUp
+  xy: 196, 800
+  size: 196, 92
+WalkUp
+  xy: 392, 800
+  size: 196, 92
+WalkUp
+  xy: 588, 800
+  size: 196, 92
+WalkUp
+  xy: 784, 800
+  size: 196, 92
+WalkDown
+  xy: 0, 892
+  size: 196, 92
+WalkDown
+  xy: 196, 892
+  size: 196, 92
+WalkDown
+  xy: 392, 892
+  size: 196, 92
+WalkDown
+  xy: 588, 892
+  size: 196, 92
+WalkDown
+  xy: 784, 892
+  size: 196, 92

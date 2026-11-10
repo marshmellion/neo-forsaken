@@ -1,0 +1,32 @@
+economy_buildings.png
+size: 208,136
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Bank
+  xy: 128, 0
+  size: 40, 40
+Exchange
+  xy: 168, 0
+  size: 40, 40
+PlainShop
+  xy: 96, 0
+  size: 32, 32
+SpecialShop
+  xy: 96, 32
+  size: 32, 32
+Armory
+  xy: 0, 64
+  size: 32, 32
+GoldMine
+  xy: 0, 96
+  size: 40, 40
+ShardMine
+  xy: 40, 96
+  size: 40, 40
+StoneMine
+  xy: 80, 96
+  size: 40, 40
+LumberMill
+  xy: 120, 96
+  size: 40, 40

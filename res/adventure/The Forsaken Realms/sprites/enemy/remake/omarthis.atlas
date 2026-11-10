@@ -1,0 +1,168 @@
+omarthis.png
+size: 640,631
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 80, 63
+  footprint: 11, 1, 59, 62
+Idle
+  xy: 80, 64
+  size: 80, 63
+Idle
+  xy: 160, 64
+  size: 80, 63
+Idle
+  xy: 240, 64
+  size: 80, 63
+Walk
+  xy: 0, 127
+  size: 80, 63
+Walk
+  xy: 80, 127
+  size: 80, 63
+Walk
+  xy: 160, 127
+  size: 80, 63
+Walk
+  xy: 240, 127
+  size: 80, 63
+Walk
+  xy: 320, 127
+  size: 80, 63
+Walk
+  xy: 400, 127
+  size: 80, 63
+Walk
+  xy: 480, 127
+  size: 80, 63
+Walk
+  xy: 560, 127
+  size: 80, 63
+Attack
+  xy: 0, 190
+  size: 80, 63
+Attack
+  xy: 80, 190
+  size: 80, 63
+Attack
+  xy: 160, 190
+  size: 80, 63
+Attack
+  xy: 240, 190
+  size: 80, 63
+Attack
+  xy: 320, 190
+  size: 80, 63
+Attack
+  xy: 400, 190
+  size: 80, 63
+Attack
+  xy: 480, 190
+  size: 80, 63
+Hit
+  xy: 0, 253
+  size: 80, 63
+Hit
+  xy: 80, 253
+  size: 80, 63
+Hit
+  xy: 160, 253
+  size: 80, 63
+Hit
+  xy: 240, 253
+  size: 80, 63
+Death
+  xy: 0, 316
+  size: 80, 63
+Death
+  xy: 80, 316
+  size: 80, 63
+Death
+  xy: 160, 316
+  size: 80, 63
+Death
+  xy: 240, 316
+  size: 80, 63
+Death
+  xy: 320, 316
+  size: 80, 63
+Death
+  xy: 400, 316
+  size: 80, 63
+IdleUp
+  xy: 0, 379
+  size: 80, 63
+IdleUp
+  xy: 80, 379
+  size: 80, 63
+IdleUp
+  xy: 160, 379
+  size: 80, 63
+IdleUp
+  xy: 240, 379
+  size: 80, 63
+IdleDown
+  xy: 0, 442
+  size: 80, 63
+IdleDown
+  xy: 80, 442
+  size: 80, 63
+IdleDown
+  xy: 160, 442
+  size: 80, 63
+IdleDown
+  xy: 240, 442
+  size: 80, 63
+WalkUp
+  xy: 0, 505
+  size: 80, 63
+WalkUp
+  xy: 80, 505
+  size: 80, 63
+WalkUp
+  xy: 160, 505
+  size: 80, 63
+WalkUp
+  xy: 240, 505
+  size: 80, 63
+WalkUp
+  xy: 320, 505
+  size: 80, 63
+WalkUp
+  xy: 400, 505
+  size: 80, 63
+WalkUp
+  xy: 480, 505
+  size: 80, 63
+WalkUp
+  xy: 560, 505
+  size: 80, 63
+WalkDown
+  xy: 0, 568
+  size: 80, 63
+WalkDown
+  xy: 80, 568
+  size: 80, 63
+WalkDown
+  xy: 160, 568
+  size: 80, 63
+WalkDown
+  xy: 240, 568
+  size: 80, 63
+WalkDown
+  xy: 320, 568
+  size: 80, 63
+WalkDown
+  xy: 400, 568
+  size: 80, 63
+WalkDown
+  xy: 480, 568
+  size: 80, 63
+WalkDown
+  xy: 560, 568
+  size: 80, 63

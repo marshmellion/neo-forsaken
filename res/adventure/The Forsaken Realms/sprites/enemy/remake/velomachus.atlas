@@ -1,0 +1,291 @@
+velomachus.png
+size: 3196,2404
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 188, 234
+  footprint: 8, 58, 162, 123
+Idle
+  xy: 188, 64
+  size: 188, 234
+Idle
+  xy: 376, 64
+  size: 188, 234
+Idle
+  xy: 564, 64
+  size: 188, 234
+Idle
+  xy: 752, 64
+  size: 188, 234
+Idle
+  xy: 940, 64
+  size: 188, 234
+Idle
+  xy: 1128, 64
+  size: 188, 234
+Idle
+  xy: 1316, 64
+  size: 188, 234
+Idle
+  xy: 1504, 64
+  size: 188, 234
+Idle
+  xy: 1692, 64
+  size: 188, 234
+Walk
+  xy: 0, 298
+  size: 188, 234
+Walk
+  xy: 188, 298
+  size: 188, 234
+Walk
+  xy: 376, 298
+  size: 188, 234
+Walk
+  xy: 564, 298
+  size: 188, 234
+Walk
+  xy: 752, 298
+  size: 188, 234
+Walk
+  xy: 940, 298
+  size: 188, 234
+Attack
+  xy: 0, 532
+  size: 188, 234
+Attack
+  xy: 188, 532
+  size: 188, 234
+Attack
+  xy: 376, 532
+  size: 188, 234
+Attack
+  xy: 564, 532
+  size: 188, 234
+Attack
+  xy: 752, 532
+  size: 188, 234
+Attack
+  xy: 940, 532
+  size: 188, 234
+Attack
+  xy: 1128, 532
+  size: 188, 234
+Attack
+  xy: 1316, 532
+  size: 188, 234
+Attack
+  xy: 1504, 532
+  size: 188, 234
+Attack
+  xy: 1692, 532
+  size: 188, 234
+Attack
+  xy: 1880, 532
+  size: 188, 234
+Hit
+  xy: 0, 766
+  size: 188, 234
+Hit
+  xy: 188, 766
+  size: 188, 234
+Hit
+  xy: 376, 766
+  size: 188, 234
+Hit
+  xy: 564, 766
+  size: 188, 234
+Hit
+  xy: 752, 766
+  size: 188, 234
+Hit
+  xy: 940, 766
+  size: 188, 234
+Hit
+  xy: 1128, 766
+  size: 188, 234
+Hit
+  xy: 1316, 766
+  size: 188, 234
+Death
+  xy: 0, 1000
+  size: 188, 234
+Death
+  xy: 188, 1000
+  size: 188, 234
+Death
+  xy: 376, 1000
+  size: 188, 234
+Death
+  xy: 564, 1000
+  size: 188, 234
+Death
+  xy: 752, 1000
+  size: 188, 234
+Death
+  xy: 940, 1000
+  size: 188, 234
+Death
+  xy: 1128, 1000
+  size: 188, 234
+Death
+  xy: 1316, 1000
+  size: 188, 234
+Death
+  xy: 1504, 1000
+  size: 188, 234
+Death
+  xy: 1692, 1000
+  size: 188, 234
+Death
+  xy: 1880, 1000
+  size: 188, 234
+Death
+  xy: 2068, 1000
+  size: 188, 234
+Death
+  xy: 2256, 1000
+  size: 188, 234
+Death
+  xy: 2444, 1000
+  size: 188, 234
+Death
+  xy: 2632, 1000
+  size: 188, 234
+Death
+  xy: 2820, 1000
+  size: 188, 234
+Death
+  xy: 3008, 1000
+  size: 188, 234
+Wake
+  xy: 0, 1234
+  size: 188, 234
+Wake
+  xy: 188, 1234
+  size: 188, 234
+Wake
+  xy: 376, 1234
+  size: 188, 234
+Wake
+  xy: 564, 1234
+  size: 188, 234
+Wake
+  xy: 752, 1234
+  size: 188, 234
+Wake
+  xy: 940, 1234
+  size: 188, 234
+Wake
+  xy: 1128, 1234
+  size: 188, 234
+Wake
+  xy: 1316, 1234
+  size: 188, 234
+Wake
+  xy: 1504, 1234
+  size: 188, 234
+Wake
+  xy: 1692, 1234
+  size: 188, 234
+IdleUp
+  xy: 0, 1468
+  size: 188, 234
+IdleUp
+  xy: 188, 1468
+  size: 188, 234
+IdleUp
+  xy: 376, 1468
+  size: 188, 234
+IdleUp
+  xy: 564, 1468
+  size: 188, 234
+IdleUp
+  xy: 752, 1468
+  size: 188, 234
+IdleUp
+  xy: 940, 1468
+  size: 188, 234
+IdleUp
+  xy: 1128, 1468
+  size: 188, 234
+IdleUp
+  xy: 1316, 1468
+  size: 188, 234
+IdleUp
+  xy: 1504, 1468
+  size: 188, 234
+IdleUp
+  xy: 1692, 1468
+  size: 188, 234
+IdleDown
+  xy: 0, 1702
+  size: 188, 234
+IdleDown
+  xy: 188, 1702
+  size: 188, 234
+IdleDown
+  xy: 376, 1702
+  size: 188, 234
+IdleDown
+  xy: 564, 1702
+  size: 188, 234
+IdleDown
+  xy: 752, 1702
+  size: 188, 234
+IdleDown
+  xy: 940, 1702
+  size: 188, 234
+IdleDown
+  xy: 1128, 1702
+  size: 188, 234
+IdleDown
+  xy: 1316, 1702
+  size: 188, 234
+IdleDown
+  xy: 1504, 1702
+  size: 188, 234
+IdleDown
+  xy: 1692, 1702
+  size: 188, 234
+WalkUp
+  xy: 0, 1936
+  size: 188, 234
+WalkUp
+  xy: 188, 1936
+  size: 188, 234
+WalkUp
+  xy: 376, 1936
+  size: 188, 234
+WalkUp
+  xy: 564, 1936
+  size: 188, 234
+WalkUp
+  xy: 752, 1936
+  size: 188, 234
+WalkUp
+  xy: 940, 1936
+  size: 188, 234
+WalkDown
+  xy: 0, 2170
+  size: 188, 234
+WalkDown
+  xy: 188, 2170
+  size: 188, 234
+WalkDown
+  xy: 376, 2170
+  size: 188, 234
+WalkDown
+  xy: 564, 2170
+  size: 188, 234
+WalkDown
+  xy: 752, 2170
+  size: 188, 234
+WalkDown
+  xy: 940, 2170
+  size: 188, 234

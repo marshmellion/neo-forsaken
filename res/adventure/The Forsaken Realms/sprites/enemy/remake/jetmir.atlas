@@ -1,0 +1,176 @@
+jetmir.png
+size: 558,577
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 62, 57
+Idle
+  xy: 62, 64
+  size: 62, 57
+Idle
+  xy: 124, 64
+  size: 62, 57
+Idle
+  xy: 186, 64
+  size: 62, 57
+Walk
+  xy: 0, 121
+  size: 62, 57
+Walk
+  xy: 62, 121
+  size: 62, 57
+Walk
+  xy: 124, 121
+  size: 62, 57
+Walk
+  xy: 186, 121
+  size: 62, 57
+Walk
+  xy: 248, 121
+  size: 62, 57
+Walk
+  xy: 310, 121
+  size: 62, 57
+Walk
+  xy: 372, 121
+  size: 62, 57
+Walk
+  xy: 434, 121
+  size: 62, 57
+Attack
+  xy: 0, 178
+  size: 62, 57
+Attack
+  xy: 62, 178
+  size: 62, 57
+Attack
+  xy: 124, 178
+  size: 62, 57
+Attack
+  xy: 186, 178
+  size: 62, 57
+Attack
+  xy: 248, 178
+  size: 62, 57
+Attack
+  xy: 310, 178
+  size: 62, 57
+Attack
+  xy: 372, 178
+  size: 62, 57
+Hit
+  xy: 0, 235
+  size: 62, 57
+Hit
+  xy: 62, 235
+  size: 62, 57
+Hit
+  xy: 124, 235
+  size: 62, 57
+Hit
+  xy: 186, 235
+  size: 62, 57
+Death
+  xy: 0, 292
+  size: 62, 57
+Death
+  xy: 62, 292
+  size: 62, 57
+Death
+  xy: 124, 292
+  size: 62, 57
+Death
+  xy: 186, 292
+  size: 62, 57
+Death
+  xy: 248, 292
+  size: 62, 57
+Death
+  xy: 310, 292
+  size: 62, 57
+Death
+  xy: 372, 292
+  size: 62, 57
+Death
+  xy: 434, 292
+  size: 62, 57
+Death
+  xy: 496, 292
+  size: 62, 57
+IdleUp
+  xy: 0, 349
+  size: 62, 57
+IdleUp
+  xy: 62, 349
+  size: 62, 57
+IdleUp
+  xy: 124, 349
+  size: 62, 57
+IdleUp
+  xy: 186, 349
+  size: 62, 57
+IdleDown
+  xy: 0, 406
+  size: 62, 57
+IdleDown
+  xy: 62, 406
+  size: 62, 57
+IdleDown
+  xy: 124, 406
+  size: 62, 57
+IdleDown
+  xy: 186, 406
+  size: 62, 57
+WalkUp
+  xy: 0, 463
+  size: 62, 57
+WalkUp
+  xy: 62, 463
+  size: 62, 57
+WalkUp
+  xy: 124, 463
+  size: 62, 57
+WalkUp
+  xy: 186, 463
+  size: 62, 57
+WalkUp
+  xy: 248, 463
+  size: 62, 57
+WalkUp
+  xy: 310, 463
+  size: 62, 57
+WalkUp
+  xy: 372, 463
+  size: 62, 57
+WalkUp
+  xy: 434, 463
+  size: 62, 57
+WalkDown
+  xy: 0, 520
+  size: 62, 57
+WalkDown
+  xy: 62, 520
+  size: 62, 57
+WalkDown
+  xy: 124, 520
+  size: 62, 57
+WalkDown
+  xy: 186, 520
+  size: 62, 57
+WalkDown
+  xy: 248, 520
+  size: 62, 57
+WalkDown
+  xy: 310, 520
+  size: 62, 57
+WalkDown
+  xy: 372, 520
+  size: 62, 57
+WalkDown
+  xy: 434, 520
+  size: 62, 57

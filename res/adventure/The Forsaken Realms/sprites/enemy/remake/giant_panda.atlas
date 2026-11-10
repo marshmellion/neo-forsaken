@@ -1,0 +1,279 @@
+giant_panda.png
+size: 1248,714
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 78, 65
+  footprint: 12, 17, 62, 41
+Idle
+  xy: 78, 64
+  size: 78, 65
+Idle
+  xy: 156, 64
+  size: 78, 65
+Idle
+  xy: 234, 64
+  size: 78, 65
+Idle
+  xy: 312, 64
+  size: 78, 65
+Idle
+  xy: 390, 64
+  size: 78, 65
+Idle
+  xy: 468, 64
+  size: 78, 65
+Idle
+  xy: 546, 64
+  size: 78, 65
+Idle
+  xy: 624, 64
+  size: 78, 65
+Idle
+  xy: 702, 64
+  size: 78, 65
+Walk
+  xy: 0, 129
+  size: 78, 65
+Walk
+  xy: 78, 129
+  size: 78, 65
+Walk
+  xy: 156, 129
+  size: 78, 65
+Walk
+  xy: 234, 129
+  size: 78, 65
+Walk
+  xy: 312, 129
+  size: 78, 65
+Walk
+  xy: 390, 129
+  size: 78, 65
+Attack
+  xy: 0, 194
+  size: 78, 65
+Attack
+  xy: 78, 194
+  size: 78, 65
+Attack
+  xy: 156, 194
+  size: 78, 65
+Attack
+  xy: 234, 194
+  size: 78, 65
+Attack
+  xy: 312, 194
+  size: 78, 65
+Attack
+  xy: 390, 194
+  size: 78, 65
+Attack
+  xy: 468, 194
+  size: 78, 65
+Attack
+  xy: 546, 194
+  size: 78, 65
+Attack
+  xy: 624, 194
+  size: 78, 65
+Attack
+  xy: 702, 194
+  size: 78, 65
+Attack
+  xy: 780, 194
+  size: 78, 65
+Attack
+  xy: 858, 194
+  size: 78, 65
+Hit
+  xy: 0, 259
+  size: 78, 65
+Hit
+  xy: 78, 259
+  size: 78, 65
+Hit
+  xy: 156, 259
+  size: 78, 65
+Hit
+  xy: 234, 259
+  size: 78, 65
+Hit
+  xy: 312, 259
+  size: 78, 65
+Hit
+  xy: 390, 259
+  size: 78, 65
+Death
+  xy: 0, 324
+  size: 78, 65
+Death
+  xy: 78, 324
+  size: 78, 65
+Death
+  xy: 156, 324
+  size: 78, 65
+Death
+  xy: 234, 324
+  size: 78, 65
+Death
+  xy: 312, 324
+  size: 78, 65
+Death
+  xy: 390, 324
+  size: 78, 65
+Death
+  xy: 468, 324
+  size: 78, 65
+Death
+  xy: 546, 324
+  size: 78, 65
+Death
+  xy: 624, 324
+  size: 78, 65
+Death
+  xy: 702, 324
+  size: 78, 65
+Death
+  xy: 780, 324
+  size: 78, 65
+Death
+  xy: 858, 324
+  size: 78, 65
+Death
+  xy: 936, 324
+  size: 78, 65
+Death
+  xy: 1014, 324
+  size: 78, 65
+Death
+  xy: 1092, 324
+  size: 78, 65
+Death
+  xy: 1170, 324
+  size: 78, 65
+Wake
+  xy: 0, 389
+  size: 78, 65
+Wake
+  xy: 78, 389
+  size: 78, 65
+Wake
+  xy: 156, 389
+  size: 78, 65
+Wake
+  xy: 234, 389
+  size: 78, 65
+Wake
+  xy: 312, 389
+  size: 78, 65
+Wake
+  xy: 390, 389
+  size: 78, 65
+Wake
+  xy: 468, 389
+  size: 78, 65
+Wake
+  xy: 546, 389
+  size: 78, 65
+IdleUp
+  xy: 0, 454
+  size: 78, 65
+IdleUp
+  xy: 78, 454
+  size: 78, 65
+IdleUp
+  xy: 156, 454
+  size: 78, 65
+IdleUp
+  xy: 234, 454
+  size: 78, 65
+IdleUp
+  xy: 312, 454
+  size: 78, 65
+IdleUp
+  xy: 390, 454
+  size: 78, 65
+IdleUp
+  xy: 468, 454
+  size: 78, 65
+IdleUp
+  xy: 546, 454
+  size: 78, 65
+IdleUp
+  xy: 624, 454
+  size: 78, 65
+IdleUp
+  xy: 702, 454
+  size: 78, 65
+IdleDown
+  xy: 0, 519
+  size: 78, 65
+IdleDown
+  xy: 78, 519
+  size: 78, 65
+IdleDown
+  xy: 156, 519
+  size: 78, 65
+IdleDown
+  xy: 234, 519
+  size: 78, 65
+IdleDown
+  xy: 312, 519
+  size: 78, 65
+IdleDown
+  xy: 390, 519
+  size: 78, 65
+IdleDown
+  xy: 468, 519
+  size: 78, 65
+IdleDown
+  xy: 546, 519
+  size: 78, 65
+IdleDown
+  xy: 624, 519
+  size: 78, 65
+IdleDown
+  xy: 702, 519
+  size: 78, 65
+WalkUp
+  xy: 0, 584
+  size: 78, 65
+WalkUp
+  xy: 78, 584
+  size: 78, 65
+WalkUp
+  xy: 156, 584
+  size: 78, 65
+WalkUp
+  xy: 234, 584
+  size: 78, 65
+WalkUp
+  xy: 312, 584
+  size: 78, 65
+WalkUp
+  xy: 390, 584
+  size: 78, 65
+WalkDown
+  xy: 0, 649
+  size: 78, 65
+WalkDown
+  xy: 78, 649
+  size: 78, 65
+WalkDown
+  xy: 156, 649
+  size: 78, 65
+WalkDown
+  xy: 234, 649
+  size: 78, 65
+WalkDown
+  xy: 312, 649
+  size: 78, 65
+WalkDown
+  xy: 390, 649
+  size: 78, 65

@@ -1,0 +1,115 @@
+{
+  "width": 480,
+  "height": 270,
+  "yDown": true,
+  "elements": [
+    {
+      "type": "Image",
+      "name": "lastScreen",
+      "width": 480,
+      "height": 270
+    },
+    {
+      "type": "Window",
+      "name": "standingsWindow",
+      "style": "paper",
+      "x": 15,
+      "y": 18,
+      "width": 400,
+      "height": 235
+    },
+    {
+      "type": "Label",
+      "name": "title",
+      "text": "[%80]The Forsaken Realms Standings",
+      "fontColor": "black",
+      "x": 25,
+      "y": 25,
+      "width": 247,
+      "height": 24
+    },
+    {
+      "type": "Table",
+      "name": "standingsList",
+      "x": 25,
+      "y": 50,
+      "width": 350,
+      "height": 190,
+      "fontColor": "black"
+    },
+    {
+      "type": "TextButton",
+      "name": "balanceSheet",
+      "text": "[%80]Balance",
+      "width": 65,
+      "height": 18,
+      "x": 204,
+      "y": 26
+    },
+    {
+      "type": "TextButton",
+      "name": "reputationInfo",
+      "text": "[%80]Reputation",
+      "width": 65,
+      "height": 18,
+      "x": 272,
+      "y": 26
+    },
+    {
+      "type": "TextButton",
+      "name": "expansionInfo",
+      "text": "[%80]Expansion",
+      "width": 65,
+      "height": 18,
+      "x": 340,
+      "y": 26
+    },
+    {
+      "type": "TextButton",
+      "name": "status",
+      "text": "[%80]Status",
+      "binding": "Status",
+      "width": 65,
+      "height": 18,
+      "x": 272,
+      "y": 46
+    },
+    {
+      "type": "TextButton",
+      "name": "modDetailsInfo",
+      "text": "[%80]Mod Details",
+      "width": 65,
+      "height": 18,
+      "x": 340,
+      "y": 46
+    },
+    {
+      "type": "Label",
+      "name": "chartTitle",
+      "text": "[%75]Towns by Week",
+      "fontColor": "black",
+      "x": 225,
+      "y": 68,
+      "width": 143,
+      "height": 14
+    },
+    {
+      "type": "Table",
+      "name": "chartArea",
+      "x": 225,
+      "y": 84,
+      "width": 143,
+      "height": 124
+    },
+    {
+      "type": "TextButton",
+      "name": "return",
+      "text": "tr(lblBack)",
+      "binding": "Back",
+      "width": 60,
+      "height": 30,
+      "x": 335,
+      "y": 215
+    }
+  ]
+}

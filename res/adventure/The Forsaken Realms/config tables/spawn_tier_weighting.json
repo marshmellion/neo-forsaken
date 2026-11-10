@@ -1,0 +1,117 @@
+{
+  // Weighted overworld-spawn tier system (user spec 2026-08-23) - hand-editable, no code change
+  // needed to rebalance. See SpawnTierWeighting.java for how this is consumed; kill-decay's own
+  // scalars live in settings.json instead (flat tunables, not a table).
+  //
+  // weekBrackets: ordered rows of {weekMin, weekMax, common, uncommon, rare, mythic} - target
+  // percentages for that week range (need not sum to exactly 100). weekMax: -1 = open-ended, i.e.
+  // this is the permanent plateau once reached. Week number = 1 + (currentDay-1)/7 (same day/7
+  // boundary EconomyBuildings' weekly mine payouts and World's own weekly standings history use).
+  "weekBrackets": [
+    { "weekMin": 1,  "weekMax": 1,  "common": 90, "uncommon": 10, "rare": 0,  "mythic": 0 },
+    { "weekMin": 2,  "weekMax": 3,  "common": 78, "uncommon": 18, "rare": 4,  "mythic": 0 },
+    { "weekMin": 4,  "weekMax": 6,  "common": 65, "uncommon": 24, "rare": 10, "mythic": 1 },
+    { "weekMin": 7,  "weekMax": 10, "common": 52, "uncommon": 27, "rare": 17, "mythic": 4 },
+    { "weekMin": 11, "weekMax": 15, "common": 40, "uncommon": 28, "rare": 24, "mythic": 8 },
+    { "weekMin": 16, "weekMax": 20, "common": 30, "uncommon": 27, "rare": 28, "mythic": 15 },
+    { "weekMin": 21, "weekMax": -1, "common": 22, "uncommon": 24, "rare": 30, "mythic": 24 }
+  ],
+  // territoryDeltas: applied to the active week bracket's row, keyed by whose land the roll is on.
+  // Rows are NOT renormalized to exactly 100 afterward - BiomeData.getEnemy() divides by whatever
+  // the whole pool came to, so a row's total only shifts ordinary enemies slightly against the
+  // exempt ones (bosses/quest-tagged keep their own absolute spawnRate), not the relative mix.
+  //
+  // Each row may carry percentage-point deltas (common/uncommon/rare/mythic, floored at 0, default
+  // 0) and MULTIPLIERS (commonScale/uncommonScale/rareScale/mythicScale, default 1.0) applied after
+  // them: max(0, base + delta) * scale.
+  //
+  // The rows below use MULTIPLIERS ONLY, on purpose. Two reasons:
+  //   1. A multiplier cannot open a rank the week bracket has closed. 0 x anything is 0, so a week
+  //      whose bracket reads "rare 0, mythic 0" grows no Masters and no Archmages however hostile
+  //      the ground is - the week brackets stay the single authority on early-game pacing. That is
+  //      exactly what the old flat "+16 mythic" War row broke: at war in week 1 it spawned
+  //      Archmages.
+  //   2. A flat delta on the LOW ranks tilts the mix the wrong way in an early bracket. War's old
+  //      "common -18, uncommon -6" against week 1's 90/10 left 72/4 - a HIGHER share of Apprentices
+  //      than neutral ground, because there was no higher rank for the removed mass to move to.
+  //      Multipliers are ratios, so the same row reads as "fewer Apprentices, more of everything
+  //      else" in every bracket.
+  // The delta fields are kept for hand-tuning a single bracket; leave them out for a pure tilt.
+  //
+  // Round 183, the user's ladder: "the Player land is the 'Friendliest' given it's his land.
+  // Neutral is somewhere in the middle. AI should probably be a little more hostile than Neutral on
+  // Neutral Reputation and get a lot more hostile at War. On Partner, there should be a very small
+  // chance of Archmage attacks, since you are on friendly terms."
+  //
+  // Keys, friendliest to most hostile: PLAYER_OWNED (your own terrain), then the five
+  // ColorReputation.Status names - each meaning "an AI color's own land at that standing" - with
+  // WASTELAND (the ownerless middle of the map) sitting between HAPPY and NEUTRAL. WASTELAND and
+  // NEUTRAL were one row before this round, which is why merely-neutral AI land was no more
+  // dangerous than no-man's-land.
+  //
+  // Resulting share of encounters at the week 21+ plateau (22/24/30/24), and at week 1 (90/10/0/0):
+  //             Apprentice  Adept  Master  Archmage      week 1: Apprentice  Adept
+  //   your land     46        29      24       1                     94         6
+  //   Partner       39        31      27       3                     93         7
+  //   Happy         31        28      28      13                     92         8
+  //   Wasteland     22        24      30      24                     90        10
+  //   Neutral AI    16        25      33      26                     86        14
+  //   Unhappy       11        20      35      34                     84        16
+  //   War            2        13      38      48                     60        40
+  "territoryDeltas": {
+    "PLAYER_OWNED": { "commonScale": 1.75, "uncommonScale": 1.00, "rareScale": 0.65, "mythicScale": 0.04 },
+    "PARTNER":      { "commonScale": 1.40, "uncommonScale": 1.00, "rareScale": 0.70, "mythicScale": 0.10 },
+    "HAPPY":        { "commonScale": 1.20, "uncommonScale": 1.00, "rareScale": 0.80, "mythicScale": 0.46 },
+    "WASTELAND":    { "commonScale": 1.00, "uncommonScale": 1.00, "rareScale": 1.00, "mythicScale": 1.00 },
+    "NEUTRAL":      { "commonScale": 0.70, "uncommonScale": 1.00, "rareScale": 1.05, "mythicScale": 1.05 },
+    "UNHAPPY":      { "commonScale": 0.60, "uncommonScale": 1.00, "rareScale": 1.40, "mythicScale": 1.70 },
+    "WAR":          { "commonScale": 0.17, "uncommonScale": 1.00, "rareScale": 2.35, "mythicScale": 3.70 }
+  },
+  // Round 418 (the user: "It sounds like we need to up the chances of Adept+ appearing early in Hard and Insane"):
+  // the difficulty tilts the row too, after the territory row and renormalized the same way (so bosses keep their
+  // share). Multipliers only, for the reason above: week 1 still grows no Masters on any difficulty. Easy and Normal
+  // have no row and play the table as written. Shares on Wasteland (Apprentice / Adept / Master / Archmage):
+  //             week 1        weeks 2-3         weeks 4-6
+  //   Normal    90 / 10       78 / 18 / 4       65 / 24 / 10 / 1
+  //   Hard      85 / 15       69 / 25 / 6       54 / 31 / 13 / 1
+  //   Insane    78 / 22       59 / 34 / 8       43 / 39 / 16 / 2
+  "difficultyFactors": {
+    "Hard":   { "commonScale": 0.80, "uncommonScale": 1.25, "rareScale": 1.25, "mythicScale": 1.25 },
+    "Insane": { "commonScale": 0.60, "uncommonScale": 1.50, "rareScale": 1.50, "mythicScale": 1.50 }
+  },
+  // Round 338 (user spec 2026-09-25): the fog zone at the SPAWN TILE tilts the row too - "lit" = in view right now
+  // (the player's own light, their land, a town's or a bonfire's lift), "dark" = explored-but-dim or unexplored.
+  // Multipliers on the week row's targets (the pick is relative, so no renormalizing); deltas untouched.
+  "fogZoneFactors": {
+    "lit":  { "commonScale": 1.25, "uncommonScale": 1.00, "rareScale": 0.75, "mythicScale": 0.75 },
+    "dark": { "commonScale": 0.75, "uncommonScale": 1.00, "rareScale": 1.25, "mythicScale": 1.25 }
+  },
+  // Round 447 (the user: "gradually increase the spawn chances of higher level enemies as the player's win streak ...
+  // goes up"): the win-streak tilt. Level = wins in a row / notorietyWinsPerLevel, capped at notorietyMaxLevel (45 and
+  // 50 wins = levels 9 and 10). Each *Scale is added to 1 once per level - multipliers after the difficulty's,
+  // renormalized the same way; a week that closes a rank keeps it closed. Weeks 7-10, Insane, Wasteland:
+  //   0 wins 30/39/25/6, 25 wins 19/35/35/10, 40 wins 13/33/41/13, 50 wins 10/32/44/14 (Archmages only where the
+  //   spawn gate lets them in - settings.json notorietyRankStepWins).
+  "notorietyWinsPerLevel": 5,
+  "notorietyMaxLevel": 10,
+  "notorietyPerLevel": { "commonScale": -0.06, "uncommonScale": 0.0, "rareScale": 0.12, "mythicScale": 0.20 },
+  // Round 613 (the user: "Based on your win ratio, I want to increase, or decrease the spawn levels on enemies"): over
+  // the last winRatioWindow duels you fought (the duels notoriety counts - not the Arena, an Inn event, Deck Tester or a
+  // guard's fight), from winRatioMinDuels[i] on record the row shifts up to winRatioMaxShift[i] percentage points out of
+  // Common into the higher ranks (a good record) or back into Common (a poor one). Full at a win ratio of winRatioHigh
+  // (20/25, 40/50) or winRatioLow (5/25, 10/50), none at 0.5, linear between. After every other layer; on top of the week.
+  "winRatioWindow": 50,
+  "winRatioMinDuels": [25, 50],
+  "winRatioMaxShift": [5, 10],
+  "winRatioHigh": 0.8,
+  "winRatioLow": 0.2,
+  // Round 620 (the user: help tokens by the win ratio, from 50 duels on): the first row the ratio meets puts its token
+  // scripts in play at the start of a duel. The enemy (ratio at least): 95% a Clue and a Treasure, 90% a Treasure, 75% a
+  // Clue. You (ratio at most): 25% a Treasure and a Clue, 50% a Treasure. The cards say why (tfr_ratio_*, made by
+  // dev-tools/ratio_tokens/make_ratio_tokens.py). Same duels as the Walls: not Inn events or your guards' fights.
+  "winRatioHelpMinDuels": 50,
+  "winRatioEnemyAtLeast": [0.95, 0.90, 0.75],
+  "winRatioEnemyTokens": ["tfr_ratio_enemy_clue,tfr_ratio_enemy_treasure", "tfr_ratio_enemy_treasure", "tfr_ratio_enemy_clue"],
+  "winRatioPlayerAtMost": [0.25, 0.50],
+  "winRatioPlayerTokens": ["tfr_ratio_player_treasure,tfr_ratio_player_clue", "tfr_ratio_player_treasure"]
+}

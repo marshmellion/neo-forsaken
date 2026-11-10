@@ -1,0 +1,291 @@
+palladia_mors_boss.png
+size: 3276,2274
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 182, 221
+  footprint: 7, 44, 165, 123
+Idle
+  xy: 182, 64
+  size: 182, 221
+Idle
+  xy: 364, 64
+  size: 182, 221
+Idle
+  xy: 546, 64
+  size: 182, 221
+Idle
+  xy: 728, 64
+  size: 182, 221
+Idle
+  xy: 910, 64
+  size: 182, 221
+Idle
+  xy: 1092, 64
+  size: 182, 221
+Idle
+  xy: 1274, 64
+  size: 182, 221
+Idle
+  xy: 1456, 64
+  size: 182, 221
+Idle
+  xy: 1638, 64
+  size: 182, 221
+Walk
+  xy: 0, 285
+  size: 182, 221
+Walk
+  xy: 182, 285
+  size: 182, 221
+Walk
+  xy: 364, 285
+  size: 182, 221
+Walk
+  xy: 546, 285
+  size: 182, 221
+Walk
+  xy: 728, 285
+  size: 182, 221
+Walk
+  xy: 910, 285
+  size: 182, 221
+Attack
+  xy: 0, 506
+  size: 182, 221
+Attack
+  xy: 182, 506
+  size: 182, 221
+Attack
+  xy: 364, 506
+  size: 182, 221
+Attack
+  xy: 546, 506
+  size: 182, 221
+Attack
+  xy: 728, 506
+  size: 182, 221
+Attack
+  xy: 910, 506
+  size: 182, 221
+Attack
+  xy: 1092, 506
+  size: 182, 221
+Attack
+  xy: 1274, 506
+  size: 182, 221
+Attack
+  xy: 1456, 506
+  size: 182, 221
+Attack
+  xy: 1638, 506
+  size: 182, 221
+Hit
+  xy: 0, 727
+  size: 182, 221
+Hit
+  xy: 182, 727
+  size: 182, 221
+Hit
+  xy: 364, 727
+  size: 182, 221
+Hit
+  xy: 546, 727
+  size: 182, 221
+Hit
+  xy: 728, 727
+  size: 182, 221
+Hit
+  xy: 910, 727
+  size: 182, 221
+Hit
+  xy: 1092, 727
+  size: 182, 221
+Hit
+  xy: 1274, 727
+  size: 182, 221
+Death
+  xy: 0, 948
+  size: 182, 221
+Death
+  xy: 182, 948
+  size: 182, 221
+Death
+  xy: 364, 948
+  size: 182, 221
+Death
+  xy: 546, 948
+  size: 182, 221
+Death
+  xy: 728, 948
+  size: 182, 221
+Death
+  xy: 910, 948
+  size: 182, 221
+Death
+  xy: 1092, 948
+  size: 182, 221
+Death
+  xy: 1274, 948
+  size: 182, 221
+Death
+  xy: 1456, 948
+  size: 182, 221
+Death
+  xy: 1638, 948
+  size: 182, 221
+Death
+  xy: 1820, 948
+  size: 182, 221
+Death
+  xy: 2002, 948
+  size: 182, 221
+Death
+  xy: 2184, 948
+  size: 182, 221
+Death
+  xy: 2366, 948
+  size: 182, 221
+Death
+  xy: 2548, 948
+  size: 182, 221
+Death
+  xy: 2730, 948
+  size: 182, 221
+Death
+  xy: 2912, 948
+  size: 182, 221
+Death
+  xy: 3094, 948
+  size: 182, 221
+Wake
+  xy: 0, 1169
+  size: 182, 221
+Wake
+  xy: 182, 1169
+  size: 182, 221
+Wake
+  xy: 364, 1169
+  size: 182, 221
+Wake
+  xy: 546, 1169
+  size: 182, 221
+Wake
+  xy: 728, 1169
+  size: 182, 221
+Wake
+  xy: 910, 1169
+  size: 182, 221
+Wake
+  xy: 1092, 1169
+  size: 182, 221
+Wake
+  xy: 1274, 1169
+  size: 182, 221
+Wake
+  xy: 1456, 1169
+  size: 182, 221
+Wake
+  xy: 1638, 1169
+  size: 182, 221
+IdleUp
+  xy: 0, 1390
+  size: 182, 221
+IdleUp
+  xy: 182, 1390
+  size: 182, 221
+IdleUp
+  xy: 364, 1390
+  size: 182, 221
+IdleUp
+  xy: 546, 1390
+  size: 182, 221
+IdleUp
+  xy: 728, 1390
+  size: 182, 221
+IdleUp
+  xy: 910, 1390
+  size: 182, 221
+IdleUp
+  xy: 1092, 1390
+  size: 182, 221
+IdleUp
+  xy: 1274, 1390
+  size: 182, 221
+IdleUp
+  xy: 1456, 1390
+  size: 182, 221
+IdleUp
+  xy: 1638, 1390
+  size: 182, 221
+IdleDown
+  xy: 0, 1611
+  size: 182, 221
+IdleDown
+  xy: 182, 1611
+  size: 182, 221
+IdleDown
+  xy: 364, 1611
+  size: 182, 221
+IdleDown
+  xy: 546, 1611
+  size: 182, 221
+IdleDown
+  xy: 728, 1611
+  size: 182, 221
+IdleDown
+  xy: 910, 1611
+  size: 182, 221
+IdleDown
+  xy: 1092, 1611
+  size: 182, 221
+IdleDown
+  xy: 1274, 1611
+  size: 182, 221
+IdleDown
+  xy: 1456, 1611
+  size: 182, 221
+IdleDown
+  xy: 1638, 1611
+  size: 182, 221
+WalkUp
+  xy: 0, 1832
+  size: 182, 221
+WalkUp
+  xy: 182, 1832
+  size: 182, 221
+WalkUp
+  xy: 364, 1832
+  size: 182, 221
+WalkUp
+  xy: 546, 1832
+  size: 182, 221
+WalkUp
+  xy: 728, 1832
+  size: 182, 221
+WalkUp
+  xy: 910, 1832
+  size: 182, 221
+WalkDown
+  xy: 0, 2053
+  size: 182, 221
+WalkDown
+  xy: 182, 2053
+  size: 182, 221
+WalkDown
+  xy: 364, 2053
+  size: 182, 221
+WalkDown
+  xy: 546, 2053
+  size: 182, 221
+WalkDown
+  xy: 728, 2053
+  size: 182, 221
+WalkDown
+  xy: 910, 2053
+  size: 182, 221

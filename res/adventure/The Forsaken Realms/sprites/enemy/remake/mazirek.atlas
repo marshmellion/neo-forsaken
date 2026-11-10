@@ -1,0 +1,171 @@
+mazirek.png
+size: 608,649
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 76, 65
+  footprint: 11, 1, 54, 61
+Idle
+  xy: 76, 64
+  size: 76, 65
+Idle
+  xy: 152, 64
+  size: 76, 65
+Idle
+  xy: 228, 64
+  size: 76, 65
+Walk
+  xy: 0, 129
+  size: 76, 65
+Walk
+  xy: 76, 129
+  size: 76, 65
+Walk
+  xy: 152, 129
+  size: 76, 65
+Walk
+  xy: 228, 129
+  size: 76, 65
+Walk
+  xy: 304, 129
+  size: 76, 65
+Walk
+  xy: 380, 129
+  size: 76, 65
+Walk
+  xy: 456, 129
+  size: 76, 65
+Walk
+  xy: 532, 129
+  size: 76, 65
+Attack
+  xy: 0, 194
+  size: 76, 65
+Attack
+  xy: 76, 194
+  size: 76, 65
+Attack
+  xy: 152, 194
+  size: 76, 65
+Attack
+  xy: 228, 194
+  size: 76, 65
+Attack
+  xy: 304, 194
+  size: 76, 65
+Attack
+  xy: 380, 194
+  size: 76, 65
+Attack
+  xy: 456, 194
+  size: 76, 65
+Attack
+  xy: 532, 194
+  size: 76, 65
+Hit
+  xy: 0, 259
+  size: 76, 65
+Hit
+  xy: 76, 259
+  size: 76, 65
+Hit
+  xy: 152, 259
+  size: 76, 65
+Hit
+  xy: 228, 259
+  size: 76, 65
+Death
+  xy: 0, 324
+  size: 76, 65
+Death
+  xy: 76, 324
+  size: 76, 65
+Death
+  xy: 152, 324
+  size: 76, 65
+Death
+  xy: 228, 324
+  size: 76, 65
+Death
+  xy: 304, 324
+  size: 76, 65
+Death
+  xy: 380, 324
+  size: 76, 65
+IdleUp
+  xy: 0, 389
+  size: 76, 65
+IdleUp
+  xy: 76, 389
+  size: 76, 65
+IdleUp
+  xy: 152, 389
+  size: 76, 65
+IdleUp
+  xy: 228, 389
+  size: 76, 65
+IdleDown
+  xy: 0, 454
+  size: 76, 65
+IdleDown
+  xy: 76, 454
+  size: 76, 65
+IdleDown
+  xy: 152, 454
+  size: 76, 65
+IdleDown
+  xy: 228, 454
+  size: 76, 65
+WalkUp
+  xy: 0, 519
+  size: 76, 65
+WalkUp
+  xy: 76, 519
+  size: 76, 65
+WalkUp
+  xy: 152, 519
+  size: 76, 65
+WalkUp
+  xy: 228, 519
+  size: 76, 65
+WalkUp
+  xy: 304, 519
+  size: 76, 65
+WalkUp
+  xy: 380, 519
+  size: 76, 65
+WalkUp
+  xy: 456, 519
+  size: 76, 65
+WalkUp
+  xy: 532, 519
+  size: 76, 65
+WalkDown
+  xy: 0, 584
+  size: 76, 65
+WalkDown
+  xy: 76, 584
+  size: 76, 65
+WalkDown
+  xy: 152, 584
+  size: 76, 65
+WalkDown
+  xy: 228, 584
+  size: 76, 65
+WalkDown
+  xy: 304, 584
+  size: 76, 65
+WalkDown
+  xy: 380, 584
+  size: 76, 65
+WalkDown
+  xy: 456, 584
+  size: 76, 65
+WalkDown
+  xy: 532, 584
+  size: 76, 65

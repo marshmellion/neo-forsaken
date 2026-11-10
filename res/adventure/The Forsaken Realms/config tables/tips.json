@@ -1,0 +1,152 @@
+// Round 993: the hover tips' texts (util/TfrTips), keyed by tag. "\n" starts a new line.
+// {name} is filled when the tip shows: {tuning.FIELD} is any settings.json field of the running game; the other names
+// are listed in TfrTips.number (difficulty, lossPct, lossMin, woodWeek, stoneWeek, mapPieces, digShards, digRadius,
+// reloadForgive, reloadCap, streakWins); {asc.FIELD} is any ascendance.json field (round 1000). A call site may fill its own ({name}, {cost}, {effect}, {where} on hud.ability).
+// Amounts use the resource icons, icon first: "[+Gold] {lossMin}".
+{
+  // ---- the world-map HUD
+  "hud.speedUp": "Speed-Up: time runs {tuning.speedUpMultiplier}x faster while you walk or Wait.\nEnemies spawn faster too; you don't walk faster.",
+  "hud.wait": "Wait: let time pass while you stand still.\nMoving cancels it. With Speed-Up on, it skips ahead fast.",
+  "hud.clock": "Time passes only while you walk or Wait on the world map.\nEvery 7th day the week turns: mines pay and guards draw their pay.\nNight (18:00-06:00): Black and Red foes are tougher, White and Green weaker.",
+  "hud.ascendance": "Ascendance: your level. Win duels, quests and towns for Power.\nThe bar is Power to the next level.\nA \"!\" means a reward to pick: click the panel.",
+  "hud.wood": "[+Wood] Wood: building material.\nFrom map piles and Lumber Mills ([+Wood] {woodWeek} a week).\nSpent restoring towns and building.",
+  "hud.stone": "[+Stone] Stone: building material.\nFrom map piles and Stone Mines ([+Stone] {stoneWeek} a week).\nSpent restoring towns and building.",
+  "hud.avatar": "Click: a see-through HUD.\nDouble-click: hide or show the HUD.",
+  "hud.minimap": "The minimap. A colored dot: a mage marching on a town.\nGold: a legend. A big dot: the Wrath hunting you.",
+  "hud.treasureMaps": "Treasure maps: obelisks give a map piece; {mapPieces} pieces make a map.\nDig with the Spade ([+Shards] {digShards}) within {digRadius} tiles of the X.",
+  "hud.gold": "[+Gold] Gold buys cards, buildings and guards.\nA lost duel costs {lossPct}% of it on {difficulty}, at least [+Gold] {lossMin} (no minimum in your first week).",
+  "hud.shards": "[+Shards] Shards: the rarer currency.\nResearch, item abilities, digging and re-rolls.",
+  "hud.life": "Your life: what you start each duel with.",
+  "hud.info": "World standings: the towns each color holds, your reputation with every color, and how the realm works.",
+  "hud.log": "The log: your latest notices and Power gains.",
+  "hud.logbook": "Quests and the journal.",
+  "hud.bookmark": "Mark this place on the world map.\nLocked while an enemy chases you.",
+  "hud.zoom": "The world map, zoomed out.",
+  "hud.deck": "Your decks.",
+  "hud.inventory": "Your items and gear.",
+  "hud.menu": "Save, load, settings and quit.",
+  "hud.exit": "Leave this place for the world map.\nLocked while an enemy chases you.",
+  "hud.ability": "{name}{effect}\nCosts [+Shards] {cost} a use. {where}",
+  "hud.abilityWorldMap": "World map only.",
+  "hud.abilityInPlaces": "In towns, caves and dungeons only.",
+  "hud.abilityAnywhere": "Works anywhere.",
+
+  // ---- New Game
+  "newGame.tooltips": "Hover tips like this one.\nAuto: on for Easy and Normal, off for Hard and Insane.\nOn or Off: always. One setting for every game.",
+  "newGame.colors": "Your starter deck's colors.\nThey start at [+Reputation] +10, their allies at +5, their enemies at -10.",
+  "newGame.startingSets": "Pick which of your race's sets you start with.\nA gold lock: open from day 1. Gray: research it later.",
+  "newGame.help": "Click for details.",
+  "newGame.advanced": "Custom difficulty: change the game's rules one by one.\nSome lock once the game starts.",
+
+  // ---- Settings
+  "settings.tooltips": "Hover tips like this one.\nAuto: on for Easy and Normal, off for Hard and Insane.\nOn or Off: always. One setting for every game.",
+  "settings.fog": "Off: the whole map is revealed.",
+  "settings.leveling": "Ascendance leveling. Off: no Power or levels, and no limit on worn main items.\nEach save keeps its own.",
+  "settings.notoriety": "Every {tuning.notorietyWinsPerLevel} wins gives foes a Wall; a loss takes {tuning.notorietyLossPenalty} off.\nChecked: no Walls or stronger foes. The score still counts.",
+  "settings.reload": "Checked: reloading to undo a lost duel makes enemies tougher on Hard and Insane (+1 life a reload, at most +{reloadCap}).\nEvery {reloadForgive} honest losses forgive one.",
+  "settings.difficulty": "This save's difficulty.\nEdit... changes the rules you can change mid-game.",
+
+  // ---- round 999: shops (call-site fills: {price}, {cost}, {haggler}, {pct})
+  "shop.restock": "Restock: new stock for this shop, [+Shards] {price} now.\nEach restock here this week costs one more; the count resets when the week turns.\nA Market town's first restock each week is free.",
+  "shop.armoryReroll": "Re-roll Inventory: new Armory stock now, for [+Shards] {cost}.\nOnce a week. The Armory also refreshes on its own each week.",
+  "shop.blueprint": "Buy Blueprint: learn this shop type, so you can build it in your own towns.\nThe town's color must like you: Neutral for Common, Happy for Uncommon,\nPartner for Rare and Mythic.",
+  "shop.shopType": "Re-assign Shop Type: rebuild this shop as another type.\nYou pay the new type's price, less half of this shop's gold value.",
+  "shop.upgradeArmory": "Upgrade to a Level 2 Armory.\nIt unlocks Manage Guards: hire guards that roam out to defend your towns.",
+  "shop.manageGuards": "Hire guards that roam out to defend your towns, and see the ones you have.",
+  "shop.storage": "Storage: keep items here, out of your inventory.",
+  "shop.destroy": "Destroy this building. Nothing is refunded.",
+  "shop.price": "The price: the card's value, this town's prices and its color's standing with you.{haggler}\nNever less than the card sells back for.",
+  "shop.haggler": "\nHaggler takes {pct}% off.",
+
+  // ---- the Shard Trader ({n}, {gold}, {pct})
+  "shardTrader.buy": "Buy [+Shards] {n} for [+Gold] {gold}: the same on every difficulty.",
+  "shardTrader.sell": "Sell [+Shards] {n} for [+Gold] {gold}.\nThe rate depends on the difficulty: on {difficulty} you get {pct}% of what they cost to buy.",
+
+  // ---- the Spellsmith ({mult}, {two}, {max}, {common} ...; {pct})
+  "smith.edition": "Pick a set: only its cards can come.\nPrice x{mult}.",
+  "smith.color": "Pick colors: only cards of these colors can come.\nPrice x{mult} for one color, x{two} for two, at most x{max}.",
+  "smith.rarity": "Pick a rarity: only cards of it can come.\nPrice x{common} Common, x{uncommon} Uncommon, x{rare} Rare, x{mythic} Mythic.",
+  "smith.cost": "Pick a mana value range: only cards in it can come.\nPrice x{mult}.",
+  "smith.pull": "Pull: a random card from the pool, for this price.\nYou see it before you take it.",
+  "smith.pullPaid": "Pull: a random card from the pool, for this price.\nPaid before the reveal: the card is yours, there is no decline.",
+  "smith.shards": "In [+Shards] it costs {pct}% of the [+Gold] price.",
+
+  // ---- the Inn ({regular}, {factor})
+  "inn.tempHp": "Temporary Hit Points: extra life above your maximum, until you lose it.\nOnly at full life. The price follows your win record and this town's prices.",
+  "inn.tempHpBarred": "Barred: this town's color is at War with you, so its Inn won't serve you.",
+  "inn.tempHpBlessed": "Blessed: this town's color is your Partner.\nYou got the extra life free on entering town.",
+  "inn.tempHpClosed": "Closed: a ruined town's Inn runs tournaments only.",
+  "inn.reroll": "Re-roll: a new card pool for this tournament, [+Shards] {tuning.innTournamentRerollShardCost}.\nOnly before you join it.",
+  "inn.sell": "Sell the cards you marked for Auto-Sell in the deck editor.",
+  "inn.entryFee": "The entry fee: the event's own fee, times this town's prices.{regular}",
+  "inn.regular": "\nTournament Regular: fees x{factor}.",
+
+  // ---- towns: the Job Board ({rep}, {slots}; {need}, {have}; {fee}, {days}; {every})
+  "town.restore": "Restore: this town becomes yours, at [+Reputation] {rep} here ({slots} building slots).\nIts land grows each week. The fee rises every {tuning.restoreFeeStepTowns} towns you hold.",
+  "town.capitol": "The Capitol: your seat of power.\nGuards, the Bank, the Temple, the Teleporter hub and rare shops.{mages}",
+  "town.capitolMages": "\nWarning: when it rises, every rival color sends a mage at once.",
+  "town.capitolTowns": "Needs {need} towns of yours ({have} now).",
+  "town.capitolOrazca": "Only Orazca, the ruin at the center of the map, can become your Capitol.",
+  "town.specialtyChoose": "A specialty gives this town one lasting bonus. The first pick is free.\nA change later costs [+Gold] {fee} and locks it for {tuning.specialtyChangeLockDays} days.",
+  "town.specialtyLocked": "Changed recently: it can change again in {days} days.\nEach change locks it for {tuning.specialtyChangeLockDays} days.",
+  "town.specialtyChange": "Change this town's specialty for [+Gold] {fee}.\nThe new one is locked for {tuning.specialtyChangeLockDays} days.",
+  "town.realm": "Every {every} towns you hold at once earns a realm boon: pick 1 of 3.\nLosing towns never takes a boon away.",
+
+  // ---- round 1000: Ascendance ({cost}, {per}, {n})
+  "asc.power": "Power: win duels (stronger foes pay more; bosses x{asc.bossFactor}, legends x{asc.legendFactor}),\nfinish quests, clear caves and dungeons, restore and take towns.",
+  "asc.mainItems": "Main items: gear worn at the Neck, Body, either Hand, Boots, Legs and Head.\nYou may wear more of them as you level.",
+  "asc.companions": "Companions: items that start a creature in play in your duels.\nYou may carry more of them as you level.",
+  "asc.reroll": "Re-roll: a new set of choices for this level, [+Shards] {cost}.\n{per}",
+  "asc.rerollOnce": "Once per level.",
+  "asc.rerollMany": "{n} times per level (Gambler).",
+
+  // ---- the quest log
+  "quest.abandon": "Abandon: it counts as failing the quest,\nwith whatever failing it costs (the confirm says).",
+  "quest.track": "Track: a tracked quest's way shows on the map. Untrack hides it.",
+  "quest.daysLeft": "Side quests fail when their time runs out.\nStory quests never expire.",
+  "quest.legend": "A legend roams for a few days, then moves on.\nThe gold dots on the map mark where they are.",
+
+  // ---- the journal ({cards}, {land})
+  "journal.streak": "You have beaten it {streakWins} times in a row on {difficulty}:\nit now starts its duels with {cards} Wastes in play, until it beats you.",
+  "journal.coin": "It holds your Bronze Coin. Beat it to win the coin back.",
+  "journal.land": "Show only the creatures of the {land} lands.",
+
+  // ---- the character sheet
+  "character.notoriety": "Notoriety: +1 a win, -{tuning.notorietyLossPenalty} a loss.\nEvery {tuning.notorietyWinsPerLevel} is a level: enemies start with Walls, and beating them pays a Bounty.",
+  "character.toRecords": "Show your record against each enemy.",
+  "character.toAchievements": "Show your achievements.",
+
+  // ---- the world standings ({status}, {prices}, {attack}, {pct})
+  "standings.status": "{status}: {prices}\n{attack}",
+  "standings.attack": "Your towns are attacked by this color x{factor} as often.",
+  "standings.attackUsual": "Your towns are attacked by this color as often as usual.",
+  "standings.cheaper": "card shops in this color's towns are {pct}% cheaper.",
+  "standings.pricier": "card shops in this color's towns cost {pct}% more.",
+  "standings.samePrice": "card shop prices as usual in this color's towns.",
+  "standings.partner": "A Partner's Inn gives you extra life free when you enter.",
+  "standings.war": "At War: its towns bar you, its capitals charge a toll, and its Inns won't heal you.",
+
+  // ---- the inventory and the Research Lab ({keep})
+  "inventory.maps": "Your treasure maps: the pieces found so far, region by region.",
+  "inventory.sets": "Gear sets: the bonuses for wearing matching pieces.",
+  "research.sell": "Sell: gold for the card, and it counts toward its set's research.",
+  "research.sacrifice": "Sacrifice: counts x{tuning.researchSacrificeFactor} toward its set's research, but pays no gold.",
+  "research.overFour": "Sells every copy over {keep} of the cards shown.\nNever a card in a deck or a favorite.",
+  "research.hideUntouched": "Hide the sets you haven't given any cards to.",
+
+  // ---- round 1001: world-map tokens (TfrMapTips; {town}, {rank}, {n}, {days}, {res}, {blueprint}, {ambush})
+  "map.guard": "{town}'s guard: {rank}. You duel it before you can take the town.\nIt rises one rank every {tuning.aiTownGuardDaysPerLevel} days its color holds the town.",
+  "map.guardCapital": "{town}'s guards: {n} {rank}s. You duel them before you can take the capital.",
+  "map.ruin": "{town}: a ruined town.\nRestore it at its Job Board and make it yours.",
+  "map.obelisk": "Obelisk: walk onto it for a treasure-map piece.\nIt moves on every {days} days.",
+  "map.xmark": "Your treasure lies here. Dig with the Spade ([+Shards] {digShards}) within {digRadius} tiles.\nIts guardian rises when you dig.",
+  "map.pile": "{res} {n}: walk over it to pick it up.\nIt fades in {days} days.",
+  "map.mystery": "Mystery: a resource, a blueprint ({blueprint}%) or extra life for your next duel.\nOr an ambush ({ambush}%). It fades in {days} days.",
+  "map.chest": "Chest: a random event when you open it - treasure, a merchant or a fight.\nIt fades in {days} days.",
+
+  // ---- custom difficulty (the knobs' own tooltips are custom_difficulty.json's; {preset})
+  "custom.basic": "Basic: the rules most players change.",
+  "custom.expert": "Expert: every rule, the fine-tuning ones too.",
+  "custom.changedOnly": "Show only the rules you changed.",
+  "custom.reset": "Back to {preset}'s value."
+}

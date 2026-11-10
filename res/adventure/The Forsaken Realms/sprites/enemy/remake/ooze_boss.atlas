@@ -1,0 +1,285 @@
+ooze_boss.png
+size: 4692,2034
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 276, 197
+  footprint: 60, 70, 162, 119
+Idle
+  xy: 276, 64
+  size: 276, 197
+Idle
+  xy: 552, 64
+  size: 276, 197
+Idle
+  xy: 828, 64
+  size: 276, 197
+Idle
+  xy: 1104, 64
+  size: 276, 197
+Idle
+  xy: 1380, 64
+  size: 276, 197
+Idle
+  xy: 1656, 64
+  size: 276, 197
+Idle
+  xy: 1932, 64
+  size: 276, 197
+Idle
+  xy: 2208, 64
+  size: 276, 197
+Idle
+  xy: 2484, 64
+  size: 276, 197
+Walk
+  xy: 0, 261
+  size: 276, 197
+Walk
+  xy: 276, 261
+  size: 276, 197
+Walk
+  xy: 552, 261
+  size: 276, 197
+Walk
+  xy: 828, 261
+  size: 276, 197
+Walk
+  xy: 1104, 261
+  size: 276, 197
+Walk
+  xy: 1380, 261
+  size: 276, 197
+Attack
+  xy: 0, 458
+  size: 276, 197
+Attack
+  xy: 276, 458
+  size: 276, 197
+Attack
+  xy: 552, 458
+  size: 276, 197
+Attack
+  xy: 828, 458
+  size: 276, 197
+Attack
+  xy: 1104, 458
+  size: 276, 197
+Attack
+  xy: 1380, 458
+  size: 276, 197
+Attack
+  xy: 1656, 458
+  size: 276, 197
+Attack
+  xy: 1932, 458
+  size: 276, 197
+Attack
+  xy: 2208, 458
+  size: 276, 197
+Hit
+  xy: 0, 655
+  size: 276, 197
+Hit
+  xy: 276, 655
+  size: 276, 197
+Hit
+  xy: 552, 655
+  size: 276, 197
+Hit
+  xy: 828, 655
+  size: 276, 197
+Hit
+  xy: 1104, 655
+  size: 276, 197
+Hit
+  xy: 1380, 655
+  size: 276, 197
+Hit
+  xy: 1656, 655
+  size: 276, 197
+Hit
+  xy: 1932, 655
+  size: 276, 197
+Death
+  xy: 0, 852
+  size: 276, 197
+Death
+  xy: 276, 852
+  size: 276, 197
+Death
+  xy: 552, 852
+  size: 276, 197
+Death
+  xy: 828, 852
+  size: 276, 197
+Death
+  xy: 1104, 852
+  size: 276, 197
+Death
+  xy: 1380, 852
+  size: 276, 197
+Death
+  xy: 1656, 852
+  size: 276, 197
+Death
+  xy: 1932, 852
+  size: 276, 197
+Death
+  xy: 2208, 852
+  size: 276, 197
+Death
+  xy: 2484, 852
+  size: 276, 197
+Death
+  xy: 2760, 852
+  size: 276, 197
+Death
+  xy: 3036, 852
+  size: 276, 197
+Death
+  xy: 3312, 852
+  size: 276, 197
+Death
+  xy: 3588, 852
+  size: 276, 197
+Death
+  xy: 3864, 852
+  size: 276, 197
+Death
+  xy: 4140, 852
+  size: 276, 197
+Death
+  xy: 4416, 852
+  size: 276, 197
+Wake
+  xy: 0, 1049
+  size: 276, 197
+Wake
+  xy: 276, 1049
+  size: 276, 197
+Wake
+  xy: 552, 1049
+  size: 276, 197
+Wake
+  xy: 828, 1049
+  size: 276, 197
+Wake
+  xy: 1104, 1049
+  size: 276, 197
+Wake
+  xy: 1380, 1049
+  size: 276, 197
+Wake
+  xy: 1656, 1049
+  size: 276, 197
+Wake
+  xy: 1932, 1049
+  size: 276, 197
+Wake
+  xy: 2208, 1049
+  size: 276, 197
+Wake
+  xy: 2484, 1049
+  size: 276, 197
+IdleUp
+  xy: 0, 1246
+  size: 276, 197
+IdleUp
+  xy: 276, 1246
+  size: 276, 197
+IdleUp
+  xy: 552, 1246
+  size: 276, 197
+IdleUp
+  xy: 828, 1246
+  size: 276, 197
+IdleUp
+  xy: 1104, 1246
+  size: 276, 197
+IdleUp
+  xy: 1380, 1246
+  size: 276, 197
+IdleUp
+  xy: 1656, 1246
+  size: 276, 197
+IdleUp
+  xy: 1932, 1246
+  size: 276, 197
+IdleUp
+  xy: 2208, 1246
+  size: 276, 197
+IdleUp
+  xy: 2484, 1246
+  size: 276, 197
+IdleDown
+  xy: 0, 1443
+  size: 276, 197
+IdleDown
+  xy: 276, 1443
+  size: 276, 197
+IdleDown
+  xy: 552, 1443
+  size: 276, 197
+IdleDown
+  xy: 828, 1443
+  size: 276, 197
+IdleDown
+  xy: 1104, 1443
+  size: 276, 197
+IdleDown
+  xy: 1380, 1443
+  size: 276, 197
+IdleDown
+  xy: 1656, 1443
+  size: 276, 197
+IdleDown
+  xy: 1932, 1443
+  size: 276, 197
+IdleDown
+  xy: 2208, 1443
+  size: 276, 197
+IdleDown
+  xy: 2484, 1443
+  size: 276, 197
+WalkUp
+  xy: 0, 1640
+  size: 276, 197
+WalkUp
+  xy: 276, 1640
+  size: 276, 197
+WalkUp
+  xy: 552, 1640
+  size: 276, 197
+WalkUp
+  xy: 828, 1640
+  size: 276, 197
+WalkUp
+  xy: 1104, 1640
+  size: 276, 197
+WalkUp
+  xy: 1380, 1640
+  size: 276, 197
+WalkDown
+  xy: 0, 1837
+  size: 276, 197
+WalkDown
+  xy: 276, 1837
+  size: 276, 197
+WalkDown
+  xy: 552, 1837
+  size: 276, 197
+WalkDown
+  xy: 828, 1837
+  size: 276, 197
+WalkDown
+  xy: 1104, 1837
+  size: 276, 197
+WalkDown
+  xy: 1380, 1837
+  size: 276, 197

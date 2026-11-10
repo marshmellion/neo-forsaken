@@ -1,0 +1,156 @@
+sliver_queen.png
+size: 3484,704
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 268, 128
+  footprint: 87, 7, 112, 114
+Idle
+  xy: 268, 64
+  size: 268, 128
+Idle
+  xy: 536, 64
+  size: 268, 128
+Idle
+  xy: 804, 64
+  size: 268, 128
+Idle
+  xy: 1072, 64
+  size: 268, 128
+Idle
+  xy: 1340, 64
+  size: 268, 128
+Idle
+  xy: 1608, 64
+  size: 268, 128
+Idle
+  xy: 1876, 64
+  size: 268, 128
+Idle
+  xy: 2144, 64
+  size: 268, 128
+Idle
+  xy: 2412, 64
+  size: 268, 128
+Idle
+  xy: 2680, 64
+  size: 268, 128
+Idle
+  xy: 2948, 64
+  size: 268, 128
+Walk
+  xy: 0, 192
+  size: 268, 128
+Walk
+  xy: 268, 192
+  size: 268, 128
+Walk
+  xy: 536, 192
+  size: 268, 128
+Walk
+  xy: 804, 192
+  size: 268, 128
+Walk
+  xy: 1072, 192
+  size: 268, 128
+Walk
+  xy: 1340, 192
+  size: 268, 128
+Walk
+  xy: 1608, 192
+  size: 268, 128
+Walk
+  xy: 1876, 192
+  size: 268, 128
+Attack
+  xy: 0, 320
+  size: 268, 128
+Attack
+  xy: 268, 320
+  size: 268, 128
+Attack
+  xy: 536, 320
+  size: 268, 128
+Attack
+  xy: 804, 320
+  size: 268, 128
+Attack
+  xy: 1072, 320
+  size: 268, 128
+Attack
+  xy: 1340, 320
+  size: 268, 128
+Attack
+  xy: 1608, 320
+  size: 268, 128
+Attack
+  xy: 1876, 320
+  size: 268, 128
+Attack
+  xy: 2144, 320
+  size: 268, 128
+Attack
+  xy: 2412, 320
+  size: 268, 128
+Attack
+  xy: 2680, 320
+  size: 268, 128
+Attack
+  xy: 2948, 320
+  size: 268, 128
+Hit
+  xy: 0, 448
+  size: 268, 128
+Hit
+  xy: 268, 448
+  size: 268, 128
+Hit
+  xy: 536, 448
+  size: 268, 128
+Hit
+  xy: 804, 448
+  size: 268, 128
+Death
+  xy: 0, 576
+  size: 268, 128
+Death
+  xy: 268, 576
+  size: 268, 128
+Death
+  xy: 536, 576
+  size: 268, 128
+Death
+  xy: 804, 576
+  size: 268, 128
+Death
+  xy: 1072, 576
+  size: 268, 128
+Death
+  xy: 1340, 576
+  size: 268, 128
+Death
+  xy: 1608, 576
+  size: 268, 128
+Death
+  xy: 1876, 576
+  size: 268, 128
+Death
+  xy: 2144, 576
+  size: 268, 128
+Death
+  xy: 2412, 576
+  size: 268, 128
+Death
+  xy: 2680, 576
+  size: 268, 128
+Death
+  xy: 2948, 576
+  size: 268, 128
+Death
+  xy: 3216, 576
+  size: 268, 128

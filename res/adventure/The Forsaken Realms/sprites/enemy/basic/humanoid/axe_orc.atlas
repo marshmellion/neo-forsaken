@@ -1,0 +1,65 @@
+axe_orc.png
+size: 256,105
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 9, 0
+  size: 18, 21
+Idle
+  xy: 9, 0
+  size: 18, 21
+Idle
+  xy: 62, 0
+  size: 18, 21
+Idle
+  xy: 108, 0
+  size: 18, 21
+Idle
+  xy: 162, 0
+  size: 18, 21
+Walk
+  xy: 10, 21
+  size: 18, 21
+Walk
+  xy: 54, 21
+  size: 18, 21
+Walk
+  xy: 98, 21
+  size: 18, 21
+Walk
+  xy: 142, 21
+  size: 18, 21
+Walk
+  xy: 186, 21
+  size: 18, 21
+Walk
+  xy: 230, 21
+  size: 18, 21
+Attack
+  xy: 2, 42
+  size: 18, 21
+Attack
+  xy: 52, 42
+  size: 18, 21
+Attack
+  xy: 102, 42
+  size: 18, 21
+Attack
+  xy: 152, 42
+  size: 18, 21
+Hit
+  xy: 9, 63
+  size: 18, 21
+Hit
+  xy: 9, 63
+  size: 18, 21
+Death
+  xy: 44, 84
+  size: 18, 21
+Death
+  xy: 62, 84
+  size: 18, 21
+Death
+  xy: 137, 84
+  size: 18, 21

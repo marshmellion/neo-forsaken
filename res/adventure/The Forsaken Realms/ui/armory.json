@@ -1,0 +1,298 @@
+{
+  "width": 480,
+  "height": 270,
+  "yDown": true,
+  "elements": [
+    {
+      "type": "Image",
+      "name": "lastScreen",
+      "width": 480,
+      "height": 270
+    },
+    {
+      "type": "Image",
+      "image": "ui/equipment.png",
+      "x": 8,
+      "y": 8,
+      "width": 129,
+      "height": 243
+    },
+    {
+      "type": "Label",
+      "name": "dollTitle",
+      "text": "[%70]Player",
+      "x": 12,
+      "y": 9,
+      "width": 122,
+      "height": 12
+    },
+    {
+      "type": "ImageButton",
+      "name": "Equipment_Ability1",
+      "style": "item_frame_static",
+      "width": 20,
+      "height": 20,
+      "x": 17,
+      "y": 20
+    },
+    {
+      "type": "ImageButton",
+      "name": "Equipment_Ability2",
+      "style": "item_frame_static",
+      "width": 20,
+      "height": 20,
+      "x": 107,
+      "y": 20
+    },
+    {
+      "type": "ImageButton",
+      "name": "Equipment_Ability3",
+      "style": "item_frame_static",
+      "width": 20,
+      "height": 20,
+      "x": 107,
+      "y": 42
+    },
+    {
+      "type": "ImageButton",
+      "name": "Equipment_Neck",
+      "style": "item_frame_static",
+      "width": 20,
+      "height": 20,
+      "x": 62,
+      "y": 40
+    },
+    {
+      "type": "ImageButton",
+      "name": "Equipment_Head",
+      "style": "item_frame_static",
+      "width": 20,
+      "height": 20,
+      "x": 62,
+      "y": 20
+    },
+    {
+      "type": "ImageButton",
+      "name": "Equipment_Legs",
+      "style": "item_frame_static",
+      "width": 20,
+      "height": 20,
+      "x": 62,
+      "y": 152
+    },
+    {
+      "type": "ImageButton",
+      "name": "Equipment_Body",
+      "style": "item_frame_static",
+      "width": 20,
+      "height": 20,
+      "x": 62,
+      "y": 85
+    },
+    {
+      "type": "ImageButton",
+      "name": "Equipment_Boots",
+      "style": "item_frame_static",
+      "width": 20,
+      "height": 20,
+      "x": 62,
+      "y": 220
+    },
+    {
+      "type": "ImageButton",
+      "name": "Equipment_Left",
+      "style": "item_frame_static",
+      "width": 20,
+      "height": 20,
+      "x": 17,
+      "y": 130
+    },
+    {
+      "type": "ImageButton",
+      "name": "Equipment_Left2",
+      "style": "item_frame_static",
+      "width": 20,
+      "height": 20,
+      "x": 17,
+      "y": 152
+    },
+    {
+      "type": "ImageButton",
+      "name": "Equipment_Medal",
+      "style": "item_frame_static",
+      "width": 20,
+      "height": 20,
+      "x": 17,
+      "y": 175
+    },
+    {
+      "type": "ImageButton",
+      "name": "Equipment_Blessing",
+      "style": "item_frame_static",
+      "width": 20,
+      "height": 20,
+      "x": 17,
+      "y": 42
+    },
+    {
+      "type": "ImageButton",
+      "name": "Equipment_Heart",
+      "style": "item_frame_static",
+      "width": 20,
+      "height": 20,
+      "x": 17,
+      "y": 197
+    },
+    {
+      "type": "ImageButton",
+      "name": "Equipment_Pocket",
+      "style": "item_frame_static",
+      "width": 20,
+      "height": 20,
+      "x": 107,
+      "y": 175
+    },
+    {
+      "type": "ImageButton",
+      "name": "Equipment_Token",
+      "style": "item_frame_static",
+      "width": 20,
+      "height": 20,
+      "x": 107,
+      "y": 197
+    },
+    {
+      "type": "ImageButton",
+      "name": "Equipment_Right",
+      "style": "item_frame_static",
+      "width": 20,
+      "height": 20,
+      "x": 107,
+      "y": 130
+    },
+    {
+      "type": "ImageButton",
+      "name": "Equipment_Right2",
+      "style": "item_frame_static",
+      "width": 20,
+      "height": 20,
+      "x": 107,
+      "y": 152
+    },
+    {
+      "type": "Label",
+      "name": "storageTitle",
+      "text": "[%70]Armory Storage",
+      "x": 150,
+      "y": 6,
+      "width": 110,
+      "height": 12
+    },
+    {
+      "type": "Scroll",
+      "name": "storage",
+      "x": 145,
+      "y": 19,
+      "width": 112,
+      "height": 193
+    },
+    {
+      "type": "Label",
+      "name": "inventoryTitle",
+      "text": "[%70]Inventory",
+      "x": 372,
+      "y": 6,
+      "width": 100,
+      "height": 12
+    },
+    {
+      "type": "Scroll",
+      "name": "inventory",
+      "x": 369,
+      "y": 19,
+      "width": 106,
+      "height": 193
+    },
+    {
+      "type": "Window",
+      "x": 261,
+      "y": 8,
+      "width": 106,
+      "height": 204
+    },
+    {
+      "type": "Label",
+      "name": "item_description",
+      "x": 267,
+      "y": 12,
+      "width": 96,
+      "height": 198
+    },
+    {
+      "type": "TextButton",
+      "name": "sell",
+      "text": "[%75]Sell",
+      "width": 56,
+      "height": 30,
+      "x": 80,
+      "y": 222
+    },
+    {
+      "type": "TextButton",
+      "name": "delete",
+      "text": "[%80]tr(lblDispose)",
+      "width": 56,
+      "height": 30,
+      "x": 144,
+      "y": 222
+    },
+    {
+      "type": "TextButton",
+      "name": "sets",
+      "text": "[%80]Sets",
+      "width": 56,
+      "height": 30,
+      "x": 144,
+      "y": 222
+    },
+    {
+      "type": "TextButton",
+      "name": "use",
+      "text": "tr(lblUse)",
+      "binding": "Use",
+      "width": 56,
+      "height": 30,
+      "x": 208,
+      "y": 222
+    },
+    {
+      "type": "TextButton",
+      "name": "equip",
+      "text": "tr(lblEquip)",
+      "binding": "Equip",
+      "width": 56,
+      "height": 30,
+      "x": 272,
+      "y": 222
+    },
+    {
+      "type": "TextButton",
+      "name": "transfer",
+      "text": "[%75]Transfer",
+      "width": 56,
+      "height": 30,
+      "x": 336,
+      "y": 222
+    },
+    {
+      "type": "TextButton",
+      "name": "return",
+      "text": "tr(lblBack)",
+      "binding": "Back",
+      "width": 56,
+      "height": 30,
+      "x": 400,
+      "y": 222
+    }
+  ]
+}

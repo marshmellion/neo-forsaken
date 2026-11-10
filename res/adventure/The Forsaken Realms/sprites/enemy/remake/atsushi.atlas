@@ -1,0 +1,300 @@
+atsushi.png
+size: 2774,1094
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 146, 103
+  footprint: 14, 4, 120, 94
+Idle
+  xy: 146, 64
+  size: 146, 103
+Idle
+  xy: 292, 64
+  size: 146, 103
+Idle
+  xy: 438, 64
+  size: 146, 103
+Idle
+  xy: 584, 64
+  size: 146, 103
+Idle
+  xy: 730, 64
+  size: 146, 103
+Idle
+  xy: 876, 64
+  size: 146, 103
+Idle
+  xy: 1022, 64
+  size: 146, 103
+Idle
+  xy: 1168, 64
+  size: 146, 103
+Idle
+  xy: 1314, 64
+  size: 146, 103
+Walk
+  xy: 0, 167
+  size: 146, 103
+Walk
+  xy: 146, 167
+  size: 146, 103
+Walk
+  xy: 292, 167
+  size: 146, 103
+Walk
+  xy: 438, 167
+  size: 146, 103
+Walk
+  xy: 584, 167
+  size: 146, 103
+Walk
+  xy: 730, 167
+  size: 146, 103
+Attack
+  xy: 0, 270
+  size: 146, 103
+Attack
+  xy: 146, 270
+  size: 146, 103
+Attack
+  xy: 292, 270
+  size: 146, 103
+Attack
+  xy: 438, 270
+  size: 146, 103
+Attack
+  xy: 584, 270
+  size: 146, 103
+Attack
+  xy: 730, 270
+  size: 146, 103
+Attack
+  xy: 876, 270
+  size: 146, 103
+Attack
+  xy: 1022, 270
+  size: 146, 103
+Attack
+  xy: 1168, 270
+  size: 146, 103
+Attack
+  xy: 1314, 270
+  size: 146, 103
+Attack
+  xy: 1460, 270
+  size: 146, 103
+Attack
+  xy: 1606, 270
+  size: 146, 103
+Hit
+  xy: 0, 373
+  size: 146, 103
+Hit
+  xy: 146, 373
+  size: 146, 103
+Hit
+  xy: 292, 373
+  size: 146, 103
+Hit
+  xy: 438, 373
+  size: 146, 103
+Hit
+  xy: 584, 373
+  size: 146, 103
+Hit
+  xy: 730, 373
+  size: 146, 103
+Hit
+  xy: 876, 373
+  size: 146, 103
+Hit
+  xy: 1022, 373
+  size: 146, 103
+Death
+  xy: 0, 476
+  size: 146, 103
+Death
+  xy: 146, 476
+  size: 146, 103
+Death
+  xy: 292, 476
+  size: 146, 103
+Death
+  xy: 438, 476
+  size: 146, 103
+Death
+  xy: 584, 476
+  size: 146, 103
+Death
+  xy: 730, 476
+  size: 146, 103
+Death
+  xy: 876, 476
+  size: 146, 103
+Death
+  xy: 1022, 476
+  size: 146, 103
+Death
+  xy: 1168, 476
+  size: 146, 103
+Death
+  xy: 1314, 476
+  size: 146, 103
+Death
+  xy: 1460, 476
+  size: 146, 103
+Death
+  xy: 1606, 476
+  size: 146, 103
+Death
+  xy: 1752, 476
+  size: 146, 103
+Death
+  xy: 1898, 476
+  size: 146, 103
+Death
+  xy: 2044, 476
+  size: 146, 103
+Death
+  xy: 2190, 476
+  size: 146, 103
+Death
+  xy: 2336, 476
+  size: 146, 103
+Death
+  xy: 2482, 476
+  size: 146, 103
+Death
+  xy: 2628, 476
+  size: 146, 103
+Wake
+  xy: 0, 579
+  size: 146, 103
+Wake
+  xy: 146, 579
+  size: 146, 103
+Wake
+  xy: 292, 579
+  size: 146, 103
+Wake
+  xy: 438, 579
+  size: 146, 103
+Wake
+  xy: 584, 579
+  size: 146, 103
+Wake
+  xy: 730, 579
+  size: 146, 103
+Wake
+  xy: 876, 579
+  size: 146, 103
+Wake
+  xy: 1022, 579
+  size: 146, 103
+Wake
+  xy: 1168, 579
+  size: 146, 103
+Wake
+  xy: 1314, 579
+  size: 146, 103
+IdleUp
+  xy: 0, 682
+  size: 146, 103
+IdleUp
+  xy: 146, 682
+  size: 146, 103
+IdleUp
+  xy: 292, 682
+  size: 146, 103
+IdleUp
+  xy: 438, 682
+  size: 146, 103
+IdleUp
+  xy: 584, 682
+  size: 146, 103
+IdleUp
+  xy: 730, 682
+  size: 146, 103
+IdleUp
+  xy: 876, 682
+  size: 146, 103
+IdleUp
+  xy: 1022, 682
+  size: 146, 103
+IdleUp
+  xy: 1168, 682
+  size: 146, 103
+IdleUp
+  xy: 1314, 682
+  size: 146, 103
+IdleDown
+  xy: 0, 785
+  size: 146, 103
+IdleDown
+  xy: 146, 785
+  size: 146, 103
+IdleDown
+  xy: 292, 785
+  size: 146, 103
+IdleDown
+  xy: 438, 785
+  size: 146, 103
+IdleDown
+  xy: 584, 785
+  size: 146, 103
+IdleDown
+  xy: 730, 785
+  size: 146, 103
+IdleDown
+  xy: 876, 785
+  size: 146, 103
+IdleDown
+  xy: 1022, 785
+  size: 146, 103
+IdleDown
+  xy: 1168, 785
+  size: 146, 103
+IdleDown
+  xy: 1314, 785
+  size: 146, 103
+WalkUp
+  xy: 0, 888
+  size: 146, 103
+WalkUp
+  xy: 146, 888
+  size: 146, 103
+WalkUp
+  xy: 292, 888
+  size: 146, 103
+WalkUp
+  xy: 438, 888
+  size: 146, 103
+WalkUp
+  xy: 584, 888
+  size: 146, 103
+WalkUp
+  xy: 730, 888
+  size: 146, 103
+WalkDown
+  xy: 0, 991
+  size: 146, 103
+WalkDown
+  xy: 146, 991
+  size: 146, 103
+WalkDown
+  xy: 292, 991
+  size: 146, 103
+WalkDown
+  xy: 438, 991
+  size: 146, 103
+WalkDown
+  xy: 584, 991
+  size: 146, 103
+WalkDown
+  xy: 730, 991
+  size: 146, 103

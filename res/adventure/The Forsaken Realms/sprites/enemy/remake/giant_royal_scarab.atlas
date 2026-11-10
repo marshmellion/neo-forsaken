@@ -1,0 +1,87 @@
+giant_royal_scarab.png
+size: 1136,654
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 142, 118
+  footprint: 17, 5, 108, 113
+Idle
+  xy: 142, 64
+  size: 142, 118
+Idle
+  xy: 284, 64
+  size: 142, 118
+Idle
+  xy: 426, 64
+  size: 142, 118
+Walk
+  xy: 0, 182
+  size: 142, 118
+Walk
+  xy: 142, 182
+  size: 142, 118
+Walk
+  xy: 284, 182
+  size: 142, 118
+Walk
+  xy: 426, 182
+  size: 142, 118
+Attack
+  xy: 0, 300
+  size: 142, 118
+Attack
+  xy: 142, 300
+  size: 142, 118
+Attack
+  xy: 284, 300
+  size: 142, 118
+Attack
+  xy: 426, 300
+  size: 142, 118
+Attack
+  xy: 568, 300
+  size: 142, 118
+Attack
+  xy: 710, 300
+  size: 142, 118
+Attack
+  xy: 852, 300
+  size: 142, 118
+Attack
+  xy: 994, 300
+  size: 142, 118
+Hit
+  xy: 0, 418
+  size: 142, 118
+Hit
+  xy: 142, 418
+  size: 142, 118
+Hit
+  xy: 284, 418
+  size: 142, 118
+Hit
+  xy: 426, 418
+  size: 142, 118
+Death
+  xy: 0, 536
+  size: 142, 118
+Death
+  xy: 142, 536
+  size: 142, 118
+Death
+  xy: 284, 536
+  size: 142, 118
+Death
+  xy: 426, 536
+  size: 142, 118
+Death
+  xy: 568, 536
+  size: 142, 118
+Death
+  xy: 710, 536
+  size: 142, 118

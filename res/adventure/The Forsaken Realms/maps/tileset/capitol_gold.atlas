@@ -1,0 +1,23 @@
+capitol_gold.png
+size: 220,48
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Trader
+  xy: 0, 0
+  size: 32, 32
+ArmoryLevel1
+  xy: 32, 0
+  size: 40, 40
+ArmoryLevel2
+  xy: 72, 0
+  size: 48, 48
+PlainShop
+  xy: 120, 0
+  size: 40, 40
+SpecialShop
+  xy: 160, 0
+  size: 40, 40
+Outlook
+  xy: 200, 0
+  size: 20, 48

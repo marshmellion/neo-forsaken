@@ -1,0 +1,290 @@
+arcades_sabboth.png
+size: 3230,2824
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 190, 276
+Idle
+  xy: 190, 64
+  size: 190, 276
+Idle
+  xy: 380, 64
+  size: 190, 276
+Idle
+  xy: 570, 64
+  size: 190, 276
+Idle
+  xy: 760, 64
+  size: 190, 276
+Idle
+  xy: 950, 64
+  size: 190, 276
+Idle
+  xy: 1140, 64
+  size: 190, 276
+Idle
+  xy: 1330, 64
+  size: 190, 276
+Idle
+  xy: 1520, 64
+  size: 190, 276
+Idle
+  xy: 1710, 64
+  size: 190, 276
+Walk
+  xy: 0, 340
+  size: 190, 276
+Walk
+  xy: 190, 340
+  size: 190, 276
+Walk
+  xy: 380, 340
+  size: 190, 276
+Walk
+  xy: 570, 340
+  size: 190, 276
+Walk
+  xy: 760, 340
+  size: 190, 276
+Walk
+  xy: 950, 340
+  size: 190, 276
+Attack
+  xy: 0, 616
+  size: 190, 276
+Attack
+  xy: 190, 616
+  size: 190, 276
+Attack
+  xy: 380, 616
+  size: 190, 276
+Attack
+  xy: 570, 616
+  size: 190, 276
+Attack
+  xy: 760, 616
+  size: 190, 276
+Attack
+  xy: 950, 616
+  size: 190, 276
+Attack
+  xy: 1140, 616
+  size: 190, 276
+Attack
+  xy: 1330, 616
+  size: 190, 276
+Attack
+  xy: 1520, 616
+  size: 190, 276
+Attack
+  xy: 1710, 616
+  size: 190, 276
+Attack
+  xy: 1900, 616
+  size: 190, 276
+Hit
+  xy: 0, 892
+  size: 190, 276
+Hit
+  xy: 190, 892
+  size: 190, 276
+Hit
+  xy: 380, 892
+  size: 190, 276
+Hit
+  xy: 570, 892
+  size: 190, 276
+Hit
+  xy: 760, 892
+  size: 190, 276
+Hit
+  xy: 950, 892
+  size: 190, 276
+Hit
+  xy: 1140, 892
+  size: 190, 276
+Hit
+  xy: 1330, 892
+  size: 190, 276
+Death
+  xy: 0, 1168
+  size: 190, 276
+Death
+  xy: 190, 1168
+  size: 190, 276
+Death
+  xy: 380, 1168
+  size: 190, 276
+Death
+  xy: 570, 1168
+  size: 190, 276
+Death
+  xy: 760, 1168
+  size: 190, 276
+Death
+  xy: 950, 1168
+  size: 190, 276
+Death
+  xy: 1140, 1168
+  size: 190, 276
+Death
+  xy: 1330, 1168
+  size: 190, 276
+Death
+  xy: 1520, 1168
+  size: 190, 276
+Death
+  xy: 1710, 1168
+  size: 190, 276
+Death
+  xy: 1900, 1168
+  size: 190, 276
+Death
+  xy: 2090, 1168
+  size: 190, 276
+Death
+  xy: 2280, 1168
+  size: 190, 276
+Death
+  xy: 2470, 1168
+  size: 190, 276
+Death
+  xy: 2660, 1168
+  size: 190, 276
+Death
+  xy: 2850, 1168
+  size: 190, 276
+Death
+  xy: 3040, 1168
+  size: 190, 276
+Wake
+  xy: 0, 1444
+  size: 190, 276
+Wake
+  xy: 190, 1444
+  size: 190, 276
+Wake
+  xy: 380, 1444
+  size: 190, 276
+Wake
+  xy: 570, 1444
+  size: 190, 276
+Wake
+  xy: 760, 1444
+  size: 190, 276
+Wake
+  xy: 950, 1444
+  size: 190, 276
+Wake
+  xy: 1140, 1444
+  size: 190, 276
+Wake
+  xy: 1330, 1444
+  size: 190, 276
+Wake
+  xy: 1520, 1444
+  size: 190, 276
+Wake
+  xy: 1710, 1444
+  size: 190, 276
+IdleUp
+  xy: 0, 1720
+  size: 190, 276
+IdleUp
+  xy: 190, 1720
+  size: 190, 276
+IdleUp
+  xy: 380, 1720
+  size: 190, 276
+IdleUp
+  xy: 570, 1720
+  size: 190, 276
+IdleUp
+  xy: 760, 1720
+  size: 190, 276
+IdleUp
+  xy: 950, 1720
+  size: 190, 276
+IdleUp
+  xy: 1140, 1720
+  size: 190, 276
+IdleUp
+  xy: 1330, 1720
+  size: 190, 276
+IdleUp
+  xy: 1520, 1720
+  size: 190, 276
+IdleUp
+  xy: 1710, 1720
+  size: 190, 276
+IdleDown
+  xy: 0, 1996
+  size: 190, 276
+IdleDown
+  xy: 190, 1996
+  size: 190, 276
+IdleDown
+  xy: 380, 1996
+  size: 190, 276
+IdleDown
+  xy: 570, 1996
+  size: 190, 276
+IdleDown
+  xy: 760, 1996
+  size: 190, 276
+IdleDown
+  xy: 950, 1996
+  size: 190, 276
+IdleDown
+  xy: 1140, 1996
+  size: 190, 276
+IdleDown
+  xy: 1330, 1996
+  size: 190, 276
+IdleDown
+  xy: 1520, 1996
+  size: 190, 276
+IdleDown
+  xy: 1710, 1996
+  size: 190, 276
+WalkUp
+  xy: 0, 2272
+  size: 190, 276
+WalkUp
+  xy: 190, 2272
+  size: 190, 276
+WalkUp
+  xy: 380, 2272
+  size: 190, 276
+WalkUp
+  xy: 570, 2272
+  size: 190, 276
+WalkUp
+  xy: 760, 2272
+  size: 190, 276
+WalkUp
+  xy: 950, 2272
+  size: 190, 276
+WalkDown
+  xy: 0, 2548
+  size: 190, 276
+WalkDown
+  xy: 190, 2548
+  size: 190, 276
+WalkDown
+  xy: 380, 2548
+  size: 190, 276
+WalkDown
+  xy: 570, 2548
+  size: 190, 276
+WalkDown
+  xy: 760, 2548
+  size: 190, 276
+WalkDown
+  xy: 950, 2548
+  size: 190, 276

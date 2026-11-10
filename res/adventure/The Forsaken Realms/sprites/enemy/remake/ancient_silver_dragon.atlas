@@ -1,0 +1,297 @@
+ancient_silver_dragon.png
+size: 3154,2194
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 166, 213
+  footprint: 10, 53, 151, 117
+Idle
+  xy: 166, 64
+  size: 166, 213
+Idle
+  xy: 332, 64
+  size: 166, 213
+Idle
+  xy: 498, 64
+  size: 166, 213
+Idle
+  xy: 664, 64
+  size: 166, 213
+Idle
+  xy: 830, 64
+  size: 166, 213
+Idle
+  xy: 996, 64
+  size: 166, 213
+Idle
+  xy: 1162, 64
+  size: 166, 213
+Idle
+  xy: 1328, 64
+  size: 166, 213
+Idle
+  xy: 1494, 64
+  size: 166, 213
+Walk
+  xy: 0, 277
+  size: 166, 213
+Walk
+  xy: 166, 277
+  size: 166, 213
+Walk
+  xy: 332, 277
+  size: 166, 213
+Walk
+  xy: 498, 277
+  size: 166, 213
+Walk
+  xy: 664, 277
+  size: 166, 213
+Walk
+  xy: 830, 277
+  size: 166, 213
+Attack
+  xy: 0, 490
+  size: 166, 213
+Attack
+  xy: 166, 490
+  size: 166, 213
+Attack
+  xy: 332, 490
+  size: 166, 213
+Attack
+  xy: 498, 490
+  size: 166, 213
+Attack
+  xy: 664, 490
+  size: 166, 213
+Attack
+  xy: 830, 490
+  size: 166, 213
+Attack
+  xy: 996, 490
+  size: 166, 213
+Attack
+  xy: 1162, 490
+  size: 166, 213
+Attack
+  xy: 1328, 490
+  size: 166, 213
+Attack
+  xy: 1494, 490
+  size: 166, 213
+Attack
+  xy: 1660, 490
+  size: 166, 213
+Hit
+  xy: 0, 703
+  size: 166, 213
+Hit
+  xy: 166, 703
+  size: 166, 213
+Hit
+  xy: 332, 703
+  size: 166, 213
+Hit
+  xy: 498, 703
+  size: 166, 213
+Hit
+  xy: 664, 703
+  size: 166, 213
+Hit
+  xy: 830, 703
+  size: 166, 213
+Hit
+  xy: 996, 703
+  size: 166, 213
+Hit
+  xy: 1162, 703
+  size: 166, 213
+Death
+  xy: 0, 916
+  size: 166, 213
+Death
+  xy: 166, 916
+  size: 166, 213
+Death
+  xy: 332, 916
+  size: 166, 213
+Death
+  xy: 498, 916
+  size: 166, 213
+Death
+  xy: 664, 916
+  size: 166, 213
+Death
+  xy: 830, 916
+  size: 166, 213
+Death
+  xy: 996, 916
+  size: 166, 213
+Death
+  xy: 1162, 916
+  size: 166, 213
+Death
+  xy: 1328, 916
+  size: 166, 213
+Death
+  xy: 1494, 916
+  size: 166, 213
+Death
+  xy: 1660, 916
+  size: 166, 213
+Death
+  xy: 1826, 916
+  size: 166, 213
+Death
+  xy: 1992, 916
+  size: 166, 213
+Death
+  xy: 2158, 916
+  size: 166, 213
+Death
+  xy: 2324, 916
+  size: 166, 213
+Death
+  xy: 2490, 916
+  size: 166, 213
+Death
+  xy: 2656, 916
+  size: 166, 213
+Death
+  xy: 2822, 916
+  size: 166, 213
+Death
+  xy: 2988, 916
+  size: 166, 213
+Wake
+  xy: 0, 1129
+  size: 166, 213
+Wake
+  xy: 166, 1129
+  size: 166, 213
+Wake
+  xy: 332, 1129
+  size: 166, 213
+Wake
+  xy: 498, 1129
+  size: 166, 213
+Wake
+  xy: 664, 1129
+  size: 166, 213
+Wake
+  xy: 830, 1129
+  size: 166, 213
+Wake
+  xy: 996, 1129
+  size: 166, 213
+Wake
+  xy: 1162, 1129
+  size: 166, 213
+Wake
+  xy: 1328, 1129
+  size: 166, 213
+Wake
+  xy: 1494, 1129
+  size: 166, 213
+IdleUp
+  xy: 0, 1342
+  size: 166, 213
+IdleUp
+  xy: 166, 1342
+  size: 166, 213
+IdleUp
+  xy: 332, 1342
+  size: 166, 213
+IdleUp
+  xy: 498, 1342
+  size: 166, 213
+IdleUp
+  xy: 664, 1342
+  size: 166, 213
+IdleUp
+  xy: 830, 1342
+  size: 166, 213
+IdleUp
+  xy: 996, 1342
+  size: 166, 213
+IdleUp
+  xy: 1162, 1342
+  size: 166, 213
+IdleUp
+  xy: 1328, 1342
+  size: 166, 213
+IdleUp
+  xy: 1494, 1342
+  size: 166, 213
+IdleDown
+  xy: 0, 1555
+  size: 166, 213
+IdleDown
+  xy: 166, 1555
+  size: 166, 213
+IdleDown
+  xy: 332, 1555
+  size: 166, 213
+IdleDown
+  xy: 498, 1555
+  size: 166, 213
+IdleDown
+  xy: 664, 1555
+  size: 166, 213
+IdleDown
+  xy: 830, 1555
+  size: 166, 213
+IdleDown
+  xy: 996, 1555
+  size: 166, 213
+IdleDown
+  xy: 1162, 1555
+  size: 166, 213
+IdleDown
+  xy: 1328, 1555
+  size: 166, 213
+IdleDown
+  xy: 1494, 1555
+  size: 166, 213
+WalkUp
+  xy: 0, 1768
+  size: 166, 213
+WalkUp
+  xy: 166, 1768
+  size: 166, 213
+WalkUp
+  xy: 332, 1768
+  size: 166, 213
+WalkUp
+  xy: 498, 1768
+  size: 166, 213
+WalkUp
+  xy: 664, 1768
+  size: 166, 213
+WalkUp
+  xy: 830, 1768
+  size: 166, 213
+WalkDown
+  xy: 0, 1981
+  size: 166, 213
+WalkDown
+  xy: 166, 1981
+  size: 166, 213
+WalkDown
+  xy: 332, 1981
+  size: 166, 213
+WalkDown
+  xy: 498, 1981
+  size: 166, 213
+WalkDown
+  xy: 664, 1981
+  size: 166, 213
+WalkDown
+  xy: 830, 1981
+  size: 166, 213

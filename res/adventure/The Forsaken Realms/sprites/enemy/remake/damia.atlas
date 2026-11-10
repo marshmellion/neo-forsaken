@@ -1,0 +1,167 @@
+damia.png
+size: 560,631
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 70, 63
+Idle
+  xy: 70, 64
+  size: 70, 63
+Idle
+  xy: 140, 64
+  size: 70, 63
+Idle
+  xy: 210, 64
+  size: 70, 63
+Walk
+  xy: 0, 127
+  size: 70, 63
+Walk
+  xy: 70, 127
+  size: 70, 63
+Walk
+  xy: 140, 127
+  size: 70, 63
+Walk
+  xy: 210, 127
+  size: 70, 63
+Walk
+  xy: 280, 127
+  size: 70, 63
+Walk
+  xy: 350, 127
+  size: 70, 63
+Walk
+  xy: 420, 127
+  size: 70, 63
+Walk
+  xy: 490, 127
+  size: 70, 63
+Attack
+  xy: 0, 190
+  size: 70, 63
+Attack
+  xy: 70, 190
+  size: 70, 63
+Attack
+  xy: 140, 190
+  size: 70, 63
+Attack
+  xy: 210, 190
+  size: 70, 63
+Attack
+  xy: 280, 190
+  size: 70, 63
+Attack
+  xy: 350, 190
+  size: 70, 63
+Attack
+  xy: 420, 190
+  size: 70, 63
+Hit
+  xy: 0, 253
+  size: 70, 63
+Hit
+  xy: 70, 253
+  size: 70, 63
+Hit
+  xy: 140, 253
+  size: 70, 63
+Hit
+  xy: 210, 253
+  size: 70, 63
+Death
+  xy: 0, 316
+  size: 70, 63
+Death
+  xy: 70, 316
+  size: 70, 63
+Death
+  xy: 140, 316
+  size: 70, 63
+Death
+  xy: 210, 316
+  size: 70, 63
+Death
+  xy: 280, 316
+  size: 70, 63
+Death
+  xy: 350, 316
+  size: 70, 63
+IdleUp
+  xy: 0, 379
+  size: 70, 63
+IdleUp
+  xy: 70, 379
+  size: 70, 63
+IdleUp
+  xy: 140, 379
+  size: 70, 63
+IdleUp
+  xy: 210, 379
+  size: 70, 63
+IdleDown
+  xy: 0, 442
+  size: 70, 63
+IdleDown
+  xy: 70, 442
+  size: 70, 63
+IdleDown
+  xy: 140, 442
+  size: 70, 63
+IdleDown
+  xy: 210, 442
+  size: 70, 63
+WalkUp
+  xy: 0, 505
+  size: 70, 63
+WalkUp
+  xy: 70, 505
+  size: 70, 63
+WalkUp
+  xy: 140, 505
+  size: 70, 63
+WalkUp
+  xy: 210, 505
+  size: 70, 63
+WalkUp
+  xy: 280, 505
+  size: 70, 63
+WalkUp
+  xy: 350, 505
+  size: 70, 63
+WalkUp
+  xy: 420, 505
+  size: 70, 63
+WalkUp
+  xy: 490, 505
+  size: 70, 63
+WalkDown
+  xy: 0, 568
+  size: 70, 63
+WalkDown
+  xy: 70, 568
+  size: 70, 63
+WalkDown
+  xy: 140, 568
+  size: 70, 63
+WalkDown
+  xy: 210, 568
+  size: 70, 63
+WalkDown
+  xy: 280, 568
+  size: 70, 63
+WalkDown
+  xy: 350, 568
+  size: 70, 63
+WalkDown
+  xy: 420, 568
+  size: 70, 63
+WalkDown
+  xy: 490, 568
+  size: 70, 63

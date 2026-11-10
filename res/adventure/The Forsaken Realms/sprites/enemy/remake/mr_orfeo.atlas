@@ -1,0 +1,264 @@
+mr_orfeo.png
+size: 1050,734
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 70, 67
+  footprint: 11, 27, 58, 33
+Idle
+  xy: 70, 64
+  size: 70, 67
+Idle
+  xy: 140, 64
+  size: 70, 67
+Idle
+  xy: 210, 64
+  size: 70, 67
+Idle
+  xy: 280, 64
+  size: 70, 67
+Idle
+  xy: 350, 64
+  size: 70, 67
+Idle
+  xy: 420, 64
+  size: 70, 67
+Idle
+  xy: 490, 64
+  size: 70, 67
+Idle
+  xy: 560, 64
+  size: 70, 67
+Idle
+  xy: 630, 64
+  size: 70, 67
+Walk
+  xy: 0, 131
+  size: 70, 67
+Walk
+  xy: 70, 131
+  size: 70, 67
+Walk
+  xy: 140, 131
+  size: 70, 67
+Walk
+  xy: 210, 131
+  size: 70, 67
+Walk
+  xy: 280, 131
+  size: 70, 67
+Walk
+  xy: 350, 131
+  size: 70, 67
+Attack
+  xy: 0, 198
+  size: 70, 67
+Attack
+  xy: 70, 198
+  size: 70, 67
+Attack
+  xy: 140, 198
+  size: 70, 67
+Attack
+  xy: 210, 198
+  size: 70, 67
+Attack
+  xy: 280, 198
+  size: 70, 67
+Attack
+  xy: 350, 198
+  size: 70, 67
+Attack
+  xy: 420, 198
+  size: 70, 67
+Attack
+  xy: 490, 198
+  size: 70, 67
+Attack
+  xy: 560, 198
+  size: 70, 67
+Hit
+  xy: 0, 265
+  size: 70, 67
+Hit
+  xy: 70, 265
+  size: 70, 67
+Hit
+  xy: 140, 265
+  size: 70, 67
+Hit
+  xy: 210, 265
+  size: 70, 67
+Hit
+  xy: 280, 265
+  size: 70, 67
+Hit
+  xy: 350, 265
+  size: 70, 67
+Death
+  xy: 0, 332
+  size: 70, 67
+Death
+  xy: 70, 332
+  size: 70, 67
+Death
+  xy: 140, 332
+  size: 70, 67
+Death
+  xy: 210, 332
+  size: 70, 67
+Death
+  xy: 280, 332
+  size: 70, 67
+Death
+  xy: 350, 332
+  size: 70, 67
+Death
+  xy: 420, 332
+  size: 70, 67
+Death
+  xy: 490, 332
+  size: 70, 67
+Death
+  xy: 560, 332
+  size: 70, 67
+Death
+  xy: 630, 332
+  size: 70, 67
+Death
+  xy: 700, 332
+  size: 70, 67
+Death
+  xy: 770, 332
+  size: 70, 67
+Death
+  xy: 840, 332
+  size: 70, 67
+Death
+  xy: 910, 332
+  size: 70, 67
+Death
+  xy: 980, 332
+  size: 70, 67
+Wake
+  xy: 0, 399
+  size: 70, 67
+Wake
+  xy: 70, 399
+  size: 70, 67
+Wake
+  xy: 140, 399
+  size: 70, 67
+Wake
+  xy: 210, 399
+  size: 70, 67
+Wake
+  xy: 280, 399
+  size: 70, 67
+Wake
+  xy: 350, 399
+  size: 70, 67
+Wake
+  xy: 420, 399
+  size: 70, 67
+IdleUp
+  xy: 0, 466
+  size: 70, 67
+IdleUp
+  xy: 70, 466
+  size: 70, 67
+IdleUp
+  xy: 140, 466
+  size: 70, 67
+IdleUp
+  xy: 210, 466
+  size: 70, 67
+IdleUp
+  xy: 280, 466
+  size: 70, 67
+IdleUp
+  xy: 350, 466
+  size: 70, 67
+IdleUp
+  xy: 420, 466
+  size: 70, 67
+IdleUp
+  xy: 490, 466
+  size: 70, 67
+IdleUp
+  xy: 560, 466
+  size: 70, 67
+IdleUp
+  xy: 630, 466
+  size: 70, 67
+IdleDown
+  xy: 0, 533
+  size: 70, 67
+IdleDown
+  xy: 70, 533
+  size: 70, 67
+IdleDown
+  xy: 140, 533
+  size: 70, 67
+IdleDown
+  xy: 210, 533
+  size: 70, 67
+IdleDown
+  xy: 280, 533
+  size: 70, 67
+IdleDown
+  xy: 350, 533
+  size: 70, 67
+IdleDown
+  xy: 420, 533
+  size: 70, 67
+IdleDown
+  xy: 490, 533
+  size: 70, 67
+IdleDown
+  xy: 560, 533
+  size: 70, 67
+IdleDown
+  xy: 630, 533
+  size: 70, 67
+WalkUp
+  xy: 0, 600
+  size: 70, 67
+WalkUp
+  xy: 70, 600
+  size: 70, 67
+WalkUp
+  xy: 140, 600
+  size: 70, 67
+WalkUp
+  xy: 210, 600
+  size: 70, 67
+WalkUp
+  xy: 280, 600
+  size: 70, 67
+WalkUp
+  xy: 350, 600
+  size: 70, 67
+WalkDown
+  xy: 0, 667
+  size: 70, 67
+WalkDown
+  xy: 70, 667
+  size: 70, 67
+WalkDown
+  xy: 140, 667
+  size: 70, 67
+WalkDown
+  xy: 210, 667
+  size: 70, 67
+WalkDown
+  xy: 280, 667
+  size: 70, 67
+WalkDown
+  xy: 350, 667
+  size: 70, 67

@@ -1,0 +1,135 @@
+squirrel.png
+size: 416,343
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 52, 31
+  footprint: 11, 7, 31, 24
+Idle
+  xy: 52, 64
+  size: 52, 31
+Idle
+  xy: 104, 64
+  size: 52, 31
+Idle
+  xy: 156, 64
+  size: 52, 31
+Walk
+  xy: 0, 95
+  size: 52, 31
+Walk
+  xy: 52, 95
+  size: 52, 31
+Walk
+  xy: 104, 95
+  size: 52, 31
+Walk
+  xy: 156, 95
+  size: 52, 31
+Attack
+  xy: 0, 126
+  size: 52, 31
+Attack
+  xy: 52, 126
+  size: 52, 31
+Attack
+  xy: 104, 126
+  size: 52, 31
+Attack
+  xy: 156, 126
+  size: 52, 31
+Attack
+  xy: 208, 126
+  size: 52, 31
+Attack
+  xy: 260, 126
+  size: 52, 31
+Attack
+  xy: 312, 126
+  size: 52, 31
+Attack
+  xy: 364, 126
+  size: 52, 31
+Hit
+  xy: 0, 157
+  size: 52, 31
+Hit
+  xy: 52, 157
+  size: 52, 31
+Hit
+  xy: 104, 157
+  size: 52, 31
+Hit
+  xy: 156, 157
+  size: 52, 31
+Death
+  xy: 0, 188
+  size: 52, 31
+Death
+  xy: 52, 188
+  size: 52, 31
+Death
+  xy: 104, 188
+  size: 52, 31
+Death
+  xy: 156, 188
+  size: 52, 31
+Death
+  xy: 208, 188
+  size: 52, 31
+Death
+  xy: 260, 188
+  size: 52, 31
+IdleUp
+  xy: 0, 219
+  size: 52, 31
+IdleUp
+  xy: 52, 219
+  size: 52, 31
+IdleUp
+  xy: 104, 219
+  size: 52, 31
+IdleUp
+  xy: 156, 219
+  size: 52, 31
+IdleDown
+  xy: 0, 250
+  size: 52, 31
+IdleDown
+  xy: 52, 250
+  size: 52, 31
+IdleDown
+  xy: 104, 250
+  size: 52, 31
+IdleDown
+  xy: 156, 250
+  size: 52, 31
+WalkUp
+  xy: 0, 281
+  size: 52, 31
+WalkUp
+  xy: 52, 281
+  size: 52, 31
+WalkUp
+  xy: 104, 281
+  size: 52, 31
+WalkUp
+  xy: 156, 281
+  size: 52, 31
+WalkDown
+  xy: 0, 312
+  size: 52, 31
+WalkDown
+  xy: 52, 312
+  size: 52, 31
+WalkDown
+  xy: 104, 312
+  size: 52, 31
+WalkDown
+  xy: 156, 312
+  size: 52, 31

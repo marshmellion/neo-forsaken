@@ -1,0 +1,171 @@
+kadena.png
+size: 880,631
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 110, 63
+  footprint: 24, 1, 62, 62
+Idle
+  xy: 110, 64
+  size: 110, 63
+Idle
+  xy: 220, 64
+  size: 110, 63
+Idle
+  xy: 330, 64
+  size: 110, 63
+Walk
+  xy: 0, 127
+  size: 110, 63
+Walk
+  xy: 110, 127
+  size: 110, 63
+Walk
+  xy: 220, 127
+  size: 110, 63
+Walk
+  xy: 330, 127
+  size: 110, 63
+Walk
+  xy: 440, 127
+  size: 110, 63
+Walk
+  xy: 550, 127
+  size: 110, 63
+Walk
+  xy: 660, 127
+  size: 110, 63
+Walk
+  xy: 770, 127
+  size: 110, 63
+Attack
+  xy: 0, 190
+  size: 110, 63
+Attack
+  xy: 110, 190
+  size: 110, 63
+Attack
+  xy: 220, 190
+  size: 110, 63
+Attack
+  xy: 330, 190
+  size: 110, 63
+Attack
+  xy: 440, 190
+  size: 110, 63
+Attack
+  xy: 550, 190
+  size: 110, 63
+Attack
+  xy: 660, 190
+  size: 110, 63
+Attack
+  xy: 770, 190
+  size: 110, 63
+Hit
+  xy: 0, 253
+  size: 110, 63
+Hit
+  xy: 110, 253
+  size: 110, 63
+Hit
+  xy: 220, 253
+  size: 110, 63
+Hit
+  xy: 330, 253
+  size: 110, 63
+Death
+  xy: 0, 316
+  size: 110, 63
+Death
+  xy: 110, 316
+  size: 110, 63
+Death
+  xy: 220, 316
+  size: 110, 63
+Death
+  xy: 330, 316
+  size: 110, 63
+Death
+  xy: 440, 316
+  size: 110, 63
+Death
+  xy: 550, 316
+  size: 110, 63
+IdleUp
+  xy: 0, 379
+  size: 110, 63
+IdleUp
+  xy: 110, 379
+  size: 110, 63
+IdleUp
+  xy: 220, 379
+  size: 110, 63
+IdleUp
+  xy: 330, 379
+  size: 110, 63
+IdleDown
+  xy: 0, 442
+  size: 110, 63
+IdleDown
+  xy: 110, 442
+  size: 110, 63
+IdleDown
+  xy: 220, 442
+  size: 110, 63
+IdleDown
+  xy: 330, 442
+  size: 110, 63
+WalkUp
+  xy: 0, 505
+  size: 110, 63
+WalkUp
+  xy: 110, 505
+  size: 110, 63
+WalkUp
+  xy: 220, 505
+  size: 110, 63
+WalkUp
+  xy: 330, 505
+  size: 110, 63
+WalkUp
+  xy: 440, 505
+  size: 110, 63
+WalkUp
+  xy: 550, 505
+  size: 110, 63
+WalkUp
+  xy: 660, 505
+  size: 110, 63
+WalkUp
+  xy: 770, 505
+  size: 110, 63
+WalkDown
+  xy: 0, 568
+  size: 110, 63
+WalkDown
+  xy: 110, 568
+  size: 110, 63
+WalkDown
+  xy: 220, 568
+  size: 110, 63
+WalkDown
+  xy: 330, 568
+  size: 110, 63
+WalkDown
+  xy: 440, 568
+  size: 110, 63
+WalkDown
+  xy: 550, 568
+  size: 110, 63
+WalkDown
+  xy: 660, 568
+  size: 110, 63
+WalkDown
+  xy: 770, 568
+  size: 110, 63

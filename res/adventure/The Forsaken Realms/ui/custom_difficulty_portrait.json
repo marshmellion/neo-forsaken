@@ -1,0 +1,75 @@
+{
+  "width": 270,
+  "height": 480,
+  "yDown": true,
+  "elements": [
+    {
+      "type": "Image",
+      "image": "ui/title_bg_portrait.png",
+      "width": 270,
+      "height": 480
+    },
+    {
+      "type": "Scroll",
+      "name": "frame",
+      "x": 6,
+      "y": 6,
+      "width": 258,
+      "height": 420
+    },
+    {
+      "type": "Table",
+      "name": "content",
+      "x": 12,
+      "y": 11,
+      "width": 246,
+      "height": 410
+    },
+    {
+      "type": "TextButton",
+      "name": "done",
+      "text": "tr(lblDone)",
+      "binding": "Back",
+      "width": 62,
+      "height": 32,
+      "x": 6,
+      "y": 432
+    },
+    {
+      "type": "TextButton",
+      "name": "resetAll",
+      "text": "Reset all",
+      "width": 62,
+      "height": 32,
+      "x": 136,
+      "y": 432
+    },
+    {
+      "type": "TextButton",
+      "name": "share",
+      "text": "[%80]Share code",
+      "width": 63,
+      "height": 32,
+      "x": 201,
+      "y": 432
+    },
+    {
+      "type": "TextButton",
+      "name": "cancel",
+      "text": "tr(lblCancel)",
+      "width": 62,
+      "height": 32,
+      "x": 71,
+      "y": 432
+    },
+    {
+      "type": "TextButton",
+      "name": "changeLevel",
+      "text": "[%75]Change level...",
+      "width": 88,
+      "height": 18,
+      "x": 168,
+      "y": 12
+    }
+  ]
+}

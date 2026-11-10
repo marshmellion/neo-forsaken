@@ -1,0 +1,870 @@
+[
+  {
+    "id": "dawnward",
+    "name": "Dawnward Regalia",
+    "family": "Regalia",
+    "against": null,
+    "color": "white",
+    "items": [
+      "Mask of Hypochondria",
+      "Jewel of Blessings",
+      "Nomad Armor",
+      "Thunder Lasso",
+      "Prayerbook of Vigor",
+      "Vindicator Greaves",
+      "Empyrial Greaves"
+    ],
+    "itemWhere": [
+      "White Equipment shops, the Plains Capital Arena, your Capitol's Arena",
+      "White Equipment shops, the Plains Capital Arena, your Capitol's Arena",
+      "White Equipment shops, the Plains Capital Arena, your Capitol's Arena",
+      "White Equipment shops, the Plains Capital Arena, your Capitol's Arena",
+      "White Equipment shops, the Plains Capital Arena, drops from Heliod",
+      "White Equipment shops, the Plains Capital Arena, your Capitol's Arena",
+      "White Equipment shops, the Plains Capital Arena, your Capitol's Arena"
+    ],
+    "where": "White Equipment shops; the Plains Capital Arena; your Capitol's Arena; the Armories; some pieces drop from bosses",
+    "tiers": [
+      {
+        "pieces": 3,
+        "effect": {
+          "lifeModifier": 2
+        },
+        "text": "+2 life",
+        "oracle": "+2 life in every duel"
+      },
+      {
+        "pieces": 5,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Dawnward Presence"
+          ]
+        },
+        "text": "Dawnward Presence",
+        "oracle": "At the beginning of your upkeep, you gain 1 life."
+      },
+      {
+        "pieces": 7,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Dawnward Regalia"
+          ]
+        },
+        "replaces": 5,
+        "text": "Dawnward Regalia",
+        "oracle": "At the beginning of your upkeep, you gain 1 life. Creatures you control get +0/+1."
+      }
+    ]
+  },
+  {
+    "id": "tidewise",
+    "name": "Tidewise Regalia",
+    "family": "Regalia",
+    "against": null,
+    "color": "blue",
+    "items": [
+      "Roiling Stormcrown",
+      "Tidal Amulet",
+      "Cephalid Armor",
+      "Giant's Bracer",
+      "Prayerbook of Fortunes",
+      "Barrier Breeches",
+      "Sovereign Greaves"
+    ],
+    "itemWhere": [
+      "Blue Equipment shops, the Island Capital Arena, your Capitol's Arena",
+      "Blue Equipment shops, the Island Capital Arena, drops from Rikala",
+      "Blue Equipment shops, the Island Capital Arena, your Capitol's Arena",
+      "Blue Equipment shops, the Island Capital Arena, your Capitol's Arena",
+      "Blue Equipment shops, the Island Capital Arena, drops from Thassa",
+      "Blue Equipment shops, the Island Capital Arena, your Capitol's Arena",
+      "Blue Equipment shops, the Island Capital Arena, your Capitol's Arena"
+    ],
+    "where": "Blue Equipment shops; the Island Capital Arena; your Capitol's Arena; the Armories; some pieces drop from bosses",
+    "tiers": [
+      {
+        "pieces": 3,
+        "effect": {
+          "lifeModifier": 2
+        },
+        "text": "+2 life",
+        "oracle": "+2 life in every duel"
+      },
+      {
+        "pieces": 5,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Tidewise Presence"
+          ]
+        },
+        "text": "Tidewise Presence",
+        "oracle": "At the beginning of your upkeep, scry 1."
+      },
+      {
+        "pieces": 7,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Tidewise Regalia"
+          ]
+        },
+        "replaces": 5,
+        "text": "Tidewise Regalia",
+        "oracle": "At the beginning of your upkeep, scry 1. The first instant or sorcery spell you cast each turn costs {1} less to cast."
+      }
+    ]
+  },
+  {
+    "id": "gravebound",
+    "name": "Gravebound Regalia",
+    "family": "Regalia",
+    "against": null,
+    "color": "black",
+    "items": [
+      "Mask of Mortiphobia",
+      "Amulet of Scorn",
+      "Cabal Armor",
+      "Enormous Energy Blade",
+      "Little Black Book",
+      "Leech Breeches",
+      "Princely Greaves"
+    ],
+    "itemWhere": [
+      "Black Equipment shops, the Swamp Capital Arena, your Capitol's Arena",
+      "Black Equipment shops, the Swamp Capital Arena, your Capitol's Arena",
+      "Black Equipment shops, the Swamp Capital Arena, your Capitol's Arena",
+      "Black Equipment shops, the Swamp Capital Arena, your Capitol's Arena",
+      "Black Equipment shops, the Swamp Capital Arena, your Capitol's Arena",
+      "Black Equipment shops, the Swamp Capital Arena, your Capitol's Arena",
+      "Black Equipment shops, the Swamp Capital Arena, your Capitol's Arena"
+    ],
+    "where": "Black Equipment shops; the Swamp Capital Arena; your Capitol's Arena; the Armories; some pieces drop from bosses",
+    "tiers": [
+      {
+        "pieces": 3,
+        "effect": {
+          "lifeModifier": 2
+        },
+        "text": "+2 life",
+        "oracle": "+2 life in every duel"
+      },
+      {
+        "pieces": 5,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Gravebound Presence"
+          ]
+        },
+        "text": "Gravebound Presence",
+        "oracle": "Whenever a creature you control dies, each opponent loses 1 life."
+      },
+      {
+        "pieces": 7,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Gravebound Regalia"
+          ]
+        },
+        "replaces": 5,
+        "text": "Gravebound Regalia",
+        "oracle": "Whenever a creature you control dies, each opponent loses 1 life. Whenever a creature you control dies, you gain 1 life."
+      }
+    ]
+  },
+  {
+    "id": "emberclad",
+    "name": "Emberclad Regalia",
+    "family": "Regalia",
+    "against": null,
+    "color": "red",
+    "items": [
+      "Mask of Pyromania",
+      "Jewel of War",
+      "Barbarian Armor",
+      "Ramosian Greatsword",
+      "Tome of Triumph",
+      "Hellkite Greaves",
+      "Firefrightener Shoes"
+    ],
+    "itemWhere": [
+      "Red Equipment shops, the Mountain Capital Arena, your Capitol's Arena",
+      "Red Equipment shops, the Mountain Capital Arena, your Capitol's Arena",
+      "Red Equipment shops, the Mountain Capital Arena, your Capitol's Arena",
+      "Red Equipment shops, the Mountain Capital Arena, your Capitol's Arena",
+      "Red Equipment shops, the Mountain Capital Arena, your Capitol's Arena",
+      "Red Equipment shops, the Mountain Capital Arena, your Capitol's Arena",
+      "Red Equipment shops, the Mountain Capital Arena, your Capitol's Arena"
+    ],
+    "where": "Red Equipment shops; the Mountain Capital Arena; your Capitol's Arena; the Armories; some pieces drop from bosses",
+    "tiers": [
+      {
+        "pieces": 3,
+        "effect": {
+          "lifeModifier": 2
+        },
+        "text": "+2 life",
+        "oracle": "+2 life in every duel"
+      },
+      {
+        "pieces": 5,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Emberclad Presence"
+          ]
+        },
+        "text": "Emberclad Presence",
+        "oracle": "Whenever you cast your first instant or sorcery spell each turn, Emberclad Presence deals 1 damage to each opponent."
+      },
+      {
+        "pieces": 7,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Emberclad Regalia"
+          ]
+        },
+        "replaces": 5,
+        "text": "Emberclad Regalia",
+        "oracle": "Whenever you cast your first instant or sorcery spell each turn, Emberclad Regalia deals 2 damage to each opponent."
+      }
+    ]
+  },
+  {
+    "id": "wildgrove",
+    "name": "Wildgrove Regalia",
+    "family": "Regalia",
+    "against": null,
+    "color": "green",
+    "items": [
+      "Mask of Narcissism",
+      "Jewel of Rage",
+      "Centaur Armor",
+      "Colossal Dreadmace",
+      "Map to the World Tree",
+      "Godsire Greaves",
+      "Greenseeker's Shoes"
+    ],
+    "itemWhere": [
+      "Green Equipment shops, the Forest Capital Arena, your Capitol's Arena",
+      "Green Equipment shops, the Forest Capital Arena, your Capitol's Arena",
+      "Green Equipment shops, the Forest Capital Arena, your Capitol's Arena",
+      "Green Equipment shops, the Forest Capital Arena, Armories (Common)",
+      "Green Equipment shops, the Forest Capital Arena, your Capitol's Arena",
+      "Green Equipment shops, the Forest Capital Arena, your Capitol's Arena",
+      "Green Equipment shops, the Forest Capital Arena, your Capitol's Arena"
+    ],
+    "where": "Green Equipment shops; the Forest Capital Arena; your Capitol's Arena; the Armories; some pieces drop from bosses",
+    "tiers": [
+      {
+        "pieces": 3,
+        "effect": {
+          "lifeModifier": 2
+        },
+        "text": "+2 life",
+        "oracle": "+2 life in every duel"
+      },
+      {
+        "pieces": 5,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Wildgrove Presence"
+          ]
+        },
+        "text": "Wildgrove Presence",
+        "oracle": "Creatures you control with power 4 or greater have trample."
+      },
+      {
+        "pieces": 7,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Wildgrove Regalia"
+          ]
+        },
+        "replaces": 5,
+        "text": "Wildgrove Regalia",
+        "oracle": "Creatures you control with power 4 or greater have trample. Creature spells you cast with power 4 or greater cost {1} less to cast."
+      }
+    ]
+  },
+  {
+    "id": "sunbane",
+    "name": "Sunbane Raiment",
+    "family": "Bane",
+    "against": "W",
+    "color": null,
+    "items": [
+      "Mask of Valgavoth",
+      "Amulet of Fury",
+      "Armor of Urami",
+      "Unhallowed Sigil",
+      "Staff of Azar",
+      "Alesha's War Skirt",
+      "Witch's Shoes"
+    ],
+    "itemWhere": [
+      "the Swamp Capital Arena, your Capitol's Arena, drops from Valgavoth",
+      "the Swamp Capital Arena, your Capitol's Arena, Armories (Rare)",
+      "the Swamp Capital Arena, your Capitol's Arena, drops from Kaalia",
+      "the Swamp Capital Arena, your Capitol's Arena, Armories (Rare)",
+      "the Swamp Capital Arena, your Capitol's Arena, drops from The Lichlord of Azar",
+      "the Swamp Capital Arena, your Capitol's Arena, drops from Alesha",
+      "the Swamp Capital Arena, your Capitol's Arena, Armories (Rare)"
+    ],
+    "where": "the Swamp Capital Arena; your Capitol's Arena; the Armories; some pieces drop from bosses",
+    "tiers": [
+      {
+        "pieces": 3,
+        "effect": {
+          "lifeModifier": 3
+        },
+        "text": "+3 life against white",
+        "oracle": "+3 life in a duel against a white enemy",
+        "onlyAgainst": true
+      },
+      {
+        "pieces": 5,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Sunbane Ward"
+          ]
+        },
+        "text": "Sunbane Ward",
+        "oracle": "White spells your opponents cast cost {1} more to cast."
+      },
+      {
+        "pieces": 7,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Sunbane Raiment"
+          ]
+        },
+        "replaces": 5,
+        "text": "Sunbane Raiment",
+        "oracle": "White spells your opponents cast cost {1} more to cast. Whenever an opponent casts a white spell, you gain 1 life."
+      }
+    ]
+  },
+  {
+    "id": "tidebane",
+    "name": "Tidebane Raiment",
+    "family": "Bane",
+    "against": "U",
+    "color": null,
+    "items": [
+      "Pinnacle Circlet",
+      "Amulet of Favor",
+      "Grovetender's Robes",
+      "Shaman's Staff",
+      "Warren Tender's Baton",
+      "Spore Skirt",
+      "Concordant Boots"
+    ],
+    "itemWhere": [
+      "the Mountain Capital Arena, your Capitol's Arena, Armories (Rare)",
+      "the Mountain Capital Arena, your Capitol's Arena, Armories (Rare)",
+      "the Mountain Capital Arena, your Capitol's Arena, drops from Titanic Tree Overseer",
+      "the Mountain Capital Arena, your Capitol's Arena, drops from Gargantuan Gorilla",
+      "the Mountain Capital Arena, your Capitol's Arena, Armories (Rare)",
+      "the Mountain Capital Arena, your Capitol's Arena, Armories (Rare)",
+      "the Mountain Capital Arena, your Capitol's Arena, Armories (Rare)"
+    ],
+    "where": "the Mountain Capital Arena; your Capitol's Arena; the Armories; some pieces drop from bosses",
+    "tiers": [
+      {
+        "pieces": 3,
+        "effect": {
+          "lifeModifier": 3
+        },
+        "text": "+3 life against blue",
+        "oracle": "+3 life in a duel against a blue enemy",
+        "onlyAgainst": true
+      },
+      {
+        "pieces": 5,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Tidebane Ward"
+          ]
+        },
+        "text": "Tidebane Ward",
+        "oracle": "Blue spells your opponents cast cost {1} more to cast."
+      },
+      {
+        "pieces": 7,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Tidebane Raiment"
+          ]
+        },
+        "replaces": 5,
+        "text": "Tidebane Raiment",
+        "oracle": "Blue spells your opponents cast cost {1} more to cast. Whenever an opponent casts a blue spell, you gain 1 life."
+      }
+    ]
+  },
+  {
+    "id": "nightbane",
+    "name": "Nightbane Raiment",
+    "family": "Bane",
+    "against": "B",
+    "color": null,
+    "items": [
+      "Glorious Helm",
+      "Amulet of Mirth",
+      "Sanctuary Armor",
+      "Skyclave Maul",
+      "Guard's Shield",
+      "Lookout's Leggings",
+      "Ley Line Walker Boots"
+    ],
+    "itemWhere": [
+      "the Forest Capital Arena, your Capitol's Arena, Armories (Rare)",
+      "the Forest Capital Arena, your Capitol's Arena, Armories (Rare)",
+      "the Forest Capital Arena, your Capitol's Arena, drops from Derevi",
+      "the Forest Capital Arena, your Capitol's Arena, Armories (Rare)",
+      "the Forest Capital Arena, your Capitol's Arena, drops from Baron Von Gant",
+      "the Forest Capital Arena, drops from General Tazri, Armories (Rare)",
+      "the Forest Capital Arena, your Capitol's Arena, drops from Hidden Wumpus"
+    ],
+    "where": "the Forest Capital Arena; your Capitol's Arena; the Armories; some pieces drop from bosses",
+    "tiers": [
+      {
+        "pieces": 3,
+        "effect": {
+          "lifeModifier": 3
+        },
+        "text": "+3 life against black",
+        "oracle": "+3 life in a duel against a black enemy",
+        "onlyAgainst": true
+      },
+      {
+        "pieces": 5,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Nightbane Ward"
+          ]
+        },
+        "text": "Nightbane Ward",
+        "oracle": "Black spells your opponents cast cost {1} more to cast."
+      },
+      {
+        "pieces": 7,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Nightbane Raiment"
+          ]
+        },
+        "replaces": 5,
+        "text": "Nightbane Raiment",
+        "oracle": "Black spells your opponents cast cost {1} more to cast. Whenever an opponent casts a black spell, you gain 1 life."
+      }
+    ]
+  },
+  {
+    "id": "flamebane",
+    "name": "Flamebane Raiment",
+    "family": "Bane",
+    "against": "R",
+    "color": null,
+    "items": [
+      "Caretaker's Cap",
+      "Amulet of Mischief",
+      "Oracle's Robes",
+      "Serra's Prayer Book",
+      "The Blackstaff of Waterdeep",
+      "Pack Leader Pants",
+      "Peddler's Shoes"
+    ],
+    "itemWhere": [
+      "the Plains Capital Arena, your Capitol's Arena, drops from Ms. Bumbleflower",
+      "the Plains Capital Arena, your Capitol's Arena, Armories (Rare)",
+      "the Plains Capital Arena, your Capitol's Arena, drops from Shadrix",
+      "the Plains Capital Arena, your Capitol's Arena, drops from Serra the Benevolent",
+      "the Plains Capital Arena, your Capitol's Arena, Armories (Rare)",
+      "the Plains Capital Arena, your Capitol's Arena, drops from Rin and Seri",
+      "the Plains Capital Arena, your Capitol's Arena, Armories (Rare)"
+    ],
+    "where": "the Plains Capital Arena; your Capitol's Arena; the Armories; some pieces drop from bosses",
+    "tiers": [
+      {
+        "pieces": 3,
+        "effect": {
+          "lifeModifier": 3
+        },
+        "text": "+3 life against red",
+        "oracle": "+3 life in a duel against a red enemy",
+        "onlyAgainst": true
+      },
+      {
+        "pieces": 5,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Flamebane Ward"
+          ]
+        },
+        "text": "Flamebane Ward",
+        "oracle": "Red spells your opponents cast cost {1} more to cast."
+      },
+      {
+        "pieces": 7,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Flamebane Raiment"
+          ]
+        },
+        "replaces": 5,
+        "text": "Flamebane Raiment",
+        "oracle": "Red spells your opponents cast cost {1} more to cast. Whenever an opponent casts a red spell, you gain 1 life."
+      }
+    ]
+  },
+  {
+    "id": "wildbane",
+    "name": "Wildbane Raiment",
+    "family": "Bane",
+    "against": "G",
+    "color": null,
+    "items": [
+      "Crown of the False God",
+      "Amulet of Agony",
+      "Librarian's Robes",
+      "Poet's Quill",
+      "Tome of the Trove",
+      "Cutthroat Skirt",
+      "Immortal Treads"
+    ],
+    "itemWhere": [
+      "the Island Capital Arena, your Capitol's Arena, drops from Karona, False God",
+      "the Island Capital Arena, your Capitol's Arena, Armories (Rare)",
+      "the Island Capital Arena, your Capitol's Arena, drops from Tanazir",
+      "the Island Capital Arena, your Capitol's Arena, Armories (Rare)",
+      "the Island Capital Arena, your Capitol's Arena, drops from Lord of Atlantis",
+      "the Island Capital Arena, your Capitol's Arena, Armories (Rare)",
+      "the Island Capital Arena, your Capitol's Arena, drops from Chromium (Boss)"
+    ],
+    "where": "the Island Capital Arena; your Capitol's Arena; the Armories; some pieces drop from bosses",
+    "tiers": [
+      {
+        "pieces": 3,
+        "effect": {
+          "lifeModifier": 3
+        },
+        "text": "+3 life against green",
+        "oracle": "+3 life in a duel against a green enemy",
+        "onlyAgainst": true
+      },
+      {
+        "pieces": 5,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Wildbane Ward"
+          ]
+        },
+        "text": "Wildbane Ward",
+        "oracle": "Green spells your opponents cast cost {1} more to cast."
+      },
+      {
+        "pieces": 7,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Wildbane Raiment"
+          ]
+        },
+        "replaces": 5,
+        "text": "Wildbane Raiment",
+        "oracle": "Green spells your opponents cast cost {1} more to cast. Whenever an opponent casts a green spell, you gain 1 life."
+      }
+    ]
+  },
+  {
+    "id": "dragonlord",
+    "name": "Dragonlord's Hoard",
+    "family": "Legend",
+    "against": null,
+    "color": null,
+    "items": [
+      "Breaching Stormcrown",
+      "Phoenix Charm",
+      "Crucible Armor",
+      "Sword of the Ur-Dragon",
+      "Triassic Egg",
+      "Draped Dragonhide",
+      "Faerie Slippers"
+    ],
+    "itemWhere": [
+      "your Capitol's Arena, drops from Numot, Armories (Rare)",
+      "your Capitol's Arena, Armories (Rare)",
+      "your Capitol's Arena, drops from Kaalia, Armories (Rare)",
+      "your Capitol's Arena, drops from Scion of the Ur-Dragon, Armories (Rare)",
+      "your Capitol's Arena, drops from Atla Palani, Armories (Rare)",
+      "your Capitol's Arena, drops from Drakuseth, Armories (Uncommon)",
+      "your Capitol's Arena, Armories (Uncommon)"
+    ],
+    "where": "your Capitol's Arena; the Armories; some pieces drop from bosses",
+    "tiers": [
+      {
+        "pieces": 3,
+        "effect": {
+          "lifeModifier": 2
+        },
+        "text": "+2 life",
+        "oracle": "+2 life in every duel"
+      },
+      {
+        "pieces": 5,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Dragonlord's Presence"
+          ]
+        },
+        "text": "Dragonlord's Presence",
+        "oracle": "Dragon spells you cast cost {1} less to cast."
+      },
+      {
+        "pieces": 7,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Dragonlord's Hoard"
+          ]
+        },
+        "replaces": 5,
+        "text": "Dragonlord's Hoard",
+        "oracle": "Dragon spells you cast cost {1} less to cast. Dragons you control get +1/+0."
+      }
+    ]
+  },
+  {
+    "id": "stonewall",
+    "name": "Stonewall Bulwark",
+    "family": "Legend",
+    "against": null,
+    "color": null,
+    "items": [
+      "High Ground Helm",
+      "Basilisk Collar",
+      "Glacial Armor",
+      "Aegis of the Meek",
+      "Shield of Air",
+      "Greaves of Glare",
+      "Kry Greaves"
+    ],
+    "itemWhere": [
+      "your Capitol's Arena, Armories (Uncommon)",
+      "your Capitol's Arena, Armories (Rare)",
+      "your Capitol's Arena, drops from Heidar, Armories (Uncommon)",
+      "your Capitol's Arena, drops from Arcades, Armories (Rare)",
+      "your Capitol's Arena, drops from King Kane Ferguson, Armories (Rare)",
+      "your Capitol's Arena, Armories (Common)",
+      "your Capitol's Arena, drops from Arcades Sabboth, Armories (Rare)"
+    ],
+    "where": "your Capitol's Arena; the Armories; some pieces drop from bosses",
+    "tiers": [
+      {
+        "pieces": 3,
+        "effect": {
+          "lifeModifier": 2
+        },
+        "text": "+2 life",
+        "oracle": "+2 life in every duel"
+      },
+      {
+        "pieces": 5,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Stonewall Presence"
+          ]
+        },
+        "text": "Stonewall Presence",
+        "oracle": "Creatures you control with defender get +0/+2."
+      },
+      {
+        "pieces": 7,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Stonewall Bulwark"
+          ]
+        },
+        "replaces": 5,
+        "text": "Stonewall Bulwark",
+        "oracle": "Creatures you control with defender get +0/+2. Whenever a creature you control with defender blocks, you gain 1 life."
+      }
+    ]
+  },
+  {
+    "id": "fblthp",
+    "name": "Fblthp's Lost Things",
+    "family": "Legend",
+    "against": null,
+    "color": null,
+    "items": [
+      "Fblthp's Lost Hat",
+      "Fblthp's Lost Locket",
+      "Fblthp's Lost Shirt",
+      "Fblthp's Lost Fishing Pole",
+      "Fblthp's Lost Bauble",
+      "Fblthp's Lost Trousers",
+      "Fblthp's Lost Socks"
+    ],
+    "itemWhere": [
+      "your Capitol's Arena, Armories (Mythic)",
+      "not in the game yet",
+      "your Capitol's Arena, Armories (Rare)",
+      "your Capitol's Arena, Armories (Uncommon)",
+      "your Capitol's Arena, Armories (Rare)",
+      "not in the game yet",
+      "your Capitol's Arena, Armories (Common)"
+    ],
+    "where": "your Capitol's Arena; the Armories",
+    "tiers": [
+      {
+        "pieces": 3,
+        "effect": {
+          "lifeModifier": 2
+        },
+        "text": "+2 life",
+        "oracle": "+2 life in every duel"
+      },
+      {
+        "pieces": 5,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Fblthp's Presence"
+          ]
+        },
+        "text": "Fblthp's Presence",
+        "oracle": "At the beginning of your upkeep, if you have no cards in hand, draw a card."
+      },
+      {
+        "pieces": 7,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Fblthp's Lost Things"
+          ],
+          "changeStartCards": 1
+        },
+        "replaces": 5,
+        "text": "Fblthp's Lost Things",
+        "oracle": "At the beginning of your upkeep, if you have no cards in hand, draw a card. You began this game with one more card in hand."
+      }
+    ]
+  },
+  {
+    "id": "ironclad",
+    "name": "Ironclad",
+    "family": "Legend",
+    "against": null,
+    "color": null,
+    "items": [
+      "War Helm",
+      "Amulet of Vigor",
+      "Steel Armor",
+      "Steel Shield",
+      "Steel Sword",
+      "Steel Greaves",
+      "Iron Boots"
+    ],
+    "itemWhere": [
+      "your Capitol's Arena, Armories (Uncommon)",
+      "your Capitol's Arena, Armories (Rare)",
+      "your Capitol's Arena, drops from Armored Knight, Armories (Uncommon)",
+      "your Capitol's Arena, Armories (Rare)",
+      "Green Equipment shops, your Capitol's Arena, Armories (Uncommon)",
+      "not in the game yet",
+      "your Capitol's Arena, Armories (Uncommon)"
+    ],
+    "where": "your Capitol's Arena; Green Equipment shops; the Armories; some pieces drop from bosses",
+    "tiers": [
+      {
+        "pieces": 3,
+        "effect": {
+          "lifeModifier": 2
+        },
+        "text": "+2 life",
+        "oracle": "+2 life in every duel"
+      },
+      {
+        "pieces": 5,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Ironclad Presence"
+          ]
+        },
+        "text": "Ironclad Presence",
+        "oracle": "Equip abilities you activate cost {1} less to activate."
+      },
+      {
+        "pieces": 7,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Ironclad"
+          ]
+        },
+        "replaces": 5,
+        "text": "Ironclad",
+        "oracle": "Equip abilities you activate cost {1} less to activate. Equipped creatures you control get +1/+1."
+      }
+    ]
+  },
+  {
+    "id": "paragon",
+    "name": "Gilded Paragon",
+    "family": "Legend",
+    "against": null,
+    "color": null,
+    "items": [
+      "Crown of the Vale",
+      "Golden Egg",
+      "Mithril Armor",
+      "Gold Shield",
+      "Staff of the Ages",
+      "Mithril Greaves",
+      "Mithril Boots"
+    ],
+    "itemWhere": [
+      "your Capitol's Arena, drops from Sorceress Queen Kaja, Armories (Rare)",
+      "your Capitol's Arena, drops from The Goose Mother, Armories (Uncommon)",
+      "Blue Equipment shops, your Capitol's Arena, Armories (Mythic)",
+      "your Capitol's Arena, Armories (Rare)",
+      "your Capitol's Arena, drops from Lim-Dûl, the Necromancer, Armories (Rare)",
+      "not in the game yet",
+      "Blue Equipment shops, your Capitol's Arena, Armories (Rare)"
+    ],
+    "where": "your Capitol's Arena; Blue Equipment shops; the Armories; some pieces drop from bosses",
+    "tiers": [
+      {
+        "pieces": 3,
+        "effect": {
+          "lifeModifier": 2
+        },
+        "text": "+2 life",
+        "oracle": "+2 life in every duel"
+      },
+      {
+        "pieces": 5,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Paragon's Presence"
+          ],
+          "startBattleWithCard": [
+            "c_a_treasure_sac"
+          ]
+        },
+        "text": "Paragon's Presence",
+        "oracle": "You start with a Treasure. Whenever you sacrifice a Treasure, you gain 1 life."
+      },
+      {
+        "pieces": 7,
+        "effect": {
+          "startBattleWithCardInCommandZone": [
+            "Gilded Paragon"
+          ],
+          "startBattleWithCard": [
+            "c_a_treasure_sac",
+            "c_a_treasure_sac"
+          ]
+        },
+        "replaces": 5,
+        "text": "Gilded Paragon",
+        "oracle": "You start with two Treasures. Whenever you sacrifice a Treasure, you gain 2 life."
+      }
+    ]
+  }
+]

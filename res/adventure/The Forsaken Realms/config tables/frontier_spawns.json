@@ -1,0 +1,21 @@
+{
+  // Frontier spawns (user spec 2026-09-07) - hand-editable, no code change needed to retune.
+  // See FrontierSpawns.java for the predicate and BiomeData.getEnemy() for where it is applied.
+  //
+  // An audit found 111 enemies reachable through NO route at all: not roaming, not placed on a
+  // map, not in an arena pool, not named in a quest, and excluded from both the Chest's
+  // Dangerous-Enemy pool (Mythic tier only) and the cave-champion pool (sprite scale 1.5 or under).
+  // They are the plane's oversized legend cycle - the dragon lords, the Theros gods, the Slivers -
+  // and 85 of the 111 are multicoloured, which is also why they were never going to work as
+  // ordinary biome spawns.
+  //
+  // Round 375: this file only says WHO is a frontier legend (the predicate in FrontierSpawns.java
+  // plus the life ceiling below). Where, how often and which legend is sighted belongs to the
+  // legend table, legends.json - it took over the three shares that used to live here
+  // (unhappyShare 0.10, warShare 0.15, neutralColorlessShare 0.01 in the ordinary roll).
+
+  // Life ceiling for a candidate. 60 admits every genuinely unreachable enemy (the largest is 50)
+  // while keeping the hand-placed Eldrazi titans - Emrakul, Ulamog, Kozilek, all 70 life - out of
+  // the roaming pool, where they belong to the encounters that placed them.
+  "maxLife": 60
+}

@@ -1,0 +1,273 @@
+quintorius.png
+size: 1632,884
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 102, 82
+  footprint: 14, 21, 86, 56
+Idle
+  xy: 102, 64
+  size: 102, 82
+Idle
+  xy: 204, 64
+  size: 102, 82
+Idle
+  xy: 306, 64
+  size: 102, 82
+Idle
+  xy: 408, 64
+  size: 102, 82
+Idle
+  xy: 510, 64
+  size: 102, 82
+Idle
+  xy: 612, 64
+  size: 102, 82
+Idle
+  xy: 714, 64
+  size: 102, 82
+Idle
+  xy: 816, 64
+  size: 102, 82
+Idle
+  xy: 918, 64
+  size: 102, 82
+Walk
+  xy: 0, 146
+  size: 102, 82
+Walk
+  xy: 102, 146
+  size: 102, 82
+Walk
+  xy: 204, 146
+  size: 102, 82
+Walk
+  xy: 306, 146
+  size: 102, 82
+Walk
+  xy: 408, 146
+  size: 102, 82
+Walk
+  xy: 510, 146
+  size: 102, 82
+Attack
+  xy: 0, 228
+  size: 102, 82
+Attack
+  xy: 102, 228
+  size: 102, 82
+Attack
+  xy: 204, 228
+  size: 102, 82
+Attack
+  xy: 306, 228
+  size: 102, 82
+Attack
+  xy: 408, 228
+  size: 102, 82
+Attack
+  xy: 510, 228
+  size: 102, 82
+Attack
+  xy: 612, 228
+  size: 102, 82
+Attack
+  xy: 714, 228
+  size: 102, 82
+Attack
+  xy: 816, 228
+  size: 102, 82
+Attack
+  xy: 918, 228
+  size: 102, 82
+Hit
+  xy: 0, 310
+  size: 102, 82
+Hit
+  xy: 102, 310
+  size: 102, 82
+Hit
+  xy: 204, 310
+  size: 102, 82
+Hit
+  xy: 306, 310
+  size: 102, 82
+Hit
+  xy: 408, 310
+  size: 102, 82
+Hit
+  xy: 510, 310
+  size: 102, 82
+Death
+  xy: 0, 392
+  size: 102, 82
+Death
+  xy: 102, 392
+  size: 102, 82
+Death
+  xy: 204, 392
+  size: 102, 82
+Death
+  xy: 306, 392
+  size: 102, 82
+Death
+  xy: 408, 392
+  size: 102, 82
+Death
+  xy: 510, 392
+  size: 102, 82
+Death
+  xy: 612, 392
+  size: 102, 82
+Death
+  xy: 714, 392
+  size: 102, 82
+Death
+  xy: 816, 392
+  size: 102, 82
+Death
+  xy: 918, 392
+  size: 102, 82
+Death
+  xy: 1020, 392
+  size: 102, 82
+Death
+  xy: 1122, 392
+  size: 102, 82
+Death
+  xy: 1224, 392
+  size: 102, 82
+Death
+  xy: 1326, 392
+  size: 102, 82
+Death
+  xy: 1428, 392
+  size: 102, 82
+Death
+  xy: 1530, 392
+  size: 102, 82
+Wake
+  xy: 0, 474
+  size: 102, 82
+Wake
+  xy: 102, 474
+  size: 102, 82
+Wake
+  xy: 204, 474
+  size: 102, 82
+Wake
+  xy: 306, 474
+  size: 102, 82
+Wake
+  xy: 408, 474
+  size: 102, 82
+Wake
+  xy: 510, 474
+  size: 102, 82
+Wake
+  xy: 612, 474
+  size: 102, 82
+Wake
+  xy: 714, 474
+  size: 102, 82
+IdleUp
+  xy: 0, 556
+  size: 102, 82
+IdleUp
+  xy: 102, 556
+  size: 102, 82
+IdleUp
+  xy: 204, 556
+  size: 102, 82
+IdleUp
+  xy: 306, 556
+  size: 102, 82
+IdleUp
+  xy: 408, 556
+  size: 102, 82
+IdleUp
+  xy: 510, 556
+  size: 102, 82
+IdleUp
+  xy: 612, 556
+  size: 102, 82
+IdleUp
+  xy: 714, 556
+  size: 102, 82
+IdleUp
+  xy: 816, 556
+  size: 102, 82
+IdleUp
+  xy: 918, 556
+  size: 102, 82
+IdleDown
+  xy: 0, 638
+  size: 102, 82
+IdleDown
+  xy: 102, 638
+  size: 102, 82
+IdleDown
+  xy: 204, 638
+  size: 102, 82
+IdleDown
+  xy: 306, 638
+  size: 102, 82
+IdleDown
+  xy: 408, 638
+  size: 102, 82
+IdleDown
+  xy: 510, 638
+  size: 102, 82
+IdleDown
+  xy: 612, 638
+  size: 102, 82
+IdleDown
+  xy: 714, 638
+  size: 102, 82
+IdleDown
+  xy: 816, 638
+  size: 102, 82
+IdleDown
+  xy: 918, 638
+  size: 102, 82
+WalkUp
+  xy: 0, 720
+  size: 102, 82
+WalkUp
+  xy: 102, 720
+  size: 102, 82
+WalkUp
+  xy: 204, 720
+  size: 102, 82
+WalkUp
+  xy: 306, 720
+  size: 102, 82
+WalkUp
+  xy: 408, 720
+  size: 102, 82
+WalkUp
+  xy: 510, 720
+  size: 102, 82
+WalkDown
+  xy: 0, 802
+  size: 102, 82
+WalkDown
+  xy: 102, 802
+  size: 102, 82
+WalkDown
+  xy: 204, 802
+  size: 102, 82
+WalkDown
+  xy: 306, 802
+  size: 102, 82
+WalkDown
+  xy: 408, 802
+  size: 102, 82
+WalkDown
+  xy: 510, 802
+  size: 102, 82

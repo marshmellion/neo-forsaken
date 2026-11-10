@@ -1,0 +1,300 @@
+gorilla_chief.png
+size: 4674,1784
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 246, 172
+  footprint: 46, 42, 185, 122
+Idle
+  xy: 246, 64
+  size: 246, 172
+Idle
+  xy: 492, 64
+  size: 246, 172
+Idle
+  xy: 738, 64
+  size: 246, 172
+Idle
+  xy: 984, 64
+  size: 246, 172
+Idle
+  xy: 1230, 64
+  size: 246, 172
+Idle
+  xy: 1476, 64
+  size: 246, 172
+Idle
+  xy: 1722, 64
+  size: 246, 172
+Idle
+  xy: 1968, 64
+  size: 246, 172
+Idle
+  xy: 2214, 64
+  size: 246, 172
+Walk
+  xy: 0, 236
+  size: 246, 172
+Walk
+  xy: 246, 236
+  size: 246, 172
+Walk
+  xy: 492, 236
+  size: 246, 172
+Walk
+  xy: 738, 236
+  size: 246, 172
+Walk
+  xy: 984, 236
+  size: 246, 172
+Walk
+  xy: 1230, 236
+  size: 246, 172
+Attack
+  xy: 0, 408
+  size: 246, 172
+Attack
+  xy: 246, 408
+  size: 246, 172
+Attack
+  xy: 492, 408
+  size: 246, 172
+Attack
+  xy: 738, 408
+  size: 246, 172
+Attack
+  xy: 984, 408
+  size: 246, 172
+Attack
+  xy: 1230, 408
+  size: 246, 172
+Attack
+  xy: 1476, 408
+  size: 246, 172
+Attack
+  xy: 1722, 408
+  size: 246, 172
+Attack
+  xy: 1968, 408
+  size: 246, 172
+Attack
+  xy: 2214, 408
+  size: 246, 172
+Attack
+  xy: 2460, 408
+  size: 246, 172
+Attack
+  xy: 2706, 408
+  size: 246, 172
+Hit
+  xy: 0, 580
+  size: 246, 172
+Hit
+  xy: 246, 580
+  size: 246, 172
+Hit
+  xy: 492, 580
+  size: 246, 172
+Hit
+  xy: 738, 580
+  size: 246, 172
+Hit
+  xy: 984, 580
+  size: 246, 172
+Hit
+  xy: 1230, 580
+  size: 246, 172
+Hit
+  xy: 1476, 580
+  size: 246, 172
+Hit
+  xy: 1722, 580
+  size: 246, 172
+Death
+  xy: 0, 752
+  size: 246, 172
+Death
+  xy: 246, 752
+  size: 246, 172
+Death
+  xy: 492, 752
+  size: 246, 172
+Death
+  xy: 738, 752
+  size: 246, 172
+Death
+  xy: 984, 752
+  size: 246, 172
+Death
+  xy: 1230, 752
+  size: 246, 172
+Death
+  xy: 1476, 752
+  size: 246, 172
+Death
+  xy: 1722, 752
+  size: 246, 172
+Death
+  xy: 1968, 752
+  size: 246, 172
+Death
+  xy: 2214, 752
+  size: 246, 172
+Death
+  xy: 2460, 752
+  size: 246, 172
+Death
+  xy: 2706, 752
+  size: 246, 172
+Death
+  xy: 2952, 752
+  size: 246, 172
+Death
+  xy: 3198, 752
+  size: 246, 172
+Death
+  xy: 3444, 752
+  size: 246, 172
+Death
+  xy: 3690, 752
+  size: 246, 172
+Death
+  xy: 3936, 752
+  size: 246, 172
+Death
+  xy: 4182, 752
+  size: 246, 172
+Death
+  xy: 4428, 752
+  size: 246, 172
+Wake
+  xy: 0, 924
+  size: 246, 172
+Wake
+  xy: 246, 924
+  size: 246, 172
+Wake
+  xy: 492, 924
+  size: 246, 172
+Wake
+  xy: 738, 924
+  size: 246, 172
+Wake
+  xy: 984, 924
+  size: 246, 172
+Wake
+  xy: 1230, 924
+  size: 246, 172
+Wake
+  xy: 1476, 924
+  size: 246, 172
+Wake
+  xy: 1722, 924
+  size: 246, 172
+Wake
+  xy: 1968, 924
+  size: 246, 172
+Wake
+  xy: 2214, 924
+  size: 246, 172
+IdleUp
+  xy: 0, 1096
+  size: 246, 172
+IdleUp
+  xy: 246, 1096
+  size: 246, 172
+IdleUp
+  xy: 492, 1096
+  size: 246, 172
+IdleUp
+  xy: 738, 1096
+  size: 246, 172
+IdleUp
+  xy: 984, 1096
+  size: 246, 172
+IdleUp
+  xy: 1230, 1096
+  size: 246, 172
+IdleUp
+  xy: 1476, 1096
+  size: 246, 172
+IdleUp
+  xy: 1722, 1096
+  size: 246, 172
+IdleUp
+  xy: 1968, 1096
+  size: 246, 172
+IdleUp
+  xy: 2214, 1096
+  size: 246, 172
+IdleDown
+  xy: 0, 1268
+  size: 246, 172
+IdleDown
+  xy: 246, 1268
+  size: 246, 172
+IdleDown
+  xy: 492, 1268
+  size: 246, 172
+IdleDown
+  xy: 738, 1268
+  size: 246, 172
+IdleDown
+  xy: 984, 1268
+  size: 246, 172
+IdleDown
+  xy: 1230, 1268
+  size: 246, 172
+IdleDown
+  xy: 1476, 1268
+  size: 246, 172
+IdleDown
+  xy: 1722, 1268
+  size: 246, 172
+IdleDown
+  xy: 1968, 1268
+  size: 246, 172
+IdleDown
+  xy: 2214, 1268
+  size: 246, 172
+WalkUp
+  xy: 0, 1440
+  size: 246, 172
+WalkUp
+  xy: 246, 1440
+  size: 246, 172
+WalkUp
+  xy: 492, 1440
+  size: 246, 172
+WalkUp
+  xy: 738, 1440
+  size: 246, 172
+WalkUp
+  xy: 984, 1440
+  size: 246, 172
+WalkUp
+  xy: 1230, 1440
+  size: 246, 172
+WalkDown
+  xy: 0, 1612
+  size: 246, 172
+WalkDown
+  xy: 246, 1612
+  size: 246, 172
+WalkDown
+  xy: 492, 1612
+  size: 246, 172
+WalkDown
+  xy: 738, 1612
+  size: 246, 172
+WalkDown
+  xy: 984, 1612
+  size: 246, 172
+WalkDown
+  xy: 1230, 1612
+  size: 246, 172

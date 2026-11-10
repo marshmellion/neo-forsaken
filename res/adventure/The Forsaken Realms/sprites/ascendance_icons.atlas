@@ -1,0 +1,279 @@
+
+ascendance_icons.png
+size: 800,1200
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+vigor_1
+  xy: 2, 2
+  size: 96, 96
+vigor_2
+  xy: 102, 2
+  size: 96, 96
+vigor_3
+  xy: 202, 2
+  size: 96, 96
+haggler_1
+  xy: 302, 2
+  size: 96, 96
+haggler_2
+  xy: 402, 2
+  size: 96, 96
+haggler_3
+  xy: 502, 2
+  size: 96, 96
+swiftFeet_1
+  xy: 602, 2
+  size: 96, 96
+swiftFeet_2
+  xy: 702, 2
+  size: 96, 96
+swiftFeet_3
+  xy: 2, 102
+  size: 96, 96
+prospector_1
+  xy: 102, 102
+  size: 96, 96
+prospector_2
+  xy: 202, 102
+  size: 96, 96
+prospector_3
+  xy: 302, 102
+  size: 96, 96
+farSight_1
+  xy: 402, 102
+  size: 96, 96
+farSight_2
+  xy: 502, 102
+  size: 96, 96
+marshal_1
+  xy: 602, 102
+  size: 96, 96
+marshal_2
+  xy: 702, 102
+  size: 96, 96
+marshal_3
+  xy: 2, 202
+  size: 96, 96
+stubborn_1
+  xy: 102, 202
+  size: 96, 96
+stubborn_2
+  xy: 202, 202
+  size: 96, 96
+mender_1
+  xy: 302, 202
+  size: 96, 96
+mender_2
+  xy: 402, 202
+  size: 96, 96
+spoilsman_1
+  xy: 502, 202
+  size: 96, 96
+spoilsman_2
+  xy: 602, 202
+  size: 96, 96
+shardwell_1
+  xy: 702, 202
+  size: 96, 96
+shardwell_2
+  xy: 2, 302
+  size: 96, 96
+envoy_1
+  xy: 102, 302
+  size: 96, 96
+envoy_2
+  xy: 202, 302
+  size: 96, 96
+architect_1
+  xy: 302, 302
+  size: 96, 96
+architect_2
+  xy: 402, 302
+  size: 96, 96
+architect_3
+  xy: 502, 302
+  size: 96, 96
+mechanic_1
+  xy: 602, 302
+  size: 96, 96
+medic_1
+  xy: 702, 302
+  size: 96, 96
+gold
+  xy: 2, 402
+  size: 96, 96
+shards
+  xy: 102, 402
+  size: 96, 96
+wood
+  xy: 202, 402
+  size: 96, 96
+stone
+  xy: 302, 402
+  size: 96, 96
+rareCards
+  xy: 402, 402
+  size: 96, 96
+item
+  xy: 502, 402
+  size: 96, 96
+booster
+  xy: 602, 402
+  size: 96, 96
+mapFragment
+  xy: 702, 402
+  size: 96, 96
+blueprint
+  xy: 2, 502
+  size: 96, 96
+coins
+  xy: 102, 502
+  size: 96, 96
+goodwill
+  xy: 202, 502
+  size: 96, 96
+coinToss_1
+  xy: 302, 502
+  size: 96, 96
+title_1
+  xy: 402, 502
+  size: 96, 96
+title_2
+  xy: 502, 502
+  size: 96, 96
+title_3
+  xy: 602, 502
+  size: 96, 96
+title_4
+  xy: 702, 502
+  size: 96, 96
+title_5
+  xy: 2, 602
+  size: 96, 96
+title_6
+  xy: 102, 602
+  size: 96, 96
+life
+  xy: 202, 602
+  size: 96, 96
+powerGain_1
+  xy: 302, 602
+  size: 96, 96
+powerGain_2
+  xy: 402, 602
+  size: 96, 96
+powerGain_3
+  xy: 502, 602
+  size: 96, 96
+gambler_1
+  xy: 602, 602
+  size: 96, 96
+sellPrice_1
+  xy: 702, 602
+  size: 96, 96
+sellPrice_2
+  xy: 2, 702
+  size: 96, 96
+sellPrice_3
+  xy: 102, 702
+  size: 96, 96
+scientist_1
+  xy: 202, 702
+  size: 96, 96
+researcher_1
+  xy: 302, 702
+  size: 96, 96
+intimidating_1
+  xy: 402, 702
+  size: 96, 96
+intimidating_2
+  xy: 502, 702
+  size: 96, 96
+intimidating_3
+  xy: 602, 702
+  size: 96, 96
+templePriest_1
+  xy: 702, 702
+  size: 96, 96
+focused_1
+  xy: 2, 802
+  size: 96, 96
+guardFocus_1
+  xy: 102, 802
+  size: 96, 96
+guardSpoils_1
+  xy: 202, 802
+  size: 96, 96
+warmonger_1
+  xy: 302, 802
+  size: 96, 96
+warmonger_2
+  xy: 402, 802
+  size: 96, 96
+auraOfFear_1
+  xy: 502, 802
+  size: 96, 96
+auraOfFear_2
+  xy: 602, 802
+  size: 96, 96
+auraOfFear_3
+  xy: 702, 802
+  size: 96, 96
+legendSeeker_1
+  xy: 2, 902
+  size: 96, 96
+insight_1
+  xy: 102, 902
+  size: 96, 96
+pactOfEmbers_1
+  xy: 202, 902
+  size: 96, 96
+splinterCache_1
+  xy: 302, 902
+  size: 96, 96
+splinterCache_2
+  xy: 402, 902
+  size: 96, 96
+challenger_1
+  xy: 502, 902
+  size: 96, 96
+hunterLedger_1
+  xy: 602, 902
+  size: 96, 96
+lawOfStakes_1
+  xy: 702, 902
+  size: 96, 96
+homeGround_1
+  xy: 2, 1002
+  size: 96, 96
+title_7
+  xy: 102, 1002
+  size: 96, 96
+title_8
+  xy: 202, 1002
+  size: 96, 96
+bountyHunter_1
+  xy: 302, 1002
+  size: 96, 96
+bountyHunter_2
+  xy: 402, 1002
+  size: 96, 96
+legendSlayer_1
+  xy: 502, 1002
+  size: 96, 96
+treasureSeeker_1
+  xy: 602, 1002
+  size: 96, 96
+treasureSeeker_2
+  xy: 702, 1002
+  size: 96, 96
+tournamentRegular_1
+  xy: 2, 1102
+  size: 96, 96
+tournamentRegular_2
+  xy: 102, 1102
+  size: 96, 96
+guildFavorite_1
+  xy: 202, 1102
+  size: 96, 96

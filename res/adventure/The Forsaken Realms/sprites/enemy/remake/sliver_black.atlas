@@ -1,0 +1,135 @@
+sliver_black.png
+size: 2496,804
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 208, 148
+  footprint: 62, 1, 85, 118
+Idle
+  xy: 208, 64
+  size: 208, 148
+Idle
+  xy: 416, 64
+  size: 208, 148
+Idle
+  xy: 624, 64
+  size: 208, 148
+Idle
+  xy: 832, 64
+  size: 208, 148
+Idle
+  xy: 1040, 64
+  size: 208, 148
+Idle
+  xy: 1248, 64
+  size: 208, 148
+Idle
+  xy: 1456, 64
+  size: 208, 148
+Idle
+  xy: 1664, 64
+  size: 208, 148
+Idle
+  xy: 1872, 64
+  size: 208, 148
+Idle
+  xy: 2080, 64
+  size: 208, 148
+Idle
+  xy: 2288, 64
+  size: 208, 148
+Walk
+  xy: 0, 212
+  size: 208, 148
+Walk
+  xy: 208, 212
+  size: 208, 148
+Walk
+  xy: 416, 212
+  size: 208, 148
+Walk
+  xy: 624, 212
+  size: 208, 148
+Walk
+  xy: 832, 212
+  size: 208, 148
+Walk
+  xy: 1040, 212
+  size: 208, 148
+Walk
+  xy: 1248, 212
+  size: 208, 148
+Walk
+  xy: 1456, 212
+  size: 208, 148
+Attack
+  xy: 0, 360
+  size: 208, 148
+Attack
+  xy: 208, 360
+  size: 208, 148
+Attack
+  xy: 416, 360
+  size: 208, 148
+Attack
+  xy: 624, 360
+  size: 208, 148
+Attack
+  xy: 832, 360
+  size: 208, 148
+Attack
+  xy: 1040, 360
+  size: 208, 148
+Attack
+  xy: 1248, 360
+  size: 208, 148
+Attack
+  xy: 1456, 360
+  size: 208, 148
+Attack
+  xy: 1664, 360
+  size: 208, 148
+Attack
+  xy: 1872, 360
+  size: 208, 148
+Attack
+  xy: 2080, 360
+  size: 208, 148
+Attack
+  xy: 2288, 360
+  size: 208, 148
+Hit
+  xy: 0, 508
+  size: 208, 148
+Hit
+  xy: 208, 508
+  size: 208, 148
+Hit
+  xy: 416, 508
+  size: 208, 148
+Hit
+  xy: 624, 508
+  size: 208, 148
+Death
+  xy: 0, 656
+  size: 208, 148
+Death
+  xy: 208, 656
+  size: 208, 148
+Death
+  xy: 416, 656
+  size: 208, 148
+Death
+  xy: 624, 656
+  size: 208, 148
+Death
+  xy: 832, 656
+  size: 208, 148
+Death
+  xy: 1040, 656
+  size: 208, 148

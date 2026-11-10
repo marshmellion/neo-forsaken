@@ -1,0 +1,252 @@
+beza.png
+size: 2314,1234
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Avatar
+  xy: 0, 0
+  size: 64, 64
+Idle
+  xy: 0, 64
+  size: 178, 117
+  footprint: 57, 24, 95, 89
+Idle
+  xy: 178, 64
+  size: 178, 117
+Idle
+  xy: 356, 64
+  size: 178, 117
+Idle
+  xy: 534, 64
+  size: 178, 117
+Idle
+  xy: 712, 64
+  size: 178, 117
+Idle
+  xy: 890, 64
+  size: 178, 117
+Idle
+  xy: 1068, 64
+  size: 178, 117
+Idle
+  xy: 1246, 64
+  size: 178, 117
+Idle
+  xy: 1424, 64
+  size: 178, 117
+Idle
+  xy: 1602, 64
+  size: 178, 117
+Walk
+  xy: 0, 181
+  size: 178, 117
+Walk
+  xy: 178, 181
+  size: 178, 117
+Walk
+  xy: 356, 181
+  size: 178, 117
+Walk
+  xy: 534, 181
+  size: 178, 117
+Walk
+  xy: 712, 181
+  size: 178, 117
+Walk
+  xy: 890, 181
+  size: 178, 117
+Attack
+  xy: 0, 298
+  size: 178, 117
+Attack
+  xy: 178, 298
+  size: 178, 117
+Attack
+  xy: 356, 298
+  size: 178, 117
+Attack
+  xy: 534, 298
+  size: 178, 117
+Attack
+  xy: 712, 298
+  size: 178, 117
+Attack
+  xy: 890, 298
+  size: 178, 117
+Attack
+  xy: 1068, 298
+  size: 178, 117
+Attack
+  xy: 1246, 298
+  size: 178, 117
+Hit
+  xy: 0, 415
+  size: 178, 117
+Hit
+  xy: 178, 415
+  size: 178, 117
+Hit
+  xy: 356, 415
+  size: 178, 117
+Hit
+  xy: 534, 415
+  size: 178, 117
+Hit
+  xy: 712, 415
+  size: 178, 117
+Death
+  xy: 0, 532
+  size: 178, 117
+Death
+  xy: 178, 532
+  size: 178, 117
+Death
+  xy: 356, 532
+  size: 178, 117
+Death
+  xy: 534, 532
+  size: 178, 117
+Death
+  xy: 712, 532
+  size: 178, 117
+Death
+  xy: 890, 532
+  size: 178, 117
+Death
+  xy: 1068, 532
+  size: 178, 117
+Death
+  xy: 1246, 532
+  size: 178, 117
+Death
+  xy: 1424, 532
+  size: 178, 117
+Death
+  xy: 1602, 532
+  size: 178, 117
+Death
+  xy: 1780, 532
+  size: 178, 117
+Death
+  xy: 1958, 532
+  size: 178, 117
+Death
+  xy: 2136, 532
+  size: 178, 117
+Wake
+  xy: 0, 649
+  size: 178, 117
+Wake
+  xy: 178, 649
+  size: 178, 117
+Wake
+  xy: 356, 649
+  size: 178, 117
+Wake
+  xy: 534, 649
+  size: 178, 117
+Wake
+  xy: 712, 649
+  size: 178, 117
+Wake
+  xy: 890, 649
+  size: 178, 117
+Wake
+  xy: 1068, 649
+  size: 178, 117
+IdleUp
+  xy: 0, 766
+  size: 178, 117
+IdleUp
+  xy: 178, 766
+  size: 178, 117
+IdleUp
+  xy: 356, 766
+  size: 178, 117
+IdleUp
+  xy: 534, 766
+  size: 178, 117
+IdleUp
+  xy: 712, 766
+  size: 178, 117
+IdleUp
+  xy: 890, 766
+  size: 178, 117
+IdleUp
+  xy: 1068, 766
+  size: 178, 117
+IdleUp
+  xy: 1246, 766
+  size: 178, 117
+IdleUp
+  xy: 1424, 766
+  size: 178, 117
+IdleUp
+  xy: 1602, 766
+  size: 178, 117
+IdleDown
+  xy: 0, 883
+  size: 178, 117
+IdleDown
+  xy: 178, 883
+  size: 178, 117
+IdleDown
+  xy: 356, 883
+  size: 178, 117
+IdleDown
+  xy: 534, 883
+  size: 178, 117
+IdleDown
+  xy: 712, 883
+  size: 178, 117
+IdleDown
+  xy: 890, 883
+  size: 178, 117
+IdleDown
+  xy: 1068, 883
+  size: 178, 117
+IdleDown
+  xy: 1246, 883
+  size: 178, 117
+IdleDown
+  xy: 1424, 883
+  size: 178, 117
+IdleDown
+  xy: 1602, 883
+  size: 178, 117
+WalkUp
+  xy: 0, 1000
+  size: 178, 117
+WalkUp
+  xy: 178, 1000
+  size: 178, 117
+WalkUp
+  xy: 356, 1000
+  size: 178, 117
+WalkUp
+  xy: 534, 1000
+  size: 178, 117
+WalkUp
+  xy: 712, 1000
+  size: 178, 117
+WalkUp
+  xy: 890, 1000
+  size: 178, 117
+WalkDown
+  xy: 0, 1117
+  size: 178, 117
+WalkDown
+  xy: 178, 1117
+  size: 178, 117
+WalkDown
+  xy: 356, 1117
+  size: 178, 117
+WalkDown
+  xy: 534, 1117
+  size: 178, 117
+WalkDown
+  xy: 712, 1117
+  size: 178, 117
+WalkDown
+  xy: 890, 1117
+  size: 178, 117

@@ -42,9 +42,17 @@ run from `forge-gui-neo`, checks the wiring (19 checks).
   back through `GameEnd()` - ante loss, win streak, win ratio, Notoriety and ReloadJab lines all written.
 - `-Dneo.adventure.selftest=editor`: NeoForge's deck builder opens on the TFR collection and saves the deck back.
 
+## The Ante Re-roll
+
+`NeoMatchUI.revealAnteCards` is TFR's Ante Re-roll on NeoForge's table: the reveal, then "Keep / Re-roll" with the cost
+from the plane's tuning (`anteRerollBaseShardCost`, `anteRerollEscalationRate`, difficulty-scaled), the free daily
+re-roll of the Law of Stakes, and both the purse and the in-match shard count charged. It mirrors
+`MatchController.revealAnteCards`; a change to the rules there has to be made in both. Seen in the self-test
+(`-Dneo.adventure.anteTest=true` skips the reveal so the offer shows unattended): the offer at 10 Shards, logged as
+`[TFR-AnteReroll] (NeoForge table)`. Clicking Re-roll and paying was not exercised.
+
 ## Not carried into a NeoForge duel (TFR features that live in TFR's own match screen)
 
-- The Ante Re-roll dialog (`IGuiGame.revealAnteCards` falls back to the plain reveal).
 - The boss intro and win-streak notice before the duel (written to the log only), and TFR's boss music: NeoForge mutes
   Forge's music in the Adventure process and plays its own.
 - The 50x speed button and other additions to `MatchController` / `VPlayerPanel` / `VPrompt`.

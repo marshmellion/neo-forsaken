@@ -8458,6 +8458,70 @@ public class NeoMatchUI extends NetworkGuiGame implements OverlookedSink {
     }
 
     /**
+     * The Forsaken Realms fusion: the Ante Re-roll, as TFR's own table offers it
+     * ({@code MatchController.revealAnteCards}). Same rules, read from the same places: the base
+     * cost and its escalation from the plane's tuning, the free daily re-roll of the Law of
+     * Stakes, the purse and the in-match shard count both charged. Outside the Adventure
+     * process, or with nobody at the table (auto-play), it is the plain reveal.
+     */
+    @Override
+    public void revealAnteCards(final String title, final List<forge.game.card.CardView> items,
+                                final java.util.function.Supplier<List<forge.game.card.CardView>> reroll) {
+        if (!Boolean.getBoolean(forge.neo.NeoSettings.ADVENTURE_PROCESS) || !interactive() || reroll == null) {
+            reveal(title, items);
+            return;
+        }
+        List<forge.game.card.CardView> current = items;
+        int rerollCount = 0;
+        while (true) {
+            // Tests only (-Dneo.adventure.anteTest=true): no reveal, so the offer shows with nobody to click.
+            if (!Boolean.getBoolean("neo.adventure.anteTest")) {
+                reveal(title, current);
+            }
+            final forge.adventure.player.AdventurePlayer player;
+            final int cost;
+            final boolean free;
+            try {
+                player = forge.adventure.player.AdventurePlayer.current();
+                if (player == null) {
+                    System.out.println("[TFR-AnteReroll] AdventurePlayer.current() is null - skipping offer entirely");
+                    return;
+                }
+                final forge.adventure.data.TuningData tuning = forge.adventure.util.Config.instance().getTuningData();
+                final int base = forge.adventure.util.EconomyBuildings.scaledCost(tuning.anteRerollBaseShardCost);
+                free = forge.adventure.util.Ascendance.freeAnteRerollToday();
+                cost = free ? 0 : Math.round(base * (float) Math.pow(tuning.anteRerollEscalationRate, rerollCount));
+            } catch (final RuntimeException e) {
+                System.out.println("[TFR-AnteReroll] could not price the re-roll (" + e + ") - ante kept");
+                return;
+            }
+            System.out.println("[TFR-AnteReroll] (NeoForge table) offering reroll " + (rerollCount + 1) + " - cost="
+                    + cost + " shards, player has " + player.getShards());
+            final boolean wants = showOptionDialog(
+                    free ? "Re-roll this ante for free? (Law of Stakes, once a day)"
+                            : "Re-roll this ante for " + cost + " Shards? (You have " + player.getShards() + ".)",
+                    "Re-roll Ante", null, java.util.Arrays.asList("Keep", "Re-roll"), 0) == 1;
+            if (!wants) {
+                return;
+            }
+            if (player.getShards() < cost) {
+                System.out.println("[TFR-AnteReroll] declined - insufficient shards");
+                message("You don't have enough Shards for this Re-roll (need " + cost + ", have "
+                        + player.getShards() + ").", "Not Enough Shards");
+                return;
+            }
+            if (free) {
+                forge.adventure.util.Ascendance.useFreeAnteReroll();
+            } else {
+                player.takeShards(cost);
+                forge.adventure.scene.DuelScene.instance().chargeInGameManaShards(cost);
+                rerollCount++;
+            }
+            current = reroll.get();
+        }
+    }
+
+    /**
      * Elegir un numero con lista corta y "Otro...". Si es la X de un hechizo,
      * la lista llega hasta lo que puedes pagar en vez de hasta 9 (Discord,
      * 25-10-2026): ver {@link AffordableX}. "Otro..." se queda.

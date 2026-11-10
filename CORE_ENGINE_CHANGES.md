@@ -44,6 +44,7 @@ md` already gets updated after every change.
 - `forge-gui-mobile/src/forge/adventure/scene/ExternalTable.java` (new), and the "NeoForge fusion" blocks in
   `DuelScene.enter()` (before `MatchController.setIntroShowing`) and `DeckEditScene.enter()` (before `getScreen()`).
   Keep both blocks through a merge. See `docs/tfr/neoforge-fusion.md`.
+- `forge-gui-mobile/src/forge/adventure/scene/SettingsScene.java`: the "Dev Mode" checkbox, before "Enable unknown cards".
 
 ### Round 1001 - hover tips on the world map's tokens and the custom difficulty rows (the tooltip audit's round D)
 - `forge-gui-mobile/src/forge/adventure/stage/PointOfInterestMapSprite.java` (STOCK): `aiGuardDots(changes)` is public

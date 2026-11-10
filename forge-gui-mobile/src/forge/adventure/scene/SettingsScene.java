@@ -520,6 +520,12 @@ public class SettingsScene extends UIScene {
                 Config.instance().saveSettings();
             }
         });
+        // NeoForge fusion: Dev Mode from the Adventure's own settings. Forge's toggle lives in the Classic
+        // settings page, which a game started straight into the Adventure (NeoForge, or a locked Classic) never shows.
+        addCheckBox(localizer.getMessage("lblDevMode"), ForgePreferences.FPref.DEV_MODE_ENABLED, () -> {
+            ForgePreferences.DEV_MODE = FModel.getPreferences().getPrefBoolean(ForgePreferences.FPref.DEV_MODE_ENABLED);
+            System.out.println("[TFR-DevMode] " + (ForgePreferences.DEV_MODE ? "on" : "off") + " (Adventure settings)");
+        });
         addCheckBox(localizer.getMessage("lblEnableUnknownCards") + " (" +
             localizer.getMessage("lblRestartRequired") + ")", ForgePreferences.FPref.UI_LOAD_UNKNOWN_CARDS, this::restartForge);
         addCheckBox(localizer.getMessage("lblEnableNonLegalCards") + " (" +

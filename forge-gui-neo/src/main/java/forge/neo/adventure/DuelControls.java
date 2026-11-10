@@ -120,6 +120,11 @@ public final class DuelControls {
                 ui.leaveMatch(NeoMatchUI.Exit.MENU);
             }
 
+            @Override
+            public java.util.Map<String, Runnable> devCheats() {
+                return DuelControls.devCheats(table, ui);
+            }
+
             // Los eventos de la Aventura van al mejor de tres.
             @Override
             public boolean canConcedeGame() {
@@ -270,5 +275,68 @@ public final class DuelControls {
             default:
                 return false;
         }
+    }
+
+    /**
+     * The Forsaken Realms fusion: Forge's Dev Mode menu (VDevMenu on TFR's own table) for a duel on this
+     * table. Empty unless Dev Mode is on (Adventure settings). The cheats ask their questions through
+     * the match UI, so they run on the game thread, never on JavaFX's.
+     */
+    private static java.util.Map<String, Runnable> devCheats(final TableScreen table, final NeoMatchUI ui) {
+        final java.util.Map<String, Runnable> out = new java.util.LinkedHashMap<>();
+        if (!forge.localinstance.properties.ForgePreferences.DEV_MODE || ui.getGameController() == null) {
+            return out;
+        }
+        final forge.interfaces.IGameController gc = ui.getGameController();
+        addCheat(out, table, "lblSetLife", "Set Player Life", () -> gc.cheat().setPlayerLife());
+        addCheat(out, table, "lblWinGame", "Win Game", () -> gc.cheat().winGame());
+        addCheat(out, table, "lblGenerateMana", "Generate Mana", () -> gc.cheat().generateMana());
+        addCheat(out, table, "lblTutor", "Tutor for Card", () -> gc.cheat().tutorForCard());
+        addCheat(out, table, "lblCardToHand", "Add Card to Hand", () -> gc.cheat().addCardToHand());
+        addCheat(out, table, "lblCardToBattlefield", "Add Card to Battlefield", () -> gc.cheat().addCardToBattlefield());
+        addCheat(out, table, "lblTokenToBattlefield", "Add Token to Battlefield", () -> gc.cheat().addTokenToBattlefield());
+        addCheat(out, table, "lblCardToLibrary", "Add Card to Library", () -> gc.cheat().addCardToLibrary());
+        addCheat(out, table, "lblCardToGraveyard", "Add Card to Graveyard", () -> gc.cheat().addCardToGraveyard());
+        addCheat(out, table, "lblRepeatAddCard", "Repeat Last Add Card", () -> gc.cheat().repeatLastAddition());
+        addCheat(out, table, "lblAddCounterPermanent", "Add Counters to Card", () -> gc.cheat().addCountersToPermanent());
+        addCheat(out, table, "lblSubCounterPermanent", "Remove Counters from Card", () -> gc.cheat().removeCountersFromPermanent());
+        addCheat(out, table, "lblTapPermanent", "Tap Permanents", () -> gc.cheat().tapPermanents());
+        addCheat(out, table, "lblUntapPermanent", "Untap Permanents", () -> gc.cheat().untapPermanents());
+        addCheat(out, table, "lblExileFromPlay", "Exile Cards from Play", () -> gc.cheat().exileCardsFromBattlefield());
+        addCheat(out, table, "lblExileFromHand", "Exile Cards from Hand", () -> gc.cheat().exileCardsFromHand());
+        final boolean lands = gc.canPlayUnlimitedLands();
+        addCheat(out, table, "lblUnlimitedLands", "Play Unlimited Lands", lands ? ": on" : ": off",
+                () -> gc.cheat().setCanPlayUnlimitedLands(!lands));
+        final boolean all = gc.mayLookAtAllCards();
+        addCheat(out, table, "lblViewAll", "View All Cards", all ? ": on" : ": off",
+                () -> gc.cheat().setViewAllCards(!all));
+        return out;
+    }
+
+    private static void addCheat(final java.util.Map<String, Runnable> out, final TableScreen table,
+                                 final String key, final String fallback, final Runnable cheat) {
+        addCheat(out, table, key, fallback, "", cheat);
+    }
+
+    private static void addCheat(final java.util.Map<String, Runnable> out, final TableScreen table,
+                                 final String key, final String fallback, final String suffix, final Runnable cheat) {
+        String label;
+        try {
+            label = forge.util.Localizer.getInstance().getMessageorUseDefault(key, fallback);
+        } catch (final RuntimeException e) {
+            label = fallback;
+        }
+        final String name = label + suffix;
+        out.put(name, () -> {
+            table.getMenuOverlay().hide();
+            NeoDuelBridge.log("dev mode: " + name);
+            forge.util.ThreadUtil.invokeInGameThread(() -> {
+                try {
+                    cheat.run();
+                } catch (final RuntimeException e) {
+                    NeoDuelBridge.log("dev mode: " + name + " failed: " + e);
+                }
+            });
+        });
     }
 }

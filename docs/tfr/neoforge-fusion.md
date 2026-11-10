@@ -51,6 +51,16 @@ re-roll of the Law of Stakes, and both the purse and the in-match shard count ch
 (`-Dneo.adventure.anteTest=true` skips the reveal so the offer shows unattended): the offer at 10 Shards, logged as
 `[TFR-AnteReroll] (NeoForge table)`. Clicking Re-roll and paying was not exercised.
 
+## Dev Mode
+
+NeoForge has no Dev Mode, and Forge's toggle is in the Classic settings page, which a game started straight into the
+Adventure never shows. So: "Dev Mode" is a checkbox in the Adventure's own Settings (`SettingsScene`, pref
+`DEV_MODE_ENABLED`, logged as `[TFR-DevMode]`), in a stock TFR build too. With it on, the pause menu of a duel on
+NeoForge's table has a "Dev mode" entry (`DuelControls.devCheats`, `PauseMenu.showDevCheats`): Forge's cheats - set
+life, win game, generate mana, tutor, add card to hand / battlefield / library / graveyard, tokens, counters, tap,
+untap, exile, unlimited lands, view all cards - run on the game thread as TFR's `VDevMenu` does. Seen: the entry in the
+pause menu with the pref on. Not exercised: the settings checkbox by hand, and each cheat (nobody to click).
+
 ## Not carried into a NeoForge duel (TFR features that live in TFR's own match screen)
 
 - The boss intro and win-streak notice before the duel (written to the log only), and TFR's boss music: NeoForge mutes

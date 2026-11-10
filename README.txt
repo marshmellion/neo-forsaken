@@ -1,4 +1,4 @@
-NEO FORSAKEN (test build, 2026-11-10)
+NEO FORSAKEN (test build 2, 2026-11-10)
 The Forsaken Realms v1.28 (TheSAguy) played with NeoForge 1.0.50's table and deck builder (AdrianLopez98),
 on the Forge rules engine (Card-Forge). Source: https://github.com/marshmellion/neo-forsaken
 

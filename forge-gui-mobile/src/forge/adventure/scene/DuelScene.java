@@ -1526,6 +1526,29 @@ public class DuelScene extends ForgeScene {
         rules.setManaBurn(false);
         rules.setWarnAboutAICards(false);
 
+        // NeoForge fusion: the player's own duels can be played on another front end's table (ExternalTable).
+        // Everything above (decks, items, blessings, life, TFR's rules) is already applied. Watched fights
+        // (guards, Deck Tester) and agent-piloted duels stay on TFR's own table.
+        final ExternalTable.Duel externalTable = ExternalTable.duel;
+        if (externalTable != null && !aiControlsPlayerSide && !forge.adventure.agent.AgentBridge.aiPilotsPlayer()) {
+            final boolean heartbeat = guardDeck == null && enemy.getData().fixedDeck == null && !isArena;
+            final String externalIntro = enemy.getData().boss && enemy.getBossIntro() != null
+                    ? (winStreakNote != null ? enemy.getBossIntro() + "\n\n" + winStreakNote : enemy.getBossIntro())
+                    : winStreakNote;
+            if (externalTable.play(hostedMatch, rules, appliedVariants, players, humanPlayer,
+                    enemy.getTieredDisplayName(), bossBattle, externalIntro, () -> {
+                        GameEnd();
+                        if (!hasCallbackExit())
+                            exitDuelScene();
+                    })) {
+                if (heartbeat)
+                    forge.adventure.util.DuelHeartbeat.start(hostedMatch, humanPlayer, enemy.getName(), notorietyGate());
+                else
+                    forge.adventure.util.DuelHeartbeat.stop();
+                return;
+            }
+        }
+
         //hostedMatch.setEndGameHook(() -> DuelScene.this.GameEnd());
         final boolean showIntro = chaosBattle || isDeckMissing || enemy.getData().boss
             || (enemy.getData().copyPlayerDeck && Current.player().isUsingCustomDeck())

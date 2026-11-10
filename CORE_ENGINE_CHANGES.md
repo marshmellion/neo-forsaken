@@ -35,6 +35,16 @@ md` already gets updated after every change.
 
 ## Modified files (existing engine code, edited)
 
+### NeoForge fusion (branch `neoforge-fusion`)
+
+- `pom.xml` (root): `<module>forge-gui-neo</module>` after `forge-gui-desktop`. An upstream merge that rewrites the
+  module list drops it; put it back.
+- `forge-gui-neo/` (new module, NeoForge 1.0.50): not an upstream folder, no merge conflicts. It compiles against
+  forge-gui-mobile, so a signature change there can break it (`SelfTest` calls `WorldSave.generateNewWorld`).
+- `forge-gui-mobile/src/forge/adventure/scene/ExternalTable.java` (new), and the "NeoForge fusion" blocks in
+  `DuelScene.enter()` (before `MatchController.setIntroShowing`) and `DeckEditScene.enter()` (before `getScreen()`).
+  Keep both blocks through a merge. See `docs/tfr/neoforge-fusion.md`.
+
 ### Round 1001 - hover tips on the world map's tokens and the custom difficulty rows (the tooltip audit's round D)
 - `forge-gui-mobile/src/forge/adventure/stage/PointOfInterestMapSprite.java` (STOCK): `aiGuardDots(changes)` is public
   (was private), for the guard's hover tip (`TfrMapTips`). Nothing else changed.

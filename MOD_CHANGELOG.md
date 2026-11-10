@@ -41977,6 +41977,15 @@ Two user reports from the live v1.05 game. Repo only - the live folder is being 
   #98 (1-vs-N content) marked Done - both shipped in v1.05; #97 Android status moved to the v1.05 APK.
 
 
+## NeoForge fusion (branch `neoforge-fusion`, no round number claimed, 2026-11-10)
+
+NeoForge 1.0.50's `forge-gui-neo` module added to the tree, so The Forsaken Realms can be played with NeoForge's table
+and deck builder. New `forge.adventure.scene.ExternalTable` (two hooks, null unless NeoForge sets them); `DuelScene.enter()`
+and `DeckEditScene.enter()` offer the duel / the deck to them; NeoForge's shadow copies of those two classes removed;
+its `SelfTest` and `AdventureCheck` updated for TFR's signatures and the hooks; root `pom.xml` lists the module. A stock
+TFR build behaves as before (hooks null). Detail, test results and what is not carried over: `docs/tfr/neoforge-fusion.md`.
+The NOW block of CLAUDE.md is untouched: this is a side branch, not a release round.
+
 ## Round 327: the Angel portraits - blue, gold and green eyes, all selectable (2026-09-24)
 
 User, after round 322's blue eyes: *"For the Angel Portraits, I only see blue eye now, can't select between Gold,

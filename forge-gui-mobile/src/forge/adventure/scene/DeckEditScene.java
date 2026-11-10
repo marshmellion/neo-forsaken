@@ -56,6 +56,11 @@ public class DeckEditScene extends ForgeScene {
             screen = null;
             lastLoadedEventContext = currentEvent;
         }
+        // NeoForge fusion: the player's own decks can open in another front end's editor (ExternalTable). Event
+        // decks (draft, jumpstart) keep TFR's editor: they have rules of their own.
+        final ExternalTable.DeckEditor externalEditor = ExternalTable.deckEditor;
+        if (currentEvent == null && externalEditor != null && externalEditor.open(() -> forge.Forge.switchToLast()))
+            return;
         getScreen();
         if (currentEvent == null)
             System.out.println("[TFR-DeckEditor] editing \"" + (selected == null ? "?" : selected.getName()) + "\" (slot "

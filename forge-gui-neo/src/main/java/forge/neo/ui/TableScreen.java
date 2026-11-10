@@ -154,6 +154,8 @@ public class TableScreen extends Pane {
      * acciones: esto no actua sobre la partida, abre una capa (principio 1).
      */
     private final Button menuButton = new Button(NeoText.get("table.menu"));
+    /** The Forsaken Realms fusion: opens Forge's Dev Mode panel. Off until enableDevButton. */
+    private final Button devButton = new Button("Dev");
 
     /**
      * Grabar y repetir una macro con el raton, como en el Forge de siempre.
@@ -437,6 +439,9 @@ public class TableScreen extends Pane {
         menuButton.getStyleClass().add("log-button");
         menuButton.setFocusTraversable(false);
         menuButton.setVisible(false);
+        devButton.getStyleClass().add("log-button");
+        devButton.setFocusTraversable(false);
+        devButton.setVisible(false);
 
         playerDetails.getStyleClass().add("player-details");
         playerDetails.setWrapText(true);
@@ -492,7 +497,7 @@ public class TableScreen extends Pane {
         spotlight.setFill(javafx.scene.paint.Color.TRANSPARENT);
 
         getChildren().addAll(opponentTabs, opponentBar, viewport,
-                selfBar, hand, commandZone, phaseRail, side, combatOverlay, impactLayer, logButton, turnButton, menuButton, chatButton, macroRecordButton, macroPlayButton, cooldownBadge,
+                selfBar, hand, commandZone, phaseRail, side, combatOverlay, impactLayer, logButton, devButton, turnButton, menuButton, chatButton, macroRecordButton, macroPlayButton, cooldownBadge,
                 stackChip, promptBanner, notices, turnBanner, coinFlip, diceRoll, playerDetails, zoomBadge, macroBadge, spotlight,
                 handPeek, overlay, menuOverlay, zoomOverlay, curtain);
         curtain.getStyleClass().add("hotseat-curtain");
@@ -548,7 +553,7 @@ public class TableScreen extends Pane {
             }
             final Object t = e.getTarget();
             if (isInside(t, overlay) || isInside(t, menuOverlay) || isInside(t, zoomOverlay)
-                    || isInside(t, logButton) || isInside(t, turnButton) || isInside(t, menuButton)
+                    || isInside(t, logButton) || isInside(t, devButton) || isInside(t, turnButton) || isInside(t, menuButton)
                     || isInside(t, chatButton) || isInside(t, opponentTabs)
                     || isZoneOpener(t)) {
                 return;
@@ -750,6 +755,11 @@ public class TableScreen extends Pane {
         final double lbW = logButton.prefWidth(-1);
         final double lbH = logButton.prefHeight(lbW);
         logButton.resizeRelocate(PAD, h - lbH - PAD, lbW, lbH);
+        // Dev, beside the log button on the same row.
+        if (devButton.isVisible()) {
+            final double dbW = devButton.prefWidth(-1);
+            devButton.resizeRelocate(PAD + lbW + 4, h - lbH - PAD, dbW, lbH);
+        }
         // Las macros, apiladas encima y del mismo ancho: una columna se lee
         // como un grupo, y a lo ancho se meterian en la mano.
         double cornerTop = h - lbH - PAD;
@@ -3218,6 +3228,13 @@ public class TableScreen extends Pane {
     public void enablePauseButton(final Runnable open) {
         menuButton.setOnAction(e -> open.run());
         menuButton.setVisible(true);
+        requestLayout();
+    }
+
+    /** The Forsaken Realms fusion: the "Dev" button beside the log button. Off unless a duel turns it on. */
+    public void enableDevButton(final Runnable open) {
+        devButton.setOnAction(e -> open.run());
+        devButton.setVisible(true);
         requestLayout();
     }
 

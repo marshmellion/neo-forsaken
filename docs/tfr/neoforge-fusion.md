@@ -54,12 +54,23 @@ re-roll of the Law of Stakes, and both the purse and the in-match shard count ch
 ## Dev Mode
 
 NeoForge has no Dev Mode, and Forge's toggle is in the Classic settings page, which a game started straight into the
-Adventure never shows. So: "Dev Mode" is a checkbox in the Adventure's own Settings (`SettingsScene`, pref
-`DEV_MODE_ENABLED`, logged as `[TFR-DevMode]`), in a stock TFR build too. With it on, the pause menu of a duel on
-NeoForge's table has a "Dev mode" entry (`DuelControls.devCheats`, `PauseMenu.showDevCheats`): Forge's cheats - set
-life, win game, generate mana, tutor, add card to hand / battlefield / library / graveyard, tokens, counters, tap,
-untap, exile, unlimited lands, view all cards - run on the game thread as TFR's `VDevMenu` does. Seen: the entry in the
-pause menu with the pref on. Not exercised: the settings checkbox by hand, and each cheat (nobody to click).
+Adventure never shows. So:
+
+- "Dev Mode" is a checkbox in the Adventure's own Settings (`SettingsScene`, pref `DEV_MODE_ENABLED`, logged as
+  `[TFR-DevMode]`), in a stock TFR build too. A duel reads it when it starts.
+- With it on, a duel on NeoForge's table has the Dev panel (`forge.neo.adventure.DevPanel`), opened by the "Dev" button
+  beside the log button (bottom left), by F2, or from the pause menu. It holds every cheat of Forge's dev menu
+  (`IDevModeCheats`): add card to hand / battlefield / library / graveyard / exile, token, repeat last add, tutor, cast
+  spell / play land, generate mana, tap, untap, add / remove counters, exile from play / hand, remove from game, set
+  life, win game, save / load game state, ask AI (plain and simulation), rigged planar roll, planeswalk to, and the two
+  switches (unlimited lands, view all cards).
+- Easier than the flat menu: grouped (Cards, Board, Game, Switches), a filter box focused on open (Enter runs the first
+  match), switches show ON / off and keep the panel open, the last cheat used is offered again at the top. Cheats run
+  on the game thread, as TFR's `VDevMenu` does.
+- Seen in the self-test (`-Dneo.adventure.devOpen=true`, `-Dneo.adventure.devRun=<name>`): the panel, the Dev button,
+  and "Add Card to Hand" and "Set Player Life" opening their first question on NeoForge's table. Not exercised: a cheat
+  carried through to the end (nobody to click) - the card picker over the whole card list in particular - and the
+  settings checkbox by hand.
 
 ## Not carried into a NeoForge duel (TFR features that live in TFR's own match screen)
 

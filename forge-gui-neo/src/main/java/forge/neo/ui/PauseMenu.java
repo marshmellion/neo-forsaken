@@ -57,12 +57,9 @@ public class PauseMenu extends StackPane {
         default void concedeGame() {
         }
 
-        /**
-         * The Forsaken Realms fusion: Forge's Dev Mode cheats for this duel, label to action, in menu order.
-         * Empty (no "Dev mode" entry) unless Dev Mode is on. Each action closes the menu itself.
-         */
-        default java.util.Map<String, Runnable> devCheats() {
-            return java.util.Map.of();
+        /** The Forsaken Realms fusion: opens Forge's Dev Mode panel, or null when Dev Mode is off. */
+        default Runnable devPanel() {
+            return null;
         }
     }
 
@@ -243,8 +240,8 @@ public class PauseMenu extends StackPane {
         // Rendir SOLO esta partida, en un partido al mejor de N (Discord,
         // 03-11-2026): la pantalla de derrota de siempre, con "Siguiente
         // partida". Va justo encima de salir, que en un partido rinde TODO.
-        if (!actions.devCheats().isEmpty()) {
-            root.getChildren().add(item("Dev mode", "btn-secondary", this::showDevCheats));
+        if (actions.devPanel() != null) {
+            root.getChildren().add(item("Dev mode", "btn-secondary", actions.devPanel()));
         }
 
         if (actions.canConcedeGame()) {
@@ -300,30 +297,6 @@ public class PauseMenu extends StackPane {
         if (gestureSpy != null) {
             gestureSpy.accept(Gesture.SETTINGS_OPEN);
         }
-    }
-
-    /** Forge's Dev Mode cheats, one button each. */
-    private void showDevCheats() {
-        final VBox box = new VBox(8);
-        box.getStyleClass().addAll("dialog", "pause-menu");
-        box.setPadding(new Insets(22, 30, 22, 30));
-        box.setAlignment(Pos.CENTER);
-        box.setMaxWidth(Region.USE_PREF_SIZE);
-        box.setMaxHeight(Region.USE_PREF_SIZE);
-        final Label title = new Label("Dev mode");
-        title.getStyleClass().add("dialog-title");
-        final VBox list = new VBox(6);
-        for (final java.util.Map.Entry<String, Runnable> e : actions.devCheats().entrySet()) {
-            list.getChildren().add(item(e.getKey(), "btn-secondary", e.getValue()));
-        }
-        final javafx.scene.control.ScrollPane scroll = new javafx.scene.control.ScrollPane(list);
-        scroll.setFitToWidth(true);
-        scroll.setHbarPolicy(javafx.scene.control.ScrollPane.ScrollBarPolicy.NEVER);
-        scroll.setPrefViewportHeight(UiScale.px(380));
-        scroll.setPrefViewportWidth(UiScale.px(300));
-        scroll.setStyle("-fx-background-color: transparent; -fx-background: transparent;");
-        box.getChildren().addAll(title, scroll, item(NeoText.get("common.cancel"), "btn-primary", this::showMain));
-        getChildren().setAll(box);
     }
 
     /** Confirmacion para lo que no tiene vuelta atras. */

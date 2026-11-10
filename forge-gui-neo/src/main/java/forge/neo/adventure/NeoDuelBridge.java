@@ -92,6 +92,7 @@ public final class NeoDuelBridge {
             gui.setBinder(binder);
             gui.setTable(table);
             binder.setMatchUi(gui);
+            DevPanel.remember(table, gui);
             DuelControls.install(NeoWindow.scene(), table, gui);
             // Que teclas manda aqui, dicho en el registro. Una linea por duelo,
             // y esta a proposito: al reportar "los atajos no me funcionan en la
@@ -179,6 +180,14 @@ public final class NeoDuelBridge {
                 return;
             }
             Platform.runLater(() -> {
+                // Tests only: -Dneo.adventure.devOpen=true opens the Dev panel, -Dneo.adventure.devRun=<name>
+                // runs one of its cheats (a part of its name), before the capture.
+                if (Boolean.getBoolean("neo.adventure.devOpen")) {
+                    DevPanel.openForTest();
+                }
+                if (System.getProperty("neo.adventure.devRun") != null) {
+                    DevPanel.runForTest(System.getProperty("neo.adventure.devRun"));
+                }
                 // Solo pruebas: -Dneo.adventure.pressEsc=true pulsa Escape antes.
                 if (Boolean.getBoolean("neo.adventure.pressEsc")) {
                     javafx.event.Event.fireEvent(NeoWindow.scene().getRoot(), new javafx.scene.input.KeyEvent(
@@ -187,7 +196,7 @@ public final class NeoDuelBridge {
                 }
             });
             try {
-                Thread.sleep(800);
+                Thread.sleep(Long.getLong("neo.adventure.snapshotSettleMs", 800));
             } catch (final InterruptedException e) {
                 return;
             }
